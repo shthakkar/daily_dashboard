@@ -1,8 +1,5 @@
 import json
-from datetime import date
 from pathlib import Path
-
-import yfinance as yf
 
 
 def classify_ema_signal(ema10: float, ema20: float) -> str:
