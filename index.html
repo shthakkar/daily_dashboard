@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Market Dashboard</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0f0f0f;
+      color: #e0e0e0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', monospace;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #555;
+      margin-bottom: 2rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+    .cards {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      padding: 2rem 2.5rem;
+      min-width: 220px;
+      text-align: center;
+    }
+    .card-title {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+    .card-label {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+    }
+    .card-sub { font-size: 0.8rem; color: #555; }
+    .bullish  { color: #22c55e; }
+    .bearish  { color: #ef4444; }
+    .low      { color: #22c55e; }
+    .normal   { color: #eab308; }
+    .elevated { color: #f97316; }
+    .crisis   { color: #ef4444; }
+    .unavailable { color: #333; }
+    #date-line {
+      margin-top: 2.5rem;
+      font-size: 0.7rem;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Market Dashboard</h1>
+
+  <div class="cards" id="cards">
+    <div class="card">
+      <div class="card-title">Market Direction</div>
+      <div class="card-label unavailable">—</div>
+      <div class="card-sub">Loading...</div>
+    </div>
+    <div class="card">
+      <div class="card-title">Volatility</div>
+      <div class="card-label unavailable">—</div>
+      <div class="card-sub">Loading...</div>
+    </div>
+  </div>
+
+  <div id="date-line"></div>
+
+  <script>
+    async function loadData() {
+      try {
+        const res = await fetch('data/latest.json');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const d = await res.json();
+        render(d);
+      } catch {
+        renderError();
+      }
+    }
+
+    function render(d) {
+      const emaClass = d.spy_ema === 'bullish' ? 'bullish' : 'bearish';
+      document.getElementById('cards').innerHTML = `
+        <div class="card">
+          <div class="card-title">Market Direction</div>
+          <div class="card-label ${emaClass}">${d.spy_ema.toUpperCase()}</div>
+          <div class="card-sub">10EMA: ${d.spy_10ema} &nbsp;|&nbsp; 20EMA: ${d.spy_20ema}</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Volatility</div>
+          <div class="card-label ${d.vix_level}">${d.vix_level.toUpperCase()}</div>
+          <div class="card-sub">VIX: ${d.vix}</div>
+        </div>
+      `;
+      document.getElementById('date-line').textContent = `Last updated: ${d.date}`;
+    }
+
+    function renderError() {
+      document.getElementById('cards').innerHTML = `
+        <div class="card">
+          <div class="card-title">Market Direction</div>
+          <div class="card-label unavailable">—</div>
+          <div class="card-sub">Data unavailable</div>
+        </div>
+        <div class="card">
+          <div class="card-title">Volatility</div>
+          <div class="card-label unavailable">—</div>
+          <div class="card-sub">Data unavailable</div>
+        </div>
+      `;
+    }
+
+    loadData();
+  </script>
+</body>
+</html>
