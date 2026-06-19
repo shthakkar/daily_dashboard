@@ -111,6 +111,59 @@
       box-shadow: 0 8px 32px #00000088;
       border: 1px solid #2a2a2a;
     }
+    .scanners {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 2.5rem;
+      width: 100%;
+      max-width: 900px;
+    }
+    .scanner-section { }
+    .scanner-title {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #555;
+      margin-bottom: 0.85rem;
+    }
+    .scanner-bands {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .scanner-band {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      padding: 1.25rem 1.75rem;
+      min-width: 190px;
+      flex: 1;
+    }
+    .scanner-band-title {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #444;
+      margin-bottom: 0.75rem;
+    }
+    .scanner-rows {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      padding: 1.25rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .scanner-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .scanner-metric { font-size: 0.8rem; color: #888; }
+    .scanner-na { font-size: 0.8rem; color: #333; }
   </style>
 </head>
 <body>
@@ -119,13 +172,13 @@
   <div class="cards">
     <div class="card">
       <div class="card-title">Market Direction</div>
-      <div class="card-label bullish">BULLISH</div>
-      <div class="card-sub">10EMA: 742.41 &nbsp;|&nbsp; 20EMA: 740.80</div>
+      <div id="direction-label" class="card-label bullish">BULLISH</div>
+      <div id="direction-sub" class="card-sub">10EMA: 742.41 &nbsp;|&nbsp; 20EMA: 740.80</div>
     </div>
     <div class="card">
       <div class="card-title">Volatility</div>
-      <div class="card-label normal">NORMAL</div>
-      <div class="card-sub">VIX: 16.78</div>
+      <div id="vix-label" class="card-label normal">NORMAL</div>
+      <div id="vix-sub" class="card-sub">VIX: 16.78</div>
     </div>
   </div>
 
@@ -146,9 +199,164 @@
     </div>
   </div>
 
+  <div class="scanners">
+
+    <div class="scanner-section">
+      <div class="scanner-title">Parabolic Short Setups</div>
+      <div class="scanner-bands" id="parabolic-bands">
+        <span class="scanner-na">Loading...</span>
+      </div>
+    </div>
+
+    <div class="scanner-section">
+      <div class="scanner-title">Qullamaggie — MA Tightness</div>
+      <div class="scanner-rows" id="qullamaggie-rows">
+        <span class="scanner-na">Loading...</span>
+      </div>
+    </div>
+
+    <div class="scanner-section">
+      <div class="scanner-title">Relative Strength</div>
+      <div class="scanner-rows" id="rs-rows">
+        <span class="scanner-na">Loading...</span>
+      </div>
+    </div>
+
+  </div>
+
   <div id="chart-popup">
     <iframe id="chart-frame" width="600" height="400" frameborder="0" scrolling="no"></iframe>
   </div>
+
+  <script>
+    const SIGNAL_CLS = new Set(['bullish', 'bearish']);
+    const VIX_CLS    = new Set(['low', 'normal', 'elevated', 'crisis']);
+
+    function safe(s) {
+      return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    }
+
+    function makeTicker(symbol, cssClass) {
+      const a = document.createElement('a');
+      a.className = 'ticker ' + cssClass;
+      a.textContent = symbol;
+      a.dataset.symbol = symbol;
+      a.href = 'https://www.tradingview.com/chart/?symbol=' + encodeURIComponent(symbol);
+      a.target = '_blank';
+      a.rel = 'noopener';
+      return a;
+    }
+
+    fetch('data/latest.json')
+      .then(r => r.json())
+      .then(d => {
+        const sig = SIGNAL_CLS.has(d.spy_ema) ? d.spy_ema : 'bearish';
+        const dirLabel = document.getElementById('direction-label');
+        dirLabel.className = 'card-label ' + sig;
+        dirLabel.textContent = sig.toUpperCase();
+        document.getElementById('direction-sub').innerHTML =
+          '10EMA: ' + safe(d.spy_10ema) + ' &nbsp;|&nbsp; 20EMA: ' + safe(d.spy_20ema);
+
+        const lvl = VIX_CLS.has(d.vix_level) ? d.vix_level : 'normal';
+        const vixLabel = document.getElementById('vix-label');
+        vixLabel.className = 'card-label ' + lvl;
+        vixLabel.textContent = lvl.toUpperCase();
+        document.getElementById('vix-sub').textContent = 'VIX: ' + safe(d.vix);
+
+        document.getElementById('date-line').textContent = 'Last updated: ' + safe(d.date);
+      })
+      .catch(() => {});
+
+    fetch('data/parabolic_short.json')
+      .then(function(r) { return r.json(); })
+      .then(function(d) {
+        var container = document.getElementById('parabolic-bands');
+        container.innerHTML = '';
+        d.bands.forEach(function(band) {
+          var bandDiv = document.createElement('div');
+          bandDiv.className = 'scanner-band';
+          var title = document.createElement('div');
+          title.className = 'scanner-band-title';
+          title.textContent = band.label;
+          bandDiv.appendChild(title);
+          if (!band.tickers.length) {
+            var na = document.createElement('span');
+            na.className = 'scanner-na';
+            na.textContent = 'No data';
+            bandDiv.appendChild(na);
+          }
+          band.tickers.forEach(function(t) {
+            var row = document.createElement('div');
+            row.className = 'scanner-row';
+            var pill = makeTicker(t.ticker, 'short');
+            row.appendChild(pill);
+            var m = document.createElement('span');
+            m.className = 'scanner-metric';
+            m.textContent = safe(t.perf_week) + ' 2W  ' + safe(t.perf_month) + ' 4W';
+            row.appendChild(m);
+            bandDiv.appendChild(row);
+          });
+          container.appendChild(bandDiv);
+        });
+        attachScannerPopups();
+      })
+      .catch(function() {
+        document.getElementById('parabolic-bands').innerHTML = '<span class="scanner-na">Data unavailable</span>';
+      });
+
+    fetch('data/qullamaggie.json')
+      .then(function(r) { return r.json(); })
+      .then(function(d) {
+        var container = document.getElementById('qullamaggie-rows');
+        container.innerHTML = '';
+        if (!d.stocks.length) {
+          container.innerHTML = '<span class="scanner-na">No results</span>';
+          return;
+        }
+        d.stocks.forEach(function(s) {
+          var row = document.createElement('div');
+          row.className = 'scanner-row';
+          row.appendChild(makeTicker(s.ticker, 'long'));
+          var m = document.createElement('span');
+          m.className = 'scanner-metric';
+          m.textContent = safe(String(s.tightness)) + '  ' + safe(s.rating) + '  $' + safe(String(s.close));
+          row.appendChild(m);
+          container.appendChild(row);
+        });
+        attachScannerPopups();
+      })
+      .catch(function() {
+        document.getElementById('qullamaggie-rows').innerHTML = '<span class="scanner-na">Data unavailable</span>';
+      });
+
+    fetch('data/relative_strength.json')
+      .then(function(r) { return r.json(); })
+      .then(function(d) {
+        var container = document.getElementById('rs-rows');
+        container.innerHTML = '';
+        if (!d.stocks.length) {
+          container.innerHTML = '<span class="scanner-na">No results</span>';
+          return;
+        }
+        d.stocks.forEach(function(s) {
+          var row = document.createElement('div');
+          row.className = 'scanner-row';
+          row.appendChild(makeTicker(s.ticker, 'long'));
+          var m = document.createElement('span');
+          m.className = 'scanner-metric';
+          m.textContent = '1M ' + safe(s.ret_1m)
+            + '  3M ' + safe(s.ret_3m)
+            + '  6M ' + safe(s.ret_6m)
+            + '  9M ' + safe(s.ret_9m);
+          row.appendChild(m);
+          container.appendChild(row);
+        });
+        attachScannerPopups();
+      })
+      .catch(function() {
+        document.getElementById('rs-rows').innerHTML = '<span class="scanner-na">Data unavailable</span>';
+      });
+  </script>
 
   <script>
     const popup = document.getElementById('chart-popup');
@@ -187,6 +395,16 @@
         popup.style.display = 'none';
         frame.dataset.current = '';
       }, 200);
+    }
+
+    function attachScannerPopups() {
+      document.querySelectorAll('.scanners .ticker').forEach(function(el) {
+        if (el.dataset.popupAttached) return;
+        el.dataset.popupAttached = '1';
+        el.addEventListener('mouseenter', function() { if (!isTouch()) showPopup(el); });
+        el.addEventListener('mouseleave', function() { if (!isTouch()) hidePopup(); });
+        el.addEventListener('click', function(e) { if (!isTouch()) e.preventDefault(); });
+      });
     }
 
     document.querySelectorAll('.ticker').forEach(function(el) {
