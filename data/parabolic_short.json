@@ -6,28 +6,28 @@
       "tickers": [
         {
           "ticker": "CAST",
-          "perf_week": "11.531099999999999",
-          "perf_month": "4.8058"
+          "perf_week": "11.53%",
+          "perf_month": "4.81%"
         },
         {
           "ticker": "WYFI",
-          "perf_week": "0.5678",
-          "perf_month": "0.5082"
+          "perf_week": "0.57%",
+          "perf_month": "0.51%"
         },
         {
           "ticker": "ZSQR",
-          "perf_week": "0.5349",
-          "perf_month": "0.7445"
+          "perf_week": "0.53%",
+          "perf_month": "0.74%"
         },
         {
           "ticker": "LPRO",
-          "perf_week": "0.46009999999999995",
-          "perf_month": "0.7278"
+          "perf_week": "0.46%",
+          "perf_month": "0.73%"
         },
         {
           "ticker": "FCEL",
-          "perf_week": "0.359",
-          "perf_month": "0.3848"
+          "perf_week": "0.36%",
+          "perf_month": "0.38%"
         }
       ]
     },
@@ -36,28 +36,28 @@
       "tickers": [
         {
           "ticker": "BFLY",
-          "perf_week": "0.5669",
-          "perf_month": "1.1706999999999999"
+          "perf_week": "0.57%",
+          "perf_month": "1.17%"
         },
         {
           "ticker": "FRMI",
-          "perf_week": "0.3669",
-          "perf_month": "0.6184000000000001"
+          "perf_week": "0.37%",
+          "perf_month": "0.62%"
         },
         {
           "ticker": "EQPT",
-          "perf_week": "0.35109999999999997",
-          "perf_month": "0.17550000000000002"
+          "perf_week": "0.35%",
+          "perf_month": "0.18%"
         },
         {
           "ticker": "CHRN",
-          "perf_week": "0.34",
-          "perf_month": "0.4979"
+          "perf_week": "0.34%",
+          "perf_month": "0.50%"
         },
         {
           "ticker": "TRVI",
-          "perf_week": "0.2786",
-          "perf_month": "0.2998"
+          "perf_week": "0.28%",
+          "perf_month": "0.30%"
         }
       ]
     },
@@ -66,28 +66,28 @@
       "tickers": [
         {
           "ticker": "BE",
-          "perf_week": "0.32159999999999994",
-          "perf_month": "0.2586"
+          "perf_week": "0.32%",
+          "perf_month": "0.26%"
         },
         {
           "ticker": "CIFR",
-          "perf_week": "0.2894",
-          "perf_month": "0.5521"
+          "perf_week": "0.29%",
+          "perf_month": "0.55%"
         },
         {
           "ticker": "MRNA",
-          "perf_week": "0.28850000000000003",
-          "perf_month": "0.39899999999999997"
+          "perf_week": "0.29%",
+          "perf_month": "0.40%"
         },
         {
           "ticker": "TLN",
-          "perf_week": "0.26530000000000004",
-          "perf_month": "0.38689999999999997"
+          "perf_week": "0.27%",
+          "perf_month": "0.39%"
         },
         {
           "ticker": "QNT",
-          "perf_week": "0.23559999999999998",
-          "perf_month": "nan"
+          "perf_week": "0.24%",
+          "perf_month": "N/A"
         }
       ]
     }
