@@ -28,6 +28,8 @@ def download_prices(tickers: list[str], period: str = "1y") -> pd.DataFrame:
 
 
 def compute_momentum(data: pd.DataFrame) -> pd.DataFrame:
+    if len(data) < 189:
+        raise ValueError(f"Price history too short: {len(data)} rows, need at least 189")
     returns = pd.DataFrame(index=data.columns)
     returns["1M"] = (data.iloc[-1] / data.iloc[-21]).values - 1
     returns["3M"] = (data.iloc[-1] / data.iloc[-63]).values - 1

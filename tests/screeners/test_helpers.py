@@ -45,3 +45,9 @@ def test_compute_momentum_higher_return_gets_higher_rank():
     )
     result = compute_momentum(data)
     assert result.loc["AAA", "avg_rank"] > result.loc["BBB", "avg_rank"]
+
+
+def test_compute_momentum_raises_on_short_history():
+    data = _make_price_df(["AAA"], n_days=100)
+    with pytest.raises(ValueError, match="too short"):
+        compute_momentum(data)
