@@ -59,7 +59,6 @@
     .normal   { color: #eab308; }
     .elevated { color: #f97316; }
     .crisis   { color: #ef4444; }
-    .unavailable { color: #333; }
     #date-line {
       margin-top: 2.5rem;
       font-size: 0.7rem;
@@ -94,9 +93,11 @@
       font-weight: 600;
       padding: 0.3rem 0.65rem;
       border-radius: 6px;
-      cursor: default;
+      cursor: pointer;
       letter-spacing: 0.05em;
       transition: opacity 0.15s;
+      user-select: none;
+      text-decoration: none;
     }
     .ticker:hover { opacity: 0.75; }
     .ticker.long  { background: #0d2e1a; color: #22c55e; border: 1px solid #22c55e33; }
@@ -115,109 +116,61 @@
 <body>
   <h1>Market Dashboard</h1>
 
-  <div class="cards" id="cards">
+  <div class="cards">
     <div class="card">
       <div class="card-title">Market Direction</div>
-      <div class="card-label unavailable">—</div>
-      <div class="card-sub">Loading...</div>
+      <div class="card-label bullish">BULLISH</div>
+      <div class="card-sub">10EMA: 742.41 &nbsp;|&nbsp; 20EMA: 740.80</div>
     </div>
     <div class="card">
       <div class="card-title">Volatility</div>
-      <div class="card-label unavailable">—</div>
-      <div class="card-sub">Loading...</div>
+      <div class="card-label normal">NORMAL</div>
+      <div class="card-sub">VIX: 16.78</div>
     </div>
   </div>
 
-  <div id="date-line"></div>
+  <div id="date-line">Last updated: 2026-06-19</div>
 
   <div class="watchlists">
     <div class="watchlist">
       <div class="watchlist-title">Long Watchlist</div>
       <div class="tickers">
-        <span class="ticker long" data-symbol="PL">PL</span>
+        <a class="ticker long" data-symbol="NYSE:PL" href="https://www.tradingview.com/chart/?symbol=NYSE%3APL" target="_blank" rel="noopener">PL</a>
       </div>
     </div>
     <div class="watchlist">
       <div class="watchlist-title">Short Watchlist</div>
       <div class="tickers">
-        <span class="ticker short" data-symbol="BIRD">BIRD</span>
+        <a class="ticker short" data-symbol="NASDAQ:BIRD" href="https://www.tradingview.com/chart/?symbol=NASDAQ%3ABIRD" target="_blank" rel="noopener">BIRD</a>
       </div>
     </div>
   </div>
 
   <div id="chart-popup">
-    <iframe id="chart-frame" width="600" height="400" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+    <iframe id="chart-frame" width="600" height="400" frameborder="0" scrolling="no"></iframe>
   </div>
 
   <script>
-    async function loadData() {
-      try {
-        const res = await fetch('data/latest.json');
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const d = await res.json();
-        render(d);
-      } catch (err) {
-        console.error('Dashboard fetch failed:', err);
-        renderError();
-      }
-    }
-
-    function safe(v) {
-      return String(v).replace(/[<>&"]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
-    }
-
-    function render(d) {
-      const EMA_CLASSES = new Set(['bullish', 'bearish']);
-      const emaClass = EMA_CLASSES.has(d.spy_ema) ? d.spy_ema : 'unavailable';
-      const VOL_CLASSES = new Set(['low', 'normal', 'elevated', 'crisis']);
-      const vixClass = VOL_CLASSES.has(d.vix_level) ? d.vix_level : 'unavailable';
-      document.getElementById('cards').innerHTML = `
-        <div class="card">
-          <div class="card-title">Market Direction</div>
-          <div class="card-label ${emaClass}">${safe(d.spy_ema).toUpperCase()}</div>
-          <div class="card-sub">10EMA: ${safe(d.spy_10ema)} &nbsp;|&nbsp; 20EMA: ${safe(d.spy_20ema)}</div>
-        </div>
-        <div class="card">
-          <div class="card-title">Volatility</div>
-          <div class="card-label ${vixClass}">${safe(d.vix_level).toUpperCase()}</div>
-          <div class="card-sub">VIX: ${safe(d.vix)}</div>
-        </div>
-      `;
-      document.getElementById('date-line').textContent = `Last updated: ${d.date}`;
-    }
-
-    function renderError() {
-      document.getElementById('cards').innerHTML = `
-        <div class="card">
-          <div class="card-title">Market Direction</div>
-          <div class="card-label unavailable">—</div>
-          <div class="card-sub">Data unavailable</div>
-        </div>
-        <div class="card">
-          <div class="card-title">Volatility</div>
-          <div class="card-label unavailable">—</div>
-          <div class="card-sub">Data unavailable</div>
-        </div>
-      `;
-    }
-
-    loadData();
-
-    // TradingView chart popup on ticker hover
     const popup = document.getElementById('chart-popup');
     const frame = document.getElementById('chart-frame');
     let hideTimer;
 
-    function tvUrl(symbol) {
-      const encoded = encodeURIComponent(symbol);
-      return `https://s.tradingview.com/widgetembed/?symbol=${encoded}&interval=D&theme=dark&style=1&locale=en&enable_publishing=false&save_image=false&hide_top_toolbar=0`;
+    const isTouch = () => 'ontouchstart' in window;
+
+    function tvEmbedUrl(symbol) {
+      return 'https://s.tradingview.com/widgetembed/?symbol=' + encodeURIComponent(symbol)
+        + '&interval=D&theme=dark&style=1&locale=en&enable_publishing=false&save_image=false';
+    }
+
+    function tvPageUrl(symbol) {
+      return 'https://www.tradingview.com/chart/?symbol=' + encodeURIComponent(symbol);
     }
 
     function showPopup(el) {
       clearTimeout(hideTimer);
       const symbol = el.dataset.symbol;
       if (frame.dataset.current !== symbol) {
-        frame.src = tvUrl(symbol);
+        frame.src = tvEmbedUrl(symbol);
         frame.dataset.current = symbol;
       }
       const rect = el.getBoundingClientRect();
@@ -230,18 +183,20 @@
     }
 
     function hidePopup() {
-      hideTimer = setTimeout(() => {
+      hideTimer = setTimeout(function() {
         popup.style.display = 'none';
         frame.dataset.current = '';
       }, 200);
     }
 
-    document.querySelectorAll('.ticker').forEach(el => {
-      el.addEventListener('mouseenter', () => showPopup(el));
-      el.addEventListener('mouseleave', hidePopup);
+    document.querySelectorAll('.ticker').forEach(function(el) {
+      // Desktop: hover shows iframe popup, click prevented (link still opens on mobile)
+      el.addEventListener('mouseenter', function() { if (!isTouch()) showPopup(el); });
+      el.addEventListener('mouseleave', function() { if (!isTouch()) hidePopup(); });
+      el.addEventListener('click', function(e) { if (!isTouch()) e.preventDefault(); });
     });
 
-    popup.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+    popup.addEventListener('mouseenter', function() { clearTimeout(hideTimer); });
     popup.addEventListener('mouseleave', hidePopup);
   </script>
 </body>
