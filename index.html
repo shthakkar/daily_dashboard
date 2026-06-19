@@ -147,23 +147,33 @@
       color: #444;
       margin-bottom: 0.75rem;
     }
-    .scanner-rows {
+    .scanner-table {
       background: #1a1a1a;
       border: 1px solid #2a2a2a;
       border-radius: 12px;
-      padding: 1.25rem 1.75rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
+      overflow: hidden;
     }
-    .scanner-row {
-      display: flex;
+    .s-head, .s-row {
+      display: grid;
       align-items: center;
+      padding: 0.5rem 1.5rem;
       gap: 0.75rem;
-      flex-wrap: wrap;
     }
-    .scanner-metric { font-size: 0.8rem; color: #888; }
-    .scanner-na { font-size: 0.8rem; color: #333; }
+    .s-head {
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #3a3a3a;
+      border-bottom: 1px solid #222;
+    }
+    .s-row { border-bottom: 1px solid #1e1e1e; }
+    .s-row:last-child { border-bottom: none; }
+    .qualla-grid { grid-template-columns: 90px 55px 1fr 90px; }
+    .rs-grid     { grid-template-columns: 90px repeat(4, 1fr); }
+    .para-grid   { grid-template-columns: 90px 1fr 1fr; }
+    .s-cell      { font-size: 0.8rem; color: #888; white-space: nowrap; }
+    .s-cell.dim  { color: #555; }
+    .scanner-na  { font-size: 0.8rem; color: #333; display: block; padding: 1rem 1.5rem; }
   </style>
 </head>
 <body>
@@ -210,14 +220,14 @@
 
     <div class="scanner-section">
       <div class="scanner-title">Qullamaggie — MA Tightness</div>
-      <div class="scanner-rows" id="qullamaggie-rows">
+      <div class="scanner-table" id="qullamaggie-rows">
         <span class="scanner-na">Loading...</span>
       </div>
     </div>
 
     <div class="scanner-section">
       <div class="scanner-title">Relative Strength</div>
-      <div class="scanner-rows" id="rs-rows">
+      <div class="scanner-table" id="rs-rows">
         <span class="scanner-na">Loading...</span>
       </div>
     </div>
@@ -282,20 +292,28 @@
           if (!band.tickers.length) {
             var na = document.createElement('span');
             na.className = 'scanner-na';
+            na.style.padding = '0';
             na.textContent = 'No data';
             bandDiv.appendChild(na);
+          } else {
+            var head = document.createElement('div');
+            head.className = 's-head para-grid';
+            head.style.padding = '0.35rem 0';
+            ['Ticker', '1W', '1M'].forEach(function(h) {
+              var c = document.createElement('span'); c.textContent = h; head.appendChild(c);
+            });
+            bandDiv.appendChild(head);
+            band.tickers.forEach(function(t) {
+              var row = document.createElement('div');
+              row.className = 's-row para-grid';
+              row.style.padding = '0.35rem 0';
+              row.style.borderBottom = '1px solid #1e1e1e';
+              var c1 = document.createElement('div'); c1.appendChild(makeTicker(t.ticker, 'short')); row.appendChild(c1);
+              var c2 = document.createElement('span'); c2.className = 's-cell'; c2.textContent = safe(t.perf_week); row.appendChild(c2);
+              var c3 = document.createElement('span'); c3.className = 's-cell'; c3.textContent = safe(t.perf_month); row.appendChild(c3);
+              bandDiv.appendChild(row);
+            });
           }
-          band.tickers.forEach(function(t) {
-            var row = document.createElement('div');
-            row.className = 'scanner-row';
-            var pill = makeTicker(t.ticker, 'short');
-            row.appendChild(pill);
-            var m = document.createElement('span');
-            m.className = 'scanner-metric';
-            m.textContent = safe(t.perf_week) + ' 1W  ' + safe(t.perf_month) + ' 1M';
-            row.appendChild(m);
-            bandDiv.appendChild(row);
-          });
           container.appendChild(bandDiv);
         });
         attachScannerPopups();
@@ -313,14 +331,19 @@
           container.innerHTML = '<span class="scanner-na">No results</span>';
           return;
         }
+        var head = document.createElement('div');
+        head.className = 's-head qualla-grid';
+        ['Ticker', 'Score', 'Rating', 'Close'].forEach(function(h) {
+          var c = document.createElement('span'); c.textContent = h; head.appendChild(c);
+        });
+        container.appendChild(head);
         d.stocks.forEach(function(s) {
           var row = document.createElement('div');
-          row.className = 'scanner-row';
-          row.appendChild(makeTicker(s.ticker, 'long'));
-          var m = document.createElement('span');
-          m.className = 'scanner-metric';
-          m.textContent = safe(String(s.tightness)) + '  ' + safe(s.rating) + '  $' + safe(String(s.close));
-          row.appendChild(m);
+          row.className = 's-row qualla-grid';
+          var c1 = document.createElement('div'); c1.appendChild(makeTicker(s.ticker, 'long')); row.appendChild(c1);
+          var c2 = document.createElement('span'); c2.className = 's-cell'; c2.textContent = safe(String(s.tightness)); row.appendChild(c2);
+          var c3 = document.createElement('span'); c3.className = 's-cell dim'; c3.textContent = safe(s.rating); row.appendChild(c3);
+          var c4 = document.createElement('span'); c4.className = 's-cell'; c4.textContent = '$' + safe(String(s.close)); row.appendChild(c4);
           container.appendChild(row);
         });
         attachScannerPopups();
@@ -338,17 +361,19 @@
           container.innerHTML = '<span class="scanner-na">No results</span>';
           return;
         }
+        var head = document.createElement('div');
+        head.className = 's-head rs-grid';
+        ['Ticker', '1M', '3M', '6M', '9M'].forEach(function(h) {
+          var c = document.createElement('span'); c.textContent = h; head.appendChild(c);
+        });
+        container.appendChild(head);
         d.stocks.forEach(function(s) {
           var row = document.createElement('div');
-          row.className = 'scanner-row';
-          row.appendChild(makeTicker(s.ticker, 'long'));
-          var m = document.createElement('span');
-          m.className = 'scanner-metric';
-          m.textContent = '1M ' + safe(s.ret_1m)
-            + '  3M ' + safe(s.ret_3m)
-            + '  6M ' + safe(s.ret_6m)
-            + '  9M ' + safe(s.ret_9m);
-          row.appendChild(m);
+          row.className = 's-row rs-grid';
+          var c1 = document.createElement('div'); c1.appendChild(makeTicker(s.ticker, 'long')); row.appendChild(c1);
+          [s.ret_1m, s.ret_3m, s.ret_6m, s.ret_9m].forEach(function(v) {
+            var c = document.createElement('span'); c.className = 's-cell'; c.textContent = safe(v); row.appendChild(c);
+          });
           container.appendChild(row);
         });
         attachScannerPopups();
