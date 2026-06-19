@@ -94,23 +94,30 @@
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const d = await res.json();
         render(d);
-      } catch {
+      } catch (err) {
+        console.error('Dashboard fetch failed:', err);
         renderError();
       }
     }
 
+    function safe(v) {
+      return String(v).replace(/[<>&"]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c]));
+    }
+
     function render(d) {
       const emaClass = d.spy_ema === 'bullish' ? 'bullish' : 'bearish';
+      const VOL_CLASSES = new Set(['low', 'normal', 'elevated', 'crisis']);
+      const vixClass = VOL_CLASSES.has(d.vix_level) ? d.vix_level : 'unavailable';
       document.getElementById('cards').innerHTML = `
         <div class="card">
           <div class="card-title">Market Direction</div>
-          <div class="card-label ${emaClass}">${d.spy_ema.toUpperCase()}</div>
-          <div class="card-sub">10EMA: ${d.spy_10ema} &nbsp;|&nbsp; 20EMA: ${d.spy_20ema}</div>
+          <div class="card-label ${emaClass}">${safe(d.spy_ema).toUpperCase()}</div>
+          <div class="card-sub">10EMA: ${safe(d.spy_10ema)} &nbsp;|&nbsp; 20EMA: ${safe(d.spy_20ema)}</div>
         </div>
         <div class="card">
           <div class="card-title">Volatility</div>
-          <div class="card-label ${d.vix_level}">${d.vix_level.toUpperCase()}</div>
-          <div class="card-sub">VIX: ${d.vix}</div>
+          <div class="card-label ${vixClass}">${safe(d.vix_level).toUpperCase()}</div>
+          <div class="card-sub">VIX: ${safe(d.vix)}</div>
         </div>
       `;
       document.getElementById('date-line').textContent = `Last updated: ${d.date}`;
