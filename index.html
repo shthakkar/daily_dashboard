@@ -67,6 +67,49 @@
       text-transform: uppercase;
       letter-spacing: 0.1em;
     }
+    .watchlists {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2.5rem;
+    }
+    .watchlist {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      padding: 1.25rem 1.75rem;
+      min-width: 180px;
+    }
+    .watchlist-title {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #555;
+      margin-bottom: 0.85rem;
+    }
+    .tickers { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .ticker {
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.3rem 0.65rem;
+      border-radius: 6px;
+      cursor: default;
+      letter-spacing: 0.05em;
+      transition: opacity 0.15s;
+    }
+    .ticker:hover { opacity: 0.75; }
+    .ticker.long  { background: #0d2e1a; color: #22c55e; border: 1px solid #22c55e33; }
+    .ticker.short { background: #2e0d0d; color: #ef4444; border: 1px solid #ef444433; }
+    #chart-popup {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 32px #00000088;
+      border: 1px solid #2a2a2a;
+    }
   </style>
 </head>
 <body>
@@ -86,6 +129,25 @@
   </div>
 
   <div id="date-line"></div>
+
+  <div class="watchlists">
+    <div class="watchlist">
+      <div class="watchlist-title">Long Watchlist</div>
+      <div class="tickers">
+        <span class="ticker long" data-symbol="PL">PL</span>
+      </div>
+    </div>
+    <div class="watchlist">
+      <div class="watchlist-title">Short Watchlist</div>
+      <div class="tickers">
+        <span class="ticker short" data-symbol="BIRD">BIRD</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="chart-popup">
+    <iframe id="chart-frame" width="600" height="400" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+  </div>
 
   <script>
     async function loadData() {
@@ -140,6 +202,47 @@
     }
 
     loadData();
+
+    // TradingView chart popup on ticker hover
+    const popup = document.getElementById('chart-popup');
+    const frame = document.getElementById('chart-frame');
+    let hideTimer;
+
+    function tvUrl(symbol) {
+      const encoded = encodeURIComponent(symbol);
+      return `https://s.tradingview.com/widgetembed/?symbol=${encoded}&interval=D&theme=dark&style=1&locale=en&enable_publishing=false&save_image=false&hide_top_toolbar=0`;
+    }
+
+    function showPopup(el) {
+      clearTimeout(hideTimer);
+      const symbol = el.dataset.symbol;
+      if (frame.dataset.current !== symbol) {
+        frame.src = tvUrl(symbol);
+        frame.dataset.current = symbol;
+      }
+      const rect = el.getBoundingClientRect();
+      const popupW = 600;
+      let left = rect.left + window.scrollX;
+      if (left + popupW > window.innerWidth - 16) left = window.innerWidth - popupW - 16;
+      popup.style.left = Math.max(8, left) + 'px';
+      popup.style.top = (rect.bottom + window.scrollY + 8) + 'px';
+      popup.style.display = 'block';
+    }
+
+    function hidePopup() {
+      hideTimer = setTimeout(() => {
+        popup.style.display = 'none';
+        frame.dataset.current = '';
+      }, 200);
+    }
+
+    document.querySelectorAll('.ticker').forEach(el => {
+      el.addEventListener('mouseenter', () => showPopup(el));
+      el.addEventListener('mouseleave', hidePopup);
+    });
+
+    popup.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+    popup.addEventListener('mouseleave', hidePopup);
   </script>
 </body>
 </html>
