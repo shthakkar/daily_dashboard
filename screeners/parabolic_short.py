@@ -1,3 +1,4 @@
+import math
 from datetime import date
 
 import pandas as pd
@@ -10,14 +11,22 @@ _BANDS = [
 ]
 
 
+def _fmt_pct(v) -> str:
+    try:
+        f = float(v)
+        return "N/A" if math.isnan(f) else f"{f:.2f}%"
+    except (ValueError, TypeError):
+        return str(v)
+
+
 def _rows_from_df(df) -> list[dict]:
     if df is None or df.empty:
         return []
     return [
         {
             "ticker": str(row["Ticker"]),
-            "perf_week": str(row["Perf Week"]),
-            "perf_month": str(row["Perf Month"]),
+            "perf_week": _fmt_pct(row["Perf Week"]),
+            "perf_month": _fmt_pct(row["Perf Month"]),
         }
         for _, row in df.head(5).iterrows()
     ]
