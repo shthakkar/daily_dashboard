@@ -1,0 +1,96 @@
+{
+  "date": "2026-06-19",
+  "stocks": [
+    {
+      "ticker": "BE",
+      "tightness": 3.2,
+      "rating": "Wide",
+      "close": 328.91,
+      "avg_rank": 0.9318
+    },
+    {
+      "ticker": "DELL",
+      "tightness": 1.1,
+      "rating": "Wide",
+      "close": 409.5,
+      "avg_rank": 0.9631
+    },
+    {
+      "ticker": "ALAB",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 417.07,
+      "avg_rank": 0.9223
+    },
+    {
+      "ticker": "AMD",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 537.37,
+      "avg_rank": 0.9309
+    },
+    {
+      "ticker": "HUT",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 124.44,
+      "avg_rank": 0.946
+    },
+    {
+      "ticker": "INTC",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 133.99,
+      "avg_rank": 0.928
+    },
+    {
+      "ticker": "MRVL",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 310.58,
+      "avg_rank": 0.983
+    },
+    {
+      "ticker": "MU",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 1133.99,
+      "avg_rank": 0.9886
+    },
+    {
+      "ticker": "SNDK",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 2184.75,
+      "avg_rank": 0.9953
+    },
+    {
+      "ticker": "STX",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 1070.23,
+      "avg_rank": 0.9744
+    },
+    {
+      "ticker": "TTMI",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 216.44,
+      "avg_rank": 0.9489
+    },
+    {
+      "ticker": "VICR",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 331.37,
+      "avg_rank": 0.9441
+    },
+    {
+      "ticker": "WDC",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 746.23,
+      "avg_rank": 0.9858
+    }
+  ]
+}
