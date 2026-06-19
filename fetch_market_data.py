@@ -4,6 +4,8 @@ from pathlib import Path
 
 import yfinance as yf
 
+from screeners import helpers, parabolic_short, qullamaggie, relative_strength
+
 
 def classify_ema_signal(ema10: float, ema20: float) -> str:
     return "bullish" if ema10 > ema20 else "bearish"
@@ -53,6 +55,7 @@ def get_vix_data() -> dict:
 
 
 def main() -> None:
+    # --- Market indicators (existing) ---
     try:
         payload = {"date": date.today().isoformat()}
         payload.update(get_spy_ema_signal())
@@ -60,8 +63,47 @@ def main() -> None:
         write_json(payload)
         print(f"Written: {payload}")
     except ValueError as e:
-        # Market closed or holiday — leave latest.json unchanged
-        print(f"Skipping update: {e}")
+        print(f"Skipping market indicators update: {e}")
+
+    # --- Parabolic short (independent — Finviz Performance only, no yfinance) ---
+    try:
+        result = parabolic_short.run()
+        write_json(result, "data/parabolic_short.json")
+        print(f"Parabolic short: {sum(len(b['tickers']) for b in result['bands'])} tickers across {len(result['bands'])} bands")
+    except Exception as e:
+        print(f"Skipping parabolic short: {e}")
+
+    # --- Shared large-cap universe fetch (used by both Qullamaggie and RS) ---
+    _LARGE_CAP_FILTERS = {
+        "Market Cap.": "+Large (over $10bln)",
+        "Price": "Over $20",
+        "Average Volume": "Over 500K",
+        "Country": "USA",
+    }
+    try:
+        tickers    = helpers.get_finviz_tickers(_LARGE_CAP_FILTERS)
+        price_data = helpers.download_prices(tickers)
+        momentum   = helpers.compute_momentum(price_data)
+        print(f"Universe: {len(tickers)} tickers fetched, {price_data.shape[1]} with sufficient history")
+    except Exception as e:
+        print(f"Skipping Qullamaggie + RS: failed to fetch universe: {e}")
+        return
+
+    # --- Qullamaggie ---
+    try:
+        result = qullamaggie.run(price_data, momentum)
+        write_json(result, "data/qullamaggie.json")
+        print(f"Qullamaggie: {len(result['stocks'])} stocks")
+    except Exception as e:
+        print(f"Skipping Qullamaggie: {e}")
+
+    # --- Relative Strength ---
+    try:
+        result = relative_strength.run(momentum)
+        write_json(result, "data/relative_strength.json")
+        print(f"Relative strength: {len(result['stocks'])} stocks")
+    except Exception as e:
+        print(f"Skipping relative strength: {e}")
 
 
 if __name__ == "__main__":
