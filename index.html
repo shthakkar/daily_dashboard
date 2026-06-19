@@ -105,7 +105,8 @@
     }
 
     function render(d) {
-      const emaClass = d.spy_ema === 'bullish' ? 'bullish' : 'bearish';
+      const EMA_CLASSES = new Set(['bullish', 'bearish']);
+      const emaClass = EMA_CLASSES.has(d.spy_ema) ? d.spy_ema : 'unavailable';
       const VOL_CLASSES = new Set(['low', 'normal', 'elevated', 'crisis']);
       const vixClass = VOL_CLASSES.has(d.vix_level) ? d.vix_level : 'unavailable';
       document.getElementById('cards').innerHTML = `
