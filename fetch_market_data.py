@@ -24,6 +24,7 @@ def write_json(data: dict, path: str = "data/latest.json") -> None:
     Path(path).parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
+        f.write("\n")
 
 
 def get_spy_ema_signal() -> dict:
@@ -41,7 +42,7 @@ def get_spy_ema_signal() -> dict:
 
 
 def get_vix_data() -> dict:
-    vix_df = yf.download("^VIX", period="5d", interval="1d", progress=False)
+    vix_df = yf.download("^VIX", period="10d", interval="1d", progress=False)
     if vix_df.empty:
         raise ValueError("No VIX data returned from yfinance")
     vix_value = float(vix_df["Close"].squeeze().iloc[-1])
