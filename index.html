@@ -155,7 +155,8 @@
       background: #1a1a1a;
       border: 1px solid #2a2a2a;
       border-radius: 12px;
-      overflow: hidden;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
     .s-head, .s-row {
       display: grid;
@@ -172,8 +173,8 @@
     }
     .s-row { border-bottom: 1px solid #1e1e1e; }
     .s-row:last-child { border-bottom: none; }
-    .qualla-grid { grid-template-columns: 90px 55px 140px 90px; }
-    .rs-grid     { grid-template-columns: 90px repeat(4, 1fr); }
+    .qualla-grid { grid-template-columns: 90px 55px 140px 90px; min-width: 420px; }
+    .rs-grid     { grid-template-columns: 90px repeat(4, minmax(70px, 1fr)); min-width: 440px; }
     .para-grid   { grid-template-columns: 90px 1fr 1fr; }
     .s-cell      { font-size: 0.8rem; color: #888; white-space: nowrap; }
     .s-cell.dim  { color: #555; }
