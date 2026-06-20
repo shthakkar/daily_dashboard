@@ -11,6 +11,17 @@ def classify_ema_signal(ema10: float, ema20: float) -> str:
     return "bullish" if ema10 > ema20 else "bearish"
 
 
+def classify_spy_off_high(pct: float) -> str:
+    if pct >= -5:
+        return "near-high"
+    elif pct >= -10:
+        return "mild-off"
+    elif pct >= -20:
+        return "off-high"
+    else:
+        return "far-off"
+
+
 def classify_vix_level(vix: float) -> str:
     if vix < 15:
         return "low"
@@ -30,16 +41,24 @@ def write_json(data: dict, path: str = "data/latest.json") -> None:
 
 
 def get_spy_ema_signal() -> dict:
-    spy = yf.download("SPY", period="60d", interval="1d", progress=False)
+    spy = yf.download("SPY", period="1y", interval="1d", progress=False)
     if spy.empty:
         raise ValueError("No SPY data returned from yfinance")
     close = spy["Close"].squeeze()
+    high = spy["High"].squeeze()
     ema10 = float(close.ewm(span=10, adjust=False).mean().iloc[-1])
     ema20 = float(close.ewm(span=20, adjust=False).mean().iloc[-1])
+    last_close = float(close.iloc[-1])
+    high_52w = float(high.max())
+    pct_off_high = round((last_close - high_52w) / high_52w * 100, 2)
     return {
         "spy_ema": classify_ema_signal(ema10, ema20),
         "spy_10ema": round(ema10, 2),
         "spy_20ema": round(ema20, 2),
+        "spy_last_close": round(last_close, 2),
+        "spy_52w_high": round(high_52w, 2),
+        "spy_pct_off_high": pct_off_high,
+        "spy_off_high_level": classify_spy_off_high(pct_off_high),
     }
 
 

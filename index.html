@@ -59,6 +59,10 @@
     .normal   { color: #eab308; }
     .elevated { color: #f97316; }
     .crisis   { color: #ef4444; }
+    .near-high { color: #22c55e; }
+    .mild-off  { color: #eab308; }
+    .off-high  { color: #f97316; }
+    .far-off   { color: #ef4444; }
     #date-line {
       margin-top: 2.5rem;
       font-size: 0.7rem;
@@ -190,6 +194,11 @@
       <div id="vix-label" class="card-label normal">NORMAL</div>
       <div id="vix-sub" class="card-sub">VIX: 16.78</div>
     </div>
+    <div class="card">
+      <div class="card-title">SPY vs 52W High</div>
+      <div id="spy52-label" class="card-label near-high">--%</div>
+      <div id="spy52-sub" class="card-sub">Last: -- &nbsp;|&nbsp; 52W High: --</div>
+    </div>
   </div>
 
   <div id="date-line">Last updated: 2026-06-19</div>
@@ -239,8 +248,9 @@
   </div>
 
   <script>
-    const SIGNAL_CLS = new Set(['bullish', 'bearish']);
-    const VIX_CLS    = new Set(['low', 'normal', 'elevated', 'crisis']);
+    const SIGNAL_CLS   = new Set(['bullish', 'bearish']);
+    const VIX_CLS      = new Set(['low', 'normal', 'elevated', 'crisis']);
+    const OFF_HIGH_CLS = new Set(['near-high', 'mild-off', 'off-high', 'far-off']);
 
     function safe(s) {
       return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -272,6 +282,15 @@
         vixLabel.className = 'card-label ' + lvl;
         vixLabel.textContent = lvl.toUpperCase();
         document.getElementById('vix-sub').textContent = 'VIX: ' + safe(d.vix);
+
+        if (d.spy_pct_off_high != null) {
+          const offCls = OFF_HIGH_CLS.has(d.spy_off_high_level) ? d.spy_off_high_level : 'off-high';
+          const spy52Label = document.getElementById('spy52-label');
+          spy52Label.className = 'card-label ' + offCls;
+          spy52Label.textContent = (d.spy_pct_off_high > 0 ? '+' : '') + safe(d.spy_pct_off_high) + '%';
+          document.getElementById('spy52-sub').innerHTML =
+            'Last: $' + safe(d.spy_last_close) + ' &nbsp;|&nbsp; 52W High: $' + safe(d.spy_52w_high);
+        }
 
         document.getElementById('date-line').textContent = 'Last updated: ' + safe(d.date);
       })
