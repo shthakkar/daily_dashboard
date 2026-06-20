@@ -14,7 +14,7 @@ _BANDS = [
 def _fmt_pct(v) -> str:
     try:
         f = float(v)
-        return "N/A" if math.isnan(f) else f"{f:.2f}%"
+        return "N/A" if math.isnan(f) else f"{f * 100:.2f}%"
     except (ValueError, TypeError):
         return str(v)
 
