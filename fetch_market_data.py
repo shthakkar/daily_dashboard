@@ -49,7 +49,7 @@ def get_spy_ema_signal() -> dict:
     ema20 = float(close.ewm(span=20, adjust=False).mean().iloc[-1])
 
     fi = yf.Ticker("SPY").fast_info
-    last_close = round(float(fi.last_close), 2)
+    last_close = round(float(close.iloc[-1]), 2)
     high_52w = round(float(fi.fifty_two_week_high), 2)
     pct_off_high = round((last_close - high_52w) / high_52w * 100, 2)
     return {
