@@ -41,22 +41,23 @@ def write_json(data: dict, path: str = "data/latest.json") -> None:
 
 
 def get_spy_ema_signal() -> dict:
-    spy = yf.download("SPY", period="1y", interval="1d", progress=False)
+    spy = yf.download("SPY", period="60d", interval="1d", progress=False)
     if spy.empty:
         raise ValueError("No SPY data returned from yfinance")
     close = spy["Close"].squeeze()
-    high = spy["High"].squeeze()
     ema10 = float(close.ewm(span=10, adjust=False).mean().iloc[-1])
     ema20 = float(close.ewm(span=20, adjust=False).mean().iloc[-1])
-    last_close = float(close.iloc[-1])
-    high_52w = float(high.max())
+
+    fi = yf.Ticker("SPY").fast_info
+    last_close = round(float(fi.last_close), 2)
+    high_52w = round(float(fi.fifty_two_week_high), 2)
     pct_off_high = round((last_close - high_52w) / high_52w * 100, 2)
     return {
         "spy_ema": classify_ema_signal(ema10, ema20),
         "spy_10ema": round(ema10, 2),
         "spy_20ema": round(ema20, 2),
-        "spy_last_close": round(last_close, 2),
-        "spy_52w_high": round(high_52w, 2),
+        "spy_last_close": last_close,
+        "spy_52w_high": high_52w,
         "spy_pct_off_high": pct_off_high,
         "spy_off_high_level": classify_spy_off_high(pct_off_high),
     }
