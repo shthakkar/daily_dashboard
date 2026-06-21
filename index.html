@@ -245,7 +245,7 @@
   </div>
 
   <div id="chart-popup">
-    <iframe id="chart-frame" width="600" height="400" frameborder="0" scrolling="no"></iframe>
+    <div id="tv-chart-container"></div>
   </div>
 
   <script>
@@ -403,42 +403,57 @@
       });
   </script>
 
+  <script src="https://s3.tradingview.com/tv.js" async></script>
   <script>
     const popup = document.getElementById('chart-popup');
-    const frame = document.getElementById('chart-frame');
     let hideTimer;
+    let currentSymbol = null;
 
     const isTouch = () => 'ontouchstart' in window;
-
-    function tvEmbedUrl(symbol) {
-      return 'https://s.tradingview.com/widgetembed/?symbol=' + encodeURIComponent(symbol)
-        + '&interval=D&theme=dark&style=1&locale=en&enable_publishing=false&save_image=false';
-    }
-
-    function tvPageUrl(symbol) {
-      return 'https://www.tradingview.com/chart/?symbol=' + encodeURIComponent(symbol);
-    }
 
     function showPopup(el) {
       clearTimeout(hideTimer);
       const symbol = el.dataset.symbol;
-      if (frame.dataset.current !== symbol) {
-        frame.src = tvEmbedUrl(symbol);
-        frame.dataset.current = symbol;
-      }
+
       const rect = el.getBoundingClientRect();
       const popupW = 600;
       let left = rect.left + window.scrollX;
       if (left + popupW > window.innerWidth - 16) left = window.innerWidth - popupW - 16;
       popup.style.left = Math.max(8, left) + 'px';
-      popup.style.top = (rect.bottom + window.scrollY + 8) + 'px';
+      popup.style.top  = (rect.bottom + window.scrollY + 8) + 'px';
       popup.style.display = 'block';
+
+      if (symbol === currentSymbol) return;
+      currentSymbol = symbol;
+
+      document.getElementById('tv-chart-container').innerHTML = '';
+      if (typeof TradingView === 'undefined') return;
+
+      new TradingView.widget({
+        container_id:        'tv-chart-container',
+        width:               600,
+        height:              400,
+        symbol:              symbol,
+        interval:            'D',
+        timezone:            'America/New_York',
+        theme:               'dark',
+        style:               '1',
+        locale:              'en',
+        toolbar_bg:          '#1a1a1a',
+        enable_publishing:   false,
+        hide_side_toolbar:   true,
+        allow_symbol_change: false,
+        studies: [
+          { id: 'MAExp@tv-basicstudies', inputs: { length: 10 } },
+          { id: 'MAExp@tv-basicstudies', inputs: { length: 20 } }
+        ]
+      });
     }
 
     function hidePopup() {
       hideTimer = setTimeout(function() {
         popup.style.display = 'none';
-        frame.dataset.current = '';
+        currentSymbol = null;
       }, 200);
     }
 
@@ -453,7 +468,6 @@
     }
 
     document.querySelectorAll('.ticker').forEach(function(el) {
-      // Desktop: hover shows iframe popup, click prevented (link still opens on mobile)
       el.addEventListener('mouseenter', function() { if (!isTouch()) showPopup(el); });
       el.addEventListener('mouseleave', function() { if (!isTouch()) hidePopup(); });
       el.addEventListener('click', function(e) { if (!isTouch()) e.preventDefault(); });
