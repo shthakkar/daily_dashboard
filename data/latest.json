@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-24",
+  "date": "2026-06-25",
   "spy_ema": "bearish",
   "spy_10ema": 740.1,
   "spy_20ema": 740.1,
@@ -7,6 +7,6 @@
   "spy_52w_high": 760.4,
   "spy_pct_off_high": -3.57,
   "spy_off_high_level": "near-high",
-  "vix": 18.63,
+  "vix": 17.84,
   "vix_level": "normal"
 }
