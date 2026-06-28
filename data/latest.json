@@ -1,12 +1,12 @@
 {
-  "date": "2026-06-27",
+  "date": "2026-06-28",
   "spy_ema": "bearish",
-  "spy_10ema": 739.05,
-  "spy_20ema": 739.61,
-  "spy_last_close": NaN,
+  "spy_10ema": 737.22,
+  "spy_20ema": 738.6,
+  "spy_last_close": 728.99,
   "spy_52w_high": 760.4,
-  "spy_pct_off_high": NaN,
-  "spy_off_high_level": "far-off",
-  "vix": 18.89,
+  "spy_pct_off_high": -4.13,
+  "spy_off_high_level": "near-high",
+  "vix": 18.41,
   "vix_level": "normal"
 }
