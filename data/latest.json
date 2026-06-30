@@ -1,12 +1,12 @@
 {
   "date": "2026-06-30",
   "spy_ema": "bearish",
-  "spy_10ema": 737.91,
-  "spy_20ema": 738.83,
-  "spy_last_close": 741.0,
+  "spy_10ema": 739.52,
+  "spy_20ema": 739.59,
+  "spy_last_close": 746.77,
   "spy_52w_high": 760.4,
-  "spy_pct_off_high": -2.55,
+  "spy_pct_off_high": -1.79,
   "spy_off_high_level": "near-high",
-  "vix": 17.6,
+  "vix": 16.45,
   "vix_level": "normal"
 }
