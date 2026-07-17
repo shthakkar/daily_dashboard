@@ -1,12 +1,12 @@
 {
   "date": "2026-07-17",
   "spy_ema": "bullish",
-  "spy_10ema": 749.79,
-  "spy_20ema": 746.93,
-  "spy_last_close": 750.72,
+  "spy_10ema": 748.6,
+  "spy_20ema": 746.6,
+  "spy_last_close": 743.29,
   "spy_52w_high": 760.4,
-  "spy_pct_off_high": -1.27,
+  "spy_pct_off_high": -2.25,
   "spy_off_high_level": "near-high",
-  "vix": 18.12,
+  "vix": 18.77,
   "vix_level": "normal"
 }
