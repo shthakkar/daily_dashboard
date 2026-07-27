@@ -2,7 +2,7 @@ import json
 from datetime import date
 from pathlib import Path
 
-import yfinance as yf
+import pandas as pd
 
 from screeners import helpers, parabolic_short, qullamaggie, relative_strength
 
@@ -40,17 +40,13 @@ def write_json(data: dict, path: str = "data/latest.json") -> None:
         f.write("\n")
 
 
-def get_spy_ema_signal() -> dict:
-    spy = yf.download("SPY", period="60d", interval="1d", progress=False)
-    if spy.empty:
-        raise ValueError("No SPY data returned from yfinance")
-    close = spy["Close"].squeeze()
+def get_spy_ema_signal(spy: pd.DataFrame) -> dict:
+    close = spy["close"]
     ema10 = float(close.ewm(span=10, adjust=False).mean().iloc[-1])
     ema20 = float(close.ewm(span=20, adjust=False).mean().iloc[-1])
 
-    fi = yf.Ticker("SPY").fast_info
     last_close = round(float(close.iloc[-1]), 2)
-    high_52w = round(float(fi.year_high), 2)
+    high_52w = round(float(spy["high"].max()), 2)
     pct_off_high = round((last_close - high_52w) / high_52w * 100, 2)
     return {
         "spy_ema": classify_ema_signal(ema10, ema20),
@@ -63,11 +59,8 @@ def get_spy_ema_signal() -> dict:
     }
 
 
-def get_vix_data() -> dict:
-    vix_df = yf.download("^VIX", period="10d", interval="1d", progress=False)
-    if vix_df.empty:
-        raise ValueError("No VIX data returned from yfinance")
-    vix_value = float(vix_df["Close"].squeeze().iloc[-1])
+def get_vix_data(vix: pd.DataFrame) -> dict:
+    vix_value = float(vix["close"].iloc[-1])
     return {
         "vix": round(vix_value, 2),
         "vix_level": classify_vix_level(vix_value),
@@ -75,14 +68,32 @@ def get_vix_data() -> dict:
 
 
 def main() -> None:
-    # --- Market indicators (existing) ---
+    # --- Single batched yfinance call: large-cap universe + SPY + VIX ---
+    # Combined into one request so the run stays under Yahoo's rate limit
+    # instead of issuing separate SPY/VIX/universe calls.
+    _LARGE_CAP_FILTERS = {
+        "Market Cap.": "+Large (over $10bln)",
+        "Price": "Over $20",
+        "Average Volume": "Over 500K",
+        "Country": "USA",
+    }
+    try:
+        tickers = helpers.get_finviz_tickers(_LARGE_CAP_FILTERS)
+        price_data, extras = helpers.download_prices(tickers, extra_tickers=["SPY", "^VIX"])
+        momentum = helpers.compute_momentum(price_data)
+        print(f"Universe: {len(tickers)} tickers fetched, {price_data.shape[1]} with sufficient history")
+    except Exception as e:
+        print(f"Skipping everything: failed to fetch price data: {e}")
+        return
+
+    # --- Market indicators ---
     try:
         payload = {"date": date.today().isoformat()}
-        payload.update(get_spy_ema_signal())
-        payload.update(get_vix_data())
+        payload.update(get_spy_ema_signal(extras["SPY"]))
+        payload.update(get_vix_data(extras["^VIX"]))
         write_json(payload)
         print(f"Written: {payload}")
-    except ValueError as e:
+    except Exception as e:
         print(f"Skipping market indicators update: {e}")
 
     # --- Parabolic short (independent — Finviz Performance only, no yfinance) ---
@@ -92,22 +103,6 @@ def main() -> None:
         print(f"Parabolic short: {sum(len(b['tickers']) for b in result['bands'])} tickers across {len(result['bands'])} bands")
     except Exception as e:
         print(f"Skipping parabolic short: {e}")
-
-    # --- Shared large-cap universe fetch (used by both Qullamaggie and RS) ---
-    _LARGE_CAP_FILTERS = {
-        "Market Cap.": "+Large (over $10bln)",
-        "Price": "Over $20",
-        "Average Volume": "Over 500K",
-        "Country": "USA",
-    }
-    try:
-        tickers    = helpers.get_finviz_tickers(_LARGE_CAP_FILTERS)
-        price_data = helpers.download_prices(tickers)
-        momentum   = helpers.compute_momentum(price_data)
-        print(f"Universe: {len(tickers)} tickers fetched, {price_data.shape[1]} with sufficient history")
-    except Exception as e:
-        print(f"Skipping Qullamaggie + RS: failed to fetch universe: {e}")
-        return
 
     # --- Qullamaggie ---
     try:

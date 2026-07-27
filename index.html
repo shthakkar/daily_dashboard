@@ -70,6 +70,13 @@
       text-transform: uppercase;
       letter-spacing: 0.1em;
     }
+    .section-timestamp {
+      font-size: 0.65rem;
+      color: #444;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.75rem;
+    }
     .watchlists {
       display: flex;
       gap: 1.5rem;
@@ -202,7 +209,7 @@
     </div>
   </div>
 
-  <div id="date-line">Last updated: 2026-06-19</div>
+  <div class="section-timestamp" id="cards-timestamp"></div>
 
   <div class="watchlists">
     <div class="watchlist">
@@ -223,6 +230,7 @@
 
     <div class="scanner-section">
       <div class="scanner-title">Parabolic Short Setups</div>
+      <div class="section-timestamp" id="parabolic-timestamp"></div>
       <div class="scanner-bands" id="parabolic-bands">
         <span class="scanner-na">Loading...</span>
       </div>
@@ -230,6 +238,7 @@
 
     <div class="scanner-section">
       <div class="scanner-title">Qullamaggie — MA Tightness</div>
+      <div class="section-timestamp" id="qullamaggie-timestamp"></div>
       <div class="scanner-table" id="qullamaggie-rows">
         <span class="scanner-na">Loading...</span>
       </div>
@@ -237,6 +246,7 @@
 
     <div class="scanner-section">
       <div class="scanner-title">Relative Strength</div>
+      <div class="section-timestamp" id="rs-timestamp"></div>
       <div class="scanner-table" id="rs-rows">
         <span class="scanner-na">Loading...</span>
       </div>
@@ -257,6 +267,18 @@
       return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
     }
 
+    function formatPSTTimestamp(dateStr) {
+      const date = new Date(dateStr + 'T16:00:00Z');
+      return date.toLocaleString('en-US', {
+        timeZone: 'America/Los_Angeles',
+        month: 'short',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: true
+      }) + ' PST';
+    }
+
     function makeTicker(symbol, cssClass) {
       const a = document.createElement('a');
       a.className = 'ticker ' + cssClass;
@@ -271,6 +293,9 @@
     fetch('data/latest.json')
       .then(r => r.json())
       .then(d => {
+        if (d.date) {
+          document.getElementById('cards-timestamp').textContent = 'Updated: ' + formatPSTTimestamp(d.date);
+        }
         const sig = SIGNAL_CLS.has(d.spy_ema) ? d.spy_ema : 'bearish';
         const dirLabel = document.getElementById('direction-label');
         dirLabel.className = 'card-label ' + sig;
@@ -292,14 +317,15 @@
           document.getElementById('spy52-sub').innerHTML =
             'Last: $' + safe(d.spy_last_close) + ' &nbsp;|&nbsp; 52W High: $' + safe(d.spy_52w_high);
         }
-
-        document.getElementById('date-line').textContent = 'Last updated: ' + safe(d.date);
       })
       .catch(() => {});
 
     fetch('data/parabolic_short.json')
       .then(function(r) { return r.json(); })
       .then(function(d) {
+        if (d.date) {
+          document.getElementById('parabolic-timestamp').textContent = 'Updated: ' + formatPSTTimestamp(d.date);
+        }
         var container = document.getElementById('parabolic-bands');
         container.innerHTML = '';
         d.bands.forEach(function(band) {
@@ -345,6 +371,9 @@
     fetch('data/qullamaggie.json')
       .then(function(r) { return r.json(); })
       .then(function(d) {
+        if (d.date) {
+          document.getElementById('qullamaggie-timestamp').textContent = 'Updated: ' + formatPSTTimestamp(d.date);
+        }
         var container = document.getElementById('qullamaggie-rows');
         container.innerHTML = '';
         if (!d.stocks.length) {
@@ -375,6 +404,9 @@
     fetch('data/relative_strength.json')
       .then(function(r) { return r.json(); })
       .then(function(d) {
+        if (d.date) {
+          document.getElementById('rs-timestamp').textContent = 'Updated: ' + formatPSTTimestamp(d.date);
+        }
         var container = document.getElementById('rs-rows');
         container.innerHTML = '';
         if (!d.stocks.length) {
