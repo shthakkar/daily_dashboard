@@ -1,8 +1,14 @@
+import time
+
 import pandas as pd
 import yfinance as yf
 from finvizfinance.screener.overview import Overview
 
 _FALLBACK_TICKERS = ["NVDA", "TSLA", "PLTR", "SMCI", "ARM", "AAPL"]
+_CHUNK_SIZE = 40
+_CHUNK_DELAY_SECONDS = 2
+_MAX_RETRIES = 2
+_RETRY_DELAY_SECONDS = 8
 
 
 def get_finviz_tickers(filters: dict) -> list[str]:
@@ -17,10 +23,33 @@ def get_finviz_tickers(filters: dict) -> list[str]:
     return _FALLBACK_TICKERS.copy()
 
 
+def _chunked(items: list[str], size: int) -> list[list[str]]:
+    return [items[i : i + size] for i in range(0, len(items), size)]
+
+
+def _download_chunk(tickers: list[str], period: str) -> tuple[pd.DataFrame, pd.DataFrame]:
+    try:
+        raw = yf.download(tickers, period=period, progress=False, auto_adjust=True)
+    except Exception as e:
+        print(f"Warning: chunk download failed ({e}), will retry")
+        return pd.DataFrame(), pd.DataFrame()
+    close, high = raw["Close"], raw["High"]
+    if isinstance(close, pd.Series):
+        close = close.to_frame(name=tickers[0])
+        high = high.to_frame(name=tickers[0])
+    return close, high
+
+
 def download_prices(
     tickers: list[str], period: str = "1y", extra_tickers: list[str] | None = None
 ) -> tuple[pd.DataFrame, dict[str, pd.DataFrame]]:
-    """Downloads Close/High prices for `tickers` plus `extra_tickers` in one batch call.
+    """Downloads Close/High prices for `tickers` plus `extra_tickers` in chunks.
+
+    Yahoo rate-limits large single-batch downloads (yfinance swallows the 429s
+    per-ticker rather than raising, leaving those columns NaN). To work around
+    this, tickers are fetched in small chunks with a delay between them, and
+    any ticker that came back with no data is retried (with backoff) up to
+    `_MAX_RETRIES` times before being given up on.
 
     Returns (universe, extras): `universe` is the Close-price frame for `tickers`,
     filtered to columns with sufficient history. `extras` maps each extra ticker
@@ -29,11 +58,32 @@ def download_prices(
     """
     extra_tickers = extra_tickers or []
     all_tickers = list(dict.fromkeys(tickers + extra_tickers))
-    raw = yf.download(all_tickers, period=period, progress=False, auto_adjust=True)
-    close, high = raw["Close"], raw["High"]
-    if isinstance(close, pd.Series):
-        close = close.to_frame(name=all_tickers[0])
-        high = high.to_frame(name=all_tickers[0])
+
+    close_parts, high_parts = [], []
+    pending = all_tickers
+    for attempt in range(_MAX_RETRIES + 1):
+        if not pending:
+            break
+        if attempt > 0:
+            print(f"Retrying {len(pending)} ticker(s) with no data (attempt {attempt + 1})")
+            time.sleep(_RETRY_DELAY_SECONDS)
+
+        still_missing = []
+        for chunk in _chunked(pending, _CHUNK_SIZE):
+            close, high = _download_chunk(chunk, period)
+            got = [t for t in chunk if t in close.columns and close[t].notna().any()]
+            if got:
+                close_parts.append(close[got])
+                high_parts.append(high[got])
+            still_missing.extend(t for t in chunk if t not in got)
+            time.sleep(_CHUNK_DELAY_SECONDS)
+        pending = still_missing
+
+    if pending:
+        print(f"Warning: {len(pending)} ticker(s) had no data after {_MAX_RETRIES + 1} attempts")
+
+    close = pd.concat(close_parts, axis=1) if close_parts else pd.DataFrame()
+    high = pd.concat(high_parts, axis=1) if high_parts else pd.DataFrame()
 
     extras = {
         t: pd.DataFrame({"close": close[t], "high": high[t]})

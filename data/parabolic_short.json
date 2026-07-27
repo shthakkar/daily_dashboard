@@ -1,33 +1,33 @@
 {
-  "date": "2026-07-24",
+  "date": "2026-07-27",
   "bands": [
     {
       "label": "Small Cap",
       "tickers": [
         {
+          "ticker": "LLVWR",
+          "perf_week": "194.69%",
+          "perf_month": "140.59%"
+        },
+        {
+          "ticker": "FFBRX",
+          "perf_week": "61.09%",
+          "perf_month": "308.87%"
+        },
+        {
           "ticker": "SSAFT",
-          "perf_week": "39.20%",
-          "perf_month": "40.27%"
+          "perf_week": "39.47%",
+          "perf_month": "42.09%"
         },
         {
           "ticker": "NNVEC",
-          "perf_week": "36.20%",
-          "perf_month": "28.93%"
+          "perf_week": "38.60%",
+          "perf_month": "24.45%"
         },
         {
-          "ticker": "TTHRM",
-          "perf_week": "18.78%",
-          "perf_month": "20.63%"
-        },
-        {
-          "ticker": "KKOS",
-          "perf_week": "17.41%",
-          "perf_month": "24.06%"
-        },
-        {
-          "ticker": "NNUAI",
-          "perf_week": "17.18%",
-          "perf_month": "-18.38%"
+          "ticker": "PPAMT",
+          "perf_week": "24.43%",
+          "perf_month": "12.43%"
         }
       ]
     },
@@ -36,28 +36,28 @@
       "tickers": [
         {
           "ticker": "UUTZ",
-          "perf_week": "95.56%",
-          "perf_month": "91.84%"
-        },
-        {
-          "ticker": "CCIFR",
-          "perf_week": "31.83%",
-          "perf_month": "-11.71%"
+          "perf_week": "88.99%",
+          "perf_month": "95.01%"
         },
         {
           "ticker": "CCLF",
-          "perf_week": "28.56%",
-          "perf_month": "12.87%"
+          "perf_week": "36.41%",
+          "perf_month": "13.85%"
+        },
+        {
+          "ticker": "RRNG",
+          "perf_week": "31.81%",
+          "perf_month": "54.98%"
         },
         {
           "ticker": "OOII",
-          "perf_week": "24.72%",
-          "perf_month": "45.30%"
+          "perf_week": "21.84%",
+          "perf_month": "32.51%"
         },
         {
-          "ticker": "RRIOT",
-          "perf_week": "23.38%",
-          "perf_month": "-17.83%"
+          "ticker": "EEQPT",
+          "perf_week": "19.80%",
+          "perf_month": "-2.29%"
         }
       ]
     },
@@ -65,29 +65,29 @@
       "label": "Large Cap",
       "tickers": [
         {
-          "ticker": "SSMCI",
-          "perf_week": "24.48%",
-          "perf_month": "-7.24%"
-        },
-        {
-          "ticker": "HHUT",
-          "perf_week": "20.27%",
-          "perf_month": "-5.26%"
-        },
-        {
           "ticker": "TTHC",
-          "perf_week": "19.64%",
-          "perf_month": "27.46%"
+          "perf_week": "25.20%",
+          "perf_month": "32.30%"
         },
         {
-          "ticker": "WWAB",
-          "perf_week": "15.42%",
-          "perf_month": "11.02%"
+          "ticker": "SSMCI",
+          "perf_week": "25.09%",
+          "perf_month": "-5.90%"
         },
         {
           "ticker": "AARWR",
-          "perf_week": "15.21%",
-          "perf_month": "7.25%"
+          "perf_week": "19.37%",
+          "perf_month": "7.90%"
+        },
+        {
+          "ticker": "IIP",
+          "perf_week": "16.99%",
+          "perf_month": "8.69%"
+        },
+        {
+          "ticker": "WWAB",
+          "perf_week": "16.70%",
+          "perf_month": "6.53%"
         }
       ]
     }
