@@ -1,19 +1,19 @@
 {
-  "date": "2026-07-27",
+  "date": "2026-07-28",
   "stocks": [
     {
       "ticker": "CCG",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 12.11,
-      "avg_rank": 0.9779
+      "avg_rank": 0.9803
     },
     {
       "ticker": "CCLX",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 0.04,
-      "avg_rank": 0.9926
+      "avg_rank": 0.9934
     }
   ]
 }
