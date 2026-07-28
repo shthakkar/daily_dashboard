@@ -11,13 +11,23 @@ _MAX_RETRIES = 2
 _RETRY_DELAY_SECONDS = 8
 
 
+def fix_finviz_ticker(ticker: str) -> str:
+    """finvizfinance's HTML scraper grabs the full text of the ticker cell, which
+    Finviz now renders as a one-letter avatar placeholder span (e.g. "Z") followed
+    by the real ticker link ("ZYME") -- so `.text` comes back as "ZZYME". The
+    duplicated character is always the ticker's own first letter, so stripping it
+    reconstructs the real symbol regardless of length or hyphens.
+    """
+    return ticker[1:]
+
+
 def get_finviz_tickers(filters: dict) -> list[str]:
     try:
         screen = Overview()
         screen.set_filter(filters_dict=filters)
         df = screen.screener_view()
         if df is not None and not df.empty:
-            return df["Ticker"].tolist()
+            return [fix_finviz_ticker(t) for t in df["Ticker"].tolist()]
     except Exception as e:
         print(f"Warning: Finviz screener failed ({e}), using fallback tickers")
     return _FALLBACK_TICKERS.copy()

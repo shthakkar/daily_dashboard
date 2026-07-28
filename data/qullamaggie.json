@@ -2,18 +2,60 @@
   "date": "2026-07-28",
   "stocks": [
     {
-      "ticker": "CCG",
-      "tightness": 1.0,
-      "rating": "Wide",
-      "close": 12.11,
-      "avg_rank": 0.9803
+      "ticker": "VSAT",
+      "tightness": 7.6,
+      "rating": "Very Tight",
+      "close": 74.87,
+      "avg_rank": 0.9549
     },
     {
-      "ticker": "CCLX",
+      "ticker": "HPE",
+      "tightness": 5.6,
+      "rating": "Tight",
+      "close": 48.19,
+      "avg_rank": 0.9455
+    },
+    {
+      "ticker": "DELL",
+      "tightness": 3.9,
+      "rating": "Wide",
+      "close": 426.91,
+      "avg_rank": 0.9318
+    },
+    {
+      "ticker": "DVA",
+      "tightness": 3.0,
+      "rating": "Wide",
+      "close": 236.31,
+      "avg_rank": 0.9271
+    },
+    {
+      "ticker": "PSX",
+      "tightness": 1.9,
+      "rating": "Wide",
+      "close": 207.82,
+      "avg_rank": 0.9208
+    },
+    {
+      "ticker": "VLO",
+      "tightness": 1.7,
+      "rating": "Wide",
+      "close": 304.93,
+      "avg_rank": 0.9404
+    },
+    {
+      "ticker": "MPC",
+      "tightness": 1.3,
+      "rating": "Wide",
+      "close": 312.35,
+      "avg_rank": 0.9518
+    },
+    {
+      "ticker": "DINO",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 0.04,
-      "avg_rank": 0.9934
+      "close": 90.78,
+      "avg_rank": 0.9667
     }
   ]
 }

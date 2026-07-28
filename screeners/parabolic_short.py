@@ -4,6 +4,8 @@ from datetime import date
 import pandas as pd
 from finvizfinance.screener.performance import Performance
 
+from .helpers import fix_finviz_ticker
+
 _BANDS = [
     {"label": "Small Cap", "cap": "Small ($300mln to $2bln)"},
     {"label": "Mid Cap",   "cap": "Mid ($2bln to $10bln)"},
@@ -24,7 +26,7 @@ def _rows_from_df(df) -> list[dict]:
         return []
     return [
         {
-            "ticker": str(row["Ticker"]),
+            "ticker": fix_finviz_ticker(str(row["Ticker"])),
             "perf_week": _fmt_pct(row["Perf Week"]),
             "perf_month": _fmt_pct(row["Perf Month"]),
         }

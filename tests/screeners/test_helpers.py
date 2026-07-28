@@ -2,7 +2,30 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from screeners.helpers import compute_momentum
+from screeners.helpers import compute_momentum, fix_finviz_ticker
+
+
+# --- fix_finviz_ticker ---
+# finvizfinance's HTML scraper concatenates a one-letter avatar span with the
+# real ticker link text (e.g. "Z" + "ZYME" -> "ZZYME"); these tests use the
+# corrupted (doubled-leading-character) form as input, matching what the
+# scraper actually returns.
+
+def test_fix_finviz_ticker_strips_duplicated_leading_char():
+    assert fix_finviz_ticker("ZZYME") == "ZYME"
+
+
+def test_fix_finviz_ticker_single_char_real_ticker():
+    assert fix_finviz_ticker("FF") == "F"
+
+
+def test_fix_finviz_ticker_naturally_double_leading_letter():
+    # Real ticker "MMM" -> corrupted "MMMM"; stripping one char still recovers it.
+    assert fix_finviz_ticker("MMMM") == "MMM"
+
+
+def test_fix_finviz_ticker_hyphenated_ticker():
+    assert fix_finviz_ticker("BBRK-B") == "BRK-B"
 
 
 def _make_price_df(tickers, n_days=200):

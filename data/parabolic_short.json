@@ -5,27 +5,27 @@
       "label": "Small Cap",
       "tickers": [
         {
-          "ticker": "LLVWR",
+          "ticker": "LVWR",
           "perf_week": "194.69%",
           "perf_month": "140.59%"
         },
         {
-          "ticker": "FFBRX",
+          "ticker": "FBRX",
           "perf_week": "61.09%",
           "perf_month": "308.87%"
         },
         {
-          "ticker": "SSAFT",
+          "ticker": "SAFT",
           "perf_week": "39.47%",
           "perf_month": "42.09%"
         },
         {
-          "ticker": "NNVEC",
+          "ticker": "NVEC",
           "perf_week": "38.60%",
           "perf_month": "24.45%"
         },
         {
-          "ticker": "PPAMT",
+          "ticker": "PAMT",
           "perf_week": "24.43%",
           "perf_month": "12.43%"
         }
@@ -35,27 +35,27 @@
       "label": "Mid Cap",
       "tickers": [
         {
-          "ticker": "UUTZ",
+          "ticker": "UTZ",
           "perf_week": "88.99%",
           "perf_month": "95.01%"
         },
         {
-          "ticker": "CCLF",
+          "ticker": "CLF",
           "perf_week": "36.41%",
           "perf_month": "13.85%"
         },
         {
-          "ticker": "RRNG",
+          "ticker": "RNG",
           "perf_week": "31.81%",
           "perf_month": "54.98%"
         },
         {
-          "ticker": "OOII",
+          "ticker": "OII",
           "perf_week": "21.84%",
           "perf_month": "32.51%"
         },
         {
-          "ticker": "EEQPT",
+          "ticker": "EQPT",
           "perf_week": "19.80%",
           "perf_month": "-2.29%"
         }
@@ -65,27 +65,27 @@
       "label": "Large Cap",
       "tickers": [
         {
-          "ticker": "TTHC",
+          "ticker": "THC",
           "perf_week": "25.20%",
           "perf_month": "32.30%"
         },
         {
-          "ticker": "SSMCI",
+          "ticker": "SMCI",
           "perf_week": "25.09%",
           "perf_month": "-5.90%"
         },
         {
-          "ticker": "AARWR",
+          "ticker": "ARWR",
           "perf_week": "19.37%",
           "perf_month": "7.90%"
         },
         {
-          "ticker": "IIP",
+          "ticker": "IP",
           "perf_week": "16.99%",
           "perf_month": "8.69%"
         },
         {
-          "ticker": "WWAB",
+          "ticker": "WAB",
           "perf_week": "16.70%",
           "perf_month": "6.53%"
         }
