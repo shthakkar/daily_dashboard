@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from screeners.helpers import compute_momentum, fix_finviz_ticker
+from screeners.helpers import _drop_trailing_empty_row, compute_momentum, fix_finviz_ticker
 
 
 # --- fix_finviz_ticker ---
@@ -74,3 +74,40 @@ def test_compute_momentum_raises_on_short_history():
     data = _make_price_df(["AAA"], n_days=100)
     with pytest.raises(ValueError, match="too short"):
         compute_momentum(data)
+
+
+# --- _drop_trailing_empty_row ---
+# Yahoo appends a placeholder row for "today" with no close yet before the
+# market opens; this must be stripped or every .iloc[-1] downstream sees NaN.
+
+def test_drop_trailing_empty_row_removes_fully_nan_last_row():
+    close = pd.DataFrame({"AAA": [1.0, 2.0, np.nan], "BBB": [3.0, 4.0, np.nan]})
+    high = pd.DataFrame({"AAA": [1.5, 2.5, np.nan], "BBB": [3.5, 4.5, np.nan]})
+    close_out, high_out = _drop_trailing_empty_row(close, high)
+    assert len(close_out) == 2
+    assert len(high_out) == 2
+
+
+def test_drop_trailing_empty_row_removes_multiple_trailing_nan_rows():
+    close = pd.DataFrame({"AAA": [1.0, 2.0, np.nan, np.nan]})
+    high = pd.DataFrame({"AAA": [1.5, 2.5, np.nan, np.nan]})
+    close_out, _ = _drop_trailing_empty_row(close, high)
+    assert len(close_out) == 2
+
+
+def test_drop_trailing_empty_row_keeps_partial_nan_last_row():
+    # Only some tickers missing the last day (real data gap, not a
+    # universal placeholder) -- must not be stripped.
+    close = pd.DataFrame({"AAA": [1.0, 2.0, 3.0], "BBB": [3.0, 4.0, np.nan]})
+    high = pd.DataFrame({"AAA": [1.5, 2.5, 3.5], "BBB": [3.5, 4.5, np.nan]})
+    close_out, high_out = _drop_trailing_empty_row(close, high)
+    assert len(close_out) == 3
+    assert len(high_out) == 3
+
+
+def test_drop_trailing_empty_row_handles_empty_input():
+    close = pd.DataFrame()
+    high = pd.DataFrame()
+    close_out, high_out = _drop_trailing_empty_row(close, high)
+    assert close_out.empty
+    assert high_out.empty

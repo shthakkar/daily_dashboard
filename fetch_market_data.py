@@ -42,6 +42,8 @@ def write_json(data: dict, path: str = "data/latest.json") -> None:
 
 def get_spy_ema_signal(spy: pd.DataFrame) -> dict:
     close = spy["close"]
+    if pd.isna(close.iloc[-1]):
+        raise ValueError("SPY close is NaN (likely a pre-market placeholder row)")
     ema10 = float(close.ewm(span=10, adjust=False).mean().iloc[-1])
     ema20 = float(close.ewm(span=20, adjust=False).mean().iloc[-1])
 
@@ -61,6 +63,8 @@ def get_spy_ema_signal(spy: pd.DataFrame) -> dict:
 
 def get_vix_data(vix: pd.DataFrame) -> dict:
     vix_value = float(vix["close"].iloc[-1])
+    if pd.isna(vix_value):
+        raise ValueError("VIX close is NaN (likely a pre-market placeholder row)")
     return {
         "vix": round(vix_value, 2),
         "vix_level": classify_vix_level(vix_value),

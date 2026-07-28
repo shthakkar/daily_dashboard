@@ -1,4 +1,26 @@
 {
   "date": "2026-07-28",
-  "stocks": []
+  "stocks": [
+    {
+      "ticker": "DVA",
+      "tightness": 2.8,
+      "rating": "Wide",
+      "close": 238.84,
+      "avg_rank": 0.9253
+    },
+    {
+      "ticker": "MPC",
+      "tightness": 1.3,
+      "rating": "Wide",
+      "close": 313.6,
+      "avg_rank": 0.9473
+    },
+    {
+      "ticker": "DINO",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 91.72,
+      "avg_rank": 0.9705
+    }
+  ]
 }

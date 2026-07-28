@@ -50,6 +50,19 @@ def _download_chunk(tickers: list[str], period: str) -> tuple[pd.DataFrame, pd.D
     return close, high
 
 
+def _drop_trailing_empty_row(close: pd.DataFrame, high: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Drops trailing rows that are entirely NaN across every ticker.
+
+    Yahoo appends a placeholder row for "today" before the market opens, with
+    no close price yet -- if left in, every `.iloc[-1]` call downstream (EMAs,
+    52w high, momentum returns) would silently compute against NaN.
+    """
+    while len(close) > 0 and close.iloc[-1].isna().all():
+        close = close.iloc[:-1]
+        high = high.iloc[:-1]
+    return close, high
+
+
 def download_prices(
     tickers: list[str], period: str = "1y", extra_tickers: list[str] | None = None
 ) -> tuple[pd.DataFrame, dict[str, pd.DataFrame]]:
@@ -94,6 +107,7 @@ def download_prices(
 
     close = pd.concat(close_parts, axis=1) if close_parts else pd.DataFrame()
     high = pd.concat(high_parts, axis=1) if high_parts else pd.DataFrame()
+    close, high = _drop_trailing_empty_row(close, high)
 
     extras = {
         t: pd.DataFrame({"close": close[t], "high": high[t]})
