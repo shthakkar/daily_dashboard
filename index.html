@@ -449,10 +449,22 @@
 
       const rect = el.getBoundingClientRect();
       const popupW = 600;
+      const popupH = 400;
+      const margin = 8;
+
       let left = rect.left + window.scrollX;
       if (left + popupW > window.innerWidth - 16) left = window.innerWidth - popupW - 16;
       popup.style.left = Math.max(8, left) + 'px';
-      popup.style.top  = (rect.bottom + window.scrollY + 8) + 'px';
+
+      const spaceBelow = window.innerHeight - rect.bottom;
+      const spaceAbove = rect.top;
+      let top;
+      if (spaceBelow >= popupH + margin || spaceBelow >= spaceAbove) {
+        top = rect.bottom + window.scrollY + margin;
+      } else {
+        top = rect.top + window.scrollY - popupH - margin;
+      }
+      popup.style.top = Math.max(8, top) + 'px';
       popup.style.display = 'block';
 
       if (symbol === currentSymbol) return;
