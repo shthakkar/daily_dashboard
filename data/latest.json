@@ -3,10 +3,10 @@
   "spy_ema": "bearish",
   "spy_10ema": 743.59,
   "spy_20ema": 744.44,
-  "spy_last_close": 739.09,
+  "spy_last_close": NaN,
   "spy_52w_high": 758.45,
-  "spy_pct_off_high": -2.55,
-  "spy_off_high_level": "near-high",
-  "vix": 18.67,
+  "spy_pct_off_high": NaN,
+  "spy_off_high_level": "far-off",
+  "vix": 18.7,
   "vix_level": "normal"
 }
