@@ -6,28 +6,28 @@
       "tickers": [
         {
           "ticker": "LVWR",
-          "perf_week": "238.60%",
-          "perf_month": "108.70%"
+          "perf_week": "129.25%",
+          "perf_month": "41.30%"
         },
         {
           "ticker": "FBRX",
-          "perf_week": "50.99%",
-          "perf_month": "264.22%"
+          "perf_week": "51.09%",
+          "perf_month": "264.48%"
         },
         {
           "ticker": "SAFT",
-          "perf_week": "40.36%",
-          "perf_month": "37.04%"
+          "perf_week": "40.31%",
+          "perf_month": "36.99%"
         },
         {
           "ticker": "OPK",
-          "perf_week": "31.82%",
-          "perf_month": "4.25%"
+          "perf_week": "36.36%",
+          "perf_month": "7.84%"
         },
         {
           "ticker": "NVEC",
-          "perf_week": "26.29%",
-          "perf_month": "15.72%"
+          "perf_week": "32.32%",
+          "perf_month": "21.24%"
         }
       ]
     },
@@ -36,28 +36,28 @@
       "tickers": [
         {
           "ticker": "RNG",
-          "perf_week": "40.19%",
-          "perf_month": "49.17%"
+          "perf_week": "43.91%",
+          "perf_month": "53.12%"
         },
         {
           "ticker": "CLF",
-          "perf_week": "33.46%",
-          "perf_month": "24.07%"
-        },
-        {
-          "ticker": "ITRI",
-          "perf_week": "23.32%",
-          "perf_month": "23.72%"
-        },
-        {
-          "ticker": "AWI",
-          "perf_week": "21.72%",
-          "perf_month": "13.67%"
+          "perf_week": "29.51%",
+          "perf_month": "20.40%"
         },
         {
           "ticker": "GSHD",
-          "perf_week": "18.93%",
-          "perf_month": "36.39%"
+          "perf_week": "28.04%",
+          "perf_month": "46.83%"
+        },
+        {
+          "ticker": "ITRI",
+          "perf_week": "27.19%",
+          "perf_month": "27.60%"
+        },
+        {
+          "ticker": "AMC",
+          "perf_week": "21.36%",
+          "perf_month": "23.61%"
         }
       ]
     },
@@ -66,28 +66,28 @@
       "tickers": [
         {
           "ticker": "THC",
-          "perf_week": "29.18%",
-          "perf_month": "34.30%"
+          "perf_week": "33.66%",
+          "perf_month": "38.96%"
         },
         {
           "ticker": "IP",
-          "perf_week": "22.75%",
-          "perf_month": "15.12%"
+          "perf_week": "21.29%",
+          "perf_month": "13.75%"
         },
         {
           "ticker": "IQV",
-          "perf_week": "20.72%",
-          "perf_month": "27.34%"
+          "perf_week": "20.49%",
+          "perf_month": "27.10%"
         },
         {
-          "ticker": "IT",
-          "perf_week": "17.04%",
-          "perf_month": "16.88%"
+          "ticker": "WAB",
+          "perf_week": "16.04%",
+          "perf_month": "13.45%"
         },
         {
-          "ticker": "LMT",
-          "perf_week": "16.97%",
-          "perf_month": "16.90%"
+          "ticker": "CACI",
+          "perf_week": "15.72%",
+          "perf_month": "12.37%"
         }
       ]
     }

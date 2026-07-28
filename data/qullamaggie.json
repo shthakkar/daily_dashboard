@@ -3,24 +3,24 @@
   "stocks": [
     {
       "ticker": "DVA",
-      "tightness": 2.8,
+      "tightness": 3.0,
       "rating": "Wide",
-      "close": 238.84,
-      "avg_rank": 0.9253
+      "close": 239.46,
+      "avg_rank": 0.9215
     },
     {
       "ticker": "MPC",
-      "tightness": 1.3,
+      "tightness": 1.9,
       "rating": "Wide",
-      "close": 313.6,
-      "avg_rank": 0.9473
+      "close": 306.05,
+      "avg_rank": 0.9226
     },
     {
       "ticker": "DINO",
-      "tightness": 1.0,
+      "tightness": 1.4,
       "rating": "Wide",
-      "close": 91.72,
-      "avg_rank": 0.9705
+      "close": 89.3,
+      "avg_rank": 0.9568
     }
   ]
 }
