@@ -28,7 +28,23 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/latest.json data/parabolic_short.json data/qullamaggie.json data/relative_strength.json
-          if ! git diff --staged --quiet; then
-            git commit -m "data: update market indicators [skip ci]"
-            git push
+          if git diff --staged --quiet; then
+            exit 0
           fi
+          git commit -m "data: update market indicators [skip ci]"
+          for i in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $i), reconciling with latest origin/master..."
+            git fetch origin
+            # Reset onto the new tip but keep our freshly-fetched data staged, so
+            # our numbers win outright instead of risking a merge conflict against
+            # someone else's concurrent data update on the same JSON lines.
+            git reset --soft origin/master
+            git add data/latest.json data/parabolic_short.json data/qullamaggie.json data/relative_strength.json
+            git commit -m "data: update market indicators [skip ci]"
+            sleep $((RANDOM % 5 + 1))
+          done
+          echo "Failed to push after 5 attempts" >&2
+          exit 1
