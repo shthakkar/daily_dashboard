@@ -1,4 +1,54 @@
 {
   "date": "2026-07-30",
-  "stocks": []
+  "stocks": [
+    {
+      "ticker": "HPE",
+      "tightness": 8.2,
+      "rating": "Very Tight",
+      "close": 47.14,
+      "avg_rank": 0.9205
+    },
+    {
+      "ticker": "NTAP",
+      "tightness": 4.2,
+      "rating": "Medium",
+      "close": 173.98,
+      "avg_rank": 0.9212
+    },
+    {
+      "ticker": "MPC",
+      "tightness": 1.4,
+      "rating": "Wide",
+      "close": 314.08,
+      "avg_rank": 0.9385
+    },
+    {
+      "ticker": "VLO",
+      "tightness": 1.1,
+      "rating": "Wide",
+      "close": 311.71,
+      "avg_rank": 0.9385
+    },
+    {
+      "ticker": "CORT",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 118.32,
+      "avg_rank": 0.9784
+    },
+    {
+      "ticker": "DINO",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 92.44,
+      "avg_rank": 0.9608
+    },
+    {
+      "ticker": "ILMN",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 205.09,
+      "avg_rank": 0.9318
+    }
+  ]
 }
