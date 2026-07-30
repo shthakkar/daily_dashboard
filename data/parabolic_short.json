@@ -1,33 +1,33 @@
 {
-  "date": "2026-07-29",
+  "date": "2026-07-30",
   "bands": [
     {
       "label": "Small Cap",
       "tickers": [
         {
           "ticker": "LVWR",
-          "perf_week": "184.93%",
-          "perf_month": "105.56%"
+          "perf_week": "249.35%",
+          "perf_month": "140.18%"
         },
         {
           "ticker": "SAFT",
-          "perf_week": "42.21%",
-          "perf_month": "37.41%"
+          "perf_week": "41.25%",
+          "perf_month": "37.63%"
+        },
+        {
+          "ticker": "VRRM",
+          "perf_week": "34.87%",
+          "perf_month": "23.76%"
         },
         {
           "ticker": "BLKB",
-          "perf_week": "36.42%",
-          "perf_month": "43.62%"
-        },
-        {
-          "ticker": "FBRX",
-          "perf_week": "35.14%",
-          "perf_month": "258.96%"
+          "perf_week": "33.88%",
+          "perf_month": "41.25%"
         },
         {
           "ticker": "CLW",
-          "perf_week": "29.95%",
-          "perf_month": "34.81%"
+          "perf_week": "31.71%",
+          "perf_month": "37.76%"
         }
       ]
     },
@@ -35,29 +35,29 @@
       "label": "Mid Cap",
       "tickers": [
         {
-          "ticker": "RNG",
-          "perf_week": "52.89%",
-          "perf_month": "47.30%"
-        },
-        {
           "ticker": "HURN",
-          "perf_week": "52.74%",
-          "perf_month": "78.30%"
+          "perf_week": "57.52%",
+          "perf_month": "90.77%"
         },
         {
-          "ticker": "GSHD",
-          "perf_week": "37.59%",
-          "perf_month": "47.39%"
+          "ticker": "RNG",
+          "perf_week": "45.68%",
+          "perf_month": "44.33%"
         },
         {
-          "ticker": "CBZ",
-          "perf_week": "36.09%",
-          "perf_month": "69.81%"
+          "ticker": "MKTX",
+          "perf_week": "42.96%",
+          "perf_month": "44.00%"
         },
         {
           "ticker": "EXLS",
-          "perf_week": "34.14%",
-          "perf_month": "40.75%"
+          "perf_week": "37.65%",
+          "perf_month": "43.08%"
+        },
+        {
+          "ticker": "CBZ",
+          "perf_week": "36.40%",
+          "perf_month": "71.14%"
         }
       ]
     },
@@ -66,28 +66,28 @@
       "tickers": [
         {
           "ticker": "MANH",
-          "perf_week": "36.83%",
-          "perf_month": "47.73%"
+          "perf_week": "33.62%",
+          "perf_month": "41.47%"
+        },
+        {
+          "ticker": "BAX",
+          "perf_week": "30.60%",
+          "perf_month": "32.74%"
         },
         {
           "ticker": "THC",
-          "perf_week": "31.88%",
-          "perf_month": "37.64%"
-        },
-        {
-          "ticker": "CTSH",
-          "perf_week": "29.62%",
-          "perf_month": "44.48%"
+          "perf_week": "29.64%",
+          "perf_month": "37.91%"
         },
         {
           "ticker": "WDAY",
-          "perf_week": "26.88%",
-          "perf_month": "35.95%"
+          "perf_week": "27.15%",
+          "perf_month": "32.82%"
         },
         {
-          "ticker": "IT",
-          "perf_week": "25.40%",
-          "perf_month": "24.75%"
+          "ticker": "CTSH",
+          "perf_week": "26.85%",
+          "perf_month": "40.87%"
         }
       ]
     }

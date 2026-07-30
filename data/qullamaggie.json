@@ -1,26 +1,4 @@
 {
-  "date": "2026-07-29",
-  "stocks": [
-    {
-      "ticker": "MPC",
-      "tightness": 1.8,
-      "rating": "Wide",
-      "close": 308.72,
-      "avg_rank": 0.931
-    },
-    {
-      "ticker": "DINO",
-      "tightness": 1.3,
-      "rating": "Wide",
-      "close": 90.0,
-      "avg_rank": 0.9657
-    },
-    {
-      "ticker": "LTH",
-      "tightness": 1.0,
-      "rating": "Wide",
-      "close": 45.7,
-      "avg_rank": 0.9278
-    }
-  ]
+  "date": "2026-07-30",
+  "stocks": []
 }
