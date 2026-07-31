@@ -2,6 +2,8 @@ from datetime import date
 
 import pandas as pd
 
+from .helpers import now_utc_iso
+
 
 def _fmt(v: float) -> str:
     return f"{v:+.1%}"
@@ -20,4 +22,4 @@ def run(momentum: pd.DataFrame) -> dict:
         }
         for ticker, row in top.iterrows()
     ]
-    return {"date": date.today().isoformat(), "stocks": stocks}
+    return {"date": date.today().isoformat(), "updated_at": now_utc_iso(), "stocks": stocks}

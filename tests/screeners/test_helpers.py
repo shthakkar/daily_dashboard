@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from screeners.helpers import _drop_trailing_empty_row, compute_momentum, fix_finviz_ticker
+from screeners.helpers import _drop_trailing_empty_row, compute_momentum, fix_finviz_ticker, now_utc_iso
 
 
 # --- fix_finviz_ticker ---
@@ -79,6 +79,9 @@ def test_compute_momentum_raises_on_short_history():
 # --- _drop_trailing_empty_row ---
 # Yahoo appends a placeholder row for "today" with no close yet before the
 # market opens; this must be stripped or every .iloc[-1] downstream sees NaN.
+# In practice the row is rarely 100% NaN (a handful of tickers often already
+# carry a value), so the drop uses a majority threshold rather than requiring
+# every column to be NaN.
 
 def test_drop_trailing_empty_row_removes_fully_nan_last_row():
     close = pd.DataFrame({"AAA": [1.0, 2.0, np.nan], "BBB": [3.0, 4.0, np.nan]})
@@ -111,3 +114,35 @@ def test_drop_trailing_empty_row_handles_empty_input():
     close_out, high_out = _drop_trailing_empty_row(close, high)
     assert close_out.empty
     assert high_out.empty
+
+
+def test_drop_trailing_empty_row_removes_majority_nan_last_row():
+    # 8 of 10 tickers missing "today" -- realistic pre-market shape, not
+    # literally every column NaN.
+    cols = {f"T{i}": [1.0, 2.0, np.nan] for i in range(8)}
+    cols.update({f"T{i}": [1.0, 2.0, 3.0] for i in range(8, 10)})
+    close = pd.DataFrame(cols)
+    high = close * 1.01
+    close_out, high_out = _drop_trailing_empty_row(close, high)
+    assert len(close_out) == 2
+    assert len(high_out) == 2
+
+
+def test_drop_trailing_empty_row_keeps_minority_nan_last_row():
+    # Only 2 of 10 tickers missing "today" -- isolated per-ticker gaps, not
+    # a pre-market placeholder; must not be stripped.
+    cols = {f"T{i}": [1.0, 2.0, 3.0] for i in range(8)}
+    cols.update({f"T{i}": [1.0, 2.0, np.nan] for i in range(8, 10)})
+    close = pd.DataFrame(cols)
+    high = close * 1.01
+    close_out, _ = _drop_trailing_empty_row(close, high)
+    assert len(close_out) == 3
+
+
+# --- now_utc_iso ---
+
+def test_now_utc_iso_is_parseable_and_has_utc_offset():
+    from datetime import datetime
+    result = now_utc_iso()
+    parsed = datetime.fromisoformat(result)
+    assert parsed.utcoffset().total_seconds() == 0

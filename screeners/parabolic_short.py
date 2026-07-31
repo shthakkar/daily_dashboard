@@ -4,7 +4,7 @@ from datetime import date
 import pandas as pd
 from finvizfinance.screener.performance import Performance
 
-from .helpers import fix_finviz_ticker
+from .helpers import fix_finviz_ticker, now_utc_iso
 
 _BANDS = [
     {"label": "Small Cap", "cap": "Small ($300mln to $2bln)"},
@@ -50,4 +50,4 @@ def run() -> dict:
             print(f"Warning: parabolic short band '{band['label']}' failed: {e}")
             tickers = []
         bands.append({"label": band["label"], "tickers": tickers})
-    return {"date": date.today().isoformat(), "bands": bands}
+    return {"date": date.today().isoformat(), "updated_at": now_utc_iso(), "bands": bands}

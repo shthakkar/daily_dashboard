@@ -1,4 +1,5 @@
 import time
+from datetime import datetime, timezone
 
 import pandas as pd
 import yfinance as yf
@@ -9,6 +10,10 @@ _CHUNK_SIZE = 40
 _CHUNK_DELAY_SECONDS = 2
 _MAX_RETRIES = 2
 _RETRY_DELAY_SECONDS = 8
+
+
+def now_utc_iso() -> str:
+    return datetime.now(timezone.utc).isoformat()
 
 
 def fix_finviz_ticker(ticker: str) -> str:
@@ -50,14 +55,22 @@ def _download_chunk(tickers: list[str], period: str) -> tuple[pd.DataFrame, pd.D
     return close, high
 
 
-def _drop_trailing_empty_row(close: pd.DataFrame, high: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Drops trailing rows that are entirely NaN across every ticker.
+def _drop_trailing_empty_row(
+    close: pd.DataFrame, high: pd.DataFrame, threshold: float = 0.5
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Drops trailing rows where most tickers are NaN (a pre-market placeholder day).
 
     Yahoo appends a placeholder row for "today" before the market opens, with
     no close price yet -- if left in, every `.iloc[-1]` call downstream (EMAs,
-    52w high, momentum returns) would silently compute against NaN.
+    52w high, momentum returns) would silently compute against NaN. Requiring
+    *every* ticker to be NaN missed this in practice: a handful of tickers
+    often already carry a value even before the broader market opens, so the
+    row was rarely 100% NaN even though the vast majority of it was -- leaving
+    most of the universe's momentum calculations silently NaN every morning
+    run. A majority-NaN threshold catches the placeholder row without risking
+    a real trading day being dropped over a few isolated per-ticker gaps.
     """
-    while len(close) > 0 and close.iloc[-1].isna().all():
+    while len(close) > 0 and close.iloc[-1].isna().mean() > threshold:
         close = close.iloc[:-1]
         high = high.iloc[:-1]
     return close, high

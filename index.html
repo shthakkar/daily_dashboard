@@ -267,8 +267,8 @@
       return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
     }
 
-    function formatPSTTimestamp(dateStr) {
-      const date = new Date(dateStr + 'T16:00:00Z');
+    function formatPSTTimestamp(isoStr) {
+      const date = new Date(isoStr);
       return date.toLocaleString('en-US', {
         timeZone: 'America/Los_Angeles',
         month: 'short',
@@ -277,6 +277,12 @@
         minute: '2-digit',
         hour12: true
       }) + ' PST';
+    }
+
+    // `updated_at` is a real timestamp; older cached JSON without it falls
+    // back to a fixed noon-UTC placeholder so at least the date still shows.
+    function timestampOf(d) {
+      return d.updated_at || (d.date ? d.date + 'T12:00:00Z' : null);
     }
 
     function makeTicker(symbol, cssClass) {
@@ -293,8 +299,9 @@
     fetch('data/latest.json')
       .then(r => r.json())
       .then(d => {
-        if (d.date) {
-          document.getElementById('cards-timestamp').textContent = 'Updated: ' + formatPSTTimestamp(d.date);
+        const ts = timestampOf(d);
+        if (ts) {
+          document.getElementById('cards-timestamp').textContent = 'Updated: ' + formatPSTTimestamp(ts);
         }
         const sig = SIGNAL_CLS.has(d.spy_ema) ? d.spy_ema : 'bearish';
         const dirLabel = document.getElementById('direction-label');
@@ -323,8 +330,9 @@
     fetch('data/parabolic_short.json')
       .then(function(r) { return r.json(); })
       .then(function(d) {
-        if (d.date) {
-          document.getElementById('parabolic-timestamp').textContent = 'Updated: ' + formatPSTTimestamp(d.date);
+        var ts = timestampOf(d);
+        if (ts) {
+          document.getElementById('parabolic-timestamp').textContent = 'Updated: ' + formatPSTTimestamp(ts);
         }
         var container = document.getElementById('parabolic-bands');
         container.innerHTML = '';
@@ -371,8 +379,9 @@
     fetch('data/qullamaggie.json')
       .then(function(r) { return r.json(); })
       .then(function(d) {
-        if (d.date) {
-          document.getElementById('qullamaggie-timestamp').textContent = 'Updated: ' + formatPSTTimestamp(d.date);
+        var ts = timestampOf(d);
+        if (ts) {
+          document.getElementById('qullamaggie-timestamp').textContent = 'Updated: ' + formatPSTTimestamp(ts);
         }
         var container = document.getElementById('qullamaggie-rows');
         container.innerHTML = '';
@@ -404,8 +413,9 @@
     fetch('data/relative_strength.json')
       .then(function(r) { return r.json(); })
       .then(function(d) {
-        if (d.date) {
-          document.getElementById('rs-timestamp').textContent = 'Updated: ' + formatPSTTimestamp(d.date);
+        var ts = timestampOf(d);
+        if (ts) {
+          document.getElementById('rs-timestamp').textContent = 'Updated: ' + formatPSTTimestamp(ts);
         }
         var container = document.getElementById('rs-rows');
         container.innerHTML = '';

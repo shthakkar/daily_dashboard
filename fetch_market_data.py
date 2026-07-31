@@ -92,7 +92,7 @@ def main() -> None:
 
     # --- Market indicators ---
     try:
-        payload = {"date": date.today().isoformat()}
+        payload = {"date": date.today().isoformat(), "updated_at": helpers.now_utc_iso()}
         payload.update(get_spy_ema_signal(extras["SPY"]))
         payload.update(get_vix_data(extras["^VIX"]))
         write_json(payload)

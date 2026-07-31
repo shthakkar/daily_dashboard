@@ -2,6 +2,8 @@ from datetime import date
 
 import pandas as pd
 
+from .helpers import now_utc_iso
+
 
 def _compute_tightness_score(
     close: float, ema10: float, ema20: float, sma50: float
@@ -52,4 +54,4 @@ def run(data: pd.DataFrame, momentum: pd.DataFrame) -> dict:
         except Exception:
             pass
     results.sort(key=lambda x: x["tightness"], reverse=True)
-    return {"date": date.today().isoformat(), "stocks": results}
+    return {"date": date.today().isoformat(), "updated_at": now_utc_iso(), "stocks": results}
