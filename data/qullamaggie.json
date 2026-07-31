@@ -1,62 +1,69 @@
 {
   "date": "2026-07-31",
-  "updated_at": "2026-07-31T12:56:20.160128+00:00",
+  "updated_at": "2026-07-31T21:43:47.980841+00:00",
   "stocks": [
     {
-      "ticker": "NTAP",
-      "tightness": 4.2,
-      "rating": "Medium",
-      "close": 173.98,
-      "avg_rank": 0.9202
+      "ticker": "HPE",
+      "tightness": 7.6,
+      "rating": "Very Tight",
+      "close": 47.9,
+      "avg_rank": 0.9757
     },
     {
-      "ticker": "LTH",
-      "tightness": 1.5,
+      "ticker": "HUT",
+      "tightness": 4.6,
+      "rating": "Medium",
+      "close": 107.63,
+      "avg_rank": 0.9511
+    },
+    {
+      "ticker": "NTAP",
+      "tightness": 3.3,
       "rating": "Wide",
-      "close": 44.2,
-      "avg_rank": 0.9221
+      "close": 178.5,
+      "avg_rank": 0.9441
     },
     {
       "ticker": "MPC",
-      "tightness": 1.4,
+      "tightness": 1.3,
       "rating": "Wide",
-      "close": 314.08,
-      "avg_rank": 0.9373
+      "close": 316.47,
+      "avg_rank": 0.9401
+    },
+    {
+      "ticker": "DINO",
+      "tightness": 1.2,
+      "rating": "Wide",
+      "close": 91.47,
+      "avg_rank": 0.957
     },
     {
       "ticker": "VLO",
       "tightness": 1.1,
       "rating": "Wide",
-      "close": 311.71,
-      "avg_rank": 0.9377
+      "close": 312.9,
+      "avg_rank": 0.9429
     },
     {
       "ticker": "CORT",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 118.32,
-      "avg_rank": 0.9778
-    },
-    {
-      "ticker": "DINO",
-      "tightness": 1.0,
-      "rating": "Wide",
-      "close": 92.44,
-      "avg_rank": 0.9599
-    },
-    {
-      "ticker": "GKOS",
-      "tightness": 1.0,
-      "rating": "Wide",
-      "close": 168.52,
-      "avg_rank": 0.9272
+      "close": 114.49,
+      "avg_rank": 0.9703
     },
     {
       "ticker": "ILMN",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 205.09,
-      "avg_rank": 0.9307
+      "close": 205.1,
+      "avg_rank": 0.9249
+    },
+    {
+      "ticker": "LTH",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 45.1,
+      "avg_rank": 0.9362
     }
   ]
 }

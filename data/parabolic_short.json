@@ -1,34 +1,34 @@
 {
   "date": "2026-07-31",
-  "updated_at": "2026-07-31T12:56:20.155844+00:00",
+  "updated_at": "2026-07-31T21:43:47.975372+00:00",
   "bands": [
     {
       "label": "Small Cap",
       "tickers": [
         {
           "ticker": "FBRX",
-          "perf_week": "40.18%",
-          "perf_month": "260.18%"
-        },
-        {
-          "ticker": "LVWR",
-          "perf_week": "36.99%",
-          "perf_month": "80.18%"
-        },
-        {
-          "ticker": "XRX",
-          "perf_week": "34.88%",
-          "perf_month": "12.26%"
+          "perf_week": "39.83%",
+          "perf_month": "259.29%"
         },
         {
           "ticker": "EFOR",
-          "perf_week": "34.24%",
-          "perf_month": "57.48%"
+          "perf_week": "38.06%",
+          "perf_month": "61.96%"
         },
         {
-          "ticker": "RJET",
-          "perf_week": "33.23%",
-          "perf_month": "3.62%"
+          "ticker": "SMTI",
+          "perf_week": "32.47%",
+          "perf_month": "39.51%"
+        },
+        {
+          "ticker": "TTGT",
+          "perf_week": "32.06%",
+          "perf_month": "10.32%"
+        },
+        {
+          "ticker": "BLKB",
+          "perf_week": "30.85%",
+          "perf_month": "42.19%"
         }
       ]
     },
@@ -36,29 +36,29 @@
       "label": "Mid Cap",
       "tickers": [
         {
-          "ticker": "HURN",
-          "perf_week": "42.48%",
-          "perf_month": "66.01%"
-        },
-        {
           "ticker": "MKTX",
-          "perf_week": "39.65%",
-          "perf_month": "42.34%"
+          "perf_week": "39.09%",
+          "perf_month": "41.76%"
         },
         {
-          "ticker": "AXTI",
-          "perf_week": "39.34%",
-          "perf_month": "1.20%"
+          "ticker": "HURN",
+          "perf_week": "35.15%",
+          "perf_month": "57.47%"
         },
         {
           "ticker": "CBZ",
-          "perf_week": "29.07%",
-          "perf_month": "60.56%"
+          "perf_week": "29.20%",
+          "perf_month": "60.72%"
         },
         {
-          "ticker": "LCID",
-          "perf_week": "28.10%",
-          "perf_month": "21.72%"
+          "ticker": "NEOG",
+          "perf_week": "28.09%",
+          "perf_month": "29.32%"
+        },
+        {
+          "ticker": "AXTI",
+          "perf_week": "27.95%",
+          "perf_month": "-7.07%"
         }
       ]
     },
@@ -66,29 +66,29 @@
       "label": "Large Cap",
       "tickers": [
         {
+          "ticker": "ARXS",
+          "perf_week": "28.07%",
+          "perf_month": "16.65%"
+        },
+        {
           "ticker": "MANH",
-          "perf_week": "24.94%",
-          "perf_month": "29.43%"
+          "perf_week": "26.17%",
+          "perf_month": "30.70%"
+        },
+        {
+          "ticker": "CTSH",
+          "perf_week": "21.78%",
+          "perf_month": "34.77%"
         },
         {
           "ticker": "CORT",
-          "perf_week": "23.74%",
-          "perf_month": "33.36%"
+          "perf_week": "20.06%",
+          "perf_month": "29.40%"
         },
         {
-          "ticker": "CMG",
-          "perf_week": "20.67%",
-          "perf_month": "9.60%"
-        },
-        {
-          "ticker": "BAX",
-          "perf_week": "20.09%",
-          "perf_month": "24.02%"
-        },
-        {
-          "ticker": "BE",
-          "perf_week": "18.44%",
-          "perf_month": "-24.36%"
+          "ticker": "IESC",
+          "perf_week": "18.92%",
+          "perf_month": "6.37%"
         }
       ]
     }
