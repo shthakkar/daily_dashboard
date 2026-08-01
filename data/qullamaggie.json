@@ -1,6 +1,6 @@
 {
-  "date": "2026-07-31",
-  "updated_at": "2026-07-31T21:43:47.980841+00:00",
+  "date": "2026-08-01",
+  "updated_at": "2026-08-01T12:02:24.910111+00:00",
   "stocks": [
     {
       "ticker": "HPE",
@@ -14,56 +14,56 @@
       "tightness": 4.6,
       "rating": "Medium",
       "close": 107.63,
-      "avg_rank": 0.9511
+      "avg_rank": 0.9506
     },
     {
       "ticker": "NTAP",
       "tightness": 3.3,
       "rating": "Wide",
       "close": 178.5,
-      "avg_rank": 0.9441
+      "avg_rank": 0.944
     },
     {
       "ticker": "MPC",
       "tightness": 1.3,
       "rating": "Wide",
       "close": 316.47,
-      "avg_rank": 0.9401
+      "avg_rank": 0.94
     },
     {
       "ticker": "DINO",
       "tightness": 1.2,
       "rating": "Wide",
       "close": 91.47,
-      "avg_rank": 0.957
-    },
-    {
-      "ticker": "VLO",
-      "tightness": 1.1,
-      "rating": "Wide",
-      "close": 312.9,
-      "avg_rank": 0.9429
+      "avg_rank": 0.9569
     },
     {
       "ticker": "CORT",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 114.49,
-      "avg_rank": 0.9703
+      "avg_rank": 0.9698
     },
     {
       "ticker": "ILMN",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 205.1,
-      "avg_rank": 0.9249
+      "avg_rank": 0.924
     },
     {
       "ticker": "LTH",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 45.1,
-      "avg_rank": 0.9362
+      "avg_rank": 0.9357
+    },
+    {
+      "ticker": "VLO",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 312.9,
+      "avg_rank": 0.9479
     }
   ]
 }
