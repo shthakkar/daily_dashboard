@@ -1,34 +1,34 @@
 {
   "date": "2026-08-04",
-  "updated_at": "2026-08-04T12:58:38.488467+00:00",
+  "updated_at": "2026-08-04T21:53:56.542715+00:00",
   "bands": [
     {
       "label": "Small Cap",
       "tickers": [
         {
           "ticker": "REPL",
-          "perf_week": "132.52%",
-          "perf_month": "8.46%"
-        },
-        {
-          "ticker": "MOVE",
-          "perf_week": "81.04%",
-          "perf_month": "11.76%"
-        },
-        {
-          "ticker": "AMRC",
-          "perf_week": "64.60%",
-          "perf_month": "19.63%"
+          "perf_week": "122.80%",
+          "perf_month": "3.92%"
         },
         {
           "ticker": "BLZE",
-          "perf_week": "58.66%",
-          "perf_month": "25.16%"
+          "perf_week": "63.96%",
+          "perf_month": "29.35%"
+        },
+        {
+          "ticker": "ALOY",
+          "perf_week": "48.84%",
+          "perf_month": "-14.36%"
         },
         {
           "ticker": "LIFE",
-          "perf_week": "49.31%",
-          "perf_month": "44.54%"
+          "perf_week": "47.07%",
+          "perf_month": "42.38%"
+        },
+        {
+          "ticker": "VELO",
+          "perf_week": "45.02%",
+          "perf_month": "-8.79%"
         }
       ]
     },
@@ -36,29 +36,29 @@
       "label": "Mid Cap",
       "tickers": [
         {
-          "ticker": "AXTI",
-          "perf_week": "50.27%",
-          "perf_month": "1.16%"
-        },
-        {
           "ticker": "AEHR",
-          "perf_week": "39.14%",
-          "perf_month": "34.67%"
+          "perf_week": "56.99%",
+          "perf_month": "51.94%"
         },
         {
-          "ticker": "CDNA",
-          "perf_week": "38.76%",
-          "perf_month": "70.70%"
+          "ticker": "AXTI",
+          "perf_week": "52.64%",
+          "perf_month": "2.76%"
         },
         {
-          "ticker": "MKTX",
-          "perf_week": "32.96%",
-          "perf_month": "39.37%"
+          "ticker": "PLPC",
+          "perf_week": "42.57%",
+          "perf_month": "15.18%"
         },
         {
           "ticker": "OUST",
-          "perf_week": "31.97%",
-          "perf_month": "-10.19%"
+          "perf_week": "41.08%",
+          "perf_month": "-3.99%"
+        },
+        {
+          "ticker": "FORM",
+          "perf_week": "36.35%",
+          "perf_month": "1.37%"
         }
       ]
     },
@@ -67,28 +67,28 @@
       "tickers": [
         {
           "ticker": "AAOI",
-          "perf_week": "46.64%",
-          "perf_month": "4.77%"
+          "perf_week": "49.34%",
+          "perf_month": "6.70%"
         },
         {
           "ticker": "IESC",
-          "perf_week": "36.62%",
-          "perf_month": "10.69%"
-        },
-        {
-          "ticker": "BE",
-          "perf_week": "36.33%",
-          "perf_month": "-22.91%"
+          "perf_week": "39.90%",
+          "perf_month": "13.35%"
         },
         {
           "ticker": "ALAB",
-          "perf_week": "35.13%",
-          "perf_month": "-18.74%"
+          "perf_week": "38.98%",
+          "perf_month": "-16.42%"
         },
         {
-          "ticker": "LITE",
-          "perf_week": "34.15%",
-          "perf_month": "19.60%"
+          "ticker": "BE",
+          "perf_week": "36.72%",
+          "perf_month": "-22.69%"
+        },
+        {
+          "ticker": "CRWV",
+          "perf_week": "36.55%",
+          "perf_month": "6.29%"
         }
       ]
     }
