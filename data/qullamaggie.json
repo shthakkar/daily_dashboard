@@ -1,69 +1,62 @@
 {
-  "date": "2026-08-03",
-  "updated_at": "2026-08-03T21:45:28.924371+00:00",
+  "date": "2026-08-04",
+  "updated_at": "2026-08-04T12:58:38.493439+00:00",
   "stocks": [
     {
       "ticker": "HPE",
       "tightness": 5.6,
       "rating": "Tight",
       "close": 50.24,
-      "avg_rank": 0.9778
+      "avg_rank": 0.9764
     },
     {
       "ticker": "HUT",
       "tightness": 5.4,
       "rating": "Medium",
       "close": 112.08,
-      "avg_rank": 0.9307
-    },
-    {
-      "ticker": "DDOG",
-      "tightness": 3.7,
-      "rating": "Wide",
-      "close": 273.6,
-      "avg_rank": 0.921
+      "avg_rank": 0.9298
     },
     {
       "ticker": "NTAP",
       "tightness": 2.3,
       "rating": "Wide",
       "close": 182.92,
-      "avg_rank": 0.9319
+      "avg_rank": 0.9306
     },
     {
       "ticker": "DINO",
       "tightness": 1.8,
       "rating": "Wide",
       "close": 88.65,
-      "avg_rank": 0.9264
+      "avg_rank": 0.9252
     },
     {
       "ticker": "VLO",
       "tightness": 1.7,
       "rating": "Wide",
       "close": 307.54,
-      "avg_rank": 0.9233
+      "avg_rank": 0.9221
     },
     {
       "ticker": "BAX",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 28.1,
-      "avg_rank": 0.9361
+      "avg_rank": 0.9345
     },
     {
       "ticker": "CORT",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 112.8,
-      "avg_rank": 0.9642
+      "avg_rank": 0.9632
     },
     {
       "ticker": "GKOS",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 170.87,
-      "avg_rank": 0.935
+      "avg_rank": 0.9333
     }
   ]
 }
