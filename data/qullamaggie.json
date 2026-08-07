@@ -1,41 +1,90 @@
 {
   "date": "2026-08-07",
-  "updated_at": "2026-08-07T11:43:48.624465+00:00",
+  "updated_at": "2026-08-07T21:15:37.698612+00:00",
   "stocks": [
     {
-      "ticker": "ATI",
-      "tightness": 3.8,
+      "ticker": "HPE",
+      "tightness": 2.5,
       "rating": "Wide",
-      "close": 223.43,
-      "avg_rank": 0.9673
+      "close": 53.22,
+      "avg_rank": 0.9277
+    },
+    {
+      "ticker": "ATI",
+      "tightness": 2.2,
+      "rating": "Wide",
+      "close": 227.84,
+      "avg_rank": 0.9623
     },
     {
       "ticker": "NTAP",
-      "tightness": 1.5,
+      "tightness": 2.0,
       "rating": "Wide",
-      "close": 191.48,
-      "avg_rank": 0.9291
+      "close": 189.52,
+      "avg_rank": 0.9212
     },
     {
-      "ticker": "CORT",
+      "ticker": "NTRA",
+      "tightness": 1.7,
+      "rating": "Wide",
+      "close": 322.1,
+      "avg_rank": 0.9381
+    },
+    {
+      "ticker": "CRWD",
+      "tightness": 1.4,
+      "rating": "Wide",
+      "close": 214.42,
+      "avg_rank": 0.9342
+    },
+    {
+      "ticker": "PANW",
       "tightness": 1.3,
       "rating": "Wide",
-      "close": 107.95,
-      "avg_rank": 0.9314
+      "close": 363.86,
+      "avg_rank": 0.9238
+    },
+    {
+      "ticker": "RVMD",
+      "tightness": 1.3,
+      "rating": "Wide",
+      "close": 205.15,
+      "avg_rank": 0.9246
     },
     {
       "ticker": "CHYM",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 31.25,
-      "avg_rank": 0.948
+      "close": 29.1,
+      "avg_rank": 0.9215
+    },
+    {
+      "ticker": "CORT",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 110.77,
+      "avg_rank": 0.9496
+    },
+    {
+      "ticker": "GKOS",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 180.02,
+      "avg_rank": 0.94
     },
     {
       "ticker": "SN",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 179.93,
-      "avg_rank": 0.9653
+      "close": 185.52,
+      "avg_rank": 0.9604
+    },
+    {
+      "ticker": "ZBRA",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 376.49,
+      "avg_rank": 0.9254
     }
   ]
 }
