@@ -1,34 +1,34 @@
 {
   "date": "2026-08-07",
-  "updated_at": "2026-08-07T01:01:02.159321+00:00",
+  "updated_at": "2026-08-07T11:43:48.620662+00:00",
   "bands": [
     {
       "label": "Small Cap",
       "tickers": [
         {
-          "ticker": "REPL",
-          "perf_week": "137.71%",
-          "perf_month": "15.65%"
-        },
-        {
           "ticker": "APPS",
-          "perf_week": "74.24%",
-          "perf_month": "35.90%"
+          "perf_week": "78.37%",
+          "perf_month": "28.25%"
         },
         {
           "ticker": "BXC",
-          "perf_week": "59.75%",
-          "perf_month": "69.34%"
+          "perf_week": "56.77%",
+          "perf_month": "64.09%"
+        },
+        {
+          "ticker": "HTZ",
+          "perf_week": "56.47%",
+          "perf_month": "14.29%"
         },
         {
           "ticker": "FTK",
-          "perf_week": "55.68%",
-          "perf_month": "57.77%"
+          "perf_week": "53.57%",
+          "perf_month": "45.06%"
         },
         {
-          "ticker": "AEVA",
-          "perf_week": "53.46%",
-          "perf_month": "17.49%"
+          "ticker": "ASPN",
+          "perf_week": "51.19%",
+          "perf_month": "33.59%"
         }
       ]
     },
@@ -36,29 +36,29 @@
       "label": "Mid Cap",
       "tickers": [
         {
-          "ticker": "AXTI",
-          "perf_week": "60.14%",
-          "perf_month": "25.03%"
+          "ticker": "DOCS",
+          "perf_week": "93.69%",
+          "perf_month": "84.01%"
         },
         {
           "ticker": "VOYG",
-          "perf_week": "59.82%",
-          "perf_month": "12.38%"
+          "perf_week": "58.38%",
+          "perf_month": "19.03%"
+        },
+        {
+          "ticker": "IOVA",
+          "perf_week": "54.05%",
+          "perf_month": "43.48%"
         },
         {
           "ticker": "RDW",
-          "perf_week": "39.67%",
-          "perf_month": "11.81%"
+          "perf_week": "40.84%",
+          "perf_month": "15.95%"
         },
         {
-          "ticker": "AAOI",
-          "perf_week": "37.85%",
-          "perf_month": "8.55%"
-        },
-        {
-          "ticker": "AVEX",
-          "perf_week": "35.07%",
-          "perf_month": "23.86%"
+          "ticker": "XE",
+          "perf_week": "33.23%",
+          "perf_month": "30.90%"
         }
       ]
     },
@@ -66,29 +66,29 @@
       "label": "Large Cap",
       "tickers": [
         {
-          "ticker": "CHYM",
-          "perf_week": "38.27%",
-          "perf_month": "48.95%"
+          "ticker": "AAOI",
+          "perf_week": "47.77%",
+          "perf_month": "14.05%"
         },
         {
-          "ticker": "IESC",
-          "perf_week": "34.45%",
-          "perf_month": "24.08%"
+          "ticker": "TEAM",
+          "perf_week": "40.57%",
+          "perf_month": "56.54%"
+        },
+        {
+          "ticker": "CHYM",
+          "perf_week": "36.23%",
+          "perf_month": "46.97%"
+        },
+        {
+          "ticker": "U",
+          "perf_week": "35.23%",
+          "perf_month": "39.54%"
         },
         {
           "ticker": "COHR",
-          "perf_week": "34.19%",
-          "perf_month": "5.42%"
-        },
-        {
-          "ticker": "PAYC",
-          "perf_week": "33.71%",
-          "perf_month": "55.94%"
-        },
-        {
-          "ticker": "CACI",
-          "perf_week": "31.73%",
-          "perf_month": "27.34%"
+          "perf_week": "34.95%",
+          "perf_month": "8.41%"
         }
       ]
     }
