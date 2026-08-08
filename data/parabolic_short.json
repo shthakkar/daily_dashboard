@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-07",
-  "updated_at": "2026-08-07T21:15:37.691926+00:00",
+  "date": "2026-08-08",
+  "updated_at": "2026-08-08T11:25:18.532781+00:00",
   "bands": [
     {
       "label": "Small Cap",
@@ -9,6 +9,11 @@
           "ticker": "APPS",
           "perf_week": "77.92%",
           "perf_month": "27.92%"
+        },
+        {
+          "ticker": "OBX",
+          "perf_week": "76.06%",
+          "perf_month": "52.78%"
         },
         {
           "ticker": "BXC",
@@ -24,11 +29,6 @@
           "ticker": "OABI",
           "perf_week": "55.56%",
           "perf_month": "37.50%"
-        },
-        {
-          "ticker": "SATL",
-          "perf_week": "54.19%",
-          "perf_month": "19.74%"
         }
       ]
     },
