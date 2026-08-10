@@ -1,90 +1,111 @@
 {
   "date": "2026-08-10",
-  "updated_at": "2026-08-10T11:46:19.667940+00:00",
+  "updated_at": "2026-08-10T21:18:16.897780+00:00",
   "stocks": [
     {
-      "ticker": "HPE",
-      "tightness": 2.5,
+      "ticker": "TWLO",
+      "tightness": 3.6,
       "rating": "Wide",
-      "close": 53.22,
-      "avg_rank": 0.928
+      "close": 250.06,
+      "avg_rank": 0.9219
+    },
+    {
+      "ticker": "HPE",
+      "tightness": 2.2,
+      "rating": "Wide",
+      "close": 54.68,
+      "avg_rank": 0.961
     },
     {
       "ticker": "ATI",
-      "tightness": 2.2,
+      "tightness": 1.9,
       "rating": "Wide",
-      "close": 227.84,
-      "avg_rank": 0.9628
+      "close": 228.19,
+      "avg_rank": 0.9602
     },
     {
       "ticker": "NTAP",
-      "tightness": 2.0,
+      "tightness": 1.2,
       "rating": "Wide",
-      "close": 189.52,
-      "avg_rank": 0.9214
+      "close": 198.72,
+      "avg_rank": 0.9606
     },
     {
-      "ticker": "NTRA",
-      "tightness": 1.7,
+      "ticker": "ABNB",
+      "tightness": 1.1,
       "rating": "Wide",
-      "close": 322.1,
-      "avg_rank": 0.9385
+      "close": 184.7,
+      "avg_rank": 0.9227
     },
     {
       "ticker": "CRWD",
-      "tightness": 1.4,
+      "tightness": 1.1,
       "rating": "Wide",
-      "close": 214.42,
-      "avg_rank": 0.9342
-    },
-    {
-      "ticker": "PANW",
-      "tightness": 1.3,
-      "rating": "Wide",
-      "close": 363.86,
-      "avg_rank": 0.9241
-    },
-    {
-      "ticker": "RVMD",
-      "tightness": 1.3,
-      "rating": "Wide",
-      "close": 205.15,
-      "avg_rank": 0.9253
+      "close": 225.16,
+      "avg_rank": 0.9532
     },
     {
       "ticker": "CHYM",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 29.1,
-      "avg_rank": 0.9222
+      "close": 30.85,
+      "avg_rank": 0.9254
     },
     {
       "ticker": "CORT",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 110.77,
-      "avg_rank": 0.9497
+      "close": 114.23,
+      "avg_rank": 0.9621
+    },
+    {
+      "ticker": "CRL",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 277.0,
+      "avg_rank": 0.937
     },
     {
       "ticker": "GKOS",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 180.02,
-      "avg_rank": 0.9408
+      "close": 181.42,
+      "avg_rank": 0.942
+    },
+    {
+      "ticker": "PANW",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 385.04,
+      "avg_rank": 0.9548
+    },
+    {
+      "ticker": "RVMD",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 206.97,
+      "avg_rank": 0.9355
     },
     {
       "ticker": "SN",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 185.52,
-      "avg_rank": 0.9609
+      "close": 186.17,
+      "avg_rank": 0.966
+    },
+    {
+      "ticker": "VSAT",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 84.82,
+      "avg_rank": 0.9212
     },
     {
       "ticker": "ZBRA",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 376.49,
-      "avg_rank": 0.9265
+      "close": 378.08,
+      "avg_rank": 0.9231
     }
   ]
 }

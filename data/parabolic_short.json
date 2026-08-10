@@ -1,34 +1,34 @@
 {
   "date": "2026-08-10",
-  "updated_at": "2026-08-10T11:46:19.662307+00:00",
+  "updated_at": "2026-08-10T21:18:16.889694+00:00",
   "bands": [
     {
       "label": "Small Cap",
       "tickers": [
         {
-          "ticker": "OBX",
-          "perf_week": "76.06%",
-          "perf_month": "52.78%"
-        },
-        {
-          "ticker": "BXC",
-          "perf_week": "65.77%",
-          "perf_month": "73.51%"
-        },
-        {
           "ticker": "OABI",
-          "perf_week": "60.70%",
-          "perf_month": "37.54%"
+          "perf_week": "72.96%",
+          "perf_month": "48.03%"
         },
         {
           "ticker": "APPS",
-          "perf_week": "56.78%",
-          "perf_month": "33.62%"
+          "perf_week": "59.89%",
+          "perf_month": "36.27%"
         },
         {
           "ticker": "VREX",
-          "perf_week": "56.02%",
-          "perf_month": "68.31%"
+          "perf_week": "54.87%",
+          "perf_month": "67.06%"
+        },
+        {
+          "ticker": "BWMN",
+          "perf_week": "54.76%",
+          "perf_month": "51.93%"
+        },
+        {
+          "ticker": "BXC",
+          "perf_week": "51.07%",
+          "perf_month": "68.75%"
         }
       ]
     },
@@ -36,29 +36,29 @@
       "label": "Mid Cap",
       "tickers": [
         {
+          "ticker": "OBX",
+          "perf_week": "84.31%",
+          "perf_month": "98.86%"
+        },
+        {
           "ticker": "VOYG",
-          "perf_week": "51.45%",
-          "perf_month": "36.14%"
+          "perf_week": "53.52%",
+          "perf_month": "38.00%"
         },
         {
           "ticker": "IOVA",
-          "perf_week": "46.47%",
-          "perf_month": "49.41%"
-        },
-        {
-          "ticker": "RDW",
-          "perf_week": "41.80%",
-          "perf_month": "34.28%"
+          "perf_week": "48.32%",
+          "perf_month": "51.30%"
         },
         {
           "ticker": "CAI",
-          "perf_week": "38.79%",
-          "perf_month": "33.31%"
+          "perf_week": "43.38%",
+          "perf_month": "37.73%"
         },
         {
-          "ticker": "MTRN",
-          "perf_week": "35.69%",
-          "perf_month": "12.55%"
+          "ticker": "LIME",
+          "perf_week": "42.91%",
+          "perf_month": "62.26%"
         }
       ]
     },
@@ -67,28 +67,28 @@
       "tickers": [
         {
           "ticker": "TEAM",
-          "perf_week": "42.95%",
-          "perf_month": "66.84%"
-        },
-        {
-          "ticker": "COHR",
-          "perf_week": "35.58%",
-          "perf_month": "20.39%"
+          "perf_week": "46.44%",
+          "perf_month": "70.91%"
         },
         {
           "ticker": "INSM",
-          "perf_week": "34.37%",
-          "perf_month": "14.43%"
+          "perf_week": "36.87%",
+          "perf_month": "16.56%"
         },
         {
-          "ticker": "SITM",
-          "perf_week": "33.85%",
-          "perf_month": "17.12%"
+          "ticker": "RBRK",
+          "perf_week": "31.00%",
+          "perf_month": "16.03%"
         },
         {
           "ticker": "ZBRA",
-          "perf_week": "29.73%",
-          "perf_month": "38.83%"
+          "perf_week": "29.64%",
+          "perf_month": "38.73%"
+        },
+        {
+          "ticker": "U",
+          "perf_week": "29.12%",
+          "perf_month": "39.53%"
         }
       ]
     }
