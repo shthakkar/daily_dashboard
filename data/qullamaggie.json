@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-09",
-  "updated_at": "2026-08-09T11:26:18.632302+00:00",
+  "date": "2026-08-10",
+  "updated_at": "2026-08-10T11:46:19.667940+00:00",
   "stocks": [
     {
       "ticker": "HPE",
@@ -14,7 +14,7 @@
       "tightness": 2.2,
       "rating": "Wide",
       "close": 227.84,
-      "avg_rank": 0.963
+      "avg_rank": 0.9628
     },
     {
       "ticker": "NTAP",
@@ -28,14 +28,14 @@
       "tightness": 1.7,
       "rating": "Wide",
       "close": 322.1,
-      "avg_rank": 0.9388
+      "avg_rank": 0.9385
     },
     {
       "ticker": "CRWD",
       "tightness": 1.4,
       "rating": "Wide",
       "close": 214.42,
-      "avg_rank": 0.9345
+      "avg_rank": 0.9342
     },
     {
       "ticker": "PANW",
@@ -63,28 +63,28 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 110.77,
-      "avg_rank": 0.9499
+      "avg_rank": 0.9497
     },
     {
       "ticker": "GKOS",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 180.02,
-      "avg_rank": 0.9411
+      "avg_rank": 0.9408
     },
     {
       "ticker": "SN",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 185.52,
-      "avg_rank": 0.9611
+      "avg_rank": 0.9609
     },
     {
       "ticker": "ZBRA",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 376.49,
-      "avg_rank": 0.926
+      "avg_rank": 0.9265
     }
   ]
 }
