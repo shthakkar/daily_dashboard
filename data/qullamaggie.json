@@ -1,20 +1,20 @@
 {
-  "date": "2026-08-10",
-  "updated_at": "2026-08-10T21:18:16.897780+00:00",
+  "date": "2026-08-11",
+  "updated_at": "2026-08-11T11:42:50.775674+00:00",
   "stocks": [
     {
       "ticker": "TWLO",
       "tightness": 3.6,
       "rating": "Wide",
       "close": 250.06,
-      "avg_rank": 0.9219
+      "avg_rank": 0.9212
     },
     {
       "ticker": "HPE",
       "tightness": 2.2,
       "rating": "Wide",
       "close": 54.68,
-      "avg_rank": 0.961
+      "avg_rank": 0.9606
     },
     {
       "ticker": "ATI",
@@ -28,77 +28,77 @@
       "tightness": 1.2,
       "rating": "Wide",
       "close": 198.72,
-      "avg_rank": 0.9606
+      "avg_rank": 0.9602
     },
     {
       "ticker": "ABNB",
       "tightness": 1.1,
       "rating": "Wide",
       "close": 184.7,
-      "avg_rank": 0.9227
+      "avg_rank": 0.9223
     },
     {
       "ticker": "CRWD",
       "tightness": 1.1,
       "rating": "Wide",
       "close": 225.16,
-      "avg_rank": 0.9532
+      "avg_rank": 0.9529
     },
     {
       "ticker": "CHYM",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 30.85,
-      "avg_rank": 0.9254
+      "avg_rank": 0.925
     },
     {
       "ticker": "CORT",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 114.23,
-      "avg_rank": 0.9621
+      "avg_rank": 0.9617
     },
     {
       "ticker": "CRL",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 277.0,
-      "avg_rank": 0.937
+      "avg_rank": 0.9366
     },
     {
       "ticker": "GKOS",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 181.42,
-      "avg_rank": 0.942
+      "avg_rank": 0.9417
     },
     {
       "ticker": "PANW",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 385.04,
-      "avg_rank": 0.9548
+      "avg_rank": 0.954
     },
     {
       "ticker": "RVMD",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 206.97,
-      "avg_rank": 0.9355
+      "avg_rank": 0.9351
     },
     {
       "ticker": "SN",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 186.17,
-      "avg_rank": 0.966
+      "avg_rank": 0.9656
     },
     {
       "ticker": "VSAT",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 84.82,
-      "avg_rank": 0.9212
+      "close": 84.83,
+      "avg_rank": 0.9216
     },
     {
       "ticker": "ZBRA",
