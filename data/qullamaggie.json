@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-12",
-  "updated_at": "2026-08-12T21:25:39.392009+00:00",
+  "date": "2026-08-13",
+  "updated_at": "2026-08-13T11:44:44.346714+00:00",
   "stocks": [
     {
       "ticker": "DELL",
@@ -24,18 +24,18 @@
       "avg_rank": 0.9428
     },
     {
-      "ticker": "CORT",
-      "tightness": 1.1,
-      "rating": "Wide",
-      "close": 112.18,
-      "avg_rank": 0.9378
-    },
-    {
       "ticker": "CHYM",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 31.6,
       "avg_rank": 0.9443
+    },
+    {
+      "ticker": "CORT",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 112.18,
+      "avg_rank": 0.9378
     },
     {
       "ticker": "CRL",

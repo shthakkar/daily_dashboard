@@ -1,24 +1,14 @@
 {
-  "date": "2026-08-12",
-  "updated_at": "2026-08-12T21:25:39.385909+00:00",
+  "date": "2026-08-13",
+  "updated_at": "2026-08-13T11:44:44.340356+00:00",
   "bands": [
     {
       "label": "Small Cap",
       "tickers": [
         {
           "ticker": "QMCO",
-          "perf_week": "89.42%",
-          "perf_month": "118.04%"
-        },
-        {
-          "ticker": "HTZ",
-          "perf_week": "79.49%",
-          "perf_month": "52.17%"
-        },
-        {
-          "ticker": "OABI",
-          "perf_week": "68.47%",
-          "perf_month": "59.81%"
+          "perf_week": "83.73%",
+          "perf_month": "108.35%"
         },
         {
           "ticker": "BWMN",
@@ -26,9 +16,19 @@
           "perf_month": "55.28%"
         },
         {
+          "ticker": "OABI",
+          "perf_week": "53.12%",
+          "perf_month": "64.90%"
+        },
+        {
+          "ticker": "VREX",
+          "perf_week": "50.45%",
+          "perf_month": "70.81%"
+        },
+        {
           "ticker": "SENS",
-          "perf_week": "53.09%",
-          "perf_month": "57.65%"
+          "perf_week": "50.29%",
+          "perf_month": "50.29%"
         }
       ]
     },
@@ -36,29 +36,29 @@
       "label": "Mid Cap",
       "tickers": [
         {
-          "ticker": "IOVA",
-          "perf_week": "55.30%",
-          "perf_month": "71.50%"
-        },
-        {
           "ticker": "NIQ",
-          "perf_week": "44.17%",
-          "perf_month": "52.13%"
+          "perf_week": "41.22%",
+          "perf_month": "49.95%"
         },
         {
-          "ticker": "CAI",
-          "perf_week": "35.32%",
-          "perf_month": "31.33%"
+          "ticker": "EROC",
+          "perf_week": "35.93%",
+          "perf_month": "17.33%"
+        },
+        {
+          "ticker": "SHAZ",
+          "perf_week": "30.39%",
+          "perf_month": "-3.72%"
         },
         {
           "ticker": "FIGS",
-          "perf_week": "32.05%",
-          "perf_month": "48.35%"
+          "perf_week": "29.89%",
+          "perf_month": "46.88%"
         },
         {
-          "ticker": "AEHR",
-          "perf_week": "30.83%",
-          "perf_month": "79.46%"
+          "ticker": "NN",
+          "perf_week": "29.47%",
+          "perf_month": "30.42%"
         }
       ]
     },
@@ -67,28 +67,28 @@
       "tickers": [
         {
           "ticker": "TEAM",
-          "perf_week": "36.99%",
-          "perf_month": "74.27%"
+          "perf_week": "41.55%",
+          "perf_month": "69.93%"
         },
         {
-          "ticker": "INSM",
-          "perf_week": "33.59%",
-          "perf_month": "20.13%"
-        },
-        {
-          "ticker": "P",
-          "perf_week": "33.03%",
-          "perf_month": "44.62%"
-        },
-        {
-          "ticker": "CACI",
-          "perf_week": "31.28%",
-          "perf_month": "45.15%"
+          "ticker": "SMCI",
+          "perf_week": "30.59%",
+          "perf_month": "42.68%"
         },
         {
           "ticker": "TWLO",
-          "perf_week": "27.64%",
-          "perf_month": "13.22%"
+          "perf_week": "28.49%",
+          "perf_month": "17.35%"
+        },
+        {
+          "ticker": "P",
+          "perf_week": "26.38%",
+          "perf_month": "55.87%"
+        },
+        {
+          "ticker": "ONTO",
+          "perf_week": "25.49%",
+          "perf_month": "10.66%"
         }
       ]
     }
