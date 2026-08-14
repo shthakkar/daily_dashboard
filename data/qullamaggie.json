@@ -1,41 +1,41 @@
 {
-  "date": "2026-08-13",
-  "updated_at": "2026-08-13T21:26:15.064488+00:00",
+  "date": "2026-08-14",
+  "updated_at": "2026-08-14T11:42:35.455876+00:00",
   "stocks": [
     {
       "ticker": "MRVL",
       "tightness": 4.5,
       "rating": "Medium",
       "close": 222.18,
-      "avg_rank": 0.9246
-    },
-    {
-      "ticker": "CORT",
-      "tightness": 1.7,
-      "rating": "Wide",
-      "close": 110.51,
-      "avg_rank": 0.9299
+      "avg_rank": 0.9242
     },
     {
       "ticker": "RVMD",
-      "tightness": 1.7,
+      "tightness": 1.9,
       "rating": "Wide",
       "close": 202.0,
-      "avg_rank": 0.9273
+      "avg_rank": 0.9261
     },
     {
       "ticker": "ATI",
       "tightness": 1.6,
       "rating": "Wide",
       "close": 227.22,
-      "avg_rank": 0.9464
+      "avg_rank": 0.9459
     },
     {
       "ticker": "DELL",
       "tightness": 1.6,
       "rating": "Wide",
       "close": 494.51,
-      "avg_rank": 0.9881
+      "avg_rank": 0.9882
+    },
+    {
+      "ticker": "CORT",
+      "tightness": 1.5,
+      "rating": "Wide",
+      "close": 110.51,
+      "avg_rank": 0.9298
     },
     {
       "ticker": "HPE",
@@ -49,63 +49,63 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 32.18,
-      "avg_rank": 0.9479
+      "avg_rank": 0.9481
     },
     {
       "ticker": "CRL",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 281.27,
-      "avg_rank": 0.9441
+      "avg_rank": 0.9439
     },
     {
       "ticker": "EAT",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 238.61,
-      "avg_rank": 0.9525
+      "avg_rank": 0.9527
     },
     {
       "ticker": "GKOS",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 189.45,
-      "avg_rank": 0.9307
+      "avg_rank": 0.9299
     },
     {
       "ticker": "MPC",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 356.37,
-      "avg_rank": 0.9226
+      "avg_rank": 0.9218
     },
     {
       "ticker": "NTAP",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 204.99,
-      "avg_rank": 0.9636
+      "avg_rank": 0.9638
     },
     {
       "ticker": "PANW",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 396.0,
-      "avg_rank": 0.9234
+      "avg_rank": 0.9226
     },
     {
       "ticker": "RBRK",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 105.09,
-      "avg_rank": 0.926
+      "avg_rank": 0.9264
     },
     {
       "ticker": "SN",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 188.59,
-      "avg_rank": 0.938
+      "avg_rank": 0.9375
     }
   ]
 }
