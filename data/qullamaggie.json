@@ -1,38 +1,38 @@
 {
-  "date": "2026-08-14",
-  "updated_at": "2026-08-14T21:01:15.397743+00:00",
+  "date": "2026-08-15",
+  "updated_at": "2026-08-15T11:17:32.032968+00:00",
   "stocks": [
     {
       "ticker": "MU",
       "tightness": 5.0,
       "rating": "Medium",
       "close": 971.66,
-      "avg_rank": 0.9421
+      "avg_rank": 0.942
     },
     {
       "ticker": "MRVL",
       "tightness": 4.1,
       "rating": "Medium",
       "close": 222.02,
-      "avg_rank": 0.9402
+      "avg_rank": 0.9401
     },
     {
       "ticker": "TER",
       "tightness": 3.3,
       "rating": "Wide",
       "close": 418.79,
-      "avg_rank": 0.9207
+      "avg_rank": 0.9206
     },
     {
       "ticker": "SNDK",
       "tightness": 2.6,
       "rating": "Wide",
       "close": 1641.11,
-      "avg_rank": 0.9356
+      "avg_rank": 0.9355
     },
     {
       "ticker": "ATI",
-      "tightness": 1.6,
+      "tightness": 1.4,
       "rating": "Wide",
       "close": 228.48,
       "avg_rank": 0.9466
@@ -43,6 +43,13 @@
       "rating": "Wide",
       "close": 490.81,
       "avg_rank": 0.9851
+    },
+    {
+      "ticker": "SN",
+      "tightness": 1.1,
+      "rating": "Wide",
+      "close": 185.1,
+      "avg_rank": 0.9282
     },
     {
       "ticker": "CHYM",
@@ -56,21 +63,21 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 114.47,
-      "avg_rank": 0.9444
+      "avg_rank": 0.9443
     },
     {
       "ticker": "CRL",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 280.05,
-      "avg_rank": 0.9425
+      "avg_rank": 0.9424
     },
     {
       "ticker": "EAT",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 237.15,
-      "avg_rank": 0.9425
+      "avg_rank": 0.9424
     },
     {
       "ticker": "HPE",
@@ -91,14 +98,7 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 102.23,
-      "avg_rank": 0.9234
-    },
-    {
-      "ticker": "SN",
-      "tightness": 1.0,
-      "rating": "Wide",
-      "close": 185.1,
-      "avg_rank": 0.9284
+      "avg_rank": 0.9233
     }
   ]
 }
