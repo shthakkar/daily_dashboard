@@ -1,41 +1,41 @@
 {
-  "date": "2026-08-16",
-  "updated_at": "2026-08-16T11:17:00.981090+00:00",
+  "date": "2026-08-17",
+  "updated_at": "2026-08-17T11:23:28.656843+00:00",
   "stocks": [
     {
       "ticker": "MU",
       "tightness": 5.0,
       "rating": "Medium",
       "close": 971.66,
-      "avg_rank": 0.942
+      "avg_rank": 0.9418
     },
     {
       "ticker": "MRVL",
       "tightness": 4.1,
       "rating": "Medium",
       "close": 222.02,
-      "avg_rank": 0.9401
+      "avg_rank": 0.9399
     },
     {
       "ticker": "TER",
       "tightness": 3.3,
       "rating": "Wide",
       "close": 418.79,
-      "avg_rank": 0.9206
+      "avg_rank": 0.9204
     },
     {
       "ticker": "SNDK",
       "tightness": 2.6,
       "rating": "Wide",
       "close": 1641.11,
-      "avg_rank": 0.9355
+      "avg_rank": 0.9361
     },
     {
       "ticker": "ATI",
       "tightness": 1.4,
       "rating": "Wide",
       "close": 228.48,
-      "avg_rank": 0.9466
+      "avg_rank": 0.9464
     },
     {
       "ticker": "DELL",
@@ -49,35 +49,35 @@
       "tightness": 1.1,
       "rating": "Wide",
       "close": 185.1,
-      "avg_rank": 0.9282
+      "avg_rank": 0.928
     },
     {
       "ticker": "CHYM",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 32.02,
-      "avg_rank": 0.9489
+      "avg_rank": 0.9487
     },
     {
       "ticker": "CORT",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 114.47,
-      "avg_rank": 0.9443
+      "avg_rank": 0.9441
     },
     {
       "ticker": "CRL",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 280.05,
-      "avg_rank": 0.9424
+      "avg_rank": 0.9422
     },
     {
       "ticker": "EAT",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 237.15,
-      "avg_rank": 0.9424
+      "avg_rank": 0.9422
     },
     {
       "ticker": "HPE",
@@ -91,14 +91,14 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 207.08,
-      "avg_rank": 0.9611
+      "avg_rank": 0.9609
     },
     {
       "ticker": "RBRK",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 102.23,
-      "avg_rank": 0.9233
+      "avg_rank": 0.923
     }
   ]
 }
