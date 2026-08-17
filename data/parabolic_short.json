@@ -1,94 +1,68 @@
 {
   "date": "2026-08-17",
-  "updated_at": "2026-08-17T11:23:28.652315+00:00",
+  "updated_at": "2026-08-17T21:07:33.918960+00:00",
   "bands": [
     {
       "label": "Small Cap",
       "tickers": [
         {
           "ticker": "QMCO",
-          "perf_week": "119.35%",
-          "perf_month": "143.09%"
+          "perf_week": "111.54%",
+          "perf_month": "134.43%"
         },
         {
           "ticker": "CAPR",
-          "perf_week": "72.85%",
-          "perf_month": "-65.77%"
+          "perf_week": "93.51%",
+          "perf_month": "-61.68%"
         },
         {
-          "ticker": "VREX",
-          "perf_week": "48.99%",
-          "perf_month": "71.84%"
+          "ticker": "ETON",
+          "perf_week": "41.36%",
+          "perf_month": "45.86%"
         },
         {
-          "ticker": "AIAI",
-          "perf_week": "47.00%",
-          "perf_month": "-15.15%"
+          "ticker": "FDMT",
+          "perf_week": "30.57%",
+          "perf_month": "32.35%"
         },
         {
-          "ticker": "CD",
-          "perf_week": "40.56%",
-          "perf_month": "29.68%"
+          "ticker": "SWMR",
+          "perf_week": "29.70%",
+          "perf_month": "28.85%"
         }
       ]
     },
     {
       "label": "Mid Cap",
-      "tickers": [
-        {
-          "ticker": "EROC",
-          "perf_week": "69.36%",
-          "perf_month": "64.66%"
-        },
-        {
-          "ticker": "NIQ",
-          "perf_week": "47.94%",
-          "perf_month": "57.09%"
-        },
-        {
-          "ticker": "SHAZ",
-          "perf_week": "46.77%",
-          "perf_month": "21.54%"
-        },
-        {
-          "ticker": "QCRH",
-          "perf_week": "44.61%",
-          "perf_month": "52.13%"
-        },
-        {
-          "ticker": "HTFL",
-          "perf_week": "44.29%",
-          "perf_month": "70.22%"
-        }
-      ]
+      "tickers": []
     },
     {
       "label": "Large Cap",
       "tickers": [
         {
-          "ticker": "SMCI",
-          "perf_week": "26.03%",
-          "perf_month": "63.98%"
-        },
-        {
-          "ticker": "CRWV",
-          "perf_week": "22.30%",
-          "perf_month": "47.33%"
-        },
-        {
-          "ticker": "P",
-          "perf_week": "21.20%",
-          "perf_month": "71.16%"
-        },
-        {
-          "ticker": "WDC",
-          "perf_week": "20.36%",
-          "perf_month": "10.55%"
+          "ticker": "VIAV",
+          "perf_week": "24.35%",
+          "perf_month": "21.23%"
         },
         {
           "ticker": "FORM",
-          "perf_week": "19.88%",
-          "perf_month": "27.72%"
+          "perf_week": "22.84%",
+          "perf_month": "30.87%"
+        },
+        {
+          "ticker": "WDC",
+          "perf_week": "22.28%",
+          "perf_month": "12.32%"
+        },
+        {
+          "ticker": "SMCI",
+          "perf_week": "21.68%",
+          "perf_month": "58.31%"
+        },
+        {
+          "ticker": "VICR",
+          "perf_week": "21.40%",
+          "perf_month": "6.68%"
         }
       ]
     }
