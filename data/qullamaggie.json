@@ -1,97 +1,55 @@
 {
   "date": "2026-08-21",
-  "updated_at": "2026-08-21T11:22:54.051071+00:00",
+  "updated_at": "2026-08-21T20:56:04.131822+00:00",
   "stocks": [
     {
-      "ticker": "ZBRA",
-      "tightness": 1.9,
+      "ticker": "AAOI",
+      "tightness": 3.3,
       "rating": "Wide",
-      "close": 360.52,
-      "avg_rank": 0.9241
+      "close": 124.82,
+      "avg_rank": 0.9667
     },
     {
-      "ticker": "SN",
+      "ticker": "MRVL",
       "tightness": 1.8,
       "rating": "Wide",
-      "close": 179.98,
-      "avg_rank": 0.9397
-    },
-    {
-      "ticker": "GKOS",
-      "tightness": 1.6,
-      "rating": "Wide",
-      "close": 184.89,
-      "avg_rank": 0.9324
-    },
-    {
-      "ticker": "RVMD",
-      "tightness": 1.5,
-      "rating": "Wide",
-      "close": 211.74,
-      "avg_rank": 0.9201
-    },
-    {
-      "ticker": "NTAP",
-      "tightness": 1.3,
-      "rating": "Wide",
-      "close": 192.81,
-      "avg_rank": 0.9236
-    },
-    {
-      "ticker": "ABNB",
-      "tightness": 1.0,
-      "rating": "Wide",
-      "close": 185.0,
-      "avg_rank": 0.9214
+      "close": 237.04,
+      "avg_rank": 0.9601
     },
     {
       "ticker": "CHYM",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 31.95,
-      "avg_rank": 0.957
+      "close": 32.78,
+      "avg_rank": 0.9452
     },
     {
       "ticker": "CORT",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 121.05,
-      "avg_rank": 0.9463
+      "close": 122.25,
+      "avg_rank": 0.9324
     },
     {
       "ticker": "CRL",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 291.45,
-      "avg_rank": 0.9536
+      "close": 295.19,
+      "avg_rank": 0.9375
     },
     {
-      "ticker": "HPE",
+      "ticker": "EAT",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 52.89,
-      "avg_rank": 0.9208
+      "close": 246.06,
+      "avg_rank": 0.9457
     },
     {
       "ticker": "MRNA",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 133.32,
-      "avg_rank": 0.9973
-    },
-    {
-      "ticker": "MRVL",
-      "tightness": 1.0,
-      "rating": "Wide",
-      "close": 251.01,
-      "avg_rank": 0.9397
-    },
-    {
-      "ticker": "PAYC",
-      "tightness": 1.0,
-      "rating": "Wide",
-      "close": 226.72,
-      "avg_rank": 0.931
+      "close": 145.13,
+      "avg_rank": 0.998
     }
   ]
 }
