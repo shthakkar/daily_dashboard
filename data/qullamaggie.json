@@ -1,55 +1,55 @@
 {
-  "date": "2026-08-20",
-  "updated_at": "2026-08-20T21:01:50.716853+00:00",
+  "date": "2026-08-21",
+  "updated_at": "2026-08-21T11:22:54.051071+00:00",
   "stocks": [
-    {
-      "ticker": "SN",
-      "tightness": 1.9,
-      "rating": "Wide",
-      "close": 179.98,
-      "avg_rank": 0.9393
-    },
     {
       "ticker": "ZBRA",
       "tightness": 1.9,
       "rating": "Wide",
       "close": 360.52,
-      "avg_rank": 0.9239
+      "avg_rank": 0.9241
+    },
+    {
+      "ticker": "SN",
+      "tightness": 1.8,
+      "rating": "Wide",
+      "close": 179.98,
+      "avg_rank": 0.9397
     },
     {
       "ticker": "GKOS",
-      "tightness": 1.5,
+      "tightness": 1.6,
       "rating": "Wide",
       "close": 184.89,
-      "avg_rank": 0.9328
+      "avg_rank": 0.9324
     },
     {
       "ticker": "RVMD",
-      "tightness": 1.4,
+      "tightness": 1.5,
       "rating": "Wide",
       "close": 211.74,
-      "avg_rank": 0.9204
+      "avg_rank": 0.9201
     },
     {
       "ticker": "NTAP",
       "tightness": 1.3,
       "rating": "Wide",
       "close": 192.81,
-      "avg_rank": 0.9239
+      "avg_rank": 0.9236
     },
     {
       "ticker": "ABNB",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 185.0,
-      "avg_rank": 0.9212
+      "avg_rank": 0.9214
     },
     {
       "ticker": "CHYM",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 31.95,
-      "avg_rank": 0.9571
+      "avg_rank": 0.957
     },
     {
       "ticker": "CORT",
@@ -70,7 +70,7 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 52.89,
-      "avg_rank": 0.9212
+      "avg_rank": 0.9208
     },
     {
       "ticker": "MRNA",
@@ -91,7 +91,7 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 226.72,
-      "avg_rank": 0.9308
+      "avg_rank": 0.931
     }
   ]
 }
