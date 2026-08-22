@@ -11,6 +11,10 @@ _FILTERS = {"Country": "USA", "Relative Volume": "Over 3", "Current Volume": "Ov
 # No. (dropped by finvizfinance), Ticker, Price, Change, Volume, Avg Volume, Rel Volume
 _COLUMNS = [0, 1, 65, 66, 67, 63, 64]
 
+# Finviz has no dollar-volume filter of its own, so it's applied here instead
+# of via `_FILTERS`: Price * Volume, in dollars.
+_MIN_DOLLAR_VOLUME = 500_000_000
+
 
 def _safe_float(v) -> float | None:
     try:
@@ -65,6 +69,12 @@ def _fmt_relvol(v) -> str:
 
 def _rows_from_df(df) -> list[dict]:
     if df is None or df.empty:
+        return []
+    # NaN Price/Volume produces a NaN dollar volume, which `>` evaluates to
+    # False for -- rows with missing data are excluded rather than kept.
+    dollar_volume = df["Price"] * df["Volume"]
+    df = df[dollar_volume > _MIN_DOLLAR_VOLUME]
+    if df.empty:
         return []
     df = df.sort_values("Rel Volume", ascending=False, na_position="last")
     return [
