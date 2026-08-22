@@ -1,13 +1,13 @@
 {
   "date": "2026-08-22",
-  "updated_at": "2026-08-22T00:40:00.373076+00:00",
+  "updated_at": "2026-08-22T02:28:04.832766+00:00",
   "stocks": [
     {
       "ticker": "AAOI",
       "tightness": 3.3,
       "rating": "Wide",
       "close": 124.82,
-      "avg_rank": 0.9667
+      "avg_rank": 0.9668
     },
     {
       "ticker": "MRVL",
