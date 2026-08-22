@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from screeners import helpers, parabolic_short, qullamaggie, relative_strength
+from screeners import helpers, news_movers, parabolic_short, qullamaggie, relative_strength
 
 
 def classify_ema_signal(ema10: float, ema20: float) -> str:
@@ -107,6 +107,14 @@ def main() -> None:
         print(f"Parabolic short: {sum(len(b['tickers']) for b in result['bands'])} tickers across {len(result['bands'])} bands")
     except Exception as e:
         print(f"Skipping parabolic short: {e}")
+
+    # --- News Movers (independent — Finviz Custom screener only, no yfinance) ---
+    try:
+        result = news_movers.run()
+        write_json(result, "data/news_movers.json")
+        print(f"News movers: {len(result['stocks'])} stocks")
+    except Exception as e:
+        print(f"Skipping news movers: {e}")
 
     # --- Qullamaggie ---
     try:

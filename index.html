@@ -183,6 +183,7 @@
     .qualla-grid { grid-template-columns: 90px 55px 140px 90px; min-width: 420px; }
     .rs-grid     { grid-template-columns: 90px repeat(4, minmax(70px, 1fr)); min-width: 440px; }
     .para-grid   { grid-template-columns: 90px 1fr 1fr; }
+    .movers-grid { grid-template-columns: 90px repeat(5, minmax(60px, 1fr)); min-width: 520px; }
     .s-cell      { font-size: 0.8rem; color: #888; white-space: nowrap; }
     .s-cell.dim  { color: #555; }
     .scanner-na  { font-size: 0.8rem; color: #333; display: block; padding: 1rem 1.5rem; }
@@ -252,6 +253,14 @@
       </div>
     </div>
 
+    <div class="scanner-section">
+      <div class="scanner-title">News Movers</div>
+      <div class="section-timestamp" id="news-movers-timestamp"></div>
+      <div class="scanner-table" id="news-movers-rows">
+        <span class="scanner-na">Loading...</span>
+      </div>
+    </div>
+
   </div>
 
   <div id="chart-popup">
@@ -285,6 +294,13 @@
       return d.updated_at || (d.date ? d.date + 'T12:00:00Z' : null);
     }
 
+    // iOS home-screen shortcuts cache aggressively and can ignore normal
+    // HTTP cache headers, so bust both the browser cache and any CDN edge
+    // cache with a per-load timestamp query param.
+    function freshFetch(path) {
+      return fetch(path + '?t=' + Date.now(), { cache: 'no-store' });
+    }
+
     function makeTicker(symbol, cssClass) {
       const a = document.createElement('a');
       a.className = 'ticker ' + cssClass;
@@ -296,7 +312,7 @@
       return a;
     }
 
-    fetch('data/latest.json')
+    freshFetch('data/latest.json')
       .then(r => r.json())
       .then(d => {
         const ts = timestampOf(d);
@@ -327,7 +343,7 @@
       })
       .catch(() => {});
 
-    fetch('data/parabolic_short.json')
+    freshFetch('data/parabolic_short.json')
       .then(function(r) { return r.json(); })
       .then(function(d) {
         var ts = timestampOf(d);
@@ -376,7 +392,7 @@
         document.getElementById('parabolic-bands').innerHTML = '<span class="scanner-na">Data unavailable</span>';
       });
 
-    fetch('data/qullamaggie.json')
+    freshFetch('data/qullamaggie.json')
       .then(function(r) { return r.json(); })
       .then(function(d) {
         var ts = timestampOf(d);
@@ -410,7 +426,7 @@
         document.getElementById('qullamaggie-rows').innerHTML = '<span class="scanner-na">Data unavailable</span>';
       });
 
-    fetch('data/relative_strength.json')
+    freshFetch('data/relative_strength.json')
       .then(function(r) { return r.json(); })
       .then(function(d) {
         var ts = timestampOf(d);
@@ -442,6 +458,40 @@
       })
       .catch(function() {
         document.getElementById('rs-rows').innerHTML = '<span class="scanner-na">Data unavailable</span>';
+      });
+
+    freshFetch('data/news_movers.json')
+      .then(function(r) { return r.json(); })
+      .then(function(d) {
+        var ts = timestampOf(d);
+        if (ts) {
+          document.getElementById('news-movers-timestamp').textContent = 'Updated: ' + formatPSTTimestamp(ts);
+        }
+        var container = document.getElementById('news-movers-rows');
+        container.innerHTML = '';
+        if (!d.stocks.length) {
+          container.innerHTML = '<span class="scanner-na">No results</span>';
+          return;
+        }
+        var head = document.createElement('div');
+        head.className = 's-head movers-grid';
+        ['Ticker', 'Price', 'Change', 'Volume', 'Avg Vol', 'Rel Vol'].forEach(function(h) {
+          var c = document.createElement('span'); c.textContent = h; head.appendChild(c);
+        });
+        container.appendChild(head);
+        d.stocks.forEach(function(s) {
+          var row = document.createElement('div');
+          row.className = 's-row movers-grid';
+          var c1 = document.createElement('div'); c1.appendChild(makeTicker(s.ticker, 'long')); row.appendChild(c1);
+          [s.price, s.change, s.volume, s.avg_volume, s.rel_volume].forEach(function(v) {
+            var c = document.createElement('span'); c.className = 's-cell'; c.textContent = safe(v); row.appendChild(c);
+          });
+          container.appendChild(row);
+        });
+        attachScannerPopups();
+      })
+      .catch(function() {
+        document.getElementById('news-movers-rows').innerHTML = '<span class="scanner-na">Data unavailable</span>';
       });
   </script>
 
