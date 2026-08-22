@@ -180,6 +180,8 @@
     }
     .s-row { border-bottom: 1px solid #1e1e1e; }
     .s-row:last-child { border-bottom: none; }
+    .s-row.high-dv { background: #2e230d; border-left: 2px solid #eab308; }
+    .s-row.high-dv .s-cell { color: #d6a94a; }
     .qualla-grid { grid-template-columns: 90px 55px 140px 90px; min-width: 420px; }
     .rs-grid     { grid-template-columns: 90px repeat(4, minmax(70px, 1fr)); min-width: 440px; }
     .para-grid   { grid-template-columns: 90px 1fr 1fr; }
@@ -481,7 +483,7 @@
         container.appendChild(head);
         d.stocks.forEach(function(s) {
           var row = document.createElement('div');
-          row.className = 's-row movers-grid';
+          row.className = 's-row movers-grid' + (s.high_dollar_volume ? ' high-dv' : '');
           var c1 = document.createElement('div'); c1.appendChild(makeTicker(s.ticker, 'long')); row.appendChild(c1);
           [s.price, s.change, s.volume, s.avg_volume, s.rel_volume].forEach(function(v) {
             var c = document.createElement('span'); c.className = 's-cell'; c.textContent = safe(v); row.appendChild(c);

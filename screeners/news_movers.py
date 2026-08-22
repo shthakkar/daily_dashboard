@@ -11,9 +11,10 @@ _FILTERS = {"Country": "USA", "Relative Volume": "Over 3", "Current Volume": "Ov
 # No. (dropped by finvizfinance), Ticker, Price, Change, Volume, Avg Volume, Rel Volume
 _COLUMNS = [0, 1, 65, 66, 67, 63, 64]
 
-# Finviz has no dollar-volume filter of its own, so it's applied here instead
-# of via `_FILTERS`: Price * Volume, in dollars.
-_MIN_DOLLAR_VOLUME = 500_000_000
+# Finviz has no dollar-volume filter of its own. Rather than excluding rows
+# below this, it's surfaced as a `high_dollar_volume` flag so the UI can
+# highlight the more-liquid names while still showing every match.
+_HIGH_DOLLAR_VOLUME = 300_000_000
 
 
 def _safe_float(v) -> float | None:
@@ -71,20 +72,18 @@ def _rows_from_df(df) -> list[dict]:
     if df is None or df.empty:
         return []
     # NaN Price/Volume produces a NaN dollar volume, which `>` evaluates to
-    # False for -- rows with missing data are excluded rather than kept.
-    dollar_volume = df["Price"] * df["Volume"]
-    df = df[dollar_volume > _MIN_DOLLAR_VOLUME]
-    if df.empty:
-        return []
+    # False for -- those rows are just left unhighlighted, not excluded.
+    df = df.assign(_dollar_volume=df["Price"] * df["Volume"])
     df = df.sort_values("Rel Volume", ascending=False, na_position="last")
     return [
         {
-            "ticker":     fix_finviz_ticker(str(row["Ticker"])),
-            "price":      _fmt_price(row["Price"]),
-            "change":     _fmt_pct(row["Change %"]),
-            "volume":     _fmt_vol(row["Volume"]),
-            "avg_volume": _fmt_vol(row["Avg Volume"]),
-            "rel_volume": _fmt_relvol(row["Rel Volume"]),
+            "ticker":            fix_finviz_ticker(str(row["Ticker"])),
+            "price":             _fmt_price(row["Price"]),
+            "change":            _fmt_pct(row["Change %"]),
+            "volume":            _fmt_vol(row["Volume"]),
+            "avg_volume":        _fmt_vol(row["Avg Volume"]),
+            "rel_volume":        _fmt_relvol(row["Rel Volume"]),
+            "high_dollar_volume": bool(row["_dollar_volume"] > _HIGH_DOLLAR_VOLUME),
         }
         for _, row in df.iterrows()
     ]
