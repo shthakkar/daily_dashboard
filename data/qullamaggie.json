@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-22",
-  "updated_at": "2026-08-22T13:50:02.779986+00:00",
+  "date": "2026-08-23",
+  "updated_at": "2026-08-23T13:51:57.009262+00:00",
   "stocks": [
     {
       "ticker": "AAOI",
@@ -14,35 +14,35 @@
       "tightness": 1.8,
       "rating": "Wide",
       "close": 237.04,
-      "avg_rank": 0.9601
+      "avg_rank": 0.9602
     },
     {
       "ticker": "CHYM",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 32.78,
-      "avg_rank": 0.9453
+      "avg_rank": 0.9454
     },
     {
       "ticker": "CORT",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 122.25,
-      "avg_rank": 0.9325
+      "avg_rank": 0.9326
     },
     {
       "ticker": "CRL",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 295.19,
-      "avg_rank": 0.9376
+      "avg_rank": 0.9377
     },
     {
       "ticker": "EAT",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 246.06,
-      "avg_rank": 0.9458
+      "avg_rank": 0.9459
     },
     {
       "ticker": "MRNA",

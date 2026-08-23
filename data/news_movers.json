@@ -1,5 +1,15 @@
 {
-  "date": "2026-08-22",
-  "updated_at": "2026-08-22T13:50:02.776590+00:00",
-  "stocks": []
+  "date": "2026-08-23",
+  "updated_at": "2026-08-23T13:51:57.006164+00:00",
+  "stocks": [
+    {
+      "ticker": "MRNA",
+      "price": "$145.13",
+      "change": "+8.86%",
+      "volume": "87.3M",
+      "avg_volume": "11.4M",
+      "rel_volume": "7.6x",
+      "high_dollar_volume": true
+    }
+  ]
 }
