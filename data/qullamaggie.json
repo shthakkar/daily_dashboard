@@ -1,55 +1,132 @@
 {
-  "date": "2026-08-23",
-  "updated_at": "2026-08-23T13:51:57.009262+00:00",
+  "date": "2026-08-24",
+  "updated_at": "2026-08-24T14:08:17.302072+00:00",
   "stocks": [
     {
-      "ticker": "AAOI",
-      "tightness": 3.3,
-      "rating": "Wide",
-      "close": 124.82,
-      "avg_rank": 0.9668
+      "ticker": "OSCR",
+      "tightness": 4.0,
+      "rating": "Medium",
+      "close": 32.74,
+      "avg_rank": 0.9537
     },
     {
-      "ticker": "MRVL",
+      "ticker": "GKOS",
+      "tightness": 1.9,
+      "rating": "Wide",
+      "close": 184.2,
+      "avg_rank": 0.9367
+    },
+    {
+      "ticker": "ZBRA",
+      "tightness": 1.9,
+      "rating": "Wide",
+      "close": 364.15,
+      "avg_rank": 0.9201
+    },
+    {
+      "ticker": "RBRK",
       "tightness": 1.8,
       "rating": "Wide",
-      "close": 237.04,
-      "avg_rank": 0.9602
+      "close": 97.78,
+      "avg_rank": 0.9201
+    },
+    {
+      "ticker": "SN",
+      "tightness": 1.7,
+      "rating": "Wide",
+      "close": 182.63,
+      "avg_rank": 0.934
+    },
+    {
+      "ticker": "ILMN",
+      "tightness": 1.4,
+      "rating": "Wide",
+      "close": 217.72,
+      "avg_rank": 0.9252
+    },
+    {
+      "ticker": "MPC",
+      "tightness": 1.1,
+      "rating": "Wide",
+      "close": 361.12,
+      "avg_rank": 0.9371
+    },
+    {
+      "ticker": "VLO",
+      "tightness": 1.1,
+      "rating": "Wide",
+      "close": 348.96,
+      "avg_rank": 0.9333
+    },
+    {
+      "ticker": "ABNB",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 191.11,
+      "avg_rank": 0.9275
     },
     {
       "ticker": "CHYM",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 32.78,
-      "avg_rank": 0.9454
+      "close": 33.5,
+      "avg_rank": 0.9622
     },
     {
       "ticker": "CORT",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 122.25,
-      "avg_rank": 0.9326
+      "close": 120.67,
+      "avg_rank": 0.9568
     },
     {
       "ticker": "CRL",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 295.19,
-      "avg_rank": 0.9377
+      "close": 295.49,
+      "avg_rank": 0.9572
     },
     {
       "ticker": "EAT",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 246.06,
-      "avg_rank": 0.9459
+      "close": 247.83,
+      "avg_rank": 0.9552
+    },
+    {
+      "ticker": "HALO",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 107.05,
+      "avg_rank": 0.9205
     },
     {
       "ticker": "MRNA",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 145.13,
-      "avg_rank": 0.998
+      "close": 133.97,
+      "avg_rank": 0.9985
+    },
+    {
+      "ticker": "PAYC",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 231.41,
+      "avg_rank": 0.9336
+    },
+    {
+      "ticker": "PSX",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 243.09,
+      "avg_rank": 0.9255
+    },
+    {
+      "ticker": "TGT",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 169.51,
+      "avg_rank": 0.9263
     }
   ]
 }
