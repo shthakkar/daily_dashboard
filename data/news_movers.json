@@ -1,105 +1,96 @@
 {
   "date": "2026-08-24",
-  "updated_at": "2026-08-24T14:08:17.292757+00:00",
+  "updated_at": "2026-08-24T21:03:56.262863+00:00",
   "stocks": [
     {
       "ticker": "XPON",
-      "price": "$7.18",
-      "change": "+109.06%",
-      "volume": "41.5M",
+      "price": "$6.20",
+      "change": "+80.49%",
+      "volume": "85.6M",
       "avg_volume": "241.6K",
-      "rel_volume": "1225.5x",
-      "high_dollar_volume": false
+      "rel_volume": "354.2x",
+      "high_dollar_volume": true
     },
     {
       "ticker": "LUCY",
-      "price": "$1.08",
-      "change": "+57.92%",
-      "volume": "101.7M",
+      "price": "$1.12",
+      "change": "+63.77%",
+      "volume": "188.1M",
       "avg_volume": "4.4M",
-      "rel_volume": "165.3x",
+      "rel_volume": "42.8x",
       "high_dollar_volume": false
     },
     {
       "ticker": "PMI",
-      "price": "$4.51",
-      "change": "+40.54%",
-      "volume": "9.2M",
+      "price": "$5.13",
+      "change": "+59.81%",
+      "volume": "23.3M",
       "avg_volume": "927.9K",
-      "rel_volume": "70.9x",
+      "rel_volume": "25.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "BMEA",
+      "price": "$1.59",
+      "change": "+16.06%",
+      "volume": "11.4M",
+      "avg_volume": "799.5K",
+      "rel_volume": "14.2x",
       "high_dollar_volume": false
     },
     {
       "ticker": "SDOT",
-      "price": "$27.52",
-      "change": "+108.84%",
-      "volume": "16.6M",
+      "price": "$23.16",
+      "change": "+75.72%",
+      "volume": "30.1M",
       "avg_volume": "3.6M",
-      "rel_volume": "32.6x",
+      "rel_volume": "8.3x",
       "high_dollar_volume": true
+    },
+    {
+      "ticker": "ABUS",
+      "price": "$5.20",
+      "change": "-0.19%",
+      "volume": "18.1M",
+      "avg_volume": "2.3M",
+      "rel_volume": "8.0x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "REAX",
+      "price": "$2.40",
+      "change": "-9.09%",
+      "volume": "20.5M",
+      "avg_volume": "4.4M",
+      "rel_volume": "4.7x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "GEMI",
+      "price": "$4.19",
+      "change": "-2.10%",
+      "volume": "7.5M",
+      "avg_volume": "1.8M",
+      "rel_volume": "4.2x",
+      "high_dollar_volume": false
     },
     {
       "ticker": "CAPR",
-      "price": "$6.70",
-      "change": "+6.60%",
-      "volume": "7.3M",
+      "price": "$6.80",
+      "change": "+8.11%",
+      "volume": "20.0M",
       "avg_volume": "5.0M",
-      "rel_volume": "10.5x",
+      "rel_volume": "4.0x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "MRNA",
-      "price": "$133.04",
-      "change": "-8.33%",
-      "volume": "8.8M",
-      "avg_volume": "12.8M",
-      "rel_volume": "4.9x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "MSTR",
-      "price": "$123.55",
-      "change": "+3.61%",
-      "volume": "11.9M",
-      "avg_volume": "22.0M",
-      "rel_volume": "3.9x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "PURR",
-      "price": "$10.95",
-      "change": "+3.54%",
-      "volume": "6.7M",
-      "avg_volume": "14.8M",
-      "rel_volume": "3.2x",
+      "ticker": "ASST",
+      "price": "$19.73",
+      "change": "+8.29%",
+      "volume": "14.5M",
+      "avg_volume": "4.3M",
+      "rel_volume": "3.4x",
       "high_dollar_volume": false
-    },
-    {
-      "ticker": "CRCL",
-      "price": "$88.99",
-      "change": "+1.15%",
-      "volume": "6.1M",
-      "avg_volume": "13.7M",
-      "rel_volume": "3.2x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "AAOI",
-      "price": "$104.37",
-      "change": "-16.39%",
-      "volume": "5.4M",
-      "avg_volume": "12.2M",
-      "rel_volume": "3.2x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "BMNR",
-      "price": "$23.82",
-      "change": "+4.34%",
-      "volume": "16.2M",
-      "avg_volume": "37.2M",
-      "rel_volume": "3.1x",
-      "high_dollar_volume": true
     }
   ]
 }
