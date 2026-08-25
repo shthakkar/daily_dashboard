@@ -1,96 +1,78 @@
 {
   "date": "2026-08-25",
-  "updated_at": "2026-08-25T14:09:51.815113+00:00",
+  "updated_at": "2026-08-25T21:05:46.366011+00:00",
   "stocks": [
     {
-      "ticker": "RIME",
-      "price": "$0.32",
-      "change": "-1.20%",
-      "volume": "5.4M",
-      "avg_volume": "610.0K",
-      "rel_volume": "61.3x",
-      "high_dollar_volume": false
-    },
-    {
       "ticker": "DKS",
-      "price": "$133.31",
-      "change": "-25.66%",
-      "volume": "9.0M",
+      "price": "$124.31",
+      "change": "-30.68%",
+      "volume": "38.6M",
       "avg_volume": "1.4M",
-      "rel_volume": "43.9x",
+      "rel_volume": "27.2x",
       "high_dollar_volume": true
     },
     {
-      "ticker": "RMSG",
-      "price": "$0.34",
-      "change": "-6.93%",
-      "volume": "11.9M",
-      "avg_volume": "4.6M",
-      "rel_volume": "18.0x",
+      "ticker": "JEM",
+      "price": "$6.80",
+      "change": "+77.88%",
+      "volume": "17.9M",
+      "avg_volume": "1.2M",
+      "rel_volume": "15.2x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "RIME",
+      "price": "$0.29",
+      "change": "-10.30%",
+      "volume": "7.2M",
+      "avg_volume": "610.0K",
+      "rel_volume": "11.8x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "SLQT",
+      "price": "$0.55",
+      "change": "-29.34%",
+      "volume": "9.5M",
+      "avg_volume": "1.4M",
+      "rel_volume": "6.7x",
       "high_dollar_volume": false
     },
     {
       "ticker": "DFNS",
-      "price": "$13.87",
-      "change": "+25.98%",
-      "volume": "8.4M",
+      "price": "$13.04",
+      "change": "+18.44%",
+      "volume": "12.9M",
       "avg_volume": "3.3M",
-      "rel_volume": "17.7x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "GIPR",
-      "price": "$0.48",
-      "change": "-36.52%",
-      "volume": "7.2M",
-      "avg_volume": "5.5M",
-      "rel_volume": "9.0x",
+      "rel_volume": "4.0x",
       "high_dollar_volume": false
     },
     {
       "ticker": "MRNA",
-      "price": "$154.71",
-      "change": "+11.39%",
-      "volume": "12.1M",
+      "price": "$158.83",
+      "change": "+14.36%",
+      "volume": "49.1M",
       "avg_volume": "13.2M",
-      "rel_volume": "6.3x",
+      "rel_volume": "3.7x",
       "high_dollar_volume": true
     },
     {
-      "ticker": "IBIT",
-      "price": "$44.68",
-      "change": "+0.09%",
-      "volume": "24.0M",
-      "avg_volume": "48.4M",
-      "rel_volume": "3.4x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "GPUS",
-      "price": "$0.35",
-      "change": "-25.45%",
-      "volume": "10.0M",
-      "avg_volume": "20.5M",
+      "ticker": "MAIR",
+      "price": "$27.99",
+      "change": "+12.09%",
+      "volume": "7.5M",
+      "avg_volume": "2.2M",
       "rel_volume": "3.4x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "NKE",
-      "price": "$39.47",
-      "change": "-3.13%",
-      "volume": "11.0M",
-      "avg_volume": "24.2M",
-      "rel_volume": "3.1x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "CRCL",
-      "price": "$87.93",
-      "change": "+0.24%",
-      "volume": "6.1M",
-      "avg_volume": "13.8M",
-      "rel_volume": "3.1x",
-      "high_dollar_volume": true
+      "ticker": "KURA",
+      "price": "$13.59",
+      "change": "+9.60%",
+      "volume": "5.3M",
+      "avg_volume": "1.8M",
+      "rel_volume": "3.0x",
+      "high_dollar_volume": false
     }
   ]
 }
