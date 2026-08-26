@@ -1,132 +1,132 @@
 {
-  "date": "2026-08-25",
-  "updated_at": "2026-08-25T21:05:46.373546+00:00",
+  "date": "2026-08-26",
+  "updated_at": "2026-08-26T14:08:54.710709+00:00",
   "stocks": [
     {
       "ticker": "DELL",
-      "tightness": 6.8,
+      "tightness": 5.6,
       "rating": "Tight",
-      "close": 451.5,
-      "avg_rank": 0.9579
+      "close": 465.61,
+      "avg_rank": 0.9741
     },
     {
       "ticker": "HPE",
-      "tightness": 3.3,
+      "tightness": 3.7,
       "rating": "Wide",
-      "close": 53.44,
-      "avg_rank": 0.9571
+      "close": 54.4,
+      "avg_rank": 0.9652
     },
     {
       "ticker": "MRVL",
-      "tightness": 2.5,
+      "tightness": 3.1,
       "rating": "Wide",
-      "close": 240.38,
-      "avg_rank": 0.9405
+      "close": 242.65,
+      "avg_rank": 0.935
     },
     {
       "ticker": "RVMD",
-      "tightness": 2.1,
+      "tightness": 2.8,
       "rating": "Wide",
-      "close": 211.38,
-      "avg_rank": 0.9432
-    },
-    {
-      "ticker": "VLO",
-      "tightness": 1.9,
-      "rating": "Wide",
-      "close": 340.41,
-      "avg_rank": 0.9289
-    },
-    {
-      "ticker": "MPC",
-      "tightness": 1.8,
-      "rating": "Wide",
-      "close": 354.88,
-      "avg_rank": 0.9351
-    },
-    {
-      "ticker": "GKOS",
-      "tightness": 1.6,
-      "rating": "Wide",
-      "close": 181.39,
-      "avg_rank": 0.9405
+      "close": 208.66,
+      "avg_rank": 0.9416
     },
     {
       "ticker": "KYMR",
-      "tightness": 1.6,
+      "tightness": 2.2,
       "rating": "Wide",
-      "close": 126.64,
-      "avg_rank": 0.9258
+      "close": 125.11,
+      "avg_rank": 0.9257
+    },
+    {
+      "ticker": "VLO",
+      "tightness": 2.0,
+      "rating": "Wide",
+      "close": 339.09,
+      "avg_rank": 0.9241
+    },
+    {
+      "ticker": "MPC",
+      "tightness": 1.7,
+      "rating": "Wide",
+      "close": 356.07,
+      "avg_rank": 0.9315
+    },
+    {
+      "ticker": "ZBRA",
+      "tightness": 1.7,
+      "rating": "Wide",
+      "close": 366.31,
+      "avg_rank": 0.9214
+    },
+    {
+      "ticker": "EAT",
+      "tightness": 1.2,
+      "rating": "Wide",
+      "close": 247.25,
+      "avg_rank": 0.9385
     },
     {
       "ticker": "SN",
-      "tightness": 1.6,
+      "tightness": 1.2,
       "rating": "Wide",
-      "close": 183.8,
-      "avg_rank": 0.9335
+      "close": 186.8,
+      "avg_rank": 0.9385
     },
     {
-      "ticker": "ABNB",
-      "tightness": 1.0,
+      "ticker": "CORT",
+      "tightness": 1.1,
       "rating": "Wide",
-      "close": 190.5,
-      "avg_rank": 0.9208
+      "close": 122.48,
+      "avg_rank": 0.9536
     },
     {
       "ticker": "CHYM",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 33.1,
-      "avg_rank": 0.9463
-    },
-    {
-      "ticker": "CORT",
-      "tightness": 1.0,
-      "rating": "Wide",
-      "close": 123.57,
-      "avg_rank": 0.9598
+      "close": 33.33,
+      "avg_rank": 0.9536
     },
     {
       "ticker": "CRL",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 297.64,
-      "avg_rank": 0.9517
-    },
-    {
-      "ticker": "EAT",
-      "tightness": 1.0,
-      "rating": "Wide",
-      "close": 248.7,
-      "avg_rank": 0.9525
+      "close": 297.45,
+      "avg_rank": 0.9443
     },
     {
       "ticker": "HALO",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 109.32,
-      "avg_rank": 0.9274
+      "close": 109.0,
+      "avg_rank": 0.9269
     },
     {
       "ticker": "ILMN",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 224.99,
-      "avg_rank": 0.9347
+      "close": 226.18,
+      "avg_rank": 0.9269
     },
     {
       "ticker": "MRNA",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 158.83,
-      "avg_rank": 0.9992
+      "close": 150.81,
+      "avg_rank": 0.9985
+    },
+    {
+      "ticker": "NTRA",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 337.43,
+      "avg_rank": 0.9211
     },
     {
       "ticker": "PAYC",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 231.7,
-      "avg_rank": 0.9393
+      "close": 230.18,
+      "avg_rank": 0.9288
     }
   ]
 }

@@ -1,34 +1,34 @@
 {
-  "date": "2026-08-25",
-  "updated_at": "2026-08-25T21:05:46.230562+00:00",
+  "date": "2026-08-26",
+  "updated_at": "2026-08-26T14:08:54.567874+00:00",
   "bands": [
     {
       "label": "Small Cap",
       "tickers": [
         {
           "ticker": "ARCT",
-          "perf_week": "88.06%",
-          "perf_month": "168.06%"
+          "perf_week": "55.40%",
+          "perf_month": "177.83%"
         },
         {
           "ticker": "ASST",
-          "perf_week": "67.11%",
-          "perf_month": "75.47%"
+          "perf_week": "43.58%",
+          "perf_month": "76.54%"
         },
         {
           "ticker": "VOGX",
-          "perf_week": "59.65%",
+          "perf_week": "30.61%",
           "perf_month": "N/A"
         },
         {
           "ticker": "TRON",
-          "perf_week": "40.67%",
-          "perf_month": "35.26%"
+          "perf_week": "30.56%",
+          "perf_month": "34.71%"
         },
         {
           "ticker": "SUJA",
-          "perf_week": "39.05%",
-          "perf_month": "-10.97%"
+          "perf_week": "27.81%",
+          "perf_month": "-9.96%"
         }
       ]
     },
@@ -36,29 +36,29 @@
       "label": "Mid Cap",
       "tickers": [
         {
-          "ticker": "PURR",
-          "perf_week": "64.86%",
-          "perf_month": "87.22%"
+          "ticker": "ANF",
+          "perf_week": "37.52%",
+          "perf_month": "40.57%"
+        },
+        {
+          "ticker": "EMAT",
+          "perf_week": "34.04%",
+          "perf_month": "-19.66%"
         },
         {
           "ticker": "MRVI",
-          "perf_week": "56.79%",
-          "perf_month": "34.53%"
+          "perf_week": "28.74%",
+          "perf_month": "35.50%"
         },
         {
-          "ticker": "XXI",
-          "perf_week": "34.50%",
-          "perf_month": "43.71%"
+          "ticker": "PURR",
+          "perf_week": "23.38%",
+          "perf_month": "88.07%"
         },
         {
-          "ticker": "CAI",
-          "perf_week": "33.57%",
-          "perf_month": "79.21%"
-        },
-        {
-          "ticker": "MARA",
-          "perf_week": "32.03%",
-          "perf_month": "0.51%"
+          "ticker": "TMC",
+          "perf_week": "23.30%",
+          "perf_month": "36.35%"
         }
       ]
     },
@@ -66,29 +66,29 @@
       "label": "Large Cap",
       "tickers": [
         {
-          "ticker": "MRNA",
-          "perf_week": "152.27%",
-          "perf_month": "185.51%"
-        },
-        {
-          "ticker": "TEM",
-          "perf_week": "39.24%",
-          "perf_month": "60.17%"
+          "ticker": "BMNR",
+          "perf_week": "23.74%",
+          "perf_month": "42.54%"
         },
         {
           "ticker": "MSTR",
-          "perf_week": "37.08%",
-          "perf_month": "28.57%"
-        },
-        {
-          "ticker": "BMNR",
-          "perf_week": "35.78%",
-          "perf_month": "38.50%"
+          "perf_week": "19.57%",
+          "perf_month": "29.63%"
         },
         {
           "ticker": "CRCL",
-          "perf_week": "28.29%",
-          "perf_month": "40.12%"
+          "perf_week": "17.25%",
+          "perf_month": "43.27%"
+        },
+        {
+          "ticker": "FCX",
+          "perf_week": "15.62%",
+          "perf_month": "29.59%"
+        },
+        {
+          "ticker": "HOOD",
+          "perf_week": "15.24%",
+          "perf_month": "18.98%"
         }
       ]
     }

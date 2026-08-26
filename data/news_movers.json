@@ -1,76 +1,121 @@
 {
-  "date": "2026-08-25",
-  "updated_at": "2026-08-25T21:05:46.366011+00:00",
+  "date": "2026-08-26",
+  "updated_at": "2026-08-26T14:08:54.703311+00:00",
   "stocks": [
     {
+      "ticker": "VNRX",
+      "price": "$0.35",
+      "change": "-10.22%",
+      "volume": "25.9M",
+      "avg_volume": "556.0K",
+      "rel_volume": "327.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "MSS",
+      "price": "$1.66",
+      "change": "+12.28%",
+      "volume": "34.2M",
+      "avg_volume": "2.1M",
+      "rel_volume": "113.5x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "VEEA",
+      "price": "$0.12",
+      "change": "-10.06%",
+      "volume": "26.3M",
+      "avg_volume": "1.8M",
+      "rel_volume": "102.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "SBFM",
+      "price": "$1.10",
+      "change": "-3.95%",
+      "volume": "6.5M",
+      "avg_volume": "625.0K",
+      "rel_volume": "72.5x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "SOAR",
+      "price": "$0.23",
+      "change": "+46.99%",
+      "volume": "285.0M",
+      "avg_volume": "27.6M",
+      "rel_volume": "72.3x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "OLOX",
+      "price": "$1.61",
+      "change": "+8.42%",
+      "volume": "8.0M",
+      "avg_volume": "908.1K",
+      "rel_volume": "62.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "DAIC",
+      "price": "$4.91",
+      "change": "+26.55%",
+      "volume": "28.0M",
+      "avg_volume": "5.0M",
+      "rel_volume": "39.4x",
+      "high_dollar_volume": false
+    },
+    {
       "ticker": "DKS",
-      "price": "$124.31",
-      "change": "-30.68%",
-      "volume": "38.6M",
-      "avg_volume": "1.4M",
-      "rel_volume": "27.2x",
+      "price": "$129.34",
+      "change": "+4.05%",
+      "volume": "5.0M",
+      "avg_volume": "2.0M",
+      "rel_volume": "17.7x",
       "high_dollar_volume": true
     },
     {
-      "ticker": "JEM",
-      "price": "$6.80",
-      "change": "+77.88%",
-      "volume": "17.9M",
-      "avg_volume": "1.2M",
-      "rel_volume": "15.2x",
+      "ticker": "SMMT",
+      "price": "$14.65",
+      "change": "+9.69%",
+      "volume": "5.2M",
+      "avg_volume": "5.4M",
+      "rel_volume": "6.8x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "RIME",
-      "price": "$0.29",
-      "change": "-10.30%",
-      "volume": "7.2M",
-      "avg_volume": "610.0K",
-      "rel_volume": "11.8x",
-      "high_dollar_volume": false
+      "ticker": "META",
+      "price": "$573.40",
+      "change": "+0.59%",
+      "volume": "12.3M",
+      "avg_volume": "18.4M",
+      "rel_volume": "4.7x",
+      "high_dollar_volume": true
     },
     {
-      "ticker": "SLQT",
-      "price": "$0.55",
-      "change": "-29.34%",
-      "volume": "9.5M",
-      "avg_volume": "1.4M",
-      "rel_volume": "6.7x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "DFNS",
-      "price": "$13.04",
-      "change": "+18.44%",
-      "volume": "12.9M",
-      "avg_volume": "3.3M",
-      "rel_volume": "4.0x",
-      "high_dollar_volume": false
+      "ticker": "BSX",
+      "price": "$47.78",
+      "change": "-4.17%",
+      "volume": "10.5M",
+      "avg_volume": "21.3M",
+      "rel_volume": "3.5x",
+      "high_dollar_volume": true
     },
     {
       "ticker": "MRNA",
-      "price": "$158.83",
-      "change": "+14.36%",
-      "volume": "49.1M",
-      "avg_volume": "13.2M",
-      "rel_volume": "3.7x",
+      "price": "$151.35",
+      "change": "-4.71%",
+      "volume": "6.7M",
+      "avg_volume": "13.8M",
+      "rel_volume": "3.4x",
       "high_dollar_volume": true
     },
     {
-      "ticker": "MAIR",
-      "price": "$27.99",
-      "change": "+12.09%",
-      "volume": "7.5M",
-      "avg_volume": "2.2M",
-      "rel_volume": "3.4x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "KURA",
-      "price": "$13.59",
-      "change": "+9.60%",
-      "volume": "5.3M",
-      "avg_volume": "1.8M",
+      "ticker": "SNAP",
+      "price": "$5.53",
+      "change": "-6.50%",
+      "volume": "17.9M",
+      "avg_volume": "41.7M",
       "rel_volume": "3.0x",
       "high_dollar_volume": false
     }
