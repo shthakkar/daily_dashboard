@@ -1,96 +1,87 @@
 {
   "date": "2026-08-27",
-  "updated_at": "2026-08-27T14:03:38.702312+00:00",
+  "updated_at": "2026-08-27T23:03:46.567449+00:00",
   "stocks": [
     {
-      "ticker": "MTC",
-      "price": "$2.36",
-      "change": "+18.00%",
-      "volume": "9.1M",
-      "avg_volume": "49.8K",
-      "rel_volume": "1401.8x",
-      "high_dollar_volume": false
+      "ticker": "ELU",
+      "price": "$2.10",
+      "change": "+138.53%",
+      "volume": "220.3M",
+      "avg_volume": "119.9K",
+      "rel_volume": "1837.8x",
+      "high_dollar_volume": true
     },
     {
-      "ticker": "ELU",
-      "price": "$1.05",
-      "change": "+19.29%",
-      "volume": "21.9M",
-      "avg_volume": "119.9K",
-      "rel_volume": "1401.2x",
+      "ticker": "MTC",
+      "price": "$1.98",
+      "change": "-1.00%",
+      "volume": "13.9M",
+      "avg_volume": "49.8K",
+      "rel_volume": "278.3x",
       "high_dollar_volume": false
     },
     {
       "ticker": "ZIO",
-      "price": "$1.27",
-      "change": "+8.67%",
-      "volume": "7.8M",
+      "price": "$1.35",
+      "change": "+15.38%",
+      "volume": "11.9M",
       "avg_volume": "512.6K",
-      "rel_volume": "117.0x",
+      "rel_volume": "23.2x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "BW",
+      "price": "$28.44",
+      "change": "-27.26%",
+      "volume": "5.3M",
+      "avg_volume": "396.5K",
+      "rel_volume": "13.4x",
       "high_dollar_volume": false
     },
     {
       "ticker": "BAI",
       "price": "$0.37",
-      "change": "+16.32%",
-      "volume": "45.9M",
+      "change": "+13.56%",
+      "volume": "64.4M",
       "avg_volume": "11.2M",
-      "rel_volume": "31.4x",
+      "rel_volume": "5.8x",
       "high_dollar_volume": false
+    },
+    {
+      "ticker": "KTA",
+      "price": "$172.91",
+      "change": "+28.63%",
+      "volume": "16.4M",
+      "avg_volume": "3.6M",
+      "rel_volume": "4.5x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "RL",
+      "price": "$21.28",
+      "change": "-10.25%",
+      "volume": "18.6M",
+      "avg_volume": "4.8M",
+      "rel_volume": "3.9x",
+      "high_dollar_volume": true
     },
     {
       "ticker": "RM",
-      "price": "$244.36",
-      "change": "+18.84%",
-      "volume": "14.2M",
+      "price": "$252.05",
+      "change": "+22.58%",
+      "volume": "55.5M",
       "avg_volume": "14.8M",
-      "rel_volume": "7.3x",
+      "rel_volume": "3.7x",
       "high_dollar_volume": true
     },
     {
-      "ticker": "PQ",
-      "price": "$28.80",
-      "change": "-5.65%",
-      "volume": "12.7M",
-      "avg_volume": "17.3M",
-      "rel_volume": "5.6x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "RWD",
-      "price": "$220.24",
-      "change": "+16.42%",
+      "ticker": "KS",
+      "price": "$131.77",
+      "change": "+1.63%",
       "volume": "6.7M",
-      "avg_volume": "10.7M",
-      "rel_volume": "4.9x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "VDA",
-      "price": "$225.11",
-      "change": "+7.37%",
-      "volume": "83.1M",
-      "avg_volume": "139.7M",
-      "rel_volume": "4.6x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "RNA",
-      "price": "$143.92",
-      "change": "-3.83%",
-      "volume": "6.0M",
-      "avg_volume": "14.0M",
-      "rel_volume": "3.3x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "URR",
-      "price": "$13.06",
-      "change": "+12.98%",
-      "volume": "6.2M",
-      "avg_volume": "15.2M",
+      "avg_volume": "2.2M",
       "rel_volume": "3.1x",
-      "high_dollar_volume": false
+      "high_dollar_volume": true
     }
   ]
 }
