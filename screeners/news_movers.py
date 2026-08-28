@@ -3,6 +3,7 @@ from datetime import date
 
 import pandas as pd
 from finvizfinance.screener.custom import Custom
+from finvizfinance.util import web_scrap
 
 from .helpers import fix_finviz_ticker, now_utc_iso
 
@@ -68,6 +69,23 @@ def _fmt_relvol(v) -> str:
     return "N/A" if f is None else f"{f:.1f}x"
 
 
+def _parse_number(v) -> float | None:
+    # `_fetch` reads Price/Volume/Avg Volume/Rel Volume as raw cell text
+    # (see its docstring for why), so these arrive as Finviz's display
+    # strings -- plain ("23.25"), comma-grouped ("11,917,022"), or
+    # K/M/B-suffixed ("512.57K") -- rather than pre-converted floats.
+    s = str(v).strip().replace(",", "")
+    if s in ("", "nan", "-", "None"):
+        return None
+    suffix_mult = {"K": 1e3, "M": 1e6, "B": 1e9}
+    try:
+        if s[-1] in suffix_mult:
+            return float(s[:-1]) * suffix_mult[s[-1]]
+        return float(s)
+    except (ValueError, IndexError):
+        return None
+
+
 def _rows_from_df(df) -> list[dict]:
     if df is None or df.empty:
         return []
@@ -77,7 +95,7 @@ def _rows_from_df(df) -> list[dict]:
     df = df.sort_values("Rel Volume", ascending=False, na_position="last")
     return [
         {
-            "ticker":            fix_finviz_ticker(str(row["Ticker"])),
+            "ticker":            str(row["Ticker"]),
             "price":             _fmt_price(row["Price"]),
             "change":            _fmt_pct(row["Change %"]),
             "volume":            _fmt_vol(row["Volume"]),
@@ -89,14 +107,72 @@ def _rows_from_df(df) -> list[dict]:
     ]
 
 
+_PAGE_SIZE = 20  # rows per page -- matches finvizfinance's Base.size
+
+
+def _parse_rows(soup) -> list[dict]:
+    table = soup.find("table", class_="screener_table")
+    if table is None:
+        return []
+    records = []
+    for row in table.find_all("tr")[1:]:
+        cols = row.find_all("td")
+        if len(cols) < 7:
+            continue
+        # cols[0] is the row-number column; cols[1] is Ticker. Fall back to
+        # finvizfinance's strip-one-character fix if Finviz ever drops the
+        # data attribute, rather than silently dropping the row.
+        ticker = cols[1].get("data-boxover-ticker") or fix_finviz_ticker(cols[1].text)
+        records.append({
+            "Ticker":     ticker,
+            "Price":      _parse_number(cols[2].text),
+            "Change %":   cols[3].text,
+            "Volume":     _parse_number(cols[4].text),
+            "Avg Volume": _parse_number(cols[5].text),
+            "Rel Volume": _parse_number(cols[6].text),
+        })
+    return records
+
+
+def _page_count(soup) -> int:
+    try:
+        return len(soup.find(id="pageSelect").find_all("option"))
+    except AttributeError:
+        return 1 if soup.find("table", class_="screener_table") else 0
+
+
 def _fetch() -> pd.DataFrame:
+    """Builds the filtered request via finvizfinance's `Custom` screener, but
+    parses the response HTML directly instead of using its `screener_view` --
+    that method reads each cell's full text, and Finviz's ticker cell renders
+    an avatar-logo link (whose fallback text is normally the ticker's first
+    letter, for when the logo image doesn't load) immediately before the real
+    ticker link, so the concatenated text comes back as e.g. "CCRM" for
+    Salesforce. finvizfinance's own fix assumes that fallback is always
+    exactly one character and strips it accordingly, which silently mangles
+    any row where Finviz's fallback text is longer (observed in production:
+    a whole batch of rows came back missing an extra leading letter, e.g.
+    "RM" instead of "CRM"). Every ticker cell also carries a
+    `data-boxover-ticker` attribute with the plain, un-decorated symbol --
+    reading that directly sidesteps the guessing game entirely.
+
+    Pages through all results (matching finvizfinance's own 20-rows-per-page
+    behavior) rather than silently capping at the first page.
+    """
     screen = Custom()
     screen.set_filter(filters_dict=_FILTERS)
     # finvizfinance's filter_dict has no entry for Finviz's "Latest News" filter
     # category, so `set_filter` can't express it -- append Finviz's raw filter
     # code for "Latest News: Today" directly onto the query string it built.
     screen.request_params["f"] += ",news_date_today"
-    return screen.screener_view(columns=_COLUMNS, verbose=0)
+    screen._parse_columns(_COLUMNS)
+
+    soup = web_scrap(screen.url, screen.request_params)
+    records = _parse_rows(soup)
+    for page in range(1, _page_count(soup)):
+        screen.request_params["r"] = page * _PAGE_SIZE + 1
+        records.extend(_parse_rows(web_scrap(screen.url, screen.request_params)))
+    return pd.DataFrame(records)
 
 
 def run() -> dict:
