@@ -1,13 +1,13 @@
 {
   "date": "2026-08-28",
-  "updated_at": "2026-08-28T13:55:29.916002+00:00",
+  "updated_at": "2026-08-28T23:08:30.835876+00:00",
   "stocks": [
     {
       "ticker": "SN",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 193.72,
-      "avg_rank": 0.9666
+      "close": 191.23,
+      "avg_rank": 0.9627
     }
   ]
 }
