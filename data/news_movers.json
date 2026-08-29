@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-28",
-  "updated_at": "2026-08-28T23:08:30.834402+00:00",
+  "date": "2026-08-29",
+  "updated_at": "2026-08-29T02:58:57.784630+00:00",
   "stocks": [
     {
       "ticker": "QNRX",
@@ -8,7 +8,7 @@
       "change": "+18.72%",
       "volume": "31.0M",
       "avg_volume": "234.6K",
-      "rel_volume": "132.1x",
+      "rel_volume": "132.2x",
       "high_dollar_volume": false
     },
     {
@@ -17,32 +17,32 @@
       "change": "+19.15%",
       "volume": "16.9M",
       "avg_volume": "129.9K",
-      "rel_volume": "129.8x",
+      "rel_volume": "129.9x",
       "high_dollar_volume": false
     },
     {
       "ticker": "CHGA",
       "price": "$0.14",
       "change": "+9.10%",
-      "volume": "149.7M",
+      "volume": "150.1M",
       "avg_volume": "1.5M",
-      "rel_volume": "98.0x",
+      "rel_volume": "98.3x",
       "high_dollar_volume": false
     },
     {
       "ticker": "BTAI",
       "price": "$0.18",
       "change": "-74.76%",
-      "volume": "58.2M",
+      "volume": "58.6M",
       "avg_volume": "1.0M",
-      "rel_volume": "56.9x",
+      "rel_volume": "57.2x",
       "high_dollar_volume": false
     },
     {
       "ticker": "NCPL",
       "price": "$0.69",
       "change": "+28.41%",
-      "volume": "107.0M",
+      "volume": "107.2M",
       "avg_volume": "10.4M",
       "rel_volume": "10.3x",
       "high_dollar_volume": false
@@ -60,7 +60,7 @@
       "ticker": "TNON",
       "price": "$5.00",
       "change": "-0.40%",
-      "volume": "7.7M",
+      "volume": "7.8M",
       "avg_volume": "1.2M",
       "rel_volume": "6.4x",
       "high_dollar_volume": false
