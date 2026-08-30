@@ -1,10 +1,15 @@
 {
-  "date": "2026-08-29",
-  "updated_at": "2026-08-29T17:14:06.370448+00:00",
+  "date": "2026-08-30",
+  "updated_at": "2026-08-30T17:35:05.600466+00:00",
   "bands": [
     {
       "label": "Small Cap",
       "tickers": [
+        {
+          "ticker": "SQL",
+          "perf_week": "96.81%",
+          "perf_month": "86.80%"
+        },
         {
           "ticker": "APR",
           "perf_week": "52.46%",
@@ -24,11 +29,6 @@
           "ticker": "UJA",
           "perf_week": "22.01%",
           "perf_month": "-9.21%"
-        },
-        {
-          "ticker": "PTU",
-          "perf_week": "20.28%",
-          "perf_month": "37.84%"
         }
       ]
     },
