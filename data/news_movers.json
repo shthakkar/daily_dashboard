@@ -1,68 +1,167 @@
 {
-  "date": "2026-08-31",
-  "updated_at": "2026-08-31T14:28:39.993329+00:00",
+  "date": "2026-09-01",
+  "updated_at": "2026-09-01T00:06:03.544281+00:00",
   "stocks": [
     {
+      "ticker": "CVKD",
+      "price": "$1.75",
+      "change": "+13.64%",
+      "volume": "21.6M",
+      "avg_volume": "67.5K",
+      "rel_volume": "319.8x",
+      "high_dollar_volume": false
+    },
+    {
       "ticker": "XAIR",
-      "price": "$4.36",
-      "change": "-2.79%",
-      "volume": "8.2M",
+      "price": "$3.97",
+      "change": "-11.38%",
+      "volume": "8.7M",
       "avg_volume": "53.4K",
-      "rel_volume": "797.9x",
+      "rel_volume": "163.7x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "SST",
+      "price": "$2.24",
+      "change": "+18.52%",
+      "volume": "9.2M",
+      "avg_volume": "150.9K",
+      "rel_volume": "60.8x",
       "high_dollar_volume": false
     },
     {
       "ticker": "MOVE",
-      "price": "$11.36",
-      "change": "-1.13%",
-      "volume": "6.0M",
+      "price": "$10.95",
+      "change": "-4.70%",
+      "volume": "7.0M",
       "avg_volume": "177.7K",
-      "rel_volume": "175.2x",
+      "rel_volume": "39.2x",
       "high_dollar_volume": false
     },
     {
       "ticker": "AUID",
-      "price": "$0.50",
-      "change": "+2.36%",
-      "volume": "6.0M",
+      "price": "$0.45",
+      "change": "-8.51%",
+      "volume": "7.3M",
       "avg_volume": "388.1K",
-      "rel_volume": "80.7x",
+      "rel_volume": "18.8x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "AIM",
-      "price": "$0.28",
-      "change": "+7.47%",
-      "volume": "92.8M",
-      "avg_volume": "10.1M",
-      "rel_volume": "48.1x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "PCG",
-      "price": "$13.28",
-      "change": "-20.00%",
-      "volume": "54.0M",
-      "avg_volume": "22.6M",
-      "rel_volume": "12.5x",
+      "ticker": "GGG",
+      "price": "$77.43",
+      "change": "-2.35%",
+      "volume": "19.5M",
+      "avg_volume": "1.5M",
+      "rel_volume": "13.4x",
       "high_dollar_volume": true
     },
     {
-      "ticker": "TENX",
-      "price": "$1.79",
-      "change": "-15.96%",
-      "volume": "9.7M",
-      "avg_volume": "4.2M",
-      "rel_volume": "12.0x",
+      "ticker": "AIM",
+      "price": "$0.23",
+      "change": "-12.54%",
+      "volume": "126.1M",
+      "avg_volume": "10.1M",
+      "rel_volume": "12.5x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "MOBX",
+      "price": "$1.32",
+      "change": "+18.92%",
+      "volume": "17.9M",
+      "avg_volume": "1.7M",
+      "rel_volume": "10.4x",
       "high_dollar_volume": false
     },
     {
       "ticker": "EIX",
       "price": "$53.98",
       "change": "-23.07%",
-      "volume": "6.2M",
+      "volume": "24.8M",
       "avg_volume": "2.9M",
-      "rel_volume": "11.2x",
+      "rel_volume": "8.6x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "PCG",
+      "price": "$13.27",
+      "change": "-20.06%",
+      "volume": "154.0M",
+      "avg_volume": "22.6M",
+      "rel_volume": "6.8x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "BTAI",
+      "price": "$0.16",
+      "change": "-10.25%",
+      "volume": "10.8M",
+      "avg_volume": "1.9M",
+      "rel_volume": "5.6x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "CLX",
+      "price": "$97.68",
+      "change": "-4.73%",
+      "volume": "13.5M",
+      "avg_volume": "2.5M",
+      "rel_volume": "5.4x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "CSGP",
+      "price": "$32.07",
+      "change": "-0.47%",
+      "volume": "33.5M",
+      "avg_volume": "7.1M",
+      "rel_volume": "4.7x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "TENX",
+      "price": "$1.84",
+      "change": "-13.62%",
+      "volume": "17.2M",
+      "avg_volume": "4.2M",
+      "rel_volume": "4.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "NEOV",
+      "price": "$4.24",
+      "change": "+26.95%",
+      "volume": "10.2M",
+      "avg_volume": "2.5M",
+      "rel_volume": "4.0x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "HWM",
+      "price": "$244.95",
+      "change": "-7.51%",
+      "volume": "9.6M",
+      "avg_volume": "2.7M",
+      "rel_volume": "3.6x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "HLF",
+      "price": "$10.99",
+      "change": "-11.58%",
+      "volume": "5.5M",
+      "avg_volume": "1.6M",
+      "rel_volume": "3.5x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "ASST",
+      "price": "$24.22",
+      "change": "+11.41%",
+      "volume": "15.2M",
+      "avg_volume": "4.9M",
+      "rel_volume": "3.1x",
       "high_dollar_volume": true
     }
   ]
