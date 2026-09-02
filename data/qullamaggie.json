@@ -1,13 +1,20 @@
 {
-  "date": "2026-09-01",
-  "updated_at": "2026-09-01T22:49:32.552751+00:00",
+  "date": "2026-09-02",
+  "updated_at": "2026-09-02T17:11:16.807061+00:00",
   "stocks": [
     {
       "ticker": "SB",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 8.75,
-      "avg_rank": 0.935
+      "close": 8.94,
+      "avg_rank": 0.9585
+    },
+    {
+      "ticker": "SM",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 38.72,
+      "avg_rank": 0.9341
     }
   ]
 }
