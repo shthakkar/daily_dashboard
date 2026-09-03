@@ -1,141 +1,123 @@
 {
-  "date": "2026-09-02",
-  "updated_at": "2026-09-02T22:52:43.816211+00:00",
+  "date": "2026-09-03",
+  "updated_at": "2026-09-03T17:05:41.480657+00:00",
   "stocks": [
     {
-      "ticker": "CTSO",
-      "price": "$0.38",
-      "change": "+13.55%",
-      "volume": "5.8M",
-      "avg_volume": "155.3K",
-      "rel_volume": "37.1x",
+      "ticker": "TVA",
+      "price": "$10.54",
+      "change": "-0.09%",
+      "volume": "7.3M",
+      "avg_volume": "34.5K",
+      "rel_volume": "369.7x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "DH",
-      "price": "$1.04",
-      "change": "+15.26%",
-      "volume": "8.7M",
-      "avg_volume": "351.4K",
-      "rel_volume": "24.8x",
+      "ticker": "SPWR",
+      "price": "$0.40",
+      "change": "+56.59%",
+      "volume": "242.5M",
+      "avg_volume": "4.9M",
+      "rel_volume": "86.3x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "DDC",
-      "price": "$0.32",
-      "change": "-6.22%",
-      "volume": "11.2M",
-      "avg_volume": "478.2K",
-      "rel_volume": "23.5x",
+      "ticker": "CHPT",
+      "price": "$8.90",
+      "change": "+71.42%",
+      "volume": "29.5M",
+      "avg_volume": "610.1K",
+      "rel_volume": "84.4x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "TLYS",
+      "price": "$4.14",
+      "change": "+8.64%",
+      "volume": "11.4M",
+      "avg_volume": "326.4K",
+      "rel_volume": "61.0x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "BIAF",
+      "price": "$11.90",
+      "change": "+22.10%",
+      "volume": "15.8M",
+      "avg_volume": "1.7M",
+      "rel_volume": "16.5x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "RARE",
+      "price": "$14.77",
+      "change": "-44.35%",
+      "volume": "17.4M",
+      "avg_volume": "2.4M",
+      "rel_volume": "12.6x",
       "high_dollar_volume": false
     },
     {
       "ticker": "GPRO",
-      "price": "$1.69",
-      "change": "+37.40%",
-      "volume": "267.4M",
-      "avg_volume": "17.1M",
-      "rel_volume": "15.6x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "TCRX",
-      "price": "$0.38",
-      "change": "-42.80%",
-      "volume": "8.4M",
-      "avg_volume": "592.4K",
-      "rel_volume": "14.2x",
+      "price": "$1.50",
+      "change": "-11.54%",
+      "volume": "142.4M",
+      "avg_volume": "21.4M",
+      "rel_volume": "11.6x",
       "high_dollar_volume": false
-    },
-    {
-      "ticker": "LHAI",
-      "price": "$1.10",
-      "change": "+34.02%",
-      "volume": "92.6M",
-      "avg_volume": "7.9M",
-      "rel_volume": "11.8x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "VIVK",
-      "price": "$0.90",
-      "change": "+14.95%",
-      "volume": "79.4M",
-      "avg_volume": "6.8M",
-      "rel_volume": "11.7x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "GTLB",
-      "price": "$49.59",
-      "change": "+9.98%",
-      "volume": "29.0M",
-      "avg_volume": "5.2M",
-      "rel_volume": "5.5x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "FRVO",
-      "price": "$17.98",
-      "change": "-8.96%",
-      "volume": "19.6M",
-      "avg_volume": "3.7M",
-      "rel_volume": "5.3x",
-      "high_dollar_volume": true
     },
     {
       "ticker": "GPUS",
-      "price": "$0.20",
-      "change": "-17.09%",
-      "volume": "116.6M",
-      "avg_volume": "22.5M",
-      "rel_volume": "5.2x",
+      "price": "$0.19",
+      "change": "-6.70%",
+      "volume": "89.8M",
+      "avg_volume": "23.5M",
+      "rel_volume": "6.7x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "DELL",
-      "price": "$492.20",
-      "change": "+15.81%",
-      "volume": "36.7M",
-      "avg_volume": "7.3M",
-      "rel_volume": "5.0x",
+      "ticker": "WOOF",
+      "price": "$2.62",
+      "change": "-0.45%",
+      "volume": "6.5M",
+      "avg_volume": "1.9M",
+      "rel_volume": "5.8x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "CPB",
+      "price": "$21.53",
+      "change": "-9.44%",
+      "volume": "24.0M",
+      "avg_volume": "8.0M",
+      "rel_volume": "5.2x",
       "high_dollar_volume": true
     },
     {
-      "ticker": "MDB",
-      "price": "$375.40",
-      "change": "-13.54%",
-      "volume": "7.4M",
-      "avg_volume": "1.6M",
+      "ticker": "VSXY",
+      "price": "$73.11",
+      "change": "-13.80%",
+      "volume": "5.2M",
+      "avg_volume": "1.9M",
+      "rel_volume": "4.9x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "SNOW",
+      "price": "$367.98",
+      "change": "+20.32%",
+      "volume": "15.0M",
+      "avg_volume": "5.6M",
       "rel_volume": "4.7x",
       "high_dollar_volume": true
     },
     {
-      "ticker": "PCG",
-      "price": "$13.33",
-      "change": "-5.19%",
-      "volume": "118.8M",
-      "avg_volume": "26.6M",
-      "rel_volume": "4.5x",
+      "ticker": "DELL",
+      "price": "$515.30",
+      "change": "+4.69%",
+      "volume": "13.8M",
+      "avg_volume": "7.6M",
+      "rel_volume": "3.2x",
       "high_dollar_volume": true
-    },
-    {
-      "ticker": "EIX",
-      "price": "$55.19",
-      "change": "-6.14%",
-      "volume": "12.4M",
-      "avg_volume": "3.5M",
-      "rel_volume": "3.5x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "RARE",
-      "price": "$26.53",
-      "change": "+2.79%",
-      "volume": "7.0M",
-      "avg_volume": "2.3M",
-      "rel_volume": "3.0x",
-      "high_dollar_volume": false
     }
   ]
 }
