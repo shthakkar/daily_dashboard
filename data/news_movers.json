@@ -1,122 +1,140 @@
 {
   "date": "2026-09-03",
-  "updated_at": "2026-09-03T17:05:41.480657+00:00",
+  "updated_at": "2026-09-03T22:50:25.796284+00:00",
   "stocks": [
     {
       "ticker": "TVA",
-      "price": "$10.54",
-      "change": "-0.09%",
-      "volume": "7.3M",
+      "price": "$10.55",
+      "change": "+0.00%",
+      "volume": "7.7M",
       "avg_volume": "34.5K",
-      "rel_volume": "369.7x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "SPWR",
-      "price": "$0.40",
-      "change": "+56.59%",
-      "volume": "242.5M",
-      "avg_volume": "4.9M",
-      "rel_volume": "86.3x",
+      "rel_volume": "222.6x",
       "high_dollar_volume": false
     },
     {
       "ticker": "CHPT",
-      "price": "$8.90",
-      "change": "+71.42%",
-      "volume": "29.5M",
+      "price": "$9.08",
+      "change": "+74.95%",
+      "volume": "43.9M",
       "avg_volume": "610.1K",
-      "rel_volume": "84.4x",
+      "rel_volume": "72.0x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "SPWR",
+      "price": "$0.40",
+      "change": "+58.21%",
+      "volume": "291.5M",
+      "avg_volume": "4.9M",
+      "rel_volume": "59.5x",
       "high_dollar_volume": false
     },
     {
       "ticker": "TLYS",
-      "price": "$4.14",
-      "change": "+8.64%",
-      "volume": "11.4M",
+      "price": "$4.40",
+      "change": "+15.49%",
+      "volume": "13.5M",
       "avg_volume": "326.4K",
-      "rel_volume": "61.0x",
+      "rel_volume": "41.4x",
       "high_dollar_volume": false
     },
     {
       "ticker": "BIAF",
-      "price": "$11.90",
-      "change": "+22.10%",
-      "volume": "15.8M",
+      "price": "$12.78",
+      "change": "+31.08%",
+      "volume": "19.2M",
       "avg_volume": "1.7M",
-      "rel_volume": "16.5x",
+      "rel_volume": "11.6x",
       "high_dollar_volume": false
     },
     {
       "ticker": "RARE",
-      "price": "$14.77",
-      "change": "-44.35%",
-      "volume": "17.4M",
+      "price": "$14.85",
+      "change": "-44.03%",
+      "volume": "27.1M",
       "avg_volume": "2.4M",
-      "rel_volume": "12.6x",
-      "high_dollar_volume": false
+      "rel_volume": "11.2x",
+      "high_dollar_volume": true
     },
     {
       "ticker": "GPRO",
-      "price": "$1.50",
-      "change": "-11.54%",
-      "volume": "142.4M",
+      "price": "$1.39",
+      "change": "-17.75%",
+      "volume": "177.9M",
       "avg_volume": "21.4M",
-      "rel_volume": "11.6x",
+      "rel_volume": "8.3x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "WOOF",
+      "price": "$2.52",
+      "change": "-4.18%",
+      "volume": "11.0M",
+      "avg_volume": "1.9M",
+      "rel_volume": "5.6x",
       "high_dollar_volume": false
     },
     {
       "ticker": "GPUS",
       "price": "$0.19",
-      "change": "-6.70%",
-      "volume": "89.8M",
+      "change": "-3.63%",
+      "volume": "124.0M",
       "avg_volume": "23.5M",
-      "rel_volume": "6.7x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "WOOF",
-      "price": "$2.62",
-      "change": "-0.45%",
-      "volume": "6.5M",
-      "avg_volume": "1.9M",
-      "rel_volume": "5.8x",
+      "rel_volume": "5.3x",
       "high_dollar_volume": false
     },
     {
       "ticker": "CPB",
-      "price": "$21.53",
-      "change": "-9.44%",
-      "volume": "24.0M",
+      "price": "$22.12",
+      "change": "-6.96%",
+      "volume": "37.4M",
       "avg_volume": "8.0M",
-      "rel_volume": "5.2x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "VSXY",
-      "price": "$73.11",
-      "change": "-13.80%",
-      "volume": "5.2M",
-      "avg_volume": "1.9M",
-      "rel_volume": "4.9x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "SNOW",
-      "price": "$367.98",
-      "change": "+20.32%",
-      "volume": "15.0M",
-      "avg_volume": "5.6M",
       "rel_volume": "4.7x",
       "high_dollar_volume": true
     },
     {
-      "ticker": "DELL",
-      "price": "$515.30",
-      "change": "+4.69%",
-      "volume": "13.8M",
-      "avg_volume": "7.6M",
-      "rel_volume": "3.2x",
+      "ticker": "VSXY",
+      "price": "$73.64",
+      "change": "-13.17%",
+      "volume": "7.7M",
+      "avg_volume": "1.9M",
+      "rel_volume": "4.2x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "CLYM",
+      "price": "$14.59",
+      "change": "-3.06%",
+      "volume": "5.5M",
+      "avg_volume": "1.4M",
+      "rel_volume": "4.0x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "SNOW",
+      "price": "$356.47",
+      "change": "+16.55%",
+      "volume": "21.8M",
+      "avg_volume": "5.6M",
+      "rel_volume": "3.9x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "HPE",
+      "price": "$54.44",
+      "change": "+5.04%",
+      "volume": "72.1M",
+      "avg_volume": "21.5M",
+      "rel_volume": "3.4x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "PL",
+      "price": "$18.35",
+      "change": "-8.20%",
+      "volume": "31.8M",
+      "avg_volume": "10.3M",
+      "rel_volume": "3.1x",
       "high_dollar_volume": true
     }
   ]
