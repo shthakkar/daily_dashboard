@@ -1,34 +1,34 @@
 {
-  "date": "2026-09-03",
-  "updated_at": "2026-09-03T22:50:25.630148+00:00",
+  "date": "2026-09-04",
+  "updated_at": "2026-09-04T16:54:36.219299+00:00",
   "bands": [
     {
       "label": "Small Cap",
       "tickers": [
         {
-          "ticker": "OVE",
-          "perf_week": "28.32%",
-          "perf_month": "17.76%"
-        },
-        {
-          "ticker": "NTK",
-          "perf_week": "25.00%",
-          "perf_month": "31.58%"
+          "ticker": "PRO",
+          "perf_week": "206.93%",
+          "perf_month": "152.72%"
         },
         {
           "ticker": "ITN",
-          "perf_week": "23.94%",
-          "perf_month": "16.12%"
+          "perf_week": "45.74%",
+          "perf_month": "35.29%"
         },
         {
-          "ticker": "MC",
-          "perf_week": "21.76%",
-          "perf_month": "20.41%"
+          "ticker": "TTO",
+          "perf_week": "30.97%",
+          "perf_month": "33.02%"
         },
         {
-          "ticker": "RNM",
-          "perf_week": "21.23%",
-          "perf_month": "54.90%"
+          "ticker": "NTK",
+          "perf_week": "28.88%",
+          "perf_month": "34.19%"
+        },
+        {
+          "ticker": "RD",
+          "perf_week": "24.39%",
+          "perf_month": "23.39%"
         }
       ]
     },
@@ -36,29 +36,29 @@
       "label": "Mid Cap",
       "tickers": [
         {
-          "ticker": "MED",
-          "perf_week": "22.19%",
-          "perf_month": "28.45%"
-        },
-        {
-          "ticker": "LMT",
-          "perf_week": "16.89%",
-          "perf_month": "32.89%"
-        },
-        {
-          "ticker": "NXC",
-          "perf_week": "16.78%",
-          "perf_month": "26.06%"
-        },
-        {
           "ticker": "SST",
-          "perf_week": "16.00%",
-          "perf_month": "115.42%"
+          "perf_week": "25.50%",
+          "perf_month": "121.65%"
+        },
+        {
+          "ticker": "RVO",
+          "perf_week": "23.80%",
+          "perf_month": "-20.50%"
+        },
+        {
+          "ticker": "LTE",
+          "perf_week": "23.55%",
+          "perf_month": "16.66%"
+        },
+        {
+          "ticker": "IR",
+          "perf_week": "17.71%",
+          "perf_month": "12.85%"
         },
         {
           "ticker": "ARS",
-          "perf_week": "15.69%",
-          "perf_month": "35.76%"
+          "perf_week": "17.51%",
+          "perf_month": "29.07%"
         }
       ]
     },
@@ -67,28 +67,28 @@
       "tickers": [
         {
           "ticker": "MMT",
-          "perf_week": "19.54%",
-          "perf_month": "26.61%"
+          "perf_week": "26.15%",
+          "perf_month": "27.92%"
         },
         {
-          "ticker": "STC",
-          "perf_week": "14.80%",
-          "perf_month": "37.88%"
+          "ticker": "BRS",
+          "perf_week": "19.44%",
+          "perf_month": "1.23%"
         },
         {
           "ticker": "OOD",
-          "perf_week": "13.63%",
-          "perf_month": "34.40%"
-        },
-        {
-          "ticker": "LNY",
-          "perf_week": "11.81%",
-          "perf_month": "15.64%"
+          "perf_week": "19.26%",
+          "perf_month": "37.08%"
         },
         {
           "ticker": "E",
-          "perf_week": "11.52%",
-          "perf_month": "13.47%"
+          "perf_week": "17.55%",
+          "perf_month": "8.21%"
+        },
+        {
+          "ticker": "RCL",
+          "perf_week": "17.55%",
+          "perf_month": "61.87%"
         }
       ]
     }
