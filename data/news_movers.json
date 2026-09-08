@@ -1,5 +1,78 @@
 {
-  "date": "2026-09-07",
-  "updated_at": "2026-09-07T23:04:01.941285+00:00",
-  "stocks": []
+  "date": "2026-09-08",
+  "updated_at": "2026-09-08T17:17:38.281607+00:00",
+  "stocks": [
+    {
+      "ticker": "PDSB",
+      "price": "$0.31",
+      "change": "+40.59%",
+      "volume": "442.0M",
+      "avg_volume": "1.3M",
+      "rel_volume": "572.4x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "GCDT",
+      "price": "$0.74",
+      "change": "+97.41%",
+      "volume": "291.2M",
+      "avg_volume": "1.9M",
+      "rel_volume": "247.3x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "MOBX",
+      "price": "$1.29",
+      "change": "+39.23%",
+      "volume": "123.7M",
+      "avg_volume": "1.4M",
+      "rel_volume": "151.6x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "TRUG",
+      "price": "$0.41",
+      "change": "+9.04%",
+      "volume": "42.9M",
+      "avg_volume": "2.8M",
+      "rel_volume": "25.3x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "BJDX",
+      "price": "$1.05",
+      "change": "+26.74%",
+      "volume": "42.8M",
+      "avg_volume": "4.8M",
+      "rel_volume": "14.8x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "DYN",
+      "price": "$20.61",
+      "change": "-15.12%",
+      "volume": "11.3M",
+      "avg_volume": "2.2M",
+      "rel_volume": "8.4x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "HWM",
+      "price": "$239.21",
+      "change": "-7.74%",
+      "volume": "6.5M",
+      "avg_volume": "2.8M",
+      "rel_volume": "3.8x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "IONS",
+      "price": "$56.17",
+      "change": "-3.30%",
+      "volume": "6.1M",
+      "avg_volume": "3.0M",
+      "rel_volume": "3.4x",
+      "high_dollar_volume": true
+    }
+  ]
 }
