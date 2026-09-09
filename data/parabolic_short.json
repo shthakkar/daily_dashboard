@@ -1,34 +1,34 @@
 {
   "date": "2026-09-09",
-  "updated_at": "2026-09-09T17:11:40.972706+00:00",
+  "updated_at": "2026-09-09T22:46:27.632465+00:00",
   "bands": [
     {
       "label": "Small Cap",
       "tickers": [
         {
           "ticker": "RD",
-          "perf_week": "49.84%",
-          "perf_month": "56.80%"
-        },
-        {
-          "ticker": "NTK",
-          "perf_week": "41.76%",
-          "perf_month": "45.91%"
-        },
-        {
-          "ticker": "RBS",
-          "perf_week": "41.32%",
-          "perf_month": "47.79%"
+          "perf_week": "49.61%",
+          "perf_month": "56.56%"
         },
         {
           "ticker": "TRX",
-          "perf_week": "38.80%",
-          "perf_month": "41.98%"
+          "perf_week": "40.02%",
+          "perf_month": "43.23%"
         },
         {
-          "ticker": "UAI",
-          "perf_week": "38.25%",
-          "perf_month": "24.63%"
+          "ticker": "NTK",
+          "perf_week": "39.77%",
+          "perf_month": "43.86%"
+        },
+        {
+          "ticker": "RBS",
+          "perf_week": "36.72%",
+          "perf_month": "42.97%"
+        },
+        {
+          "ticker": "OSE",
+          "perf_week": "36.51%",
+          "perf_month": "2.47%"
         }
       ]
     },
@@ -37,28 +37,28 @@
       "tickers": [
         {
           "ticker": "EI",
-          "perf_week": "35.23%",
-          "perf_month": "14.56%"
-        },
-        {
-          "ticker": "EHR",
-          "perf_week": "27.22%",
-          "perf_month": "-8.25%"
+          "perf_week": "36.32%",
+          "perf_month": "15.48%"
         },
         {
           "ticker": "OHU",
-          "perf_week": "27.07%",
-          "perf_month": "13.43%"
+          "perf_week": "28.35%",
+          "perf_month": "14.57%"
         },
         {
-          "ticker": "XTI",
-          "perf_week": "25.43%",
-          "perf_month": "-4.65%"
+          "ticker": "EHR",
+          "perf_week": "24.77%",
+          "perf_month": "-10.02%"
         },
         {
           "ticker": "XL",
-          "perf_week": "22.58%",
-          "perf_month": "3.15%"
+          "perf_week": "24.17%",
+          "perf_month": "4.49%"
+        },
+        {
+          "ticker": "IOT",
+          "perf_week": "24.06%",
+          "perf_month": "13.76%"
         }
       ]
     },
@@ -67,28 +67,28 @@
       "tickers": [
         {
           "ticker": "E",
-          "perf_week": "27.70%",
-          "perf_month": "29.52%"
+          "perf_week": "26.05%",
+          "perf_month": "27.85%"
         },
         {
           "ticker": "MTC",
-          "perf_week": "24.86%",
-          "perf_month": "25.81%"
+          "perf_week": "23.94%",
+          "perf_month": "24.89%"
         },
         {
           "ticker": "MMT",
-          "perf_week": "23.69%",
-          "perf_month": "17.79%"
+          "perf_week": "23.87%",
+          "perf_month": "17.96%"
         },
         {
           "ticker": "UT",
-          "perf_week": "21.48%",
-          "perf_month": "10.00%"
+          "perf_week": "23.66%",
+          "perf_month": "11.98%"
         },
         {
           "ticker": "OCN",
-          "perf_week": "21.34%",
-          "perf_month": "1.87%"
+          "perf_week": "21.81%",
+          "perf_month": "2.27%"
         }
       ]
     }
