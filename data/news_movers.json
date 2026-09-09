@@ -1,87 +1,69 @@
 {
-  "date": "2026-09-08",
-  "updated_at": "2026-09-08T23:00:14.207883+00:00",
+  "date": "2026-09-09",
+  "updated_at": "2026-09-09T17:11:41.242229+00:00",
   "stocks": [
     {
-      "ticker": "PDSB",
-      "price": "$0.30",
-      "change": "+36.36%",
-      "volume": "489.5M",
-      "avg_volume": "1.3M",
-      "rel_volume": "382.2x",
+      "ticker": "IRD",
+      "price": "$5.72",
+      "change": "+31.68%",
+      "volume": "41.4M",
+      "avg_volume": "1.1M",
+      "rel_volume": "62.7x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "GCDT",
-      "price": "$0.91",
-      "change": "+143.25%",
-      "volume": "408.4M",
-      "avg_volume": "1.9M",
-      "rel_volume": "209.2x",
+      "ticker": "ZTG",
+      "price": "$0.75",
+      "change": "+10.28%",
+      "volume": "27.6M",
+      "avg_volume": "1.2M",
+      "rel_volume": "37.7x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "TTAN",
+      "price": "$57.36",
+      "change": "-29.69%",
+      "volume": "16.6M",
+      "avg_volume": "1.5M",
+      "rel_volume": "18.7x",
       "high_dollar_volume": true
     },
     {
-      "ticker": "MOBX",
-      "price": "$1.27",
-      "change": "+36.54%",
-      "volume": "133.4M",
+      "ticker": "TNON",
+      "price": "$3.31",
+      "change": "-1.49%",
+      "volume": "10.4M",
       "avg_volume": "1.4M",
-      "rel_volume": "98.6x",
+      "rel_volume": "12.8x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "TRUG",
-      "price": "$0.44",
-      "change": "+16.54%",
-      "volume": "49.9M",
+      "ticker": "SCNX",
+      "price": "$0.37",
+      "change": "+2.01%",
+      "volume": "8.3M",
+      "avg_volume": "2.5M",
+      "rel_volume": "5.6x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "IRT",
+      "price": "$15.18",
+      "change": "-4.59%",
+      "volume": "7.3M",
       "avg_volume": "2.8M",
-      "rel_volume": "17.7x",
+      "rel_volume": "4.5x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "SST",
-      "price": "$5.00",
-      "change": "+30.55%",
-      "volume": "6.2M",
-      "avg_volume": "401.9K",
-      "rel_volume": "15.3x",
+      "ticker": "BRZE",
+      "price": "$24.44",
+      "change": "-19.35%",
+      "volume": "6.3M",
+      "avg_volume": "2.5M",
+      "rel_volume": "4.4x",
       "high_dollar_volume": false
-    },
-    {
-      "ticker": "BJDX",
-      "price": "$1.03",
-      "change": "+23.74%",
-      "volume": "46.1M",
-      "avg_volume": "4.8M",
-      "rel_volume": "9.6x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "DYN",
-      "price": "$20.31",
-      "change": "-16.35%",
-      "volume": "17.2M",
-      "avg_volume": "2.2M",
-      "rel_volume": "7.7x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "HWM",
-      "price": "$231.53",
-      "change": "-10.70%",
-      "volume": "11.7M",
-      "avg_volume": "2.8M",
-      "rel_volume": "4.2x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "IONS",
-      "price": "$56.71",
-      "change": "-2.38%",
-      "volume": "9.2M",
-      "avg_volume": "3.0M",
-      "rel_volume": "3.1x",
-      "high_dollar_volume": true
     }
   ]
 }
