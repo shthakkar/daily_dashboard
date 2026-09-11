@@ -1,34 +1,27 @@
 {
   "date": "2026-09-11",
-  "updated_at": "2026-09-11T17:04:00.612325+00:00",
+  "updated_at": "2026-09-11T22:49:57.693186+00:00",
   "stocks": [
     {
       "ticker": "SB",
-      "tightness": 2.4,
+      "tightness": 2.5,
       "rating": "Wide",
-      "close": 8.48,
-      "avg_rank": 0.9387
-    },
-    {
-      "ticker": "TX",
-      "tightness": 2.2,
-      "rating": "Wide",
-      "close": 57.61,
-      "avg_rank": 0.9225
+      "close": 8.51,
+      "avg_rank": 0.9388
     },
     {
       "ticker": "SM",
-      "tightness": 1.3,
+      "tightness": 1.4,
       "rating": "Wide",
-      "close": 38.13,
-      "avg_rank": 0.9663
+      "close": 38.1,
+      "avg_rank": 0.9637
     },
     {
       "ticker": "DBE",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 37.35,
-      "avg_rank": 0.945
+      "close": 37.18,
+      "avg_rank": 0.9425
     }
   ]
 }
