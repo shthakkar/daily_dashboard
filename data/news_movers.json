@@ -1,113 +1,86 @@
 {
-  "date": "2026-09-10",
-  "updated_at": "2026-09-10T22:50:01.381794+00:00",
+  "date": "2026-09-11",
+  "updated_at": "2026-09-11T17:04:00.609705+00:00",
   "stocks": [
     {
-      "ticker": "DBGI",
-      "price": "$6.79",
-      "change": "+81.07%",
-      "volume": "28.2M",
-      "avg_volume": "173.8K",
-      "rel_volume": "162.2x",
+      "ticker": "AENT",
+      "price": "$6.45",
+      "change": "+17.07%",
+      "volume": "7.3M",
+      "avg_volume": "17.9K",
+      "rel_volume": "715.9x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "CDT",
-      "price": "$0.34",
-      "change": "-42.54%",
-      "volume": "43.9M",
-      "avg_volume": "754.2K",
-      "rel_volume": "58.2x",
+      "ticker": "TRUG",
+      "price": "$0.63",
+      "change": "+70.23%",
+      "volume": "323.3M",
+      "avg_volume": "3.7M",
+      "rel_volume": "153.8x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "ACVA",
+      "price": "$10.44",
+      "change": "+44.60%",
+      "volume": "92.1M",
+      "avg_volume": "3.9M",
+      "rel_volume": "41.5x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "OPTT",
+      "price": "$0.11",
+      "change": "-31.25%",
+      "volume": "54.4M",
+      "avg_volume": "4.8M",
+      "rel_volume": "19.9x",
       "high_dollar_volume": false
     },
     {
       "ticker": "RWT",
-      "price": "$3.63",
-      "change": "-14.79%",
-      "volume": "42.8M",
-      "avg_volume": "2.6M",
-      "rel_volume": "16.5x",
+      "price": "$3.52",
+      "change": "-3.17%",
+      "volume": "22.7M",
+      "avg_volume": "3.3M",
+      "rel_volume": "12.2x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "COO",
-      "price": "$54.17",
-      "change": "-14.67%",
-      "volume": "18.6M",
-      "avg_volume": "2.4M",
-      "rel_volume": "7.9x",
+      "ticker": "KPTI",
+      "price": "$1.46",
+      "change": "-10.14%",
+      "volume": "5.2M",
+      "avg_volume": "1.4M",
+      "rel_volume": "6.7x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "TENB",
+      "price": "$30.61",
+      "change": "-4.42%",
+      "volume": "12.3M",
+      "avg_volume": "3.7M",
+      "rel_volume": "5.9x",
       "high_dollar_volume": true
     },
     {
-      "ticker": "NFE",
-      "price": "$0.33",
-      "change": "+20.87%",
-      "volume": "18.9M",
-      "avg_volume": "3.0M",
-      "rel_volume": "6.3x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "AEO",
-      "price": "$14.53",
-      "change": "-13.97%",
-      "volume": "28.4M",
-      "avg_volume": "4.9M",
-      "rel_volume": "5.7x",
+      "ticker": "SMR",
+      "price": "$8.77",
+      "change": "-14.10%",
+      "volume": "61.1M",
+      "avg_volume": "31.9M",
+      "rel_volume": "3.4x",
       "high_dollar_volume": true
     },
     {
-      "ticker": "ACVA",
-      "price": "$7.22",
-      "change": "-2.04%",
-      "volume": "19.5M",
-      "avg_volume": "3.6M",
-      "rel_volume": "5.3x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "AVAV",
-      "price": "$147.07",
-      "change": "+4.45%",
-      "volume": "8.8M",
-      "avg_volume": "1.7M",
-      "rel_volume": "5.2x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "WLTH",
-      "price": "$10.88",
-      "change": "+15.01%",
-      "volume": "7.2M",
-      "avg_volume": "1.5M",
-      "rel_volume": "4.9x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "NAVN",
-      "price": "$20.26",
-      "change": "-21.75%",
-      "volume": "19.2M",
-      "avg_volume": "4.0M",
-      "rel_volume": "4.8x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "SURG",
-      "price": "$0.16",
-      "change": "-4.69%",
-      "volume": "72.7M",
-      "avg_volume": "15.7M",
-      "rel_volume": "4.6x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "KVUE",
-      "price": "$17.79",
-      "change": "+0.23%",
-      "volume": "64.4M",
-      "avg_volume": "20.4M",
-      "rel_volume": "3.2x",
+      "ticker": "ORCL",
+      "price": "$151.92",
+      "change": "-0.67%",
+      "volume": "56.6M",
+      "avg_volume": "32.0M",
+      "rel_volume": "3.1x",
       "high_dollar_volume": true
     }
   ]
