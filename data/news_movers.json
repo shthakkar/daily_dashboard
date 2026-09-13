@@ -1,15 +1,5 @@
 {
-  "date": "2026-09-12",
-  "updated_at": "2026-09-12T16:14:36.008751+00:00",
-  "stocks": [
-    {
-      "ticker": "OPTT",
-      "price": "$0.11",
-      "change": "-33.44%",
-      "volume": "63.6M",
-      "avg_volume": "4.8M",
-      "rel_volume": "13.2x",
-      "high_dollar_volume": false
-    }
-  ]
+  "date": "2026-09-13",
+  "updated_at": "2026-09-13T17:00:54.966823+00:00",
+  "stocks": []
 }
