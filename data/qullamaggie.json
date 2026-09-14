@@ -1,34 +1,41 @@
 {
   "date": "2026-09-14",
-  "updated_at": "2026-09-14T18:33:32.469374+00:00",
+  "updated_at": "2026-09-14T23:25:37.509145+00:00",
   "stocks": [
     {
       "ticker": "S",
-      "tightness": 6.7,
+      "tightness": 6.6,
       "rating": "Tight",
-      "close": 22.87,
-      "avg_rank": 0.9301
+      "close": 22.61,
+      "avg_rank": 0.9233
     },
     {
       "ticker": "NET",
-      "tightness": 3.3,
+      "tightness": 3.4,
       "rating": "Wide",
-      "close": 333.33,
-      "avg_rank": 0.951
+      "close": 330.36,
+      "avg_rank": 0.9455
+    },
+    {
+      "ticker": "PLX",
+      "tightness": 1.7,
+      "rating": "Wide",
+      "close": 2.77,
+      "avg_rank": 0.9208
     },
     {
       "ticker": "DBE",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 37.66,
-      "avg_rank": 0.9277
+      "avg_rank": 0.9233
     },
     {
       "ticker": "SM",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 39.29,
-      "avg_rank": 0.9571
+      "close": 39.03,
+      "avg_rank": 0.953
     }
   ]
 }
