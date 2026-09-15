@@ -1,113 +1,176 @@
 {
   "date": "2026-09-15",
-  "updated_at": "2026-09-15T17:41:14.110712+00:00",
+  "updated_at": "2026-09-15T23:09:48.171869+00:00",
   "stocks": [
     {
-      "ticker": "VRA",
-      "price": "$4.00",
-      "change": "+31.58%",
-      "volume": "9.3M",
-      "avg_volume": "152.1K",
-      "rel_volume": "92.6x",
+      "ticker": "MEDS",
+      "price": "$1.62",
+      "change": "+87.22%",
+      "volume": "64.5M",
+      "avg_volume": "272.3K",
+      "rel_volume": "236.8x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "TPST",
+      "price": "$0.76",
+      "change": "-3.68%",
+      "volume": "24.6M",
+      "avg_volume": "231.6K",
+      "rel_volume": "106.1x",
       "high_dollar_volume": false
     },
     {
       "ticker": "CTNT",
       "price": "$0.06",
-      "change": "-57.99%",
-      "volume": "162.3M",
+      "change": "-59.18%",
+      "volume": "243.5M",
       "avg_volume": "2.8M",
-      "rel_volume": "87.7x",
+      "rel_volume": "86.7x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "CNTB",
-      "price": "$1.10",
-      "change": "-36.52%",
-      "volume": "9.5M",
-      "avg_volume": "699.2K",
-      "rel_volume": "20.6x",
+      "ticker": "VRA",
+      "price": "$4.09",
+      "change": "+34.54%",
+      "volume": "11.5M",
+      "avg_volume": "152.1K",
+      "rel_volume": "75.8x",
       "high_dollar_volume": false
     },
     {
       "ticker": "FBDT",
-      "price": "$0.95",
-      "change": "+48.87%",
-      "volume": "16.6M",
+      "price": "$1.00",
+      "change": "+55.98%",
+      "volume": "75.7M",
       "avg_volume": "1.4M",
-      "rel_volume": "18.4x",
+      "rel_volume": "55.3x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "CNTB",
+      "price": "$1.17",
+      "change": "-32.17%",
+      "volume": "11.7M",
+      "avg_volume": "699.2K",
+      "rel_volume": "16.7x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "SWMR",
+      "price": "$23.04",
+      "change": "-28.36%",
+      "volume": "5.5M",
+      "avg_volume": "374.0K",
+      "rel_volume": "14.8x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "TRUG",
+      "price": "$0.54",
+      "change": "-15.30%",
+      "volume": "144.5M",
+      "avg_volume": "10.9M",
+      "rel_volume": "13.2x",
       "high_dollar_volume": false
     },
     {
       "ticker": "PLAY",
-      "price": "$6.82",
-      "change": "-19.54%",
-      "volume": "12.2M",
+      "price": "$6.86",
+      "change": "-19.01%",
+      "volume": "16.6M",
       "avg_volume": "1.8M",
-      "rel_volume": "10.4x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "SDST",
-      "price": "$0.14",
-      "change": "+4.56%",
-      "volume": "8.7M",
-      "avg_volume": "1.7M",
-      "rel_volume": "8.0x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "VERA",
-      "price": "$33.24",
-      "change": "-2.39%",
-      "volume": "8.7M",
-      "avg_volume": "2.2M",
-      "rel_volume": "6.0x",
+      "rel_volume": "9.3x",
       "high_dollar_volume": false
     },
     {
       "ticker": "BWIN",
-      "price": "$32.48",
-      "change": "+1.51%",
-      "volume": "5.8M",
+      "price": "$32.49",
+      "change": "+1.53%",
+      "volume": "12.0M",
       "avg_volume": "1.8M",
-      "rel_volume": "5.0x",
+      "rel_volume": "6.8x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "SDST",
+      "price": "$0.14",
+      "change": "+0.00%",
+      "volume": "10.9M",
+      "avg_volume": "1.7M",
+      "rel_volume": "6.6x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "RIME",
+      "price": "$0.22",
+      "change": "-11.38%",
+      "volume": "5.1M",
+      "avg_volume": "816.4K",
+      "rel_volume": "6.2x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "ALHC",
+      "price": "$10.37",
+      "change": "-19.86%",
+      "volume": "28.5M",
+      "avg_volume": "5.1M",
+      "rel_volume": "5.6x",
       "high_dollar_volume": false
     },
     {
       "ticker": "DVLT",
       "price": "$0.16",
-      "change": "-15.01%",
-      "volume": "100.5M",
+      "change": "-18.24%",
+      "volume": "157.7M",
       "avg_volume": "32.3M",
-      "rel_volume": "4.7x",
+      "rel_volume": "4.9x",
       "high_dollar_volume": false
     },
     {
+      "ticker": "VERA",
+      "price": "$33.67",
+      "change": "-1.12%",
+      "volume": "10.5M",
+      "avg_volume": "2.2M",
+      "rel_volume": "4.8x",
+      "high_dollar_volume": true
+    },
+    {
       "ticker": "FPS",
-      "price": "$31.91",
-      "change": "+11.40%",
-      "volume": "21.7M",
+      "price": "$31.36",
+      "change": "+9.50%",
+      "volume": "32.4M",
       "avg_volume": "7.7M",
       "rel_volume": "4.2x",
       "high_dollar_volume": true
     },
     {
       "ticker": "SYY",
-      "price": "$79.51",
-      "change": "-4.82%",
-      "volume": "8.8M",
+      "price": "$79.60",
+      "change": "-4.72%",
+      "volume": "13.7M",
       "avg_volume": "3.3M",
-      "rel_volume": "4.0x",
+      "rel_volume": "4.1x",
       "high_dollar_volume": true
     },
     {
-      "ticker": "ALHC",
-      "price": "$10.07",
-      "change": "-22.14%",
-      "volume": "13.5M",
-      "avg_volume": "5.1M",
-      "rel_volume": "4.0x",
+      "ticker": "GNW",
+      "price": "$10.01",
+      "change": "-5.57%",
+      "volume": "9.8M",
+      "avg_volume": "3.1M",
+      "rel_volume": "3.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "EU",
+      "price": "$0.93",
+      "change": "-0.04%",
+      "volume": "12.4M",
+      "avg_volume": "4.1M",
+      "rel_volume": "3.0x",
       "high_dollar_volume": false
     }
   ]
