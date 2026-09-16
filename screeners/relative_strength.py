@@ -10,7 +10,7 @@ def _fmt(v: float) -> str:
 
 
 def run(momentum: pd.DataFrame) -> dict:
-    top = momentum[momentum["avg_rank"] >= 0.97].sort_values("avg_rank", ascending=False)
+    top = momentum[momentum["avg_rank"] >= 0.95].sort_values("avg_rank", ascending=False)
     stocks = [
         {
             "ticker":   ticker,
