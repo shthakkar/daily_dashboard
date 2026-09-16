@@ -1,33 +1,60 @@
 {
   "date": "2026-09-16",
-  "updated_at": "2026-09-16T13:13:20.990572+00:00",
+  "updated_at": "2026-09-16T20:36:21.034846+00:00",
   "stocks": [
     {
-      "ticker": "AMZE",
-      "price": "$0.13",
-      "change": "-2.91%",
-      "volume": "16.2M",
-      "avg_volume": "5.1M",
-      "rel_volume": "63.1x",
-      "high_dollar_volume": false
+      "ticker": "MEDS",
+      "price": "$6.07",
+      "change": "+274.69%",
+      "volume": "186.7M",
+      "avg_volume": "1.3M",
+      "rel_volume": "143.1x",
+      "high_dollar_volume": true
     },
     {
-      "ticker": "GPUS",
-      "price": "$0.19",
-      "change": "-1.49%",
-      "volume": "9.8M",
-      "avg_volume": "27.1M",
-      "rel_volume": "7.2x",
-      "high_dollar_volume": false
+      "ticker": "BWIN",
+      "price": "$32.04",
+      "change": "-1.39%",
+      "volume": "19.5M",
+      "avg_volume": "1.9M",
+      "rel_volume": "10.0x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "FANG",
+      "price": "$194.54",
+      "change": "-8.03%",
+      "volume": "15.4M",
+      "avg_volume": "2.0M",
+      "rel_volume": "7.5x",
+      "high_dollar_volume": true
     },
     {
       "ticker": "DVLT",
-      "price": "$0.17",
-      "change": "+7.39%",
-      "volume": "10.4M",
+      "price": "$0.18",
+      "change": "+12.62%",
+      "volume": "160.9M",
       "avg_volume": "34.2M",
-      "rel_volume": "6.1x",
+      "rel_volume": "4.7x",
       "high_dollar_volume": false
+    },
+    {
+      "ticker": "AMZE",
+      "price": "$0.13",
+      "change": "-2.54%",
+      "volume": "21.8M",
+      "avg_volume": "5.1M",
+      "rel_volume": "4.2x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "HBAN",
+      "price": "$15.82",
+      "change": "-5.55%",
+      "volume": "76.7M",
+      "avg_volume": "23.0M",
+      "rel_volume": "3.3x",
+      "high_dollar_volume": true
     }
   ]
 }

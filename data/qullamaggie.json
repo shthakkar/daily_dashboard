@@ -1,41 +1,48 @@
 {
   "date": "2026-09-16",
-  "updated_at": "2026-09-16T13:13:20.994006+00:00",
+  "updated_at": "2026-09-16T20:36:21.038622+00:00",
   "stocks": [
     {
       "ticker": "S",
-      "tightness": 5.3,
-      "rating": "Medium",
-      "close": 23.48,
-      "avg_rank": 0.9272
+      "tightness": 3.8,
+      "rating": "Wide",
+      "close": 23.17,
+      "avg_rank": 0.9634
+    },
+    {
+      "ticker": "TX",
+      "tightness": 3.8,
+      "rating": "Wide",
+      "close": 56.98,
+      "avg_rank": 0.9205
     },
     {
       "ticker": "SB",
-      "tightness": 4.1,
-      "rating": "Medium",
-      "close": 8.61,
-      "avg_rank": 0.9284
+      "tightness": 3.7,
+      "rating": "Wide",
+      "close": 8.75,
+      "avg_rank": 0.9457
     },
     {
       "ticker": "NET",
-      "tightness": 2.4,
+      "tightness": 2.2,
       "rating": "Wide",
-      "close": 327.23,
-      "avg_rank": 0.9393
+      "close": 324.65,
+      "avg_rank": 0.9596
+    },
+    {
+      "ticker": "SM",
+      "tightness": 1.9,
+      "rating": "Wide",
+      "close": 38.16,
+      "avg_rank": 0.9306
     },
     {
       "ticker": "DBE",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 38.99,
-      "avg_rank": 0.9454
-    },
-    {
-      "ticker": "SM",
-      "tightness": 1.0,
-      "rating": "Wide",
-      "close": 41.29,
-      "avg_rank": 0.9684
+      "close": 37.84,
+      "avg_rank": 0.9255
     }
   ]
 }
