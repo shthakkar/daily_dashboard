@@ -1,34 +1,34 @@
 {
   "date": "2026-09-17",
-  "updated_at": "2026-09-17T13:14:22.917647+00:00",
+  "updated_at": "2026-09-17T20:37:15.272471+00:00",
   "bands": [
     {
       "label": "Small Cap",
       "tickers": [
         {
           "ticker": "LOO",
-          "perf_week": "58.07%",
-          "perf_month": "46.15%"
+          "perf_week": "63.39%",
+          "perf_month": "51.08%"
+        },
+        {
+          "ticker": "NDP",
+          "perf_week": "53.52%",
+          "perf_month": "319.83%"
         },
         {
           "ticker": "CVA",
-          "perf_week": "44.88%",
-          "perf_month": "37.09%"
+          "perf_week": "45.15%",
+          "perf_month": "37.35%"
         },
         {
-          "ticker": "EIM",
-          "perf_week": "39.27%",
-          "perf_month": "14.98%"
+          "ticker": "YPH",
+          "perf_week": "39.55%",
+          "perf_month": "281.18%"
         },
         {
-          "ticker": "BNX",
-          "perf_week": "35.62%",
-          "perf_month": "18.30%"
-        },
-        {
-          "ticker": "DGR",
-          "perf_week": "28.46%",
-          "perf_month": "36.67%"
+          "ticker": "LMT",
+          "perf_week": "38.00%",
+          "perf_month": "22.19%"
         }
       ]
     },
@@ -36,29 +36,29 @@
       "label": "Mid Cap",
       "tickers": [
         {
-          "ticker": "MAT",
-          "perf_week": "27.60%",
-          "perf_month": "25.96%"
+          "ticker": "DGR",
+          "perf_week": "60.85%",
+          "perf_month": "71.14%"
         },
         {
-          "ticker": "OVA",
-          "perf_week": "24.82%",
-          "perf_month": "44.52%"
+          "ticker": "MAT",
+          "perf_week": "30.52%",
+          "perf_month": "28.85%"
         },
         {
           "ticker": "AI",
-          "perf_week": "19.05%",
-          "perf_month": "36.48%"
-        },
-        {
-          "ticker": "WST",
-          "perf_week": "17.46%",
-          "perf_month": "28.34%"
+          "perf_week": "28.62%",
+          "perf_month": "47.45%"
         },
         {
           "ticker": "GS",
-          "perf_week": "17.32%",
-          "perf_month": "29.03%"
+          "perf_week": "25.00%",
+          "perf_month": "37.48%"
+        },
+        {
+          "ticker": "OVA",
+          "perf_week": "23.10%",
+          "perf_month": "42.53%"
         }
       ]
     },
@@ -66,29 +66,29 @@
       "label": "Large Cap",
       "tickers": [
         {
-          "ticker": "NRC",
-          "perf_week": "27.98%",
-          "perf_month": "9.90%"
+          "ticker": "EM",
+          "perf_week": "36.81%",
+          "perf_month": "62.80%"
         },
         {
           "ticker": "PS",
-          "perf_week": "25.55%",
-          "perf_month": "1.33%"
+          "perf_week": "30.34%",
+          "perf_month": "5.20%"
         },
         {
-          "ticker": "EM",
-          "perf_week": "22.91%",
-          "perf_month": "46.27%"
+          "ticker": "WST",
+          "perf_week": "22.63%",
+          "perf_month": "33.99%"
+        },
+        {
+          "ticker": "LMN",
+          "perf_week": "21.82%",
+          "perf_month": "30.21%"
         },
         {
           "ticker": "VTY",
-          "perf_week": "21.50%",
-          "perf_month": "29.18%"
-        },
-        {
-          "ticker": "S",
-          "perf_week": "16.10%",
-          "perf_month": "2.21%"
+          "perf_week": "21.32%",
+          "perf_month": "28.99%"
         }
       ]
     }
