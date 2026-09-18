@@ -42,17 +42,26 @@ def _chunked(items: list[str], size: int) -> list[list[str]]:
     return [items[i : i + size] for i in range(0, len(items), size)]
 
 
-def _download_chunk(tickers: list[str], period: str) -> tuple[pd.DataFrame, pd.DataFrame]:
+_OHLCV_FIELDS = ("Open", "High", "Low", "Close", "Volume")
+
+
+def _download_chunk(tickers: list[str], period: str) -> dict[str, pd.DataFrame]:
+    """Download one chunk; returns {field: wide DataFrame} for the OHLCV fields."""
     try:
         raw = yf.download(tickers, period=period, progress=False, auto_adjust=True)
     except Exception as e:
         print(f"Warning: chunk download failed ({e}), will retry")
-        return pd.DataFrame(), pd.DataFrame()
-    close, high = raw["Close"], raw["High"]
-    if isinstance(close, pd.Series):
-        close = close.to_frame(name=tickers[0])
-        high = high.to_frame(name=tickers[0])
-    return close, high
+        return {}
+    out: dict[str, pd.DataFrame] = {}
+    for field in _OHLCV_FIELDS:
+        try:
+            frame = raw[field]
+        except KeyError:
+            continue
+        if isinstance(frame, pd.Series):
+            frame = frame.to_frame(name=tickers[0])
+        out[field] = frame
+    return out
 
 
 def _drop_trailing_empty_row(
@@ -77,8 +86,11 @@ def _drop_trailing_empty_row(
 
 
 def download_prices(
-    tickers: list[str], period: str = "1y", extra_tickers: list[str] | None = None
-) -> tuple[pd.DataFrame, dict[str, pd.DataFrame]]:
+    tickers: list[str],
+    period: str = "1y",
+    extra_tickers: list[str] | None = None,
+    include_ohlcv: bool = False,
+) -> tuple:
     """Downloads Close/High prices for `tickers` plus `extra_tickers` in chunks.
 
     Yahoo rate-limits large single-batch downloads (yfinance swallows the 429s
@@ -91,11 +103,15 @@ def download_prices(
     filtered to columns with sufficient history. `extras` maps each extra ticker
     (e.g. index symbols like SPY/^VIX that shouldn't go through the universe
     history filter or appear in the momentum screeners) to its own close/high frame.
+
+    With include_ohlcv=True a third element is returned: `ohlcv`, mapping each
+    universe ticker to its own Open/High/Low/Close/Volume DataFrame (same single
+    batched download, no extra Yahoo requests).
     """
     extra_tickers = extra_tickers or []
     all_tickers = list(dict.fromkeys(tickers + extra_tickers))
 
-    close_parts, high_parts = [], []
+    parts: dict[str, list[pd.DataFrame]] = {f: [] for f in _OHLCV_FIELDS}
     pending = all_tickers
     for attempt in range(_MAX_RETRIES + 1):
         if not pending:
@@ -106,11 +122,19 @@ def download_prices(
 
         still_missing = []
         for chunk in _chunked(pending, _CHUNK_SIZE):
-            close, high = _download_chunk(chunk, period)
-            got = [t for t in chunk if t in close.columns and close[t].notna().any()]
+            frames = _download_chunk(chunk, period)
+            close_chunk = frames.get("Close")
+            got = [
+                t for t in chunk
+                if close_chunk is not None
+                and t in close_chunk.columns
+                and close_chunk[t].notna().any()
+            ]
             if got:
-                close_parts.append(close[got])
-                high_parts.append(high[got])
+                for field, frame in frames.items():
+                    cols = [t for t in got if t in frame.columns]
+                    if cols:
+                        parts[field].append(frame[cols])
             still_missing.extend(t for t in chunk if t not in got)
             time.sleep(_CHUNK_DELAY_SECONDS)
         pending = still_missing
@@ -118,9 +142,13 @@ def download_prices(
     if pending:
         print(f"Warning: {len(pending)} ticker(s) had no data after {_MAX_RETRIES + 1} attempts")
 
-    close = pd.concat(close_parts, axis=1) if close_parts else pd.DataFrame()
-    high = pd.concat(high_parts, axis=1) if high_parts else pd.DataFrame()
-    close, high = _drop_trailing_empty_row(close, high)
+    wide = {f: (pd.concat(p, axis=1) if p else pd.DataFrame()) for f, p in parts.items()}
+    close, high = _drop_trailing_empty_row(wide["Close"], wide["High"])
+    # keep the remaining fields aligned with the trimmed close frame
+    aligned = {
+        f: (wide[f].loc[close.index] if not wide[f].empty else wide[f])
+        for f in _OHLCV_FIELDS
+    }
 
     extras = {
         t: pd.DataFrame({"close": close[t], "high": high[t]})
@@ -133,7 +161,15 @@ def download_prices(
     if universe.empty:
         raise ValueError("No price data returned after filtering")
 
-    return universe, extras
+    if not include_ohlcv:
+        return universe, extras
+
+    ohlcv = {
+        t: pd.DataFrame({f: aligned[f][t] for f in _OHLCV_FIELDS}).dropna(subset=["Close"])
+        for t in universe.columns
+        if all(t in aligned[f].columns for f in _OHLCV_FIELDS)
+    }
+    return universe, extras, ohlcv
 
 
 def compute_momentum(data: pd.DataFrame) -> pd.DataFrame:
