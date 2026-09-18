@@ -24,7 +24,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/latest.json data/parabolic_short.json data/qullamaggie.json data/relative_strength.json data/news_movers.json
+          git add data/latest.json data/capitulation_fade.json data/qullamaggie.json data/relative_strength.json data/news_movers.json
           if git diff --staged --quiet; then
             exit 0
           fi
@@ -40,7 +40,7 @@ jobs:
             # whatever landed on master mid-run (e.g. workflow or screener edits),
             # which also trips the workflows-permission check on push.
             git reset origin/master
-            git add data/latest.json data/parabolic_short.json data/qullamaggie.json data/relative_strength.json data/news_movers.json
+            git add data/latest.json data/capitulation_fade.json data/qullamaggie.json data/relative_strength.json data/news_movers.json
             if git diff --staged --quiet; then
               # Our data already matches the new tip; the next push is a no-op.
               if git push; then
