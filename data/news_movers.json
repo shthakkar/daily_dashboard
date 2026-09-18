@@ -1,177 +1,60 @@
 {
-  "date": "2026-09-17",
-  "updated_at": "2026-09-17T20:37:15.530484+00:00",
+  "date": "2026-09-18",
+  "updated_at": "2026-09-18T13:10:36.565883+00:00",
   "stocks": [
     {
-      "ticker": "VRME",
-      "price": "$0.77",
-      "change": "+14.50%",
-      "volume": "10.3M",
-      "avg_volume": "48.2K",
-      "rel_volume": "213.0x",
+      "ticker": "TCRT",
+      "price": "$1.48",
+      "change": "-7.50%",
+      "volume": "25.4M",
+      "avg_volume": "253.2K",
+      "rel_volume": "2007.7x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "AIFF",
-      "price": "$1.28",
-      "change": "+37.62%",
-      "volume": "11.3M",
-      "avg_volume": "115.2K",
-      "rel_volume": "98.3x",
+      "ticker": "BENF",
+      "price": "$0.71",
+      "change": "+12.96%",
+      "volume": "43.1M",
+      "avg_volume": "2.9M",
+      "rel_volume": "293.9x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "AEMD",
-      "price": "$6.78",
-      "change": "+374.13%",
-      "volume": "92.0M",
-      "avg_volume": "1.1M",
-      "rel_volume": "86.8x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "NUWE",
-      "price": "$1.09",
-      "change": "+33.74%",
-      "volume": "58.4M",
-      "avg_volume": "3.4M",
-      "rel_volume": "16.9x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "BIAF",
-      "price": "$8.75",
-      "change": "+63.55%",
-      "volume": "25.1M",
-      "avg_volume": "2.5M",
-      "rel_volume": "9.8x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "ATCH",
+      "ticker": "CDT",
       "price": "$0.17",
-      "change": "+7.75%",
-      "volume": "17.5M",
+      "change": "-12.82%",
+      "volume": "11.9M",
       "avg_volume": "1.9M",
-      "rel_volume": "9.4x",
+      "rel_volume": "123.1x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "SRFM",
-      "price": "$0.63",
-      "change": "+27.77%",
-      "volume": "45.5M",
-      "avg_volume": "5.6M",
-      "rel_volume": "8.2x",
+      "ticker": "TRUG",
+      "price": "$0.50",
+      "change": "+30.80%",
+      "volume": "76.9M",
+      "avg_volume": "13.4M",
+      "rel_volume": "114.4x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "GNRC",
-      "price": "$207.23",
-      "change": "+18.34%",
-      "volume": "8.0M",
-      "avg_volume": "1.1M",
-      "rel_volume": "7.6x",
+      "ticker": "MEDS",
+      "price": "$5.88",
+      "change": "+26.62%",
+      "volume": "8.8M",
+      "avg_volume": "4.4M",
+      "rel_volume": "39.8x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "CRWV",
+      "price": "$79.84",
+      "change": "-0.05%",
+      "volume": "6.8M",
+      "avg_volume": "28.4M",
+      "rel_volume": "4.8x",
       "high_dollar_volume": true
-    },
-    {
-      "ticker": "SDGR",
-      "price": "$30.24",
-      "change": "+26.37%",
-      "volume": "8.9M",
-      "avg_volume": "1.2M",
-      "rel_volume": "7.2x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "SURG",
-      "price": "$0.16",
-      "change": "+8.90%",
-      "volume": "129.1M",
-      "avg_volume": "20.9M",
-      "rel_volume": "6.2x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "QSR",
-      "price": "$73.29",
-      "change": "-2.21%",
-      "volume": "14.8M",
-      "avg_volume": "2.8M",
-      "rel_volume": "5.4x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "FLNC",
-      "price": "$7.66",
-      "change": "-15.36%",
-      "volume": "33.7M",
-      "avg_volume": "7.7M",
-      "rel_volume": "4.4x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "ACVA",
-      "price": "$10.48",
-      "change": "+0.58%",
-      "volume": "23.2M",
-      "avg_volume": "6.3M",
-      "rel_volume": "3.7x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "RARE",
-      "price": "$14.50",
-      "change": "+12.58%",
-      "volume": "12.1M",
-      "avg_volume": "3.3M",
-      "rel_volume": "3.6x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "VNRX",
-      "price": "$0.28",
-      "change": "+3.64%",
-      "volume": "27.8M",
-      "avg_volume": "7.7M",
-      "rel_volume": "3.6x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "VEEA",
-      "price": "$5.33",
-      "change": "-12.62%",
-      "volume": "14.3M",
-      "avg_volume": "4.0M",
-      "rel_volume": "3.5x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "SECZ",
-      "price": "$8.93",
-      "change": "+14.93%",
-      "volume": "5.8M",
-      "avg_volume": "1.6M",
-      "rel_volume": "3.5x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "LEN",
-      "price": "$79.70",
-      "change": "+1.71%",
-      "volume": "8.6M",
-      "avg_volume": "2.7M",
-      "rel_volume": "3.2x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "AMZE",
-      "price": "$0.14",
-      "change": "+8.26%",
-      "volume": "16.7M",
-      "avg_volume": "5.5M",
-      "rel_volume": "3.0x",
-      "high_dollar_volume": false
     }
   ]
 }
