@@ -16,14 +16,29 @@ def now_utc_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
-def fix_finviz_ticker(ticker: str) -> str:
-    """finvizfinance's HTML scraper grabs the full text of the ticker cell, which
-    Finviz now renders as a one-letter avatar placeholder span (e.g. "Z") followed
-    by the real ticker link ("ZYME") -- so `.text` comes back as "ZZYME". The
-    duplicated character is always the ticker's own first letter, so stripping it
-    reconstructs the real symbol regardless of length or hyphens.
+def fix_finviz_tickers(tickers: list[str]) -> list[str]:
+    """Undo finvizfinance's ticker-cell scraping quirk when it is present.
+
+    Finviz sometimes renders each ticker cell as a one-letter avatar placeholder
+    span (the ticker's own first letter) followed by the real ticker link, so the
+    scraped text comes back with the first letter doubled ("ZYME" -> "ZZYME").
+    But the markup changes over time: as of 2026-09-17 the raw text is clean
+    ("AAOI", "AAPL") and stripping unconditionally mangles every symbol
+    ("AAON" -> "AON", which then 404s on Yahoo -- or worse, collides with a
+    different real ticker).
+
+    The two states are easy to tell apart: in the duplicated state essentially
+    every scraped ticker starts with a doubled letter, while in the clean state
+    only a handful of real tickers do (AA, AAOI, ...). So strip the leading
+    character only when a majority of the scrape shows the doubling.
     """
-    return ticker[1:]
+    if not tickers:
+        return tickers
+    doubled = sum(1 for t in tickers if len(t) >= 2 and t[0] == t[1])
+    if doubled / len(tickers) > 0.5:
+        print(f"Detected doubled-letter ticker scrape ({doubled}/{len(tickers)}), stripping")
+        return [t[1:] if len(t) >= 2 and t[0] == t[1] else t for t in tickers]
+    return tickers
 
 
 def get_finviz_tickers(filters: dict) -> list[str]:
@@ -32,7 +47,7 @@ def get_finviz_tickers(filters: dict) -> list[str]:
         screen.set_filter(filters_dict=filters)
         df = screen.screener_view()
         if df is not None and not df.empty:
-            return [fix_finviz_ticker(t) for t in df["Ticker"].tolist()]
+            return fix_finviz_tickers(df["Ticker"].tolist())
     except Exception as e:
         print(f"Warning: Finviz screener failed ({e}), using fallback tickers")
     return _FALLBACK_TICKERS.copy()
