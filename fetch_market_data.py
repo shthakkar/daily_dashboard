@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from screeners import helpers, news_movers, parabolic_short, qullamaggie, relative_strength
+from screeners import capitulation_fade, helpers, news_movers, qullamaggie, relative_strength
 
 
 def classify_ema_signal(ema10: float, ema20: float) -> str:
@@ -72,20 +72,39 @@ def get_vix_data(vix: pd.DataFrame) -> dict:
 
 
 def main() -> None:
-    # --- Single batched yfinance call: large-cap universe + SPY + VIX ---
+    # --- Single batched yfinance call: large+mid-cap universe + SPY + VIX ---
     # Combined into one request so the run stays under Yahoo's rate limit
-    # instead of issuing separate SPY/VIX/universe calls.
+    # instead of issuing separate SPY/VIX/universe calls. The capitulation
+    # fade screener covers mid caps too (framework targets $2B+), while the
+    # momentum screeners below keep the original large-cap-only universe so
+    # their outputs don't change.
     _LARGE_CAP_FILTERS = {
         "Market Cap.": "+Large (over $10bln)",
         "Price": "Over $20",
         "Average Volume": "Over 500K",
         "Country": "USA",
     }
+    _MID_CAP_FILTERS = {
+        "Market Cap.": "Mid ($2bln to $10bln)",
+        "Price": "Over $20",
+        "Average Volume": "Over 500K",
+        "Country": "USA",
+    }
     try:
-        tickers = helpers.get_finviz_tickers(_LARGE_CAP_FILTERS)
-        price_data, extras = helpers.download_prices(tickers, extra_tickers=["SPY", "^VIX"])
-        momentum = helpers.compute_momentum(price_data)
-        print(f"Universe: {len(tickers)} tickers fetched, {price_data.shape[1]} with sufficient history")
+        large_tickers = helpers.get_finviz_tickers(_LARGE_CAP_FILTERS)
+        mid_tickers = helpers.get_finviz_tickers(_MID_CAP_FILTERS)
+        tickers = list(dict.fromkeys(large_tickers + mid_tickers))
+        price_data, extras, ohlcv = helpers.download_prices(
+            tickers, extra_tickers=["SPY", "^VIX"], include_ohlcv=True
+        )
+        large_cols = [t for t in large_tickers if t in price_data.columns]
+        price_large = price_data[large_cols]
+        momentum = helpers.compute_momentum(price_large)
+        print(
+            f"Universe: {len(tickers)} tickers fetched, "
+            f"{price_data.shape[1]} with sufficient history "
+            f"({len(ohlcv)} with OHLCV)"
+        )
     except Exception as e:
         print(f"Skipping everything: failed to fetch price data: {e}")
         return
@@ -100,13 +119,13 @@ def main() -> None:
     except Exception as e:
         print(f"Skipping market indicators update: {e}")
 
-    # --- Parabolic short (independent — Finviz Performance only, no yfinance) ---
+    # --- Capitulation Fade (needs OHLCV; screens the large+mid universe) ---
     try:
-        result = parabolic_short.run()
-        write_json(result, "data/parabolic_short.json")
-        print(f"Parabolic short: {sum(len(b['tickers']) for b in result['bands'])} tickers across {len(result['bands'])} bands")
+        result = capitulation_fade.run(ohlcv)
+        write_json(result, "data/capitulation_fade.json")
+        print(f"Capitulation fade: {len(result['stocks'])} candidates")
     except Exception as e:
-        print(f"Skipping parabolic short: {e}")
+        print(f"Skipping capitulation fade: {e}")
 
     # --- News Movers (independent — Finviz Custom screener only, no yfinance) ---
     try:
@@ -118,7 +137,7 @@ def main() -> None:
 
     # --- Qullamaggie ---
     try:
-        result = qullamaggie.run(price_data, momentum)
+        result = qullamaggie.run(price_large, momentum)
         write_json(result, "data/qullamaggie.json")
         print(f"Qullamaggie: {len(result['stocks'])} stocks")
     except Exception as e:
