@@ -2,30 +2,30 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from screeners.helpers import _drop_trailing_empty_row, compute_momentum, fix_finviz_ticker, now_utc_iso
+from screeners.helpers import _drop_trailing_empty_row, compute_momentum, fix_finviz_tickers, now_utc_iso
 
 
-# --- fix_finviz_ticker ---
-# finvizfinance's HTML scraper concatenates a one-letter avatar span with the
-# real ticker link text (e.g. "Z" + "ZYME" -> "ZZYME"); these tests use the
-# corrupted (doubled-leading-character) form as input, matching what the
-# scraper actually returns.
+# --- fix_finviz_tickers ---
+# The scraper sometimes doubles the leading letter ("ZYME" -> "ZZYME"); the
+# helper strips only when a majority of the scrape shows the doubling, and
+# leaves clean scrapes untouched.
 
-def test_fix_finviz_ticker_strips_duplicated_leading_char():
-    assert fix_finviz_ticker("ZZYME") == "ZYME"
-
-
-def test_fix_finviz_ticker_single_char_real_ticker():
-    assert fix_finviz_ticker("FF") == "F"
+def test_fix_finviz_tickers_strips_when_majority_doubled():
+    # In a duplicated scrape even a clean-looking "AAPL" is treated as doubled.
+    assert fix_finviz_tickers(["ZZYME", "AAAPL", "MMMM", "AAPL"]) == ["ZYME", "AAPL", "MMM", "APL"]
 
 
-def test_fix_finviz_ticker_naturally_double_leading_letter():
-    # Real ticker "MMM" -> corrupted "MMMM"; stripping one char still recovers it.
-    assert fix_finviz_ticker("MMMM") == "MMM"
+def test_fix_finviz_tickers_leaves_clean_scrape_untouched():
+    # Only a couple of real double-letter tickers (AA, AAOI) -- no stripping.
+    assert fix_finviz_tickers(["AAOI", "AAON", "AAPL", "ABBV", "ABNB", "ABT"]) == ["AAOI", "AAON", "AAPL", "ABBV", "ABNB", "ABT"]
 
 
-def test_fix_finviz_ticker_hyphenated_ticker():
-    assert fix_finviz_ticker("BBRK-B") == "BRK-B"
+def test_fix_finviz_tickers_empty_list():
+    assert fix_finviz_tickers([]) == []
+
+
+def test_fix_finviz_tickers_single_char_tickers_kept():
+    assert fix_finviz_tickers(["A", "F", "T"]) == ["A", "F", "T"]
 
 
 def _make_price_df(tickers, n_days=200):
