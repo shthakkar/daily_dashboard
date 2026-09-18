@@ -5,7 +5,7 @@ import pandas as pd
 from finvizfinance.screener.custom import Custom
 from finvizfinance.util import web_scrap
 
-from .helpers import fix_finviz_ticker, now_utc_iso
+from .helpers import fix_finviz_tickers, now_utc_iso
 
 _FILTERS = {"Country": "USA", "Relative Volume": "Over 3", "Current Volume": "Over 5M"}
 
@@ -119,18 +119,25 @@ def _parse_rows(soup) -> list[dict]:
         cols = row.find_all("td")
         if len(cols) < 7:
             continue
-        # cols[0] is the row-number column; cols[1] is Ticker. Fall back to
-        # finvizfinance's strip-one-character fix if Finviz ever drops the
-        # data attribute, rather than silently dropping the row.
-        ticker = cols[1].get("data-boxover-ticker") or fix_finviz_ticker(cols[1].text)
+        # cols[0] is the row-number column; cols[1] is Ticker. Prefer the
+        # data attribute (always the clean symbol); fall back to the cell text
+        # only if Finviz ever drops the attribute.
+        raw_ticker = cols[1].get("data-boxover-ticker")
         records.append({
-            "Ticker":     ticker,
+            "Ticker":     raw_ticker if raw_ticker else cols[1].text,
+            "_from_text": not raw_ticker,
             "Price":      _parse_number(cols[2].text),
             "Change %":   cols[3].text,
             "Volume":     _parse_number(cols[4].text),
             "Avg Volume": _parse_number(cols[5].text),
             "Rel Volume": _parse_number(cols[6].text),
         })
+    # Repair scraped-text tickers only (data-attribute ones are already clean).
+    text_idx = [i for i, r in enumerate(records) if r.pop("_from_text")]
+    if text_idx:
+        fixed = fix_finviz_tickers([records[i]["Ticker"] for i in text_idx])
+        for i, t in zip(text_idx, fixed):
+            records[i]["Ticker"] = t
     return records
 
 
