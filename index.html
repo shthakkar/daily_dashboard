@@ -164,6 +164,7 @@
     .rs-grid     { grid-template-columns: 90px repeat(4, minmax(70px, 1fr)); min-width: 440px; }
     .para-grid   { grid-template-columns: 90px 1fr 1fr; }
     .movers-grid { grid-template-columns: 90px repeat(5, minmax(60px, 1fr)); min-width: 520px; }
+    .capit-grid   { grid-template-columns: 80px repeat(6, minmax(62px, 1fr)); min-width: 560px; }
     .s-cell      { font-size: 0.8rem; color: #888; white-space: nowrap; }
     .s-cell.dim  { color: #555; }
     .scanner-na  { font-size: 0.8rem; color: #333; display: block; padding: 1rem 1.5rem; }
@@ -195,9 +196,9 @@
   <div class="scanners">
 
     <div class="scanner-section">
-      <div class="scanner-title">Parabolic Short Setups</div>
-      <div class="section-timestamp" id="parabolic-timestamp"></div>
-      <div class="scanner-bands" id="parabolic-bands">
+      <div class="scanner-title">Capitulation Fade</div>
+      <div class="section-timestamp" id="capit-timestamp"></div>
+      <div class="scanner-table" id="capit-rows">
         <span class="scanner-na">Loading...</span>
       </div>
     </div>
@@ -308,53 +309,41 @@
       })
       .catch(() => {});
 
-    freshFetch('data/parabolic_short.json')
+    freshFetch('data/capitulation_fade.json')
       .then(function(r) { return r.json(); })
       .then(function(d) {
         var ts = timestampOf(d);
         if (ts) {
-          document.getElementById('parabolic-timestamp').textContent = 'Updated: ' + formatPSTTimestamp(ts);
+          document.getElementById('capit-timestamp').textContent = 'Updated: ' + formatPSTTimestamp(ts);
         }
-        var container = document.getElementById('parabolic-bands');
+        var container = document.getElementById('capit-rows');
         container.innerHTML = '';
-        d.bands.forEach(function(band) {
-          var bandDiv = document.createElement('div');
-          bandDiv.className = 'scanner-band';
-          var title = document.createElement('div');
-          title.className = 'scanner-band-title';
-          title.textContent = band.label;
-          bandDiv.appendChild(title);
-          if (!band.tickers.length) {
-            var na = document.createElement('span');
-            na.className = 'scanner-na';
-            na.style.padding = '0';
-            na.textContent = 'No data';
-            bandDiv.appendChild(na);
-          } else {
-            var head = document.createElement('div');
-            head.className = 's-head para-grid';
-            head.style.padding = '0.35rem 0';
-            ['Ticker', '1W', '1M'].forEach(function(h) {
-              var c = document.createElement('span'); c.textContent = h; head.appendChild(c);
-            });
-            bandDiv.appendChild(head);
-            band.tickers.forEach(function(t) {
-              var row = document.createElement('div');
-              row.className = 's-row para-grid';
-              row.style.padding = '0.35rem 0';
-              row.style.borderBottom = '1px solid #1e1e1e';
-              var c1 = document.createElement('div'); c1.appendChild(makeTicker(t.ticker, 'short')); row.appendChild(c1);
-              var c2 = document.createElement('span'); c2.className = 's-cell'; c2.textContent = safe(t.perf_week); row.appendChild(c2);
-              var c3 = document.createElement('span'); c3.className = 's-cell'; c3.textContent = safe(t.perf_month); row.appendChild(c3);
-              bandDiv.appendChild(row);
-            });
-          }
-          container.appendChild(bandDiv);
+        if (!d.stocks.length) {
+          container.innerHTML = '<span class="scanner-na">No results</span>';
+          return;
+        }
+        var head = document.createElement('div');
+        head.className = 's-head capit-grid';
+        ['Ticker', 'Setup', 'Score', 'Price', 'Stretch', 'RVOL', '3D'].forEach(function(h) {
+          var c = document.createElement('span'); c.textContent = h; head.appendChild(c);
+        });
+        container.appendChild(head);
+        d.stocks.forEach(function(s) {
+          var row = document.createElement('div');
+          row.className = 's-row capit-grid';
+          var c1 = document.createElement('div'); c1.appendChild(makeTicker(s.ticker, s.direction)); row.appendChild(c1);
+          var c2 = document.createElement('span'); c2.className = 's-cell'; c2.textContent = safe(s.setup); row.appendChild(c2);
+          var c3 = document.createElement('span'); c3.className = 's-cell'; c3.textContent = safe(s.score); row.appendChild(c3);
+          var c4 = document.createElement('span'); c4.className = 's-cell'; c4.textContent = '$' + safe(String(s.close)); row.appendChild(c4);
+          [s.stretch, s.rvol, s.roc3].forEach(function(v) {
+            var c = document.createElement('span'); c.className = 's-cell'; c.textContent = safe(v); row.appendChild(c);
+          });
+          container.appendChild(row);
         });
         attachScannerPopups();
       })
       .catch(function() {
-        document.getElementById('parabolic-bands').innerHTML = '<span class="scanner-na">Data unavailable</span>';
+        document.getElementById('capit-rows').innerHTML = '<span class="scanner-na">Data unavailable</span>';
       });
 
     freshFetch('data/qullamaggie.json')
