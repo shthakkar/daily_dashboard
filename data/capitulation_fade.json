@@ -1,26 +1,76 @@
 {
   "date": "2026-09-18",
-  "updated_at": "2026-09-18T13:10:36.416946+00:00",
+  "updated_at": "2026-09-18T20:33:32.437031+00:00",
   "stocks": [
     {
-      "ticker": "SDGR",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "6/6",
-      "close": 30.24,
-      "stretch": "+45.8%",
-      "rvol": "5.7x",
-      "roc3": "+45.7%"
+      "ticker": "RSI",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 23.3,
+      "stretch": "-10.7%",
+      "rvol": "2.5x",
+      "roc3": "-10.6%"
     },
     {
-      "ticker": "WGS",
-      "setup": "Fade Short",
-      "direction": "short",
+      "ticker": "DNTH",
+      "setup": "Fade Long",
+      "direction": "long",
       "score": "4/6",
-      "close": 104.95,
-      "stretch": "+18.9%",
-      "rvol": "1.6x",
-      "roc3": "+16.9%"
+      "close": 96.81,
+      "stretch": "-9.3%",
+      "rvol": "3.8x",
+      "roc3": "-7.6%"
+    },
+    {
+      "ticker": "NFLX",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 71.79,
+      "stretch": "-9.0%",
+      "rvol": "3.7x",
+      "roc3": "-7.8%"
+    },
+    {
+      "ticker": "CNX",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 32.89,
+      "stretch": "-8.8%",
+      "rvol": "3.8x",
+      "roc3": "-7.1%"
+    },
+    {
+      "ticker": "LAZ",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 35.75,
+      "stretch": "-14.5%",
+      "rvol": "4.8x",
+      "roc3": "-7.5%"
+    },
+    {
+      "ticker": "HUBS",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 216.12,
+      "stretch": "-10.5%",
+      "rvol": "5.3x",
+      "roc3": "-10.7%"
+    },
+    {
+      "ticker": "TRU",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 72.43,
+      "stretch": "-10.1%",
+      "rvol": "3.5x",
+      "roc3": "-6.0%"
     }
   ]
 }
