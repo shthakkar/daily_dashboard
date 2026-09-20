@@ -1,15 +1,24 @@
 {
-  "date": "2026-09-19",
-  "updated_at": "2026-09-19T13:11:27.384923+00:00",
+  "date": "2026-09-20",
+  "updated_at": "2026-09-20T13:10:32.188796+00:00",
   "stocks": [
     {
-      "ticker": "TDUP",
-      "price": "$2.48",
-      "change": "+2.48%",
-      "volume": "10.1M",
-      "avg_volume": "2.4M",
-      "rel_volume": "4.3x",
-      "high_dollar_volume": false
+      "ticker": "DAL",
+      "price": "$79.62",
+      "change": "+0.24%",
+      "volume": "24.9M",
+      "avg_volume": "6.2M",
+      "rel_volume": "4.0x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "ARES",
+      "price": "$123.80",
+      "change": "-1.21%",
+      "volume": "7.9M",
+      "avg_volume": "2.2M",
+      "rel_volume": "3.6x",
+      "high_dollar_volume": true
     },
     {
       "ticker": "SPCX",
@@ -18,15 +27,6 @@
       "volume": "335.7M",
       "avg_volume": "95.8M",
       "rel_volume": "3.5x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "GM",
-      "price": "$82.20",
-      "change": "-5.10%",
-      "volume": "21.1M",
-      "avg_volume": "6.8M",
-      "rel_volume": "3.1x",
       "high_dollar_volume": true
     }
   ]
