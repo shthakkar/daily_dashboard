@@ -1,13 +1,13 @@
 {
   "date": "2026-09-21",
-  "updated_at": "2026-09-21T13:10:56.550111+00:00",
-  "spy_ema": "bearish",
-  "spy_10ema": 760.04,
-  "spy_20ema": 761.12,
-  "spy_last_close": 761.69,
+  "updated_at": "2026-09-21T20:34:04.923847+00:00",
+  "spy_ema": "bullish",
+  "spy_10ema": 762.48,
+  "spy_20ema": 762.3,
+  "spy_last_close": 773.5,
   "spy_52w_high": 777.44,
-  "spy_pct_off_high": -2.03,
+  "spy_pct_off_high": -0.51,
   "spy_off_high_level": "near-high",
-  "vix": 14.81,
+  "vix": 14.87,
   "vix_level": "low"
 }

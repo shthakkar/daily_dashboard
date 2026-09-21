@@ -1,42 +1,78 @@
 {
   "date": "2026-09-21",
-  "updated_at": "2026-09-21T13:11:03.041021+00:00",
+  "updated_at": "2026-09-21T20:34:09.111919+00:00",
   "stocks": [
     {
       "ticker": "GRML",
-      "price": "$7.27",
-      "change": "+155.09%",
-      "volume": "51.4M",
+      "price": "$9.42",
+      "change": "+230.53%",
+      "volume": "210.7M",
       "avg_volume": "427.4K",
-      "rel_volume": "2403.4x",
+      "rel_volume": "493.1x",
       "high_dollar_volume": true
     },
     {
       "ticker": "GLND",
-      "price": "$3.00",
-      "change": "+149.99%",
-      "volume": "54.7M",
+      "price": "$2.88",
+      "change": "+140.00%",
+      "volume": "180.0M",
       "avg_volume": "1.6M",
-      "rel_volume": "686.9x",
+      "rel_volume": "112.9x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "PRTH",
+      "price": "$7.80",
+      "change": "+33.79%",
+      "volume": "18.7M",
+      "avg_volume": "475.8K",
+      "rel_volume": "39.3x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "INV",
+      "price": "$0.88",
+      "change": "+47.26%",
+      "volume": "86.9M",
+      "avg_volume": "3.4M",
+      "rel_volume": "25.6x",
       "high_dollar_volume": false
     },
     {
       "ticker": "WBD",
-      "price": "$29.77",
-      "change": "+7.09%",
-      "volume": "5.4M",
+      "price": "$30.80",
+      "change": "+10.79%",
+      "volume": "233.3M",
       "avg_volume": "21.1M",
-      "rel_volume": "5.1x",
+      "rel_volume": "11.1x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "PSKY",
+      "price": "$9.91",
+      "change": "-2.94%",
+      "volume": "64.5M",
+      "avg_volume": "12.0M",
+      "rel_volume": "5.4x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "VGZ",
+      "price": "$2.74",
+      "change": "+21.24%",
+      "volume": "7.8M",
+      "avg_volume": "1.9M",
+      "rel_volume": "4.2x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "MSTR",
-      "price": "$166.28",
-      "change": "+8.03%",
-      "volume": "5.2M",
-      "avg_volume": "23.8M",
-      "rel_volume": "4.4x",
-      "high_dollar_volume": true
+      "ticker": "NUAI",
+      "price": "$7.65",
+      "change": "+30.55%",
+      "volume": "25.5M",
+      "avg_volume": "7.3M",
+      "rel_volume": "3.5x",
+      "high_dollar_volume": false
     }
   ]
 }
