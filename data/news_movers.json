@@ -1,32 +1,41 @@
 {
-  "date": "2026-09-20",
-  "updated_at": "2026-09-20T13:10:32.188796+00:00",
+  "date": "2026-09-21",
+  "updated_at": "2026-09-21T13:11:03.041021+00:00",
   "stocks": [
     {
-      "ticker": "DAL",
-      "price": "$79.62",
-      "change": "+0.24%",
-      "volume": "24.9M",
-      "avg_volume": "6.2M",
-      "rel_volume": "4.0x",
+      "ticker": "GRML",
+      "price": "$7.27",
+      "change": "+155.09%",
+      "volume": "51.4M",
+      "avg_volume": "427.4K",
+      "rel_volume": "2403.4x",
       "high_dollar_volume": true
     },
     {
-      "ticker": "ARES",
-      "price": "$123.80",
-      "change": "-1.21%",
-      "volume": "7.9M",
-      "avg_volume": "2.2M",
-      "rel_volume": "3.6x",
-      "high_dollar_volume": true
+      "ticker": "GLND",
+      "price": "$3.00",
+      "change": "+149.99%",
+      "volume": "54.7M",
+      "avg_volume": "1.6M",
+      "rel_volume": "686.9x",
+      "high_dollar_volume": false
     },
     {
-      "ticker": "SPCX",
-      "price": "$152.71",
-      "change": "-1.36%",
-      "volume": "335.7M",
-      "avg_volume": "95.8M",
-      "rel_volume": "3.5x",
+      "ticker": "WBD",
+      "price": "$29.77",
+      "change": "+7.09%",
+      "volume": "5.4M",
+      "avg_volume": "21.1M",
+      "rel_volume": "5.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "MSTR",
+      "price": "$166.28",
+      "change": "+8.03%",
+      "volume": "5.2M",
+      "avg_volume": "23.8M",
+      "rel_volume": "4.4x",
       "high_dollar_volume": true
     }
   ]
