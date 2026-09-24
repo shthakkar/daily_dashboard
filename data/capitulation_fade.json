@@ -1,156 +1,66 @@
 {
   "date": "2026-09-24",
-  "updated_at": "2026-09-24T13:10:40.953069+00:00",
+  "updated_at": "2026-09-24T20:33:33.657762+00:00",
   "stocks": [
     {
-      "ticker": "VKTX",
-      "setup": "Fade Short",
-      "direction": "short",
+      "ticker": "ACAD",
+      "setup": "Fade Long",
+      "direction": "long",
       "score": "5/6",
-      "close": 41.65,
-      "stretch": "+25.9%",
-      "rvol": "3.2x",
-      "roc3": "+43.7%"
+      "close": 22.18,
+      "stretch": "-19.7%",
+      "rvol": "3.7x",
+      "roc3": "-18.7%"
     },
     {
-      "ticker": "PLNT",
+      "ticker": "GEN",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 41.0,
-      "stretch": "-18.6%",
-      "rvol": "2.7x",
-      "roc3": "-17.9%"
-    },
-    {
-      "ticker": "ALL",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 225.66,
-      "stretch": "-11.2%",
-      "rvol": "2.4x",
-      "roc3": "-10.5%"
+      "close": 23.07,
+      "stretch": "-22.5%",
+      "rvol": "4.0x",
+      "roc3": "-20.5%"
     },
     {
       "ticker": "AMP",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 502.79,
-      "stretch": "-8.7%",
-      "rvol": "1.3x",
-      "roc3": "-7.9%"
+      "close": 485.15,
+      "stretch": "-11.3%",
+      "rvol": "1.8x",
+      "roc3": "-10.9%"
     },
     {
-      "ticker": "VICR",
+      "ticker": "GRAL",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 283.16,
-      "stretch": "+43.5%",
-      "rvol": "2.0x",
-      "roc3": "+30.9%"
-    },
-    {
-      "ticker": "PAY",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 29.95,
-      "stretch": "-16.7%",
-      "rvol": "2.6x",
-      "roc3": "-17.1%"
-    },
-    {
-      "ticker": "CLDX",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 31.12,
-      "stretch": "-18.8%",
-      "rvol": "2.7x",
-      "roc3": "-18.6%"
-    },
-    {
-      "ticker": "BBT",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 27.91,
-      "stretch": "-9.9%",
-      "rvol": "1.2x",
-      "roc3": "-9.9%"
-    },
-    {
-      "ticker": "CHYM",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 26.46,
-      "stretch": "-18.2%",
-      "rvol": "1.3x",
-      "roc3": "-13.9%"
-    },
-    {
-      "ticker": "RMBS",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 103.47,
-      "stretch": "+18.4%",
-      "rvol": "1.2x",
-      "roc3": "+20.5%"
-    },
-    {
-      "ticker": "INOD",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 71.99,
-      "stretch": "+25.5%",
-      "rvol": "3.5x",
-      "roc3": "+26.0%"
-    },
-    {
-      "ticker": "SNX",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 287.89,
-      "stretch": "+10.2%",
-      "rvol": "3.4x",
-      "roc3": "+8.9%"
-    },
-    {
-      "ticker": "WAFD",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 30.7,
-      "stretch": "-10.7%",
-      "rvol": "1.2x",
-      "roc3": "-5.7%"
-    },
-    {
-      "ticker": "IONQ",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 42.54,
-      "stretch": "+8.8%",
-      "rvol": "3.3x",
-      "roc3": "+8.7%"
+      "close": 125.21,
+      "stretch": "+48.9%",
+      "rvol": "2.9x",
+      "roc3": "+55.0%"
     },
     {
       "ticker": "GME",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 24.2,
-      "stretch": "+17.9%",
+      "close": 25.02,
+      "stretch": "+19.9%",
       "rvol": "1.3x",
-      "roc3": "+6.9%"
+      "roc3": "+9.9%"
+    },
+    {
+      "ticker": "VKTX",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 36.75,
+      "stretch": "+10.7%",
+      "rvol": "4.6x",
+      "roc3": "+22.1%"
     }
   ]
 }
