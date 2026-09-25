@@ -1,56 +1,26 @@
 {
   "date": "2026-09-25",
-  "updated_at": "2026-09-25T13:11:05.079147+00:00",
+  "updated_at": "2026-09-25T20:34:33.073980+00:00",
   "stocks": [
+    {
+      "ticker": "AAON",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 89.1,
+      "stretch": "+14.1%",
+      "rvol": "1.7x",
+      "roc3": "+12.4%"
+    },
     {
       "ticker": "GEN",
       "setup": "Fade Long",
       "direction": "long",
-      "score": "5/6",
-      "close": 23.07,
-      "stretch": "-22.2%",
-      "rvol": "3.9x",
-      "roc3": "-20.9%"
-    },
-    {
-      "ticker": "ACAD",
-      "setup": "Fade Long",
-      "direction": "long",
       "score": "4/6",
-      "close": 22.18,
-      "stretch": "-19.2%",
-      "rvol": "3.7x",
-      "roc3": "-16.0%"
-    },
-    {
-      "ticker": "CCI",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 67.63,
-      "stretch": "-8.0%",
-      "rvol": "1.4x",
-      "roc3": "-7.6%"
-    },
-    {
-      "ticker": "GME",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 25.02,
-      "stretch": "+19.9%",
-      "rvol": "1.3x",
-      "roc3": "+9.9%"
-    },
-    {
-      "ticker": "VKTX",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 36.75,
-      "stretch": "+10.7%",
-      "rvol": "4.7x",
-      "roc3": "+22.1%"
+      "close": 21.62,
+      "stretch": "-26.0%",
+      "rvol": "3.2x",
+      "roc3": "-20.8%"
     }
   ]
 }
