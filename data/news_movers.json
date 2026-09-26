@@ -1,131 +1,14 @@
 {
-  "date": "2026-09-25",
-  "updated_at": "2026-09-25T20:34:33.435742+00:00",
+  "date": "2026-09-26",
+  "updated_at": "2026-09-26T13:10:35.240847+00:00",
   "stocks": [
-    {
-      "ticker": "MGLD",
-      "price": "$1.93",
-      "change": "+93.02%",
-      "volume": "15.5M",
-      "avg_volume": "12.4K",
-      "rel_volume": "1246.8x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "AIFF",
-      "price": "$2.01",
-      "change": "+68.91%",
-      "volume": "140.9M",
-      "avg_volume": "315.6K",
-      "rel_volume": "446.4x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "FTHM",
-      "price": "$0.58",
-      "change": "+12.27%",
-      "volume": "40.0M",
-      "avg_volume": "327.4K",
-      "rel_volume": "122.3x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "KITT",
-      "price": "$2.32",
-      "change": "-21.33%",
-      "volume": "10.2M",
-      "avg_volume": "118.9K",
-      "rel_volume": "85.5x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "FFAI",
-      "price": "$1.61",
-      "change": "+22.90%",
-      "volume": "22.9M",
-      "avg_volume": "998.5K",
-      "rel_volume": "23.0x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "KDK",
-      "price": "$2.43",
-      "change": "-12.59%",
-      "volume": "20.0M",
-      "avg_volume": "1.2M",
-      "rel_volume": "16.6x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "CDT",
-      "price": "$0.08",
-      "change": "-33.88%",
-      "volume": "25.4M",
-      "avg_volume": "2.2M",
-      "rel_volume": "11.7x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "GPUS",
-      "price": "$0.17",
-      "change": "-6.35%",
-      "volume": "226.0M",
-      "avg_volume": "20.5M",
-      "rel_volume": "11.0x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "AKAM",
-      "price": "$113.94",
-      "change": "+3.20%",
-      "volume": "31.6M",
-      "avg_volume": "3.6M",
-      "rel_volume": "8.8x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "GEN",
-      "price": "$21.62",
-      "change": "-6.29%",
-      "volume": "29.6M",
-      "avg_volume": "6.0M",
-      "rel_volume": "4.9x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "MGM",
-      "price": "$32.58",
-      "change": "-3.29%",
-      "volume": "11.2M",
-      "avg_volume": "2.8M",
-      "rel_volume": "4.0x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "AESI",
-      "price": "$12.47",
-      "change": "+13.47%",
-      "volume": "12.2M",
-      "avg_volume": "3.3M",
-      "rel_volume": "3.7x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "EDBL",
-      "price": "$1.24",
-      "change": "+5.08%",
-      "volume": "6.4M",
-      "avg_volume": "1.7M",
-      "rel_volume": "3.7x",
-      "high_dollar_volume": false
-    },
     {
       "ticker": "GRML",
       "price": "$14.66",
       "change": "-1.54%",
-      "volume": "22.3M",
+      "volume": "22.9M",
       "avg_volume": "6.9M",
-      "rel_volume": "3.2x",
+      "rel_volume": "3.3x",
       "high_dollar_volume": true
     }
   ]
