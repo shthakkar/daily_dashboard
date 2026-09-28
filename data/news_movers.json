@@ -1,5 +1,60 @@
 {
-  "date": "2026-09-27",
-  "updated_at": "2026-09-27T13:10:33.628680+00:00",
-  "stocks": []
+  "date": "2026-09-28",
+  "updated_at": "2026-09-28T13:10:31.726905+00:00",
+  "stocks": [
+    {
+      "ticker": "ARAY",
+      "price": "$0.29",
+      "change": "+35.19%",
+      "volume": "175.5M",
+      "avg_volume": "1.2M",
+      "rel_volume": "2911.7x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "VWAV",
+      "price": "$4.47",
+      "change": "-8.21%",
+      "volume": "6.7M",
+      "avg_volume": "129.5K",
+      "rel_volume": "1036.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "LABT",
+      "price": "$2.18",
+      "change": "+30.48%",
+      "volume": "26.3M",
+      "avg_volume": "1.8M",
+      "rel_volume": "289.0x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "SOAR",
+      "price": "$0.34",
+      "change": "+89.19%",
+      "volume": "231.0M",
+      "avg_volume": "32.0M",
+      "rel_volume": "144.4x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "KOD",
+      "price": "$63.56",
+      "change": "+96.48%",
+      "volume": "5.0M",
+      "avg_volume": "731.6K",
+      "rel_volume": "137.1x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "MEDS",
+      "price": "$4.03",
+      "change": "+29.58%",
+      "volume": "12.8M",
+      "avg_volume": "4.7M",
+      "rel_volume": "54.8x",
+      "high_dollar_volume": false
+    }
+  ]
 }
