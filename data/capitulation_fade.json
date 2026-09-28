@@ -1,26 +1,46 @@
 {
   "date": "2026-09-28",
-  "updated_at": "2026-09-28T13:10:31.587934+00:00",
+  "updated_at": "2026-09-28T20:06:02.325335+00:00",
   "stocks": [
     {
-      "ticker": "AAON",
+      "ticker": "KOD",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "5/6",
+      "close": 89.92,
+      "stretch": "+144.4%",
+      "rvol": "13.9x",
+      "roc3": "+185.3%"
+    },
+    {
+      "ticker": "GRAL",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 89.1,
-      "stretch": "+14.1%",
-      "rvol": "1.7x",
-      "roc3": "+12.4%"
+      "close": 132.63,
+      "stretch": "+46.7%",
+      "rvol": "0.8x",
+      "roc3": "+22.2%"
     },
     {
-      "ticker": "GEN",
+      "ticker": "TXG",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 88.5,
+      "stretch": "+22.7%",
+      "rvol": "1.1x",
+      "roc3": "+17.0%"
+    },
+    {
+      "ticker": "MDB",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 21.62,
-      "stretch": "-26.0%",
-      "rvol": "3.2x",
-      "roc3": "-20.8%"
+      "close": 334.68,
+      "stretch": "-14.3%",
+      "rvol": "6.2x",
+      "roc3": "-21.9%"
     }
   ]
 }
