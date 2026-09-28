@@ -1,6 +1,6 @@
 {
   "date": "2026-09-28",
-  "updated_at": "2026-09-28T20:06:02.610886+00:00",
+  "updated_at": "2026-09-28T20:33:54.860035+00:00",
   "stocks": [
     {
       "ticker": "NTAP",
@@ -13,21 +13,21 @@
       "ticker": "MPC",
       "tightness": 3.5,
       "rating": "Wide",
-      "close": 389.53,
-      "avg_rank": 0.9245
+      "close": 389.44,
+      "avg_rank": 0.9241
     },
     {
       "ticker": "DINO",
       "tightness": 3.3,
       "rating": "Wide",
-      "close": 106.21,
+      "close": 106.19,
       "avg_rank": 0.9297
     },
     {
       "ticker": "VLO",
       "tightness": 3.1,
       "rating": "Wide",
-      "close": 389.45,
+      "close": 389.57,
       "avg_rank": 0.9402
     },
     {
@@ -41,7 +41,7 @@
       "ticker": "DELL",
       "tightness": 1.6,
       "rating": "Wide",
-      "close": 543.51,
+      "close": 543.43,
       "avg_rank": 0.9685
     },
     {
@@ -55,7 +55,7 @@
       "ticker": "HPE",
       "tightness": 1.2,
       "rating": "Wide",
-      "close": 62.67,
+      "close": 62.63,
       "avg_rank": 0.9746
     },
     {
@@ -97,7 +97,7 @@
       "ticker": "NET",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 354.07,
+      "close": 353.99,
       "avg_rank": 0.9451
     },
     {
@@ -125,14 +125,14 @@
       "ticker": "RBRK",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 113.04,
-      "avg_rank": 0.9362
+      "close": 113.09,
+      "avg_rank": 0.937
     },
     {
       "ticker": "RVTY",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 151.0,
+      "close": 151.02,
       "avg_rank": 0.9301
     },
     {
@@ -146,7 +146,7 @@
       "ticker": "TWLO",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 287.01,
+      "close": 286.98,
       "avg_rank": 0.9592
     },
     {
