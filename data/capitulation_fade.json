@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-28",
-  "updated_at": "2026-09-28T20:33:54.693243+00:00",
+  "date": "2026-09-29",
+  "updated_at": "2026-09-29T13:11:08.420060+00:00",
   "stocks": [
     {
       "ticker": "KOD",
@@ -11,6 +11,16 @@
       "stretch": "+144.4%",
       "rvol": "13.9x",
       "roc3": "+185.3%"
+    },
+    {
+      "ticker": "HHH",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "5/6",
+      "close": 73.95,
+      "stretch": "+15.8%",
+      "rvol": "2.4x",
+      "roc3": "+16.0%"
     },
     {
       "ticker": "GRAL",
