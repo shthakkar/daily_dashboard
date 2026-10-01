@@ -1,50 +1,167 @@
 {
   "date": "2026-10-01",
-  "updated_at": "2026-10-01T13:10:35.384784+00:00",
+  "updated_at": "2026-10-01T20:08:39.018451+00:00",
   "stocks": [
     {
       "ticker": "NXL",
-      "price": "$6.45",
-      "change": "+50.70%",
-      "volume": "13.8M",
+      "price": "$7.55",
+      "change": "+76.40%",
+      "volume": "60.8M",
       "avg_volume": "11.0K",
-      "rel_volume": "25146.7x",
+      "rel_volume": "5544.6x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "AISP",
+      "price": "$2.22",
+      "change": "+19.35%",
+      "volume": "41.4M",
+      "avg_volume": "311.1K",
+      "rel_volume": "133.1x",
       "high_dollar_volume": false
+    },
+    {
+      "ticker": "FHTX",
+      "price": "$2.92",
+      "change": "-18.21%",
+      "volume": "13.3M",
+      "avg_volume": "379.0K",
+      "rel_volume": "35.2x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "CTVA",
+      "price": "$12.56",
+      "change": "-83.82%",
+      "volume": "87.7M",
+      "avg_volume": "4.5M",
+      "rel_volume": "19.7x",
+      "high_dollar_volume": true
     },
     {
       "ticker": "VEEA",
-      "price": "$3.03",
-      "change": "+39.63%",
-      "volume": "27.5M",
+      "price": "$3.47",
+      "change": "+59.91%",
+      "volume": "79.3M",
       "avg_volume": "4.3M",
-      "rel_volume": "128.7x",
+      "rel_volume": "18.5x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "MEDS",
-      "price": "$3.79",
-      "change": "+19.57%",
-      "volume": "22.3M",
-      "avg_volume": "5.2M",
-      "rel_volume": "85.2x",
+      "ticker": "LQDA",
+      "price": "$27.99",
+      "change": "-7.50%",
+      "volume": "21.5M",
+      "avg_volume": "1.7M",
+      "rel_volume": "12.4x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "QSI",
+      "price": "$1.43",
+      "change": "+33.64%",
+      "volume": "32.3M",
+      "avg_volume": "3.1M",
+      "rel_volume": "10.6x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "MAT",
+      "price": "$15.04",
+      "change": "+18.80%",
+      "volume": "35.6M",
+      "avg_volume": "4.4M",
+      "rel_volume": "8.1x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "VERI",
+      "price": "$0.75",
+      "change": "-37.03%",
+      "volume": "24.7M",
+      "avg_volume": "3.2M",
+      "rel_volume": "7.6x",
       "high_dollar_volume": false
     },
     {
       "ticker": "ABAT",
-      "price": "$2.45",
-      "change": "+10.86%",
-      "volume": "12.1M",
+      "price": "$2.28",
+      "change": "+3.17%",
+      "volume": "21.3M",
       "avg_volume": "3.2M",
-      "rel_volume": "75.0x",
+      "rel_volume": "6.6x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "SOXS",
-      "price": "$32.83",
-      "change": "-0.76%",
-      "volume": "22.0M",
-      "avg_volume": "61.7M",
-      "rel_volume": "7.2x",
+      "ticker": "NKTR",
+      "price": "$46.99",
+      "change": "-22.39%",
+      "volume": "6.1M",
+      "avg_volume": "927.7K",
+      "rel_volume": "6.6x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "MEDS",
+      "price": "$4.06",
+      "change": "+28.08%",
+      "volume": "34.4M",
+      "avg_volume": "5.2M",
+      "rel_volume": "6.6x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "KDK",
+      "price": "$1.67",
+      "change": "-13.02%",
+      "volume": "9.3M",
+      "avg_volume": "1.9M",
+      "rel_volume": "4.9x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "PACB",
+      "price": "$2.51",
+      "change": "+5.91%",
+      "volume": "35.8M",
+      "avg_volume": "8.0M",
+      "rel_volume": "4.5x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "AIB",
+      "price": "$1.49",
+      "change": "+12.03%",
+      "volume": "6.1M",
+      "avg_volume": "1.6M",
+      "rel_volume": "3.9x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "ABUS",
+      "price": "$4.56",
+      "change": "-4.60%",
+      "volume": "16.6M",
+      "avg_volume": "4.2M",
+      "rel_volume": "3.9x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "VMBS",
+      "price": "$44.38",
+      "change": "-0.07%",
+      "volume": "5.6M",
+      "avg_volume": "1.6M",
+      "rel_volume": "3.4x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "SNPS",
+      "price": "$490.54",
+      "change": "+12.78%",
+      "volume": "6.3M",
+      "avg_volume": "1.9M",
+      "rel_volume": "3.4x",
       "high_dollar_volume": true
     }
   ]
