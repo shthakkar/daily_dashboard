@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-30",
-  "updated_at": "2026-09-30T20:08:46.731105+00:00",
+  "date": "2026-10-01",
+  "updated_at": "2026-10-01T13:10:35.396011+00:00",
   "stocks": [
     {
       "ticker": "CORT",
@@ -13,14 +13,14 @@
       "ticker": "SNOW",
       "tightness": 6.8,
       "rating": "Tight",
-      "close": 339.64,
+      "close": 339.56,
       "avg_rank": 0.9262
     },
     {
       "ticker": "VLO",
       "tightness": 3.8,
       "rating": "Wide",
-      "close": 387.94,
+      "close": 387.61,
       "avg_rank": 0.9242
     },
     {
@@ -31,24 +31,31 @@
       "avg_rank": 0.9418
     },
     {
+      "ticker": "FTNT",
+      "tightness": 3.2,
+      "rating": "Wide",
+      "close": 178.76,
+      "avg_rank": 0.9201
+    },
+    {
       "ticker": "PANW",
       "tightness": 3.0,
       "rating": "Wide",
       "close": 397.31,
-      "avg_rank": 0.9287
+      "avg_rank": 0.9291
     },
     {
       "ticker": "DELL",
-      "tightness": 2.2,
+      "tightness": 2.1,
       "rating": "Wide",
-      "close": 538.32,
-      "avg_rank": 0.952
+      "close": 537.95,
+      "avg_rank": 0.9516
     },
     {
       "ticker": "NET",
       "tightness": 1.7,
       "rating": "Wide",
-      "close": 347.24,
+      "close": 347.28,
       "avg_rank": 0.9471
     },
     {
@@ -63,7 +70,7 @@
       "tightness": 1.1,
       "rating": "Wide",
       "close": 611.76,
-      "avg_rank": 0.9459
+      "avg_rank": 0.9463
     },
     {
       "ticker": "CRWD",
@@ -118,28 +125,28 @@
       "ticker": "P",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 130.82,
+      "close": 130.78,
       "avg_rank": 0.9713
     },
     {
       "ticker": "RBRK",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 114.51,
+      "close": 114.47,
       "avg_rank": 0.9443
     },
     {
       "ticker": "RVTY",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 153.02,
+      "close": 152.89,
       "avg_rank": 0.9307
     },
     {
       "ticker": "TWLO",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 292.42,
+      "close": 292.46,
       "avg_rank": 0.9668
     },
     {

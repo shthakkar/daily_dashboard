@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-30",
-  "updated_at": "2026-09-30T20:08:46.570636+00:00",
+  "date": "2026-10-01",
+  "updated_at": "2026-10-01T13:10:35.181558+00:00",
   "stocks": [
     {
       "ticker": "LQDA",
@@ -17,9 +17,9 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 25.53,
-      "stretch": "-8.5%",
-      "rvol": "1.1x",
+      "close": 25.54,
+      "stretch": "-8.4%",
+      "rvol": "1.5x",
       "roc3": "-8.5%"
     },
     {
@@ -29,7 +29,7 @@
       "score": "4/6",
       "close": 541.89,
       "stretch": "+9.4%",
-      "rvol": "3.6x",
+      "rvol": "3.7x",
       "roc3": "+14.0%"
     },
     {
@@ -39,7 +39,7 @@
       "score": "4/6",
       "close": 37.32,
       "stretch": "-12.9%",
-      "rvol": "3.0x",
+      "rvol": "3.4x",
       "roc3": "-9.5%"
     },
     {
@@ -49,8 +49,18 @@
       "score": "4/6",
       "close": 25.84,
       "stretch": "-13.0%",
-      "rvol": "1.8x",
+      "rvol": "2.3x",
       "roc3": "-9.3%"
+    },
+    {
+      "ticker": "RDN",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 30.61,
+      "stretch": "-12.2%",
+      "rvol": "3.5x",
+      "roc3": "-7.3%"
     },
     {
       "ticker": "KOD",
