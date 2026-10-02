@@ -1,42 +1,114 @@
 {
   "date": "2026-10-02",
-  "updated_at": "2026-10-02T13:10:43.424510+00:00",
+  "updated_at": "2026-10-02T20:09:10.694580+00:00",
   "stocks": [
     {
-      "ticker": "SCNX",
-      "price": "$0.21",
-      "change": "+16.77%",
-      "volume": "109.4M",
-      "avg_volume": "2.9M",
-      "rel_volume": "763.7x",
-      "high_dollar_volume": false
-    },
-    {
       "ticker": "FLUX",
-      "price": "$0.38",
-      "change": "-6.30%",
-      "volume": "7.1M",
+      "price": "$0.64",
+      "change": "+57.40%",
+      "volume": "162.3M",
       "avg_volume": "419.6K",
-      "rel_volume": "339.5x",
+      "rel_volume": "386.9x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "NKE",
-      "price": "$32.41",
-      "change": "-7.80%",
-      "volume": "14.6M",
-      "avg_volume": "27.8M",
+      "ticker": "SCNX",
+      "price": "$0.16",
+      "change": "-10.33%",
+      "volume": "161.5M",
+      "avg_volume": "2.9M",
+      "rel_volume": "56.4x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "XRPN",
+      "price": "$39.50",
+      "change": "+68.59%",
+      "volume": "9.1M",
+      "avg_volume": "238.2K",
+      "rel_volume": "38.2x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "CYCU",
+      "price": "$3.82",
+      "change": "+42.01%",
+      "volume": "48.8M",
+      "avg_volume": "2.3M",
+      "rel_volume": "21.4x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "SYNA",
+      "price": "$121.10",
+      "change": "+14.08%",
+      "volume": "7.7M",
+      "avg_volume": "729.1K",
       "rel_volume": "10.5x",
       "high_dollar_volume": true
     },
     {
-      "ticker": "GPUS",
-      "price": "$0.17",
-      "change": "+2.92%",
-      "volume": "7.9M",
-      "avg_volume": "23.8M",
-      "rel_volume": "6.7x",
+      "ticker": "NNBR",
+      "price": "$4.51",
+      "change": "+24.24%",
+      "volume": "14.6M",
+      "avg_volume": "2.3M",
+      "rel_volume": "6.4x",
       "high_dollar_volume": false
+    },
+    {
+      "ticker": "NKE",
+      "price": "$33.90",
+      "change": "-3.57%",
+      "volume": "141.4M",
+      "avg_volume": "27.8M",
+      "rel_volume": "5.1x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "LQDA",
+      "price": "$28.64",
+      "change": "+2.32%",
+      "volume": "8.4M",
+      "avg_volume": "2.0M",
+      "rel_volume": "4.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "MAT",
+      "price": "$15.27",
+      "change": "+1.53%",
+      "volume": "19.0M",
+      "avg_volume": "4.9M",
+      "rel_volume": "3.9x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "WDC",
+      "price": "$415.29",
+      "change": "-10.22%",
+      "volume": "24.0M",
+      "avg_volume": "7.2M",
+      "rel_volume": "3.3x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "IBRX",
+      "price": "$10.28",
+      "change": "+10.83%",
+      "volume": "30.9M",
+      "avg_volume": "9.9M",
+      "rel_volume": "3.1x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "STX",
+      "price": "$848.99",
+      "change": "-10.21%",
+      "volume": "13.5M",
+      "avg_volume": "4.4M",
+      "rel_volume": "3.0x",
+      "high_dollar_volume": true
     }
   ]
 }
