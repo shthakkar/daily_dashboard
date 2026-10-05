@@ -1,36 +1,66 @@
 {
   "date": "2026-10-05",
-  "updated_at": "2026-10-05T13:11:23.952469+00:00",
+  "updated_at": "2026-10-05T20:19:26.558746+00:00",
   "stocks": [
     {
-      "ticker": "SYNA",
+      "ticker": "PCVX",
       "setup": "Fade Short",
       "direction": "short",
       "score": "5/6",
-      "close": 121.1,
-      "stretch": "+23.0%",
-      "rvol": "8.1x",
-      "roc3": "+20.1%"
+      "close": 73.82,
+      "stretch": "+25.1%",
+      "rvol": "6.8x",
+      "roc3": "+29.7%"
+    },
+    {
+      "ticker": "RXO",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "5/6",
+      "close": 28.65,
+      "stretch": "+39.3%",
+      "rvol": "7.2x",
+      "roc3": "+40.0%"
+    },
+    {
+      "ticker": "SPHR",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "5/6",
+      "close": 110.8,
+      "stretch": "-20.1%",
+      "rvol": "4.6x",
+      "roc3": "-17.6%"
+    },
+    {
+      "ticker": "PTC",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 192.26,
+      "stretch": "+38.1%",
+      "rvol": "9.5x",
+      "roc3": "+37.0%"
     },
     {
       "ticker": "MRP",
       "setup": "Fade Long",
       "direction": "long",
-      "score": "5/6",
-      "close": 24.61,
-      "stretch": "-12.9%",
-      "rvol": "3.6x",
-      "roc3": "-7.2%"
+      "score": "4/6",
+      "close": 22.51,
+      "stretch": "-19.0%",
+      "rvol": "2.7x",
+      "roc3": "-13.3%"
     },
     {
-      "ticker": "VSH",
-      "setup": "Fade Short",
-      "direction": "short",
+      "ticker": "VKTX",
+      "setup": "Fade Long",
+      "direction": "long",
       "score": "4/6",
-      "close": 38.18,
-      "stretch": "+17.6%",
-      "rvol": "2.8x",
-      "roc3": "+17.6%"
+      "close": 29.28,
+      "stretch": "-10.2%",
+      "rvol": "0.7x",
+      "roc3": "-10.2%"
     }
   ]
 }

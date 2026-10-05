@@ -1,51 +1,159 @@
 {
   "date": "2026-10-05",
-  "updated_at": "2026-10-05T13:11:24.144396+00:00",
+  "updated_at": "2026-10-05T20:19:26.813774+00:00",
   "stocks": [
     {
       "ticker": "BEAT",
-      "price": "$0.85",
-      "change": "+95.81%",
-      "volume": "72.0M",
+      "price": "$0.66",
+      "change": "+52.96%",
+      "volume": "395.6M",
       "avg_volume": "659.5K",
-      "rel_volume": "2184.6x",
+      "rel_volume": "599.9x",
       "high_dollar_volume": false
     },
     {
       "ticker": "ALEC",
-      "price": "$2.88",
-      "change": "+59.12%",
-      "volume": "46.4M",
+      "price": "$1.98",
+      "change": "+9.39%",
+      "volume": "88.9M",
       "avg_volume": "1.2M",
-      "rel_volume": "793.6x",
+      "rel_volume": "76.1x",
       "high_dollar_volume": false
+    },
+    {
+      "ticker": "PTC",
+      "price": "$192.38",
+      "change": "+33.57%",
+      "volume": "29.5M",
+      "avg_volume": "1.5M",
+      "rel_volume": "19.7x",
+      "high_dollar_volume": true
     },
     {
       "ticker": "APUS",
-      "price": "$5.18",
-      "change": "+60.87%",
-      "volume": "18.8M",
+      "price": "$4.59",
+      "change": "+42.55%",
+      "volume": "33.4M",
       "avg_volume": "2.1M",
-      "rel_volume": "180.1x",
+      "rel_volume": "16.0x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "SDST",
-      "price": "$0.08",
-      "change": "-1.06%",
-      "volume": "16.3M",
-      "avg_volume": "18.4M",
-      "rel_volume": "17.7x",
+      "ticker": "WBD",
+      "price": "$30.97",
+      "change": "+0.10%",
+      "volume": "432.2M",
+      "avg_volume": "30.5M",
+      "rel_volume": "14.2x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "PCVX",
+      "price": "$73.95",
+      "change": "+30.94%",
+      "volume": "14.8M",
+      "avg_volume": "1.1M",
+      "rel_volume": "12.8x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "RXO",
+      "price": "$28.65",
+      "change": "+22.54%",
+      "volume": "20.3M",
+      "avg_volume": "1.8M",
+      "rel_volume": "11.2x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "HLSQ",
+      "price": "$0.41",
+      "change": "+13.89%",
+      "volume": "5.4M",
+      "avg_volume": "594.0K",
+      "rel_volume": "9.1x",
       "high_dollar_volume": false
     },
     {
       "ticker": "EWZ",
-      "price": "$42.86",
-      "change": "+12.23%",
-      "volume": "12.6M",
+      "price": "$42.98",
+      "change": "+12.54%",
+      "volume": "186.8M",
       "avg_volume": "22.9M",
-      "rel_volume": "11.0x",
+      "rel_volume": "8.1x",
       "high_dollar_volume": true
+    },
+    {
+      "ticker": "OLN",
+      "price": "$16.27",
+      "change": "+2.33%",
+      "volume": "22.3M",
+      "avg_volume": "3.0M",
+      "rel_volume": "7.4x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "CTVA",
+      "price": "$12.39",
+      "change": "+3.94%",
+      "volume": "182.7M",
+      "avg_volume": "31.5M",
+      "rel_volume": "5.8x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "VELO",
+      "price": "$9.59",
+      "change": "-14.37%",
+      "volume": "7.5M",
+      "avg_volume": "1.4M",
+      "rel_volume": "5.3x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "CHRW",
+      "price": "$140.61",
+      "change": "-10.85%",
+      "volume": "8.6M",
+      "avg_volume": "1.7M",
+      "rel_volume": "5.0x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "NXH",
+      "price": "$2.06",
+      "change": "-25.36%",
+      "volume": "11.6M",
+      "avg_volume": "2.4M",
+      "rel_volume": "4.8x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "SWKS",
+      "price": "$83.89",
+      "change": "-1.34%",
+      "volume": "29.2M",
+      "avg_volume": "6.2M",
+      "rel_volume": "4.7x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "AIB",
+      "price": "$1.62",
+      "change": "-1.22%",
+      "volume": "6.5M",
+      "avg_volume": "1.7M",
+      "rel_volume": "3.8x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "LESL",
+      "price": "$0.10",
+      "change": "-29.99%",
+      "volume": "15.9M",
+      "avg_volume": "4.3M",
+      "rel_volume": "3.7x",
+      "high_dollar_volume": false
     }
   ]
 }
