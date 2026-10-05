@@ -1,5 +1,51 @@
 {
-  "date": "2026-10-04",
-  "updated_at": "2026-10-04T13:11:19.991250+00:00",
-  "stocks": []
+  "date": "2026-10-05",
+  "updated_at": "2026-10-05T13:11:24.144396+00:00",
+  "stocks": [
+    {
+      "ticker": "BEAT",
+      "price": "$0.85",
+      "change": "+95.81%",
+      "volume": "72.0M",
+      "avg_volume": "659.5K",
+      "rel_volume": "2184.6x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "ALEC",
+      "price": "$2.88",
+      "change": "+59.12%",
+      "volume": "46.4M",
+      "avg_volume": "1.2M",
+      "rel_volume": "793.6x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "APUS",
+      "price": "$5.18",
+      "change": "+60.87%",
+      "volume": "18.8M",
+      "avg_volume": "2.1M",
+      "rel_volume": "180.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "SDST",
+      "price": "$0.08",
+      "change": "-1.06%",
+      "volume": "16.3M",
+      "avg_volume": "18.4M",
+      "rel_volume": "17.7x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "EWZ",
+      "price": "$42.86",
+      "change": "+12.23%",
+      "volume": "12.6M",
+      "avg_volume": "22.9M",
+      "rel_volume": "11.0x",
+      "high_dollar_volume": true
+    }
+  ]
 }
