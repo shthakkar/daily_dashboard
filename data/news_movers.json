@@ -1,59 +1,257 @@
 {
   "date": "2026-10-06",
-  "updated_at": "2026-10-06T13:10:47.265838+00:00",
+  "updated_at": "2026-10-06T20:10:38.083578+00:00",
   "stocks": [
     {
       "ticker": "ARAI",
-      "price": "$0.21",
-      "change": "+0.72%",
-      "volume": "145.7M",
+      "price": "$0.20",
+      "change": "-3.08%",
+      "volume": "179.2M",
       "avg_volume": "611.4K",
-      "rel_volume": "4766.9x",
+      "rel_volume": "293.1x",
       "high_dollar_volume": false
     },
     {
       "ticker": "BRN",
-      "price": "$1.00",
-      "change": "+6.71%",
-      "volume": "8.3M",
+      "price": "$0.96",
+      "change": "+2.17%",
+      "volume": "9.7M",
       "avg_volume": "50.8K",
-      "rel_volume": "3284.7x",
+      "rel_volume": "190.9x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "JAGX",
-      "price": "$6.40",
-      "change": "+35.31%",
-      "volume": "11.2M",
-      "avg_volume": "1.5M",
-      "rel_volume": "146.4x",
+      "ticker": "OLB",
+      "price": "$0.41",
+      "change": "+117.85%",
+      "volume": "740.8M",
+      "avg_volume": "6.4M",
+      "rel_volume": "115.6x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "AVBP",
+      "price": "$15.09",
+      "change": "-46.98%",
+      "volume": "19.7M",
+      "avg_volume": "524.1K",
+      "rel_volume": "37.6x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "BFRG",
-      "price": "$0.57",
-      "change": "-3.42%",
-      "volume": "28.5M",
-      "avg_volume": "4.3M",
-      "rel_volume": "133.1x",
+      "ticker": "MOBX",
+      "price": "$1.12",
+      "change": "+72.28%",
+      "volume": "121.0M",
+      "avg_volume": "3.6M",
+      "rel_volume": "33.9x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "XHLD",
+      "price": "$0.61",
+      "change": "+47.20%",
+      "volume": "145.5M",
+      "avg_volume": "4.9M",
+      "rel_volume": "29.9x",
       "high_dollar_volume": false
     },
     {
       "ticker": "OPCH",
-      "price": "$31.10",
-      "change": "+33.08%",
-      "volume": "7.8M",
+      "price": "$31.00",
+      "change": "+32.65%",
+      "volume": "65.0M",
       "avg_volume": "2.2M",
-      "rel_volume": "71.4x",
+      "rel_volume": "29.6x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "KAPA",
+      "price": "$1.12",
+      "change": "-27.42%",
+      "volume": "9.7M",
+      "avg_volume": "335.8K",
+      "rel_volume": "28.8x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "BJDX",
-      "price": "$0.79",
-      "change": "+3.78%",
-      "volume": "5.5M",
-      "avg_volume": "5.5M",
-      "rel_volume": "20.0x",
+      "ticker": "JAGX",
+      "price": "$5.62",
+      "change": "+18.82%",
+      "volume": "26.7M",
+      "avg_volume": "1.5M",
+      "rel_volume": "17.4x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "OSTX",
+      "price": "$1.47",
+      "change": "-8.12%",
+      "volume": "6.0M",
+      "avg_volume": "569.2K",
+      "rel_volume": "10.5x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "BFRG",
+      "price": "$0.69",
+      "change": "+15.99%",
+      "volume": "37.0M",
+      "avg_volume": "4.3M",
+      "rel_volume": "8.7x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "MMED",
+      "price": "$19.64",
+      "change": "-2.58%",
+      "volume": "15.5M",
+      "avg_volume": "2.1M",
+      "rel_volume": "7.4x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "PCVX",
+      "price": "$66.70",
+      "change": "-9.65%",
+      "volume": "10.1M",
+      "avg_volume": "1.4M",
+      "rel_volume": "7.4x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "NXH",
+      "price": "$1.83",
+      "change": "-11.17%",
+      "volume": "17.5M",
+      "avg_volume": "2.5M",
+      "rel_volume": "6.9x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "PENG",
+      "price": "$64.21",
+      "change": "+5.77%",
+      "volume": "13.6M",
+      "avg_volume": "2.6M",
+      "rel_volume": "5.2x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "PACB",
+      "price": "$2.70",
+      "change": "-5.92%",
+      "volume": "47.0M",
+      "avg_volume": "9.1M",
+      "rel_volume": "5.2x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "LW",
+      "price": "$47.93",
+      "change": "+7.54%",
+      "volume": "8.4M",
+      "avg_volume": "1.7M",
+      "rel_volume": "4.8x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "CEG",
+      "price": "$300.40",
+      "change": "+12.25%",
+      "volume": "13.2M",
+      "avg_volume": "2.8M",
+      "rel_volume": "4.7x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "CIRC",
+      "price": "$0.50",
+      "change": "-7.86%",
+      "volume": "11.9M",
+      "avg_volume": "2.6M",
+      "rel_volume": "4.6x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "TWST",
+      "price": "$166.97",
+      "change": "-18.55%",
+      "volume": "7.9M",
+      "avg_volume": "1.8M",
+      "rel_volume": "4.3x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "NVAX",
+      "price": "$11.32",
+      "change": "-9.87%",
+      "volume": "19.3M",
+      "avg_volume": "4.8M",
+      "rel_volume": "4.0x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "ALEC",
+      "price": "$1.81",
+      "change": "-9.05%",
+      "volume": "10.0M",
+      "avg_volume": "2.5M",
+      "rel_volume": "4.0x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "VST",
+      "price": "$160.48",
+      "change": "+10.76%",
+      "volume": "18.0M",
+      "avg_volume": "4.7M",
+      "rel_volume": "3.8x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "PTC",
+      "price": "$193.00",
+      "change": "+0.38%",
+      "volume": "7.2M",
+      "avg_volume": "1.9M",
+      "rel_volume": "3.7x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "RXRX",
+      "price": "$4.63",
+      "change": "-3.14%",
+      "volume": "70.8M",
+      "avg_volume": "19.9M",
+      "rel_volume": "3.6x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "MRP",
+      "price": "$23.17",
+      "change": "+2.93%",
+      "volume": "5.2M",
+      "avg_volume": "1.6M",
+      "rel_volume": "3.3x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "BZAI",
+      "price": "$0.29",
+      "change": "-33.43%",
+      "volume": "14.2M",
+      "avg_volume": "4.5M",
+      "rel_volume": "3.2x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "KDK",
+      "price": "$1.72",
+      "change": "-0.58%",
+      "volume": "7.0M",
+      "avg_volume": "2.3M",
+      "rel_volume": "3.1x",
       "high_dollar_volume": false
     }
   ]
