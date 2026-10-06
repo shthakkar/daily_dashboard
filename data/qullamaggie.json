@@ -1,83 +1,90 @@
 {
-  "date": "2026-10-05",
-  "updated_at": "2026-10-05T20:19:26.825718+00:00",
+  "date": "2026-10-06",
+  "updated_at": "2026-10-06T13:10:47.278041+00:00",
   "stocks": [
+    {
+      "ticker": "PAYC",
+      "tightness": 7.7,
+      "rating": "Very Tight",
+      "close": 225.79,
+      "avg_rank": 0.9302
+    },
     {
       "ticker": "CORT",
       "tightness": 6.2,
       "rating": "Tight",
       "close": 122.03,
-      "avg_rank": 0.9687
+      "avg_rank": 0.9673
     },
     {
       "ticker": "PSX",
       "tightness": 4.0,
       "rating": "Medium",
       "close": 269.72,
-      "avg_rank": 0.945
+      "avg_rank": 0.9436
     },
     {
       "ticker": "DELL",
       "tightness": 3.0,
       "rating": "Wide",
-      "close": 552.06,
-      "avg_rank": 0.9639
+      "close": 552.29,
+      "avg_rank": 0.9624
     },
     {
       "ticker": "PANW",
       "tightness": 2.3,
       "rating": "Wide",
       "close": 406.76,
-      "avg_rank": 0.9385
+      "avg_rank": 0.9383
     },
     {
       "ticker": "DINO",
       "tightness": 1.9,
       "rating": "Wide",
       "close": 115.22,
-      "avg_rank": 0.9671
+      "avg_rank": 0.9662
     },
     {
       "ticker": "NTAP",
       "tightness": 1.5,
       "rating": "Wide",
       "close": 223.77,
-      "avg_rank": 0.9488
+      "avg_rank": 0.9474
     },
     {
       "ticker": "AMD",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 631.75,
-      "avg_rank": 0.9369
+      "avg_rank": 0.9356
     },
     {
       "ticker": "CRWD",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 272.67,
-      "avg_rank": 0.9655
+      "avg_rank": 0.9646
     },
     {
       "ticker": "HPE",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 68.38,
-      "avg_rank": 0.9779
+      "close": 68.36,
+      "avg_rank": 0.9769
     },
     {
       "ticker": "ILMN",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 293.69,
-      "avg_rank": 0.9649
+      "avg_rank": 0.9646
     },
     {
       "ticker": "MPC",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 433.47,
-      "avg_rank": 0.9693
+      "avg_rank": 0.9683
     },
     {
       "ticker": "MRNA",
@@ -90,71 +97,71 @@
       "ticker": "NET",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 359.63,
-      "avg_rank": 0.9288
+      "close": 359.49,
+      "avg_rank": 0.9275
     },
     {
       "ticker": "NTRA",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 425.64,
-      "avg_rank": 0.9477
+      "avg_rank": 0.9474
     },
     {
       "ticker": "OKTA",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 218.29,
-      "avg_rank": 0.9773
+      "avg_rank": 0.9764
     },
     {
       "ticker": "P",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 143.93,
-      "avg_rank": 0.9714
+      "close": 143.88,
+      "avg_rank": 0.971
     },
     {
       "ticker": "RBRK",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 122.68,
-      "avg_rank": 0.9444
+      "avg_rank": 0.9442
     },
     {
       "ticker": "RVTY",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 157.36,
-      "avg_rank": 0.9207
+      "avg_rank": 0.92
     },
     {
       "ticker": "SMCI",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 43.19,
-      "avg_rank": 0.9223
+      "avg_rank": 0.9211
     },
     {
       "ticker": "SMTC",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 192.83,
-      "avg_rank": 0.966
+      "avg_rank": 0.9656
     },
     {
       "ticker": "TWLO",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 300.91,
-      "avg_rank": 0.959
+      "avg_rank": 0.9581
     },
     {
       "ticker": "TWST",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 205.0,
-      "avg_rank": 0.9978
+      "avg_rank": 0.9979
     },
     {
       "ticker": "TXG",
@@ -168,7 +175,7 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 419.33,
-      "avg_rank": 0.9601
+      "avg_rank": 0.9587
     }
   ]
 }

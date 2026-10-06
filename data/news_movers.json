@@ -1,158 +1,59 @@
 {
-  "date": "2026-10-05",
-  "updated_at": "2026-10-05T20:19:26.813774+00:00",
+  "date": "2026-10-06",
+  "updated_at": "2026-10-06T13:10:47.265838+00:00",
   "stocks": [
     {
-      "ticker": "BEAT",
-      "price": "$0.66",
-      "change": "+52.96%",
-      "volume": "395.6M",
-      "avg_volume": "659.5K",
-      "rel_volume": "599.9x",
+      "ticker": "ARAI",
+      "price": "$0.21",
+      "change": "+0.72%",
+      "volume": "145.7M",
+      "avg_volume": "611.4K",
+      "rel_volume": "4766.9x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "ALEC",
-      "price": "$1.98",
-      "change": "+9.39%",
-      "volume": "88.9M",
-      "avg_volume": "1.2M",
-      "rel_volume": "76.1x",
+      "ticker": "BRN",
+      "price": "$1.00",
+      "change": "+6.71%",
+      "volume": "8.3M",
+      "avg_volume": "50.8K",
+      "rel_volume": "3284.7x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "PTC",
-      "price": "$192.38",
-      "change": "+33.57%",
-      "volume": "29.5M",
+      "ticker": "JAGX",
+      "price": "$6.40",
+      "change": "+35.31%",
+      "volume": "11.2M",
       "avg_volume": "1.5M",
-      "rel_volume": "19.7x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "APUS",
-      "price": "$4.59",
-      "change": "+42.55%",
-      "volume": "33.4M",
-      "avg_volume": "2.1M",
-      "rel_volume": "16.0x",
+      "rel_volume": "146.4x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "WBD",
-      "price": "$30.97",
-      "change": "+0.10%",
-      "volume": "432.2M",
-      "avg_volume": "30.5M",
-      "rel_volume": "14.2x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "PCVX",
-      "price": "$73.95",
-      "change": "+30.94%",
-      "volume": "14.8M",
-      "avg_volume": "1.1M",
-      "rel_volume": "12.8x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "RXO",
-      "price": "$28.65",
-      "change": "+22.54%",
-      "volume": "20.3M",
-      "avg_volume": "1.8M",
-      "rel_volume": "11.2x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "HLSQ",
-      "price": "$0.41",
-      "change": "+13.89%",
-      "volume": "5.4M",
-      "avg_volume": "594.0K",
-      "rel_volume": "9.1x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "EWZ",
-      "price": "$42.98",
-      "change": "+12.54%",
-      "volume": "186.8M",
-      "avg_volume": "22.9M",
-      "rel_volume": "8.1x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "OLN",
-      "price": "$16.27",
-      "change": "+2.33%",
-      "volume": "22.3M",
-      "avg_volume": "3.0M",
-      "rel_volume": "7.4x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "CTVA",
-      "price": "$12.39",
-      "change": "+3.94%",
-      "volume": "182.7M",
-      "avg_volume": "31.5M",
-      "rel_volume": "5.8x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "VELO",
-      "price": "$9.59",
-      "change": "-14.37%",
-      "volume": "7.5M",
-      "avg_volume": "1.4M",
-      "rel_volume": "5.3x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "CHRW",
-      "price": "$140.61",
-      "change": "-10.85%",
-      "volume": "8.6M",
-      "avg_volume": "1.7M",
-      "rel_volume": "5.0x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "NXH",
-      "price": "$2.06",
-      "change": "-25.36%",
-      "volume": "11.6M",
-      "avg_volume": "2.4M",
-      "rel_volume": "4.8x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "SWKS",
-      "price": "$83.89",
-      "change": "-1.34%",
-      "volume": "29.2M",
-      "avg_volume": "6.2M",
-      "rel_volume": "4.7x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "AIB",
-      "price": "$1.62",
-      "change": "-1.22%",
-      "volume": "6.5M",
-      "avg_volume": "1.7M",
-      "rel_volume": "3.8x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "LESL",
-      "price": "$0.10",
-      "change": "-29.99%",
-      "volume": "15.9M",
+      "ticker": "BFRG",
+      "price": "$0.57",
+      "change": "-3.42%",
+      "volume": "28.5M",
       "avg_volume": "4.3M",
-      "rel_volume": "3.7x",
+      "rel_volume": "133.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "OPCH",
+      "price": "$31.10",
+      "change": "+33.08%",
+      "volume": "7.8M",
+      "avg_volume": "2.2M",
+      "rel_volume": "71.4x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "BJDX",
+      "price": "$0.79",
+      "change": "+3.78%",
+      "volume": "5.5M",
+      "avg_volume": "5.5M",
+      "rel_volume": "20.0x",
       "high_dollar_volume": false
     }
   ]
