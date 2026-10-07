@@ -1,42 +1,132 @@
 {
   "date": "2026-10-07",
-  "updated_at": "2026-10-07T13:11:16.411103+00:00",
+  "updated_at": "2026-10-07T20:09:03.782548+00:00",
   "stocks": [
     {
       "ticker": "LPCN",
-      "price": "$2.91",
-      "change": "+38.57%",
-      "volume": "71.6M",
+      "price": "$2.20",
+      "change": "+4.76%",
+      "volume": "104.9M",
       "avg_volume": "35.9K",
-      "rel_volume": "39959.5x",
+      "rel_volume": "2925.8x",
       "high_dollar_volume": false
+    },
+    {
+      "ticker": "CRBU",
+      "price": "$0.62",
+      "change": "-45.60%",
+      "volume": "36.9M",
+      "avg_volume": "1.4M",
+      "rel_volume": "27.0x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "SPAI",
+      "price": "$4.71",
+      "change": "+14.88%",
+      "volume": "5.7M",
+      "avg_volume": "231.2K",
+      "rel_volume": "24.5x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "HESM",
+      "price": "$33.04",
+      "change": "-14.60%",
+      "volume": "11.9M",
+      "avg_volume": "1.2M",
+      "rel_volume": "9.8x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "PENG",
+      "price": "$72.61",
+      "change": "+13.08%",
+      "volume": "20.9M",
+      "avg_volume": "2.8M",
+      "rel_volume": "7.4x",
+      "high_dollar_volume": true
     },
     {
       "ticker": "CIRC",
-      "price": "$0.49",
-      "change": "-1.73%",
-      "volume": "13.3M",
+      "price": "$0.46",
+      "change": "-7.26%",
+      "volume": "20.3M",
       "avg_volume": "2.8M",
-      "rel_volume": "96.6x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "LABT",
-      "price": "$0.78",
-      "change": "-9.98%",
-      "volume": "7.2M",
-      "avg_volume": "2.3M",
-      "rel_volume": "61.6x",
+      "rel_volume": "7.4x",
       "high_dollar_volume": false
     },
     {
       "ticker": "BULL",
-      "price": "$5.58",
-      "change": "-23.35%",
-      "volume": "18.9M",
+      "price": "$5.89",
+      "change": "-19.09%",
+      "volume": "80.7M",
       "avg_volume": "12.8M",
-      "rel_volume": "29.4x",
+      "rel_volume": "6.3x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "OPCH",
+      "price": "$31.01",
+      "change": "+0.03%",
+      "volume": "19.2M",
+      "avg_volume": "3.2M",
+      "rel_volume": "6.1x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "LEVI",
+      "price": "$19.51",
+      "change": "-4.95%",
+      "volume": "14.4M",
+      "avg_volume": "2.6M",
+      "rel_volume": "5.5x",
       "high_dollar_volume": false
+    },
+    {
+      "ticker": "NEOG",
+      "price": "$11.68",
+      "change": "-2.34%",
+      "volume": "13.0M",
+      "avg_volume": "2.8M",
+      "rel_volume": "4.6x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "MMED",
+      "price": "$19.11",
+      "change": "-2.70%",
+      "volume": "9.6M",
+      "avg_volume": "2.3M",
+      "rel_volume": "4.2x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "LABT",
+      "price": "$0.85",
+      "change": "-1.98%",
+      "volume": "8.5M",
+      "avg_volume": "2.3M",
+      "rel_volume": "3.6x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "PTC",
+      "price": "$193.60",
+      "change": "+0.31%",
+      "volume": "7.0M",
+      "avg_volume": "2.0M",
+      "rel_volume": "3.5x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "STZ",
+      "price": "$118.39",
+      "change": "+2.35%",
+      "volume": "6.3M",
+      "avg_volume": "2.1M",
+      "rel_volume": "3.0x",
+      "high_dollar_volume": true
     }
   ]
 }

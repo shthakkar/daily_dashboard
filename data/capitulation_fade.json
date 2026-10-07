@@ -1,36 +1,46 @@
 {
   "date": "2026-10-07",
-  "updated_at": "2026-10-07T13:11:16.223763+00:00",
+  "updated_at": "2026-10-07T20:09:03.626797+00:00",
   "stocks": [
+    {
+      "ticker": "HESM",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "5/6",
+      "close": 33.04,
+      "stretch": "-14.6%",
+      "rvol": "6.2x",
+      "roc3": "-12.5%"
+    },
     {
       "ticker": "OPCH",
       "setup": "Fade Short",
       "direction": "short",
-      "score": "6/6",
-      "close": 31.0,
-      "stretch": "+30.1%",
-      "rvol": "12.1x",
-      "roc3": "+37.3%"
+      "score": "5/6",
+      "close": 31.01,
+      "stretch": "+28.2%",
+      "rvol": "3.1x",
+      "roc3": "+37.0%"
     },
     {
       "ticker": "VST",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 160.5,
-      "stretch": "+12.7%",
-      "rvol": "3.0x",
-      "roc3": "+14.8%"
+      "close": 166.73,
+      "stretch": "+16.4%",
+      "rvol": "1.7x",
+      "roc3": "+19.1%"
     },
     {
       "ticker": "PCVX",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 66.7,
-      "stretch": "+12.4%",
-      "rvol": "3.8x",
-      "roc3": "+19.0%"
+      "close": 66.96,
+      "stretch": "+12.2%",
+      "rvol": "3.6x",
+      "roc3": "+18.6%"
     }
   ]
 }
