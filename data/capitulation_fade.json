@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-07",
-  "updated_at": "2026-10-07T20:09:03.626797+00:00",
+  "date": "2026-10-08",
+  "updated_at": "2026-10-08T13:11:15.504825+00:00",
   "stocks": [
     {
       "ticker": "HESM",
       "setup": "Fade Long",
       "direction": "long",
       "score": "5/6",
-      "close": 33.04,
+      "close": 33.03,
       "stretch": "-14.6%",
-      "rvol": "6.2x",
+      "rvol": "6.3x",
       "roc3": "-12.5%"
     },
     {
@@ -27,9 +27,9 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 166.73,
+      "close": 166.72,
       "stretch": "+16.4%",
-      "rvol": "1.7x",
+      "rvol": "1.9x",
       "roc3": "+19.1%"
     },
     {
