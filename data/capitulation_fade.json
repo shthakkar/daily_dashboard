@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-08",
-  "updated_at": "2026-10-08T20:08:55.084196+00:00",
+  "date": "2026-10-09",
+  "updated_at": "2026-10-09T13:10:50.975887+00:00",
   "stocks": [
     {
       "ticker": "HAE",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 119.59,
-      "stretch": "+12.4%",
-      "rvol": "3.8x",
-      "roc3": "+14.2%"
+      "close": 119.47,
+      "stretch": "+12.3%",
+      "rvol": "4.1x",
+      "roc3": "+14.1%"
     },
     {
       "ticker": "OPCH",
@@ -29,7 +29,7 @@
       "score": "4/6",
       "close": 152.05,
       "stretch": "-8.9%",
-      "rvol": "1.3x",
+      "rvol": "1.4x",
       "roc3": "-25.8%"
     }
   ]
