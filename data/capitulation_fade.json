@@ -1,36 +1,46 @@
 {
   "date": "2026-10-09",
-  "updated_at": "2026-10-09T13:10:50.975887+00:00",
+  "updated_at": "2026-10-09T20:08:52.786663+00:00",
   "stocks": [
     {
-      "ticker": "HAE",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 119.47,
-      "stretch": "+12.3%",
-      "rvol": "4.1x",
-      "roc3": "+14.1%"
+      "ticker": "ASTS",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "5/6",
+      "close": 50.97,
+      "stretch": "-14.5%",
+      "rvol": "4.0x",
+      "roc3": "-19.3%"
     },
     {
-      "ticker": "OPCH",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 31.05,
-      "stretch": "+26.4%",
-      "rvol": "1.4x",
-      "roc3": "+32.9%"
-    },
-    {
-      "ticker": "TWST",
+      "ticker": "AVNT",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 152.05,
-      "stretch": "-8.9%",
-      "rvol": "1.4x",
-      "roc3": "-25.8%"
+      "close": 37.78,
+      "stretch": "-7.3%",
+      "rvol": "3.1x",
+      "roc3": "-8.9%"
+    },
+    {
+      "ticker": "DE",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 620.9,
+      "stretch": "-8.4%",
+      "rvol": "1.3x",
+      "roc3": "-9.1%"
+    },
+    {
+      "ticker": "HUM",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 431.8,
+      "stretch": "+10.5%",
+      "rvol": "3.1x",
+      "roc3": "+6.8%"
     }
   ]
 }
