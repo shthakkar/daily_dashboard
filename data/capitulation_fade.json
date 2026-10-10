@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-09",
-  "updated_at": "2026-10-09T20:08:52.786663+00:00",
+  "date": "2026-10-10",
+  "updated_at": "2026-10-10T13:10:57.901059+00:00",
   "stocks": [
     {
       "ticker": "ASTS",
@@ -17,9 +17,9 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 37.78,
+      "close": 37.79,
       "stretch": "-7.3%",
-      "rvol": "3.1x",
+      "rvol": "3.3x",
       "roc3": "-8.9%"
     },
     {
@@ -27,9 +27,9 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 620.9,
+      "close": 620.93,
       "stretch": "-8.4%",
-      "rvol": "1.3x",
+      "rvol": "1.5x",
       "roc3": "-9.1%"
     },
     {
@@ -37,9 +37,9 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 431.8,
-      "stretch": "+10.5%",
-      "rvol": "3.1x",
+      "close": 431.87,
+      "stretch": "+10.6%",
+      "rvol": "3.3x",
       "roc3": "+6.8%"
     }
   ]
