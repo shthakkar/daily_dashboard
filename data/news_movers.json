@@ -1,16 +1,7 @@
 {
-  "date": "2026-10-10",
-  "updated_at": "2026-10-10T13:10:58.024806+00:00",
+  "date": "2026-10-11",
+  "updated_at": "2026-10-11T13:11:14.787267+00:00",
   "stocks": [
-    {
-      "ticker": "ASTS",
-      "price": "$50.97",
-      "change": "-10.48%",
-      "volume": "54.3M",
-      "avg_volume": "12.2M",
-      "rel_volume": "4.4x",
-      "high_dollar_volume": true
-    },
     {
       "ticker": "VZ",
       "price": "$41.65",
