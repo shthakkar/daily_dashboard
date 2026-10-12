@@ -1,46 +1,16 @@
 {
   "date": "2026-10-12",
-  "updated_at": "2026-10-12T13:11:53.820206+00:00",
+  "updated_at": "2026-10-12T20:09:11.620101+00:00",
   "stocks": [
     {
-      "ticker": "ASTS",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "5/6",
-      "close": 50.97,
-      "stretch": "-14.5%",
-      "rvol": "4.0x",
-      "roc3": "-19.3%"
-    },
-    {
-      "ticker": "AVNT",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 37.79,
-      "stretch": "-7.3%",
-      "rvol": "3.3x",
-      "roc3": "-8.9%"
-    },
-    {
-      "ticker": "DE",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 620.93,
-      "stretch": "-8.4%",
-      "rvol": "1.5x",
-      "roc3": "-9.1%"
-    },
-    {
-      "ticker": "HUM",
+      "ticker": "GME",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 431.87,
-      "stretch": "+10.6%",
-      "rvol": "3.3x",
-      "roc3": "+6.8%"
+      "close": 27.23,
+      "stretch": "+12.7%",
+      "rvol": "0.8x",
+      "roc3": "+10.8%"
     }
   ]
 }
