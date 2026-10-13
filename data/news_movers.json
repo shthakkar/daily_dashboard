@@ -1,51 +1,96 @@
 {
   "date": "2026-10-13",
-  "updated_at": "2026-10-13T13:11:47.743362+00:00",
+  "updated_at": "2026-10-13T20:10:08.331422+00:00",
   "stocks": [
     {
       "ticker": "TCRT",
-      "price": "$1.85",
-      "change": "+76.29%",
-      "volume": "67.1M",
+      "price": "$3.03",
+      "change": "+188.57%",
+      "volume": "240.4M",
       "avg_volume": "838.7K",
-      "rel_volume": "1599.1x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "BKYI",
-      "price": "$3.90",
-      "change": "+136.36%",
-      "volume": "40.9M",
-      "avg_volume": "2.8M",
-      "rel_volume": "295.0x",
-      "high_dollar_volume": false
+      "rel_volume": "286.7x",
+      "high_dollar_volume": true
     },
     {
       "ticker": "BMBL",
-      "price": "$5.97",
-      "change": "+57.16%",
-      "volume": "19.1M",
+      "price": "$5.95",
+      "change": "+56.58%",
+      "volume": "118.1M",
       "avg_volume": "3.0M",
-      "rel_volume": "128.0x",
+      "rel_volume": "39.5x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "BKYI",
+      "price": "$2.83",
+      "change": "+71.52%",
+      "volume": "79.0M",
+      "avg_volume": "2.8M",
+      "rel_volume": "28.5x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "MMED",
+      "price": "$18.40",
+      "change": "-2.13%",
+      "volume": "33.6M",
+      "avg_volume": "3.7M",
+      "rel_volume": "9.2x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "FUN",
+      "price": "$10.20",
+      "change": "-14.43%",
+      "volume": "14.4M",
+      "avg_volume": "2.3M",
+      "rel_volume": "6.2x",
       "high_dollar_volume": false
     },
     {
       "ticker": "FRMI",
-      "price": "$3.67",
-      "change": "+12.89%",
-      "volume": "11.6M",
+      "price": "$3.72",
+      "change": "+14.46%",
+      "volume": "86.1M",
       "avg_volume": "18.0M",
-      "rel_volume": "12.9x",
+      "rel_volume": "4.8x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "SNDX",
+      "price": "$13.95",
+      "change": "-15.71%",
+      "volume": "6.8M",
+      "avg_volume": "1.6M",
+      "rel_volume": "4.4x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "KORU",
-      "price": "$13.82",
-      "change": "-12.20%",
-      "volume": "15.2M",
-      "avg_volume": "27.6M",
-      "rel_volume": "11.0x",
-      "high_dollar_volume": false
+      "ticker": "CIFR",
+      "price": "$11.34",
+      "change": "-12.77%",
+      "volume": "127.5M",
+      "avg_volume": "33.2M",
+      "rel_volume": "3.8x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "S",
+      "price": "$23.99",
+      "change": "-6.51%",
+      "volume": "27.5M",
+      "avg_volume": "8.0M",
+      "rel_volume": "3.4x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "EIX",
+      "price": "$55.48",
+      "change": "-0.29%",
+      "volume": "15.4M",
+      "avg_volume": "4.9M",
+      "rel_volume": "3.1x",
+      "high_dollar_volume": true
     }
   ]
 }

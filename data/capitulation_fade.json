@@ -1,16 +1,5 @@
 {
   "date": "2026-10-13",
-  "updated_at": "2026-10-13T13:11:47.467285+00:00",
-  "stocks": [
-    {
-      "ticker": "GME",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 27.23,
-      "stretch": "+12.7%",
-      "rvol": "0.8x",
-      "roc3": "+10.8%"
-    }
-  ]
+  "updated_at": "2026-10-13T20:10:08.112109+00:00",
+  "stocks": []
 }
