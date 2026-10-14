@@ -1,132 +1,132 @@
 {
-  "date": "2026-10-13",
-  "updated_at": "2026-10-13T20:10:08.337525+00:00",
+  "date": "2026-10-14",
+  "updated_at": "2026-10-14T13:11:08.926243+00:00",
   "stocks": [
     {
       "ticker": "CORT",
       "tightness": 7.0,
       "rating": "Very Tight",
       "close": 117.8,
-      "avg_rank": 0.9272
+      "avg_rank": 0.928
     },
     {
       "ticker": "ZBRA",
       "tightness": 5.1,
       "rating": "Medium",
       "close": 386.57,
-      "avg_rank": 0.9248
+      "avg_rank": 0.9256
     },
     {
       "ticker": "SNOW",
       "tightness": 4.7,
       "rating": "Medium",
-      "close": 357.79,
-      "avg_rank": 0.9374
+      "close": 357.76,
+      "avg_rank": 0.9386
     },
     {
       "ticker": "DELL",
       "tightness": 2.4,
       "rating": "Wide",
-      "close": 572.34,
-      "avg_rank": 0.9317
+      "close": 572.47,
+      "avg_rank": 0.9325
     },
     {
       "ticker": "HPE",
       "tightness": 2.0,
       "rating": "Wide",
       "close": 68.81,
-      "avg_rank": 0.9862
+      "avg_rank": 0.9866
     },
     {
       "ticker": "ILMN",
       "tightness": 2.0,
       "rating": "Wide",
-      "close": 271.17,
-      "avg_rank": 0.9622
+      "close": 271.18,
+      "avg_rank": 0.963
     },
     {
       "ticker": "NTRA",
       "tightness": 2.0,
       "rating": "Wide",
       "close": 395.65,
-      "avg_rank": 0.9407
+      "avg_rank": 0.9419
     },
     {
       "ticker": "TWLO",
       "tightness": 1.9,
       "rating": "Wide",
-      "close": 281.09,
-      "avg_rank": 0.9549
+      "close": 281.59,
+      "avg_rank": 0.9557
     },
     {
       "ticker": "FTNT",
       "tightness": 1.8,
       "rating": "Wide",
       "close": 190.76,
-      "avg_rank": 0.9293
+      "avg_rank": 0.9305
     },
     {
       "ticker": "MRVL",
       "tightness": 1.8,
       "rating": "Wide",
       "close": 268.73,
-      "avg_rank": 0.9707
+      "avg_rank": 0.9715
     },
     {
       "ticker": "DDOG",
       "tightness": 1.7,
       "rating": "Wide",
       "close": 283.34,
-      "avg_rank": 0.9203
+      "avg_rank": 0.9211
     },
     {
       "ticker": "RBRK",
       "tightness": 1.7,
       "rating": "Wide",
-      "close": 118.49,
-      "avg_rank": 0.9557
+      "close": 118.47,
+      "avg_rank": 0.9561
     },
     {
       "ticker": "AMD",
       "tightness": 1.5,
       "rating": "Wide",
       "close": 605.53,
-      "avg_rank": 0.9528
+      "avg_rank": 0.9533
     },
     {
       "ticker": "CRWD",
       "tightness": 1.5,
       "rating": "Wide",
       "close": 261.21,
-      "avg_rank": 0.926
+      "avg_rank": 0.9268
     },
     {
       "ticker": "VEEV",
       "tightness": 1.4,
       "rating": "Wide",
-      "close": 301.7,
-      "avg_rank": 0.9232
+      "close": 301.63,
+      "avg_rank": 0.9248
     },
     {
       "ticker": "DINO",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 128.23,
-      "avg_rank": 0.9646
+      "avg_rank": 0.9654
     },
     {
       "ticker": "DT",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 64.46,
-      "avg_rank": 0.9455
+      "close": 64.47,
+      "avg_rank": 0.9467
     },
     {
       "ticker": "MPC",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 476.87,
-      "avg_rank": 0.9724
+      "close": 476.98,
+      "avg_rank": 0.9732
     },
     {
       "ticker": "MRNA",
@@ -147,49 +147,49 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 226.53,
-      "avg_rank": 0.9789
+      "avg_rank": 0.9797
     },
     {
       "ticker": "P",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 156.95,
-      "avg_rank": 0.9862
+      "close": 156.97,
+      "avg_rank": 0.9866
     },
     {
       "ticker": "PBF",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 91.18,
-      "avg_rank": 0.9809
+      "close": 91.17,
+      "avg_rank": 0.9817
     },
     {
       "ticker": "PSX",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 292.73,
-      "avg_rank": 0.9407
+      "avg_rank": 0.9419
     },
     {
       "ticker": "SMTC",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 172.78,
-      "avg_rank": 0.9455
+      "avg_rank": 0.9463
     },
     {
       "ticker": "TEAM",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 208.04,
-      "avg_rank": 0.9451
+      "avg_rank": 0.9463
     },
     {
       "ticker": "VLO",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 456.37,
-      "avg_rank": 0.9654
+      "close": 456.46,
+      "avg_rank": 0.9663
     }
   ]
 }
