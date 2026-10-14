@@ -1,5 +1,26 @@
 {
   "date": "2026-10-14",
-  "updated_at": "2026-10-14T13:11:08.754004+00:00",
-  "stocks": []
+  "updated_at": "2026-10-14T20:08:08.787220+00:00",
+  "stocks": [
+    {
+      "ticker": "ASST",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 24.68,
+      "stretch": "-14.7%",
+      "rvol": "2.0x",
+      "roc3": "-11.2%"
+    },
+    {
+      "ticker": "LW",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 53.05,
+      "stretch": "+14.6%",
+      "rvol": "1.1x",
+      "roc3": "+10.8%"
+    }
+  ]
 }
