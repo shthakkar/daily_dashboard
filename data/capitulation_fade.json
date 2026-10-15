@@ -1,46 +1,46 @@
 {
   "date": "2026-10-15",
-  "updated_at": "2026-10-15T13:10:59.587024+00:00",
+  "updated_at": "2026-10-15T20:08:27.907210+00:00",
   "stocks": [
     {
-      "ticker": "CRWV",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "5/6",
-      "close": 65.78,
-      "stretch": "-22.1%",
-      "rvol": "3.1x",
-      "roc3": "-19.9%"
-    },
-    {
-      "ticker": "ASST",
+      "ticker": "MAN",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 24.68,
-      "stretch": "-14.7%",
-      "rvol": "2.0x",
-      "roc3": "-11.2%"
+      "close": 43.74,
+      "stretch": "-19.6%",
+      "rvol": "3.4x",
+      "roc3": "-14.7%"
     },
     {
-      "ticker": "VRT",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 222.83,
-      "stretch": "-9.3%",
-      "rvol": "1.6x",
-      "roc3": "-8.2%"
-    },
-    {
-      "ticker": "LW",
+      "ticker": "PACS",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 53.02,
-      "stretch": "+14.5%",
-      "rvol": "1.3x",
-      "roc3": "+10.8%"
+      "close": 47.81,
+      "stretch": "+11.5%",
+      "rvol": "1.6x",
+      "roc3": "+7.9%"
+    },
+    {
+      "ticker": "KTB",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 72.91,
+      "stretch": "+10.4%",
+      "rvol": "1.1x",
+      "roc3": "+10.4%"
+    },
+    {
+      "ticker": "G",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 37.59,
+      "stretch": "+10.6%",
+      "rvol": "0.9x",
+      "roc3": "+9.4%"
     }
   ]
 }
