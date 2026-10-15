@@ -1,7 +1,17 @@
 {
-  "date": "2026-10-14",
-  "updated_at": "2026-10-14T20:08:08.787220+00:00",
+  "date": "2026-10-15",
+  "updated_at": "2026-10-15T13:10:59.587024+00:00",
   "stocks": [
+    {
+      "ticker": "CRWV",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "5/6",
+      "close": 65.78,
+      "stretch": "-22.1%",
+      "rvol": "3.1x",
+      "roc3": "-19.9%"
+    },
     {
       "ticker": "ASST",
       "setup": "Fade Long",
@@ -13,13 +23,23 @@
       "roc3": "-11.2%"
     },
     {
+      "ticker": "VRT",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 222.83,
+      "stretch": "-9.3%",
+      "rvol": "1.6x",
+      "roc3": "-8.2%"
+    },
+    {
       "ticker": "LW",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 53.05,
-      "stretch": "+14.6%",
-      "rvol": "1.1x",
+      "close": 53.02,
+      "stretch": "+14.5%",
+      "rvol": "1.3x",
       "roc3": "+10.8%"
     }
   ]

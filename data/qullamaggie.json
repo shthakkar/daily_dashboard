@@ -1,5 +1,153 @@
 {
-  "date": "2026-10-14",
-  "updated_at": "2026-10-14T20:08:09.072445+00:00",
-  "stocks": []
+  "date": "2026-10-15",
+  "updated_at": "2026-10-15T13:10:59.882306+00:00",
+  "stocks": [
+    {
+      "ticker": "HALO",
+      "tightness": 5.8,
+      "rating": "Tight",
+      "close": 116.82,
+      "avg_rank": 0.9318
+    },
+    {
+      "ticker": "ZBRA",
+      "tightness": 5.6,
+      "rating": "Tight",
+      "close": 376.88,
+      "avg_rank": 0.9285
+    },
+    {
+      "ticker": "NTRA",
+      "tightness": 2.6,
+      "rating": "Wide",
+      "close": 394.75,
+      "avg_rank": 0.9628
+    },
+    {
+      "ticker": "VEEV",
+      "tightness": 2.0,
+      "rating": "Wide",
+      "close": 297.35,
+      "avg_rank": 0.9273
+    },
+    {
+      "ticker": "ILMN",
+      "tightness": 1.9,
+      "rating": "Wide",
+      "close": 271.76,
+      "avg_rank": 0.9726
+    },
+    {
+      "ticker": "TWLO",
+      "tightness": 1.8,
+      "rating": "Wide",
+      "close": 271.12,
+      "avg_rank": 0.9555
+    },
+    {
+      "ticker": "TEAM",
+      "tightness": 1.6,
+      "rating": "Wide",
+      "close": 204.66,
+      "avg_rank": 0.9502
+    },
+    {
+      "ticker": "AMD",
+      "tightness": 1.2,
+      "rating": "Wide",
+      "close": 570.82,
+      "avg_rank": 0.9281
+    },
+    {
+      "ticker": "NTAP",
+      "tightness": 1.2,
+      "rating": "Wide",
+      "close": 222.2,
+      "avg_rank": 0.9681
+    },
+    {
+      "ticker": "DT",
+      "tightness": 1.1,
+      "rating": "Wide",
+      "close": 63.58,
+      "avg_rank": 0.9514
+    },
+    {
+      "ticker": "DINO",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 127.69,
+      "avg_rank": 0.969
+    },
+    {
+      "ticker": "HPE",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 63.11,
+      "avg_rank": 0.9698
+    },
+    {
+      "ticker": "MPC",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 484.92,
+      "avg_rank": 0.9873
+    },
+    {
+      "ticker": "MRNA",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 226.3,
+      "avg_rank": 1.0
+    },
+    {
+      "ticker": "MRVL",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 245.28,
+      "avg_rank": 0.9208
+    },
+    {
+      "ticker": "OKTA",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 211.91,
+      "avg_rank": 0.9726
+    },
+    {
+      "ticker": "P",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 141.49,
+      "avg_rank": 0.9812
+    },
+    {
+      "ticker": "PBF",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 89.51,
+      "avg_rank": 0.9824
+    },
+    {
+      "ticker": "PSX",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 297.29,
+      "avg_rank": 0.962
+    },
+    {
+      "ticker": "RBRK",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 113.9,
+      "avg_rank": 0.9457
+    },
+    {
+      "ticker": "VLO",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 459.78,
+      "avg_rank": 0.973
+    }
+  ]
 }
