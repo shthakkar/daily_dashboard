@@ -1,32 +1,104 @@
 {
   "date": "2026-10-16",
-  "updated_at": "2026-10-16T13:11:22.033395+00:00",
+  "updated_at": "2026-10-16T20:10:16.982119+00:00",
   "stocks": [
     {
       "ticker": "GUTS",
-      "price": "$2.26",
-      "change": "-45.70%",
-      "volume": "8.1M",
+      "price": "$1.55",
+      "change": "-62.74%",
+      "volume": "14.7M",
       "avg_volume": "148.1K",
-      "rel_volume": "1091.0x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "LRHC",
-      "price": "$0.91",
-      "change": "+1.83%",
-      "volume": "7.0M",
-      "avg_volume": "277.7K",
-      "rel_volume": "502.4x",
+      "rel_volume": "99.5x",
       "high_dollar_volume": false
     },
     {
       "ticker": "ZTG",
-      "price": "$1.05",
-      "change": "+68.22%",
-      "volume": "88.7M",
+      "price": "$0.70",
+      "change": "+13.16%",
+      "volume": "167.9M",
       "avg_volume": "4.5M",
-      "rel_volume": "398.8x",
+      "rel_volume": "37.8x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "LRHC",
+      "price": "$0.76",
+      "change": "-15.43%",
+      "volume": "8.6M",
+      "avg_volume": "277.7K",
+      "rel_volume": "30.9x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "VRNS",
+      "price": "$48.72",
+      "change": "+2.92%",
+      "volume": "36.0M",
+      "avg_volume": "1.7M",
+      "rel_volume": "20.6x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "SITC",
+      "price": "$3.43",
+      "change": "+14.02%",
+      "volume": "10.1M",
+      "avg_volume": "1.1M",
+      "rel_volume": "8.8x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "IHI",
+      "price": "$53.76",
+      "change": "-0.46%",
+      "volume": "12.1M",
+      "avg_volume": "2.6M",
+      "rel_volume": "4.7x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "MMED",
+      "price": "$17.49",
+      "change": "-2.83%",
+      "volume": "21.2M",
+      "avg_volume": "5.6M",
+      "rel_volume": "3.8x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "FMC",
+      "price": "$5.65",
+      "change": "+0.56%",
+      "volume": "15.7M",
+      "avg_volume": "4.2M",
+      "rel_volume": "3.7x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "FUN",
+      "price": "$8.10",
+      "change": "-5.20%",
+      "volume": "9.2M",
+      "avg_volume": "2.7M",
+      "rel_volume": "3.4x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "FRVO",
+      "price": "$9.68",
+      "change": "-5.65%",
+      "volume": "20.7M",
+      "avg_volume": "6.2M",
+      "rel_volume": "3.4x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "SRPT",
+      "price": "$17.10",
+      "change": "-3.88%",
+      "volume": "9.8M",
+      "avg_volume": "3.0M",
+      "rel_volume": "3.2x",
       "high_dollar_volume": false
     }
   ]

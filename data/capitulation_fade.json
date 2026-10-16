@@ -1,56 +1,56 @@
 {
   "date": "2026-10-16",
-  "updated_at": "2026-10-16T13:11:21.844712+00:00",
+  "updated_at": "2026-10-16T20:10:16.621739+00:00",
   "stocks": [
     {
-      "ticker": "MAN",
+      "ticker": "NET",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 43.74,
-      "stretch": "-19.6%",
-      "rvol": "3.6x",
-      "roc3": "-14.7%"
+      "close": 296.28,
+      "stretch": "-14.3%",
+      "rvol": "1.2x",
+      "roc3": "-14.8%"
     },
     {
-      "ticker": "KTB",
-      "setup": "Fade Short",
-      "direction": "short",
+      "ticker": "INDV",
+      "setup": "Fade Long",
+      "direction": "long",
       "score": "4/6",
-      "close": 72.94,
-      "stretch": "+10.5%",
-      "rvol": "1.4x",
-      "roc3": "+10.4%"
-    },
-    {
-      "ticker": "G",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 37.59,
-      "stretch": "+10.6%",
-      "rvol": "1.0x",
-      "roc3": "+9.4%"
-    },
-    {
-      "ticker": "PAYC",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 252.87,
-      "stretch": "+11.3%",
+      "close": 32.45,
+      "stretch": "-8.7%",
       "rvol": "1.5x",
-      "roc3": "+7.6%"
+      "roc3": "-8.4%"
     },
     {
-      "ticker": "PACS",
-      "setup": "Fade Short",
-      "direction": "short",
+      "ticker": "TWST",
+      "setup": "Fade Long",
+      "direction": "long",
       "score": "4/6",
-      "close": 47.75,
-      "stretch": "+11.4%",
-      "rvol": "2.1x",
-      "roc3": "+7.8%"
+      "close": 132.75,
+      "stretch": "-21.0%",
+      "rvol": "0.9x",
+      "roc3": "-12.3%"
+    },
+    {
+      "ticker": "GRAL",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 117.81,
+      "stretch": "-10.4%",
+      "rvol": "0.9x",
+      "roc3": "-16.1%"
+    },
+    {
+      "ticker": "PENG",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 57.1,
+      "stretch": "-8.3%",
+      "rvol": "0.8x",
+      "roc3": "-27.0%"
     }
   ]
 }
