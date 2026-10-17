@@ -1,56 +1,5 @@
 {
-  "date": "2026-10-16",
-  "updated_at": "2026-10-16T20:10:16.621739+00:00",
-  "stocks": [
-    {
-      "ticker": "NET",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 296.28,
-      "stretch": "-14.3%",
-      "rvol": "1.2x",
-      "roc3": "-14.8%"
-    },
-    {
-      "ticker": "INDV",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 32.45,
-      "stretch": "-8.7%",
-      "rvol": "1.5x",
-      "roc3": "-8.4%"
-    },
-    {
-      "ticker": "TWST",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 132.75,
-      "stretch": "-21.0%",
-      "rvol": "0.9x",
-      "roc3": "-12.3%"
-    },
-    {
-      "ticker": "GRAL",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 117.81,
-      "stretch": "-10.4%",
-      "rvol": "0.9x",
-      "roc3": "-16.1%"
-    },
-    {
-      "ticker": "PENG",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 57.1,
-      "stretch": "-8.3%",
-      "rvol": "0.8x",
-      "roc3": "-27.0%"
-    }
-  ]
+  "date": "2026-10-17",
+  "updated_at": "2026-10-17T13:07:32.612444+00:00",
+  "stocks": []
 }
