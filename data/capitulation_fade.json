@@ -1,5 +1,36 @@
 {
   "date": "2026-10-19",
-  "updated_at": "2026-10-19T13:07:36.311551+00:00",
-  "stocks": []
+  "updated_at": "2026-10-19T17:41:11.038318+00:00",
+  "stocks": [
+    {
+      "ticker": "SLGN",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 40.81,
+      "stretch": "+13.3%",
+      "rvol": "0.8x",
+      "roc3": "+14.0%"
+    },
+    {
+      "ticker": "INSW",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 103.54,
+      "stretch": "-8.4%",
+      "rvol": "0.6x",
+      "roc3": "-12.8%"
+    },
+    {
+      "ticker": "PENG",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 56.28,
+      "stretch": "-9.8%",
+      "rvol": "0.5x",
+      "roc3": "-16.7%"
+    }
+  ]
 }
