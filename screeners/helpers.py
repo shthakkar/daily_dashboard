@@ -1,11 +1,33 @@
+import re
 import time
 from datetime import datetime, timezone
 
 import pandas as pd
+import requests
 import yfinance as yf
-from finvizfinance.screener.overview import Overview
 
-_FALLBACK_TICKERS = ["NVDA", "TSLA", "PLTR", "SMCI", "ARM", "AAPL"]
+_FINVIZ_UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+)
+_FINVIZ_PAGE_SIZE = 20
+# Finviz screener filter URL codes (finvizfinance's mapping, inlined so the
+# universe fetch doesn't depend on that library's scraper).
+_FINVIZ_FILTER_CODES = {
+    "Market Cap.": {
+        "prefix": "cap",
+        "option": {
+            "+Large (over $10bln)": "largeover",
+            "Mid ($2bln to $10bln)": "mid",
+        },
+    },
+    "Price": {"prefix": "sh_price", "option": {"Over $20": "o20"}},
+    "Average Volume": {"prefix": "sh_avgvol", "option": {"Over 500K": "o500"}},
+    "Country": {"prefix": "geo", "option": {"USA": "usa"}},
+    "Relative Volume": {"prefix": "sh_relvol", "option": {"Over 3": "o3"}},
+    "Current Volume": {"prefix": "sh_curvol", "option": {"Over 5M": "o5000"}},
+}
+
 _CHUNK_SIZE = 40
 _CHUNK_DELAY_SECONDS = 2
 _MAX_RETRIES = 2
@@ -41,16 +63,62 @@ def fix_finviz_tickers(tickers: list[str]) -> list[str]:
     return tickers
 
 
+def _finviz_filter_param(filters: dict) -> str:
+    """Translate human-readable filter names to Finviz's `f=` URL codes."""
+    codes = []
+    for key, value in filters.items():
+        spec = _FINVIZ_FILTER_CODES[key]
+        urlcode = spec["option"][value]
+        if urlcode:
+            codes.append(f"{spec['prefix']}_{urlcode}")
+    return ",".join(codes)
+
+
 def get_finviz_tickers(filters: dict) -> list[str]:
-    try:
-        screen = Overview()
-        screen.set_filter(filters_dict=filters)
-        df = screen.screener_view()
-        if df is not None and not df.empty:
-            return fix_finviz_tickers(df["Ticker"].tolist())
-    except Exception as e:
-        print(f"Warning: Finviz screener failed ({e}), using fallback tickers")
-    return _FALLBACK_TICKERS.copy()
+    """Fetch ticker symbols from Finviz's screener.
+
+    Finviz redesigned the screener page in Oct 2026: it's now a JS-rendered
+    div grid with no server-side HTML table, which broke finvizfinance's
+    table scraper (it returns None). This parses the new markup directly --
+    each ticker cell carries a `data-ticker` attribute with the clean symbol
+    (the cell *text* still has the old avatar-duplication quirk, so the
+    attribute is the only trustworthy source). Pages through all results
+    (20 per page via the `r=` offset) using the `totalCount` embedded in
+    the page.
+
+    Raises on failure. A loud failure keeps the dashboard on yesterday's
+    data; the previous silent fallback to a handful of hardcoded tickers
+    published three days of empty "No results" dashboards (Oct 17-19, 2026)
+    before anyone noticed.
+    """
+    f = _finviz_filter_param(filters)
+    tickers: list[str] = []
+    total = None
+    r = 1
+    session = requests.Session()
+    session.headers.update({"User-Agent": _FINVIZ_UA})
+    while True:
+        resp = session.get(
+            "https://finviz.com/screener.ashx",
+            params={"v": "111", "f": f, "r": r},
+            timeout=30,
+        )
+        resp.raise_for_status()
+        html = resp.text
+        if total is None:
+            m = re.search(r'"totalCount"\s*:\s*(\d+)', html)
+            total = int(m.group(1)) if m else 0
+        page = re.findall(r'data-ticker="([A-Z0-9.\-]{1,8})"', html)
+        for t in page:
+            if t not in tickers:
+                tickers.append(t)
+        if len(page) < _FINVIZ_PAGE_SIZE or (total and len(tickers) >= total):
+            break
+        r += _FINVIZ_PAGE_SIZE
+        time.sleep(1)
+    if not tickers:
+        raise RuntimeError(f"Finviz screener returned no tickers for filters {filters}")
+    return fix_finviz_tickers(tickers)
 
 
 def _chunked(items: list[str], size: int) -> list[list[str]]:
