@@ -1,16 +1,21 @@
 import math
+import re
+import time
 from datetime import date
 
 import pandas as pd
-from finvizfinance.screener.custom import Custom
-from finvizfinance.util import web_scrap
+import requests
+from bs4 import BeautifulSoup
 
-from .helpers import fix_finviz_tickers, now_utc_iso
+from .helpers import _FINVIZ_UA, _finviz_filter_param, fix_finviz_tickers, now_utc_iso
 
 _FILTERS = {"Country": "USA", "Relative Volume": "Over 3", "Current Volume": "Over 5M"}
 
-# No. (dropped by finvizfinance), Ticker, Price, Change, Volume, Avg Volume, Rel Volume
-_COLUMNS = [0, 1, 65, 66, 67, 63, 64]
+# Custom-screener column set: No., Ticker, Price, Change, Volume, Avg Volume,
+# Rel Volume (same columns as before, now addressed by the grid's column ids).
+_COLUMNS_PARAM = "0,1,65,66,67,63,64"
+_NEWS_FILTER_CODE = "news_date_today"
+_PAGE_SIZE = 20
 
 # Finviz has no dollar-volume filter of its own. Rather than excluding rows
 # below this, it's surfaced as a `high_dollar_volume` flag so the UI can
@@ -107,33 +112,47 @@ def _rows_from_df(df) -> list[dict]:
     ]
 
 
-_PAGE_SIZE = 20  # rows per page -- matches finvizfinance's Base.size
+# Grid column ids in the custom (v=151) table, in display order.
+_GRID_COLUMNS = ["row", "ticker", "price", "change", "volume", "averageVolume", "relativeVolume"]
 
 
-def _parse_rows(soup) -> list[dict]:
-    table = soup.find("table", class_="screener_table")
-    if table is None:
-        return []
+def _parse_rows(html: str) -> list[dict]:
+    """Parse one page of Finviz's new div-grid screener markup.
+
+    Each data cell is a `div.fv-table_cell[role=gridcell][data-column-id]`;
+    the ticker cell carries a `data-ticker` attribute with the clean symbol
+    (the cell *text* still has the old avatar-duplication quirk, so the
+    attribute is the only trustworthy source for tickers).
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    cells = soup.find_all("div", class_="fv-table_cell", attrs={"role": "gridcell"})
     records = []
-    for row in table.find_all("tr")[1:]:
-        cols = row.find_all("td")
-        if len(cols) < 7:
+    row: dict = {}
+    for cell in cells:
+        col = cell.get("data-column-id")
+        if col not in _GRID_COLUMNS:
             continue
-        # cols[0] is the row-number column; cols[1] is Ticker. Prefer the
-        # data attribute (always the clean symbol); fall back to the cell text
-        # only if Finviz ever drops the attribute.
-        raw_ticker = cols[1].get("data-boxover-ticker")
-        records.append({
-            "Ticker":     raw_ticker if raw_ticker else cols[1].text,
-            "_from_text": not raw_ticker,
-            "Price":      _parse_number(cols[2].text),
-            "Change %":   cols[3].text,
-            "Volume":     _parse_number(cols[4].text),
-            "Avg Volume": _parse_number(cols[5].text),
-            "Rel Volume": _parse_number(cols[6].text),
-        })
+        if col == "row":
+            if row:
+                records.append(row)
+            row = {}
+        if col == "ticker":
+            row["Ticker"] = cell.get("data-ticker") or cell.get_text(strip=True)
+            row["_from_text"] = not cell.get("data-ticker")
+        elif col == "price":
+            row["Price"] = _parse_number(cell.get_text(strip=True))
+        elif col == "change":
+            row["Change %"] = cell.get_text(strip=True)
+        elif col == "volume":
+            row["Volume"] = _parse_number(cell.get_text(strip=True))
+        elif col == "averageVolume":
+            row["Avg Volume"] = _parse_number(cell.get_text(strip=True))
+        elif col == "relativeVolume":
+            row["Rel Volume"] = _parse_number(cell.get_text(strip=True))
+    if row:
+        records.append(row)
     # Repair scraped-text tickers only (data-attribute ones are already clean).
-    text_idx = [i for i, r in enumerate(records) if r.pop("_from_text")]
+    text_idx = [i for i, r in enumerate(records) if r.pop("_from_text", False)]
     if text_idx:
         fixed = fix_finviz_tickers([records[i]["Ticker"] for i in text_idx])
         for i, t in zip(text_idx, fixed):
@@ -141,44 +160,37 @@ def _parse_rows(soup) -> list[dict]:
     return records
 
 
-def _page_count(soup) -> int:
-    try:
-        return len(soup.find(id="pageSelect").find_all("option"))
-    except AttributeError:
-        return 1 if soup.find("table", class_="screener_table") else 0
-
-
 def _fetch() -> pd.DataFrame:
-    """Builds the filtered request via finvizfinance's `Custom` screener, but
-    parses the response HTML directly instead of using its `screener_view` --
-    that method reads each cell's full text, and Finviz's ticker cell renders
-    an avatar-logo link (whose fallback text is normally the ticker's first
-    letter, for when the logo image doesn't load) immediately before the real
-    ticker link, so the concatenated text comes back as e.g. "CCRM" for
-    Salesforce. finvizfinance's own fix assumes that fallback is always
-    exactly one character and strips it accordingly, which silently mangles
-    any row where Finviz's fallback text is longer (observed in production:
-    a whole batch of rows came back missing an extra leading letter, e.g.
-    "RM" instead of "CRM"). Every ticker cell also carries a
-    `data-boxover-ticker` attribute with the plain, un-decorated symbol --
-    reading that directly sidesteps the guessing game entirely.
+    """Fetch all pages of the custom screener (USA, rel vol > 3x, volume > 5M,
+    news today) and return the raw records as a DataFrame.
 
-    Pages through all results (matching finvizfinance's own 20-rows-per-page
-    behavior) rather than silently capping at the first page.
+    Finviz redesigned the screener in Oct 2026 (JS-rendered div grid, no
+    server-side table), breaking finvizfinance's scraper -- this hits the
+    screener URL directly and parses the new grid markup.
     """
-    screen = Custom()
-    screen.set_filter(filters_dict=_FILTERS)
-    # finvizfinance's filter_dict has no entry for Finviz's "Latest News" filter
-    # category, so `set_filter` can't express it -- append Finviz's raw filter
-    # code for "Latest News: Today" directly onto the query string it built.
-    screen.request_params["f"] += ",news_date_today"
-    screen._parse_columns(_COLUMNS)
-
-    soup = web_scrap(screen.url, screen.request_params)
-    records = _parse_rows(soup)
-    for page in range(1, _page_count(soup)):
-        screen.request_params["r"] = page * _PAGE_SIZE + 1
-        records.extend(_parse_rows(web_scrap(screen.url, screen.request_params)))
+    f = _finviz_filter_param(_FILTERS) + "," + _NEWS_FILTER_CODE
+    session = requests.Session()
+    session.headers.update({"User-Agent": _FINVIZ_UA})
+    records: list[dict] = []
+    total = None
+    r = 1
+    while True:
+        resp = session.get(
+            "https://finviz.com/screener.ashx",
+            params={"v": "151", "f": f, "c": _COLUMNS_PARAM, "r": r},
+            timeout=30,
+        )
+        resp.raise_for_status()
+        html = resp.text
+        if total is None:
+            m = re.search(r'"totalCount"\s*:\s*(\d+)', html)
+            total = int(m.group(1)) if m else 0
+        page_records = _parse_rows(html)
+        records.extend(page_records)
+        if len(page_records) < _PAGE_SIZE or (total and len(records) >= total):
+            break
+        r += _PAGE_SIZE
+        time.sleep(1)
     return pd.DataFrame(records)
 
 
