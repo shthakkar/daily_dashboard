@@ -2,7 +2,14 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from screeners.helpers import _drop_trailing_empty_row, compute_momentum, fix_finviz_tickers, now_utc_iso
+from screeners.helpers import (
+    _drop_trailing_empty_row,
+    _finviz_filter_param,
+    compute_momentum,
+    fix_finviz_tickers,
+    get_finviz_tickers,
+    now_utc_iso,
+)
 
 
 # --- fix_finviz_tickers ---
@@ -26,6 +33,79 @@ def test_fix_finviz_tickers_empty_list():
 
 def test_fix_finviz_tickers_single_char_tickers_kept():
     assert fix_finviz_tickers(["A", "F", "T"]) == ["A", "F", "T"]
+
+
+# --- get_finviz_tickers (new-markup parsing, mocked HTTP) ---
+
+def _page_html(tickers, total):
+    cells = "".join(
+        f'<div class="fv-table_cell" data-column-id="ticker" role="gridcell"'
+        f' data-ticker="{t}">{t}</div>'
+        for t in tickers
+    )
+    return f'<html><script>var x = {{"totalCount": {total}}};</script><div>{cells}</div></html>'
+
+
+class _FakeResponse:
+    def __init__(self, text):
+        self.text = text
+
+    def raise_for_status(self):
+        pass
+
+
+class _FakeSession:
+    def __init__(self, pages):
+        self._pages = pages
+        self.calls = []
+        self.headers = {}
+
+    def get(self, url, params=None, timeout=None):
+        self.calls.append(params)
+        return _FakeResponse(self._pages[params["r"]])
+
+
+def _patch_session(monkeypatch, pages):
+    import screeners.helpers as h
+    fake = _FakeSession(pages)
+    monkeypatch.setattr(h.requests, "Session", lambda: fake)
+    monkeypatch.setattr(h.time, "sleep", lambda s: None)
+    return fake
+
+
+def test_get_finviz_tickers_parses_data_ticker_attributes(monkeypatch):
+    pages = {1: _page_html(["AAPL", "MSFT"], 2)}
+    _patch_session(monkeypatch, pages)
+    result = get_finviz_tickers({"Country": "USA"})
+    assert result == ["AAPL", "MSFT"]
+
+
+def test_get_finviz_tickers_paginates_until_total(monkeypatch):
+    pages = {
+        1: _page_html([f"T{i:03d}" for i in range(20)], 25),
+        21: _page_html([f"T{i:03d}" for i in range(20, 25)], 25),
+    }
+    fake = _patch_session(monkeypatch, pages)
+    result = get_finviz_tickers({"Country": "USA"})
+    assert len(result) == 25
+    assert [c["r"] for c in fake.calls] == [1, 21]
+
+
+def test_get_finviz_tickers_raises_on_empty(monkeypatch):
+    pages = {1: _page_html([], 0)}
+    _patch_session(monkeypatch, pages)
+    with pytest.raises(RuntimeError):
+        get_finviz_tickers({"Country": "USA"})
+
+
+def test_finviz_filter_param_builds_codes():
+    param = _finviz_filter_param({
+        "Market Cap.": "+Large (over $10bln)",
+        "Price": "Over $20",
+        "Average Volume": "Over 500K",
+        "Country": "USA",
+    })
+    assert param == "cap_largeover,sh_price_o20,sh_avgvol_o500,geo_usa"
 
 
 def _make_price_df(tickers, n_days=200):
