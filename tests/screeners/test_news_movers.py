@@ -1,8 +1,7 @@
 import pandas as pd
 import pytest
-from bs4 import BeautifulSoup
 
-from screeners.news_movers import _page_count, _parse_number, _parse_rows, _rows_from_df
+from screeners.news_movers import _parse_number, _parse_rows, _rows_from_df
 
 
 def _make_df():
@@ -128,39 +127,37 @@ def test_parse_number(raw, expected):
         assert result == pytest.approx(expected)
 
 
-# --- _parse_rows / _page_count ---------------------------------------------
+# --- _parse_rows ------------------------------------------------------------
+
+def _cell(col, text, extra=""):
+    return (f'<div class="fv-table_cell" data-column-id="{col}" role="gridcell"'
+            f"{extra}>{text}</div>")
+
 
 def _row_html(ticker_cell_text, ticker_attr=None, price="248.04", change="20.63%",
               volume="18,513,815", avg_volume="14.82M", rel_volume="7.48"):
     # `ticker_attr`, when given, mirrors Finviz's real markup: the
-    # `data-boxover-ticker` attribute lives on the <td> itself.
-    attr = f' data-boxover-ticker="{ticker_attr}"' if ticker_attr else ""
-    return f"""
-      <tr>
-        <td>1</td>
-        <td{attr}>{ticker_cell_text}</td>
-        <td>{price}</td>
-        <td>{change}</td>
-        <td>{volume}</td>
-        <td>{avg_volume}</td>
-        <td>{rel_volume}</td>
-      </tr>
-    """
+    # `data-ticker` attribute lives on the ticker gridcell itself.
+    attr = f' data-ticker="{ticker_attr}"' if ticker_attr else ""
+    return "".join([
+        _cell("row", "1"),
+        _cell("ticker", ticker_cell_text, attr),
+        _cell("price", price),
+        _cell("change", change),
+        _cell("volume", volume),
+        _cell("averageVolume", avg_volume),
+        _cell("relativeVolume", rel_volume),
+    ])
 
 
-def _table_soup(*row_htmls):
-    header = "<tr><th>No.</th><th>Ticker</th><th>Price</th><th>Change %</th><th>Volume</th><th>Avg Volume</th><th>Rel Volume</th></tr>"
-    html = f'<table class="screener_table">{header}{"".join(row_htmls)}</table>'
-    return BeautifulSoup(html, "html.parser")
+def _grid_html(*row_htmls):
+    return f"<div>{''.join(row_htmls)}</div>"
 
 
-def test_parse_rows_uses_data_boxover_ticker_even_when_cell_text_is_mangled():
-    # Regression case: Finviz's avatar fallback text came back longer than
-    # the usual one character, so the visible cell text is "CCRM" for
-    # Salesforce -- but the data attribute is still the plain symbol.
-    row = _row_html("CCRM", ticker_attr="CRM")
-    soup = _table_soup(row)
-    records = _parse_rows(soup)
+def test_parse_rows_uses_data_ticker_even_when_cell_text_is_mangled():
+    # Regression case: Finviz's avatar fallback text makes the visible cell
+    # text "CCRM" for Salesforce -- but the data-ticker attribute is clean.
+    records = _parse_rows(_grid_html(_row_html("CCRM", ticker_attr="CRM")))
     assert records[0]["Ticker"] == "CRM"
     assert records[0]["Price"] == 248.04
     assert records[0]["Volume"] == 18_513_815.0
@@ -170,38 +167,19 @@ def test_parse_rows_uses_data_boxover_ticker_even_when_cell_text_is_mangled():
 
 
 def test_parse_rows_falls_back_to_strip_when_data_attribute_missing():
-    row = _row_html("HHOWL")  # no data-boxover-ticker attribute anywhere
-    soup = _table_soup(row)
-    records = _parse_rows(soup)
+    records = _parse_rows(_grid_html(_row_html("HHOWL")))  # no data-ticker
     assert records[0]["Ticker"] == "HOWL"
 
 
-def test_parse_rows_skips_short_rows():
-    soup = BeautifulSoup(
-        '<table class="screener_table"><tr><th>No.</th></tr><tr><td>1</td></tr></table>',
-        "html.parser",
+def test_parse_rows_parses_multiple_rows_in_order():
+    html = _grid_html(
+        _row_html("AAPL", ticker_attr="AAPL", price="100.00"),
+        _row_html("MSFT", ticker_attr="MSFT", price="200.00"),
     )
-    assert _parse_rows(soup) == []
+    records = _parse_rows(html)
+    assert [r["Ticker"] for r in records] == ["AAPL", "MSFT"]
+    assert [r["Price"] for r in records] == [100.00, 200.00]
 
 
-def test_parse_rows_no_table_returns_empty():
-    soup = BeautifulSoup("<div>no table here</div>", "html.parser")
-    assert _parse_rows(soup) == []
-
-
-def test_page_count_single_page_without_page_select():
-    soup = _table_soup(_row_html("AAZIO"))
-    assert _page_count(soup) == 1
-
-
-def test_page_count_no_results():
-    soup = BeautifulSoup("<div>No ticker found.</div>", "html.parser")
-    assert _page_count(soup) == 0
-
-
-def test_page_count_multi_page():
-    html = (
-        '<select id="pageSelect"><option>1</option><option>2</option><option>3</option></select>'
-    )
-    soup = BeautifulSoup(html, "html.parser")
-    assert _page_count(soup) == 3
+def test_parse_rows_no_grid_returns_empty():
+    assert _parse_rows("<div>no grid here</div>") == []
