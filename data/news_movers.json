@@ -1,77 +1,86 @@
 {
   "date": "2026-10-19",
-  "updated_at": "2026-10-19T17:41:11.438910+00:00",
+  "updated_at": "2026-10-19T20:08:44.785444+00:00",
   "stocks": [
     {
       "ticker": "WORX",
-      "price": "$2.69",
-      "change": "+94.93%",
-      "volume": "81.0M",
+      "price": "$2.68",
+      "change": "+94.20%",
+      "volume": "110.5M",
       "avg_volume": "374.9K",
-      "rel_volume": "328.0x",
+      "rel_volume": "294.6x",
       "high_dollar_volume": false
     },
     {
       "ticker": "EYPT",
-      "price": "$0.43",
-      "change": "-85.58%",
-      "volume": "147.7M",
+      "price": "$0.44",
+      "change": "-85.28%",
+      "volume": "182.1M",
       "avg_volume": "4.0M",
-      "rel_volume": "55.6x",
+      "rel_volume": "45.2x",
       "high_dollar_volume": false
     },
     {
       "ticker": "EXYN",
-      "price": "$2.60",
-      "change": "+32.65%",
-      "volume": "20.3M",
+      "price": "$2.72",
+      "change": "+38.78%",
+      "volume": "22.6M",
       "avg_volume": "632.5K",
-      "rel_volume": "48.6x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "GLAS",
-      "price": "$2.37",
-      "change": "-25.71%",
-      "volume": "14.4M",
-      "avg_volume": "951.5K",
-      "rel_volume": "23.0x",
+      "rel_volume": "35.8x",
       "high_dollar_volume": false
     },
     {
       "ticker": "IRON",
-      "price": "$78.07",
-      "change": "+37.35%",
-      "volume": "6.7M",
+      "price": "$78.93",
+      "change": "+38.86%",
+      "volume": "8.5M",
       "avg_volume": "490.0K",
-      "rel_volume": "20.8x",
+      "rel_volume": "17.3x",
       "high_dollar_volume": true
     },
     {
-      "ticker": "FRGT",
-      "price": "$1.36",
-      "change": "-8.37%",
-      "volume": "9.6M",
-      "avg_volume": "1.1M",
-      "rel_volume": "13.0x",
+      "ticker": "GLAS",
+      "price": "$2.44",
+      "change": "-23.51%",
+      "volume": "16.1M",
+      "avg_volume": "951.5K",
+      "rel_volume": "16.9x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "BURU",
-      "price": "$0.57",
-      "change": "-4.22%",
-      "volume": "5.0M",
-      "avg_volume": "1.2M",
-      "rel_volume": "6.0x",
+      "ticker": "FRGT",
+      "price": "$1.47",
+      "change": "-0.94%",
+      "volume": "10.1M",
+      "avg_volume": "1.1M",
+      "rel_volume": "9.0x",
       "high_dollar_volume": false
     },
     {
       "ticker": "CLF",
-      "price": "$13.98",
-      "change": "+15.31%",
-      "volume": "56.7M",
+      "price": "$14.11",
+      "change": "+16.42%",
+      "volume": "88.1M",
       "avg_volume": "18.8M",
-      "rel_volume": "4.6x",
+      "rel_volume": "4.7x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "BURU",
+      "price": "$0.55",
+      "change": "-6.36%",
+      "volume": "5.7M",
+      "avg_volume": "1.2M",
+      "rel_volume": "4.5x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "CRWV",
+      "price": "$61.12",
+      "change": "-0.44%",
+      "volume": "99.4M",
+      "avg_volume": "32.3M",
+      "rel_volume": "3.1x",
       "high_dollar_volume": true
     }
   ]
