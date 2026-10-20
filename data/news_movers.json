@@ -1,87 +1,24 @@
 {
-  "date": "2026-10-19",
-  "updated_at": "2026-10-19T20:08:44.785444+00:00",
+  "date": "2026-10-20",
+  "updated_at": "2026-10-20T13:11:42.047152+00:00",
   "stocks": [
     {
-      "ticker": "WORX",
-      "price": "$2.68",
-      "change": "+94.20%",
-      "volume": "110.5M",
-      "avg_volume": "374.9K",
-      "rel_volume": "294.6x",
+      "ticker": "FRTT",
+      "price": "$0.74",
+      "change": "+37.81%",
+      "volume": "94.6M",
+      "avg_volume": "1.7M",
+      "rel_volume": "1115.9x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "EYPT",
-      "price": "$0.44",
-      "change": "-85.28%",
-      "volume": "182.1M",
-      "avg_volume": "4.0M",
-      "rel_volume": "45.2x",
+      "ticker": "HLSQ",
+      "price": "$0.21",
+      "change": "-5.73%",
+      "volume": "9.5M",
+      "avg_volume": "676.1K",
+      "rel_volume": "282.4x",
       "high_dollar_volume": false
-    },
-    {
-      "ticker": "EXYN",
-      "price": "$2.72",
-      "change": "+38.78%",
-      "volume": "22.6M",
-      "avg_volume": "632.5K",
-      "rel_volume": "35.8x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "IRON",
-      "price": "$78.93",
-      "change": "+38.86%",
-      "volume": "8.5M",
-      "avg_volume": "490.0K",
-      "rel_volume": "17.3x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "GLAS",
-      "price": "$2.44",
-      "change": "-23.51%",
-      "volume": "16.1M",
-      "avg_volume": "951.5K",
-      "rel_volume": "16.9x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "FRGT",
-      "price": "$1.47",
-      "change": "-0.94%",
-      "volume": "10.1M",
-      "avg_volume": "1.1M",
-      "rel_volume": "9.0x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "CLF",
-      "price": "$14.11",
-      "change": "+16.42%",
-      "volume": "88.1M",
-      "avg_volume": "18.8M",
-      "rel_volume": "4.7x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "BURU",
-      "price": "$0.55",
-      "change": "-6.36%",
-      "volume": "5.7M",
-      "avg_volume": "1.2M",
-      "rel_volume": "4.5x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "CRWV",
-      "price": "$61.12",
-      "change": "-0.44%",
-      "volume": "99.4M",
-      "avg_volume": "32.3M",
-      "rel_volume": "3.1x",
-      "high_dollar_volume": true
     }
   ]
 }
