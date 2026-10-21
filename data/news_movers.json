@@ -1,140 +1,32 @@
 {
-  "date": "2026-10-20",
-  "updated_at": "2026-10-20T20:09:19.484714+00:00",
+  "date": "2026-10-21",
+  "updated_at": "2026-10-21T13:11:31.958966+00:00",
   "stocks": [
     {
-      "ticker": "PRSO",
-      "price": "$0.59",
-      "change": "+54.13%",
-      "volume": "224.3M",
-      "avg_volume": "246.3K",
-      "rel_volume": "910.6x",
+      "ticker": "INVE",
+      "price": "$2.69",
+      "change": "+21.16%",
+      "volume": "6.8M",
+      "avg_volume": "175.0K",
+      "rel_volume": "777.9x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "FRTT",
-      "price": "$0.71",
-      "change": "+32.63%",
-      "volume": "207.4M",
-      "avg_volume": "1.7M",
-      "rel_volume": "122.3x",
+      "ticker": "OLOX",
+      "price": "$1.13",
+      "change": "+53.31%",
+      "volume": "69.7M",
+      "avg_volume": "4.1M",
+      "rel_volume": "341.0x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "BRZE",
-      "price": "$45.57",
-      "change": "+51.70%",
-      "volume": "64.6M",
-      "avg_volume": "2.5M",
-      "rel_volume": "26.3x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "RAPP",
-      "price": "$29.37",
-      "change": "+2.69%",
-      "volume": "8.2M",
-      "avg_volume": "349.1K",
-      "rel_volume": "23.4x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "HLSQ",
-      "price": "$0.22",
-      "change": "-0.13%",
-      "volume": "11.5M",
-      "avg_volume": "676.1K",
-      "rel_volume": "17.0x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "HOST",
-      "price": "$2.79",
-      "change": "+45.19%",
-      "volume": "6.0M",
-      "avg_volume": "433.0K",
-      "rel_volume": "13.9x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "SAFX",
-      "price": "$0.21",
-      "change": "+32.14%",
-      "volume": "81.4M",
-      "avg_volume": "7.1M",
-      "rel_volume": "11.5x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "MYGN",
-      "price": "$5.54",
-      "change": "+31.59%",
-      "volume": "23.8M",
-      "avg_volume": "2.1M",
-      "rel_volume": "11.5x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "EYPT",
-      "price": "$0.41",
-      "change": "-7.91%",
-      "volume": "50.4M",
-      "avg_volume": "6.8M",
-      "rel_volume": "7.4x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "CJMB",
-      "price": "$0.66",
-      "change": "-65.63%",
-      "volume": "5.8M",
-      "avg_volume": "1.2M",
-      "rel_volume": "5.0x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "RCUS",
-      "price": "$23.75",
-      "change": "+7.27%",
-      "volume": "6.2M",
-      "avg_volume": "1.4M",
-      "rel_volume": "4.4x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "HAS",
-      "price": "$109.52",
-      "change": "+11.20%",
-      "volume": "8.0M",
-      "avg_volume": "1.9M",
-      "rel_volume": "4.2x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "GM",
-      "price": "$77.10",
-      "change": "-6.83%",
-      "volume": "24.6M",
-      "avg_volume": "6.8M",
-      "rel_volume": "3.6x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "VRNS",
-      "price": "$48.68",
-      "change": "-0.04%",
-      "volume": "7.4M",
-      "avg_volume": "2.4M",
-      "rel_volume": "3.1x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "ALK",
-      "price": "$34.39",
-      "change": "+1.21%",
-      "volume": "8.7M",
-      "avg_volume": "2.9M",
-      "rel_volume": "3.0x",
+      "ticker": "AMOD",
+      "price": "$1.86",
+      "change": "+44.19%",
+      "volume": "17.4M",
+      "avg_volume": "4.4M",
+      "rel_volume": "79.7x",
       "high_dollar_volume": false
     }
   ]

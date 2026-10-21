@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-20",
-  "updated_at": "2026-10-20T20:09:19.111817+00:00",
+  "date": "2026-10-21",
+  "updated_at": "2026-10-21T13:11:31.674504+00:00",
   "stocks": [
     {
       "ticker": "BRZE",
@@ -27,9 +27,9 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 20.73,
-      "stretch": "+8.6%",
-      "rvol": "1.1x",
+      "close": 20.71,
+      "stretch": "+8.5%",
+      "rvol": "1.3x",
       "roc3": "+7.0%"
     },
     {
@@ -39,7 +39,7 @@
       "score": "4/6",
       "close": 79.48,
       "stretch": "+24.6%",
-      "rvol": "1.8x",
+      "rvol": "2.0x",
       "roc3": "+40.3%"
     },
     {
