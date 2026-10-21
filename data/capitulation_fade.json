@@ -1,56 +1,56 @@
 {
   "date": "2026-10-21",
-  "updated_at": "2026-10-21T13:11:31.674504+00:00",
+  "updated_at": "2026-10-21T20:11:04.431582+00:00",
   "stocks": [
     {
       "ticker": "BRZE",
       "setup": "Fade Short",
       "direction": "short",
       "score": "5/6",
-      "close": 45.57,
-      "stretch": "+63.4%",
-      "rvol": "12.7x",
-      "roc3": "+50.0%"
+      "close": 45.68,
+      "stretch": "+58.1%",
+      "rvol": "3.2x",
+      "roc3": "+55.7%"
     },
     {
-      "ticker": "HAS",
+      "ticker": "CRL",
       "setup": "Fade Short",
       "direction": "short",
-      "score": "5/6",
-      "close": 109.52,
-      "stretch": "+17.9%",
-      "rvol": "3.7x",
-      "roc3": "+11.3%"
+      "score": "4/6",
+      "close": 344.81,
+      "stretch": "+14.3%",
+      "rvol": "2.4x",
+      "roc3": "+14.9%"
     },
     {
       "ticker": "PEB",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 20.71,
-      "stretch": "+8.5%",
-      "rvol": "1.3x",
-      "roc3": "+7.0%"
+      "close": 21.11,
+      "stretch": "+9.8%",
+      "rvol": "1.4x",
+      "roc3": "+8.3%"
+    },
+    {
+      "ticker": "CDNA",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 70.74,
+      "stretch": "+8.4%",
+      "rvol": "1.0x",
+      "roc3": "+10.5%"
     },
     {
       "ticker": "IRON",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 79.48,
-      "stretch": "+24.6%",
-      "rvol": "2.0x",
-      "roc3": "+40.3%"
-    },
-    {
-      "ticker": "PENG",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 56.32,
-      "stretch": "-9.7%",
-      "rvol": "0.8x",
-      "roc3": "-9.0%"
+      "close": 76.0,
+      "stretch": "+18.2%",
+      "rvol": "3.3x",
+      "roc3": "+33.7%"
     }
   ]
 }

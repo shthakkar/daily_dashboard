@@ -1,33 +1,78 @@
 {
   "date": "2026-10-21",
-  "updated_at": "2026-10-21T13:11:31.958966+00:00",
+  "updated_at": "2026-10-21T20:11:04.740402+00:00",
   "stocks": [
     {
+      "ticker": "REED",
+      "price": "$0.40",
+      "change": "-12.51%",
+      "volume": "46.0M",
+      "avg_volume": "351.5K",
+      "rel_volume": "130.8x",
+      "high_dollar_volume": false
+    },
+    {
       "ticker": "INVE",
-      "price": "$2.69",
-      "change": "+21.16%",
-      "volume": "6.8M",
+      "price": "$2.78",
+      "change": "+25.23%",
+      "volume": "15.3M",
       "avg_volume": "175.0K",
-      "rel_volume": "777.9x",
+      "rel_volume": "87.2x",
       "high_dollar_volume": false
     },
     {
       "ticker": "OLOX",
-      "price": "$1.13",
-      "change": "+53.31%",
-      "volume": "69.7M",
+      "price": "$1.01",
+      "change": "+37.04%",
+      "volume": "128.1M",
       "avg_volume": "4.1M",
-      "rel_volume": "341.0x",
+      "rel_volume": "31.3x",
       "high_dollar_volume": false
     },
     {
       "ticker": "AMOD",
-      "price": "$1.86",
-      "change": "+44.19%",
-      "volume": "17.4M",
+      "price": "$1.03",
+      "change": "-20.16%",
+      "volume": "113.5M",
       "avg_volume": "4.4M",
-      "rel_volume": "79.7x",
+      "rel_volume": "25.9x",
       "high_dollar_volume": false
+    },
+    {
+      "ticker": "AVEX",
+      "price": "$9.65",
+      "change": "-32.74%",
+      "volume": "12.3M",
+      "avg_volume": "1.5M",
+      "rel_volume": "8.5x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "BRZE",
+      "price": "$45.68",
+      "change": "+0.24%",
+      "volume": "18.9M",
+      "avg_volume": "3.4M",
+      "rel_volume": "5.5x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "ALK",
+      "price": "$33.56",
+      "change": "-2.31%",
+      "volume": "11.4M",
+      "avg_volume": "3.0M",
+      "rel_volume": "3.9x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "VRNS",
+      "price": "$48.69",
+      "change": "+0.02%",
+      "volume": "7.5M",
+      "avg_volume": "2.5M",
+      "rel_volume": "3.1x",
+      "high_dollar_volume": true
     }
   ]
 }
