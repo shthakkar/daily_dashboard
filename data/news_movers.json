@@ -1,42 +1,78 @@
 {
   "date": "2026-10-22",
-  "updated_at": "2026-10-22T13:11:12.373693+00:00",
+  "updated_at": "2026-10-22T20:09:21.300344+00:00",
   "stocks": [
     {
+      "ticker": "XXII",
+      "price": "$0.22",
+      "change": "-20.96%",
+      "volume": "110.5M",
+      "avg_volume": "782.5K",
+      "rel_volume": "141.2x",
+      "high_dollar_volume": false
+    },
+    {
       "ticker": "CJMB",
-      "price": "$0.62",
-      "change": "+21.44%",
-      "volume": "67.9M",
+      "price": "$0.52",
+      "change": "+2.38%",
+      "volume": "116.3M",
       "avg_volume": "1.2M",
-      "rel_volume": "1088.4x",
+      "rel_volume": "93.2x",
       "high_dollar_volume": false
     },
     {
       "ticker": "BHVN",
-      "price": "$15.95",
-      "change": "+35.74%",
-      "volume": "11.7M",
+      "price": "$14.70",
+      "change": "+25.11%",
+      "volume": "30.4M",
       "avg_volume": "2.6M",
-      "rel_volume": "90.2x",
-      "high_dollar_volume": false
+      "rel_volume": "11.7x",
+      "high_dollar_volume": true
     },
     {
       "ticker": "BKYI",
-      "price": "$2.65",
-      "change": "+26.19%",
-      "volume": "12.5M",
+      "price": "$2.74",
+      "change": "+30.48%",
+      "volume": "31.6M",
       "avg_volume": "4.1M",
-      "rel_volume": "61.0x",
+      "rel_volume": "7.7x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "SPCX",
-      "price": "$154.54",
-      "change": "-2.99%",
-      "volume": "15.8M",
-      "avg_volume": "97.7M",
-      "rel_volume": "3.2x",
+      "ticker": "TTMI",
+      "price": "$73.89",
+      "change": "-27.67%",
+      "volume": "17.3M",
+      "avg_volume": "2.7M",
+      "rel_volume": "6.4x",
       "high_dollar_volume": true
+    },
+    {
+      "ticker": "FPS",
+      "price": "$24.98",
+      "change": "-21.35%",
+      "volume": "44.2M",
+      "avg_volume": "8.2M",
+      "rel_volume": "5.4x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "AVEX",
+      "price": "$10.98",
+      "change": "+13.48%",
+      "volume": "6.5M",
+      "avg_volume": "1.6M",
+      "rel_volume": "4.0x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "JBLU",
+      "price": "$2.65",
+      "change": "-9.56%",
+      "volume": "83.6M",
+      "avg_volume": "25.8M",
+      "rel_volume": "3.2x",
+      "high_dollar_volume": false
     }
   ]
 }
