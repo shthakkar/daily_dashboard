@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-21",
-  "updated_at": "2026-10-21T20:11:04.431582+00:00",
+  "date": "2026-10-22",
+  "updated_at": "2026-10-22T13:11:12.024546+00:00",
   "stocks": [
     {
       "ticker": "BRZE",
@@ -17,9 +17,9 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 344.81,
+      "close": 344.87,
       "stretch": "+14.3%",
-      "rvol": "2.4x",
+      "rvol": "2.6x",
       "roc3": "+14.9%"
     },
     {
@@ -27,9 +27,9 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 21.11,
-      "stretch": "+9.8%",
-      "rvol": "1.4x",
+      "close": 21.1,
+      "stretch": "+9.7%",
+      "rvol": "1.6x",
       "roc3": "+8.3%"
     },
     {
@@ -39,7 +39,7 @@
       "score": "4/6",
       "close": 70.74,
       "stretch": "+8.4%",
-      "rvol": "1.0x",
+      "rvol": "1.1x",
       "roc3": "+10.5%"
     },
     {
@@ -49,7 +49,7 @@
       "score": "4/6",
       "close": 76.0,
       "stretch": "+18.2%",
-      "rvol": "3.3x",
+      "rvol": "3.5x",
       "roc3": "+33.7%"
     }
   ]
