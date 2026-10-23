@@ -1,14 +1,14 @@
 {
   "date": "2026-10-23",
-  "updated_at": "2026-10-23T20:08:41.279701+00:00",
+  "updated_at": "2026-10-23T20:41:51.545839+00:00",
   "stocks": [
     {
       "ticker": "AIOK",
       "price": "$12.02",
       "change": "+182.82%",
-      "volume": "40.9M",
+      "volume": "41.6M",
       "avg_volume": "65.4K",
-      "rel_volume": "625.9x",
+      "rel_volume": "636.7x",
       "high_dollar_volume": true
     },
     {
@@ -17,43 +17,43 @@
       "change": "+49.64%",
       "volume": "12.7M",
       "avg_volume": "27.8K",
-      "rel_volume": "456.7x",
+      "rel_volume": "458.4x",
       "high_dollar_volume": false
     },
     {
       "ticker": "AARD",
       "price": "$1.39",
       "change": "-64.81%",
-      "volume": "15.9M",
+      "volume": "16.0M",
       "avg_volume": "149.5K",
-      "rel_volume": "106.5x",
+      "rel_volume": "107.2x",
       "high_dollar_volume": false
     },
     {
       "ticker": "RIME",
       "price": "$0.11",
       "change": "-12.90%",
-      "volume": "72.3M",
+      "volume": "73.0M",
       "avg_volume": "2.6M",
-      "rel_volume": "28.2x",
+      "rel_volume": "28.5x",
       "high_dollar_volume": false
     },
     {
       "ticker": "GPUS",
       "price": "$0.17",
-      "change": "+33.57%",
-      "volume": "371.0M",
+      "change": "+34.05%",
+      "volume": "374.4M",
       "avg_volume": "26.6M",
-      "rel_volume": "13.9x",
+      "rel_volume": "14.1x",
       "high_dollar_volume": false
     },
     {
       "ticker": "LKQ",
       "price": "$17.42",
       "change": "-22.47%",
-      "volume": "23.1M",
+      "volume": "23.4M",
       "avg_volume": "3.4M",
-      "rel_volume": "6.7x",
+      "rel_volume": "6.8x",
       "high_dollar_volume": true
     },
     {
@@ -67,17 +67,18 @@
     },
     {
       "ticker": "FLG",
-      "price": "$10.37",
-      "change": "-9.34%",
+      "price": "$10.38",
+      "change": "-9.27%",
       "volume": "24.2M",
       "avg_volume": "5.0M",
       "rel_volume": "4.8x",
-      "high_dollar_volume": false
+      "high_dollar_volume": false,
+      "earnings_date": "2026-10-23"
     },
     {
       "ticker": "CCI",
-      "price": "$86.01",
-      "change": "+9.11%",
+      "price": "$85.97",
+      "change": "+9.06%",
       "volume": "17.3M",
       "avg_volume": "4.0M",
       "rel_volume": "4.3x",
@@ -85,8 +86,8 @@
     },
     {
       "ticker": "CATX",
-      "price": "$1.60",
-      "change": "-29.20%",
+      "price": "$1.61",
+      "change": "-28.76%",
       "volume": "5.6M",
       "avg_volume": "1.6M",
       "rel_volume": "3.5x",
@@ -94,18 +95,19 @@
     },
     {
       "ticker": "RHI",
-      "price": "$45.90",
-      "change": "+21.82%",
+      "price": "$45.87",
+      "change": "+21.74%",
       "volume": "6.9M",
       "avg_volume": "2.0M",
       "rel_volume": "3.4x",
-      "high_dollar_volume": true
+      "high_dollar_volume": true,
+      "earnings_date": "2026-10-22"
     },
     {
       "ticker": "AMT",
       "price": "$188.97",
       "change": "+4.08%",
-      "volume": "8.6M",
+      "volume": "8.7M",
       "avg_volume": "2.8M",
       "rel_volume": "3.1x",
       "high_dollar_volume": true

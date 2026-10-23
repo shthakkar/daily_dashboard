@@ -1,6 +1,6 @@
 import re
 import time
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 import pandas as pd
 import requests
@@ -119,6 +119,50 @@ def get_finviz_tickers(filters: dict) -> list[str]:
     if not tickers:
         raise RuntimeError(f"Finviz screener returned no tickers for filters {filters}")
     return fix_finviz_tickers(tickers)
+
+
+def get_earnings_map() -> dict[str, str]:
+    """Tickers that reported earnings today or yesterday -> ISO earnings date.
+
+    Source: Nasdaq's earnings calendar (one request per day). Sakshar's ask
+    (2026-10-23): flag earnings next to dashboard tickers instead of dropping
+    them, so earnings-day names are visible before he trades them. Raises on
+    failure or an implausibly empty calendar -- the caller logs it loudly and
+    ships the dashboard without the annotation rather than a fake-empty one.
+    """
+    out: dict[str, str] = {}
+    session = requests.Session()
+    session.headers.update({"User-Agent": _FINVIZ_UA,
+                            "Accept": "application/json"})
+    for offset in (1, 0):  # yesterday first so today's date wins on overlap
+        day = date.today() - timedelta(days=offset)
+        resp = session.get(
+            "https://api.nasdaq.com/api/calendar/earnings",
+            params={"date": day.isoformat()}, timeout=30)
+        resp.raise_for_status()
+        rows = (resp.json().get("data") or {}).get("rows") or []
+        if not rows:
+            raise RuntimeError(
+                f"Nasdaq earnings calendar returned no rows for {day}")
+        for row in rows:
+            sym = (row.get("symbol") or "").strip()
+            if sym:
+                out[sym] = day.isoformat()
+    return out
+
+
+def annotate_earnings(result: dict, earnings: dict[str, str]) -> int:
+    """Set stock['earnings_date'] on rows whose ticker reported today/yesterday.
+
+    Mutates `result` in place; returns how many stocks were annotated.
+    """
+    n = 0
+    for stock in result.get("stocks", []):
+        d = earnings.get(stock.get("ticker"))
+        if d:
+            stock["earnings_date"] = d
+            n += 1
+    return n
 
 
 def _chunked(items: list[str], size: int) -> list[list[str]]:
