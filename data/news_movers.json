@@ -1,33 +1,114 @@
 {
   "date": "2026-10-23",
-  "updated_at": "2026-10-23T13:10:47.328304+00:00",
+  "updated_at": "2026-10-23T20:08:41.279701+00:00",
   "stocks": [
     {
+      "ticker": "AIOK",
+      "price": "$12.02",
+      "change": "+182.82%",
+      "volume": "40.9M",
+      "avg_volume": "65.4K",
+      "rel_volume": "625.9x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "BOLT",
+      "price": "$6.27",
+      "change": "+49.64%",
+      "volume": "12.7M",
+      "avg_volume": "27.8K",
+      "rel_volume": "456.7x",
+      "high_dollar_volume": false
+    },
+    {
       "ticker": "AARD",
-      "price": "$2.93",
-      "change": "-25.82%",
-      "volume": "5.3M",
+      "price": "$1.39",
+      "change": "-64.81%",
+      "volume": "15.9M",
       "avg_volume": "149.5K",
-      "rel_volume": "708.9x",
+      "rel_volume": "106.5x",
       "high_dollar_volume": false
     },
     {
       "ticker": "RIME",
-      "price": "$0.10",
-      "change": "-17.83%",
-      "volume": "58.7M",
+      "price": "$0.11",
+      "change": "-12.90%",
+      "volume": "72.3M",
       "avg_volume": "2.6M",
-      "rel_volume": "458.2x",
+      "rel_volume": "28.2x",
       "high_dollar_volume": false
     },
     {
       "ticker": "GPUS",
-      "price": "$0.15",
-      "change": "+22.62%",
-      "volume": "110.2M",
+      "price": "$0.17",
+      "change": "+33.57%",
+      "volume": "371.0M",
       "avg_volume": "26.6M",
-      "rel_volume": "82.7x",
+      "rel_volume": "13.9x",
       "high_dollar_volume": false
+    },
+    {
+      "ticker": "LKQ",
+      "price": "$17.42",
+      "change": "-22.47%",
+      "volume": "23.1M",
+      "avg_volume": "3.4M",
+      "rel_volume": "6.7x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "TNGX",
+      "price": "$23.34",
+      "change": "-16.43%",
+      "volume": "15.9M",
+      "avg_volume": "2.9M",
+      "rel_volume": "5.4x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "FLG",
+      "price": "$10.37",
+      "change": "-9.34%",
+      "volume": "24.2M",
+      "avg_volume": "5.0M",
+      "rel_volume": "4.8x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "CCI",
+      "price": "$86.01",
+      "change": "+9.11%",
+      "volume": "17.3M",
+      "avg_volume": "4.0M",
+      "rel_volume": "4.3x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "CATX",
+      "price": "$1.60",
+      "change": "-29.20%",
+      "volume": "5.6M",
+      "avg_volume": "1.6M",
+      "rel_volume": "3.5x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "RHI",
+      "price": "$45.90",
+      "change": "+21.82%",
+      "volume": "6.9M",
+      "avg_volume": "2.0M",
+      "rel_volume": "3.4x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "AMT",
+      "price": "$188.97",
+      "change": "+4.08%",
+      "volume": "8.6M",
+      "avg_volume": "2.8M",
+      "rel_volume": "3.1x",
+      "high_dollar_volume": true
     }
   ]
 }
