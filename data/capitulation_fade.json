@@ -1,6 +1,6 @@
 {
   "date": "2026-10-23",
-  "updated_at": "2026-10-23T20:08:40.976840+00:00",
+  "updated_at": "2026-10-23T20:41:50.452328+00:00",
   "stocks": [
     {
       "ticker": "CORT",
@@ -9,7 +9,7 @@
       "score": "5/6",
       "close": 85.86,
       "stretch": "-25.1%",
-      "rvol": "3.2x",
+      "rvol": "3.4x",
       "roc3": "-26.3%"
     },
     {
@@ -17,30 +17,32 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "5/6",
-      "close": 45.9,
-      "stretch": "+29.1%",
-      "rvol": "3.1x",
-      "roc3": "+35.6%"
+      "close": 45.87,
+      "stretch": "+29.0%",
+      "rvol": "3.4x",
+      "roc3": "+35.5%",
+      "earnings_date": "2026-10-22"
     },
     {
       "ticker": "GBCI",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 47.8,
+      "close": 47.81,
       "stretch": "+9.3%",
-      "rvol": "1.9x",
-      "roc3": "+7.4%"
+      "rvol": "2.2x",
+      "roc3": "+7.4%",
+      "earnings_date": "2026-10-22"
     },
     {
       "ticker": "TCBI",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 101.67,
-      "stretch": "+9.7%",
+      "close": 101.99,
+      "stretch": "+10.1%",
       "rvol": "1.6x",
-      "roc3": "+11.7%"
+      "roc3": "+12.0%"
     },
     {
       "ticker": "OZK",
@@ -59,8 +61,18 @@
       "score": "4/6",
       "close": 117.44,
       "stretch": "+20.8%",
-      "rvol": "0.9x",
+      "rvol": "1.1x",
       "roc3": "+7.2%"
+    },
+    {
+      "ticker": "CCI",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 85.97,
+      "stretch": "+15.0%",
+      "rvol": "3.0x",
+      "roc3": "+6.0%"
     }
   ]
 }

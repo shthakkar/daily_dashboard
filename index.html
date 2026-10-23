@@ -160,13 +160,14 @@
     .s-row:last-child { border-bottom: none; }
     .s-row.high-dv { background: #2e230d; border-left: 2px solid #eab308; }
     .s-row.high-dv .s-cell { color: #d6a94a; }
-    .qualla-grid { grid-template-columns: 90px 55px 140px 90px; min-width: 420px; }
-    .rs-grid     { grid-template-columns: 90px repeat(4, minmax(70px, 1fr)); min-width: 440px; }
+    .qualla-grid { grid-template-columns: 90px 55px 140px 90px 95px; min-width: 515px; }
+    .rs-grid     { grid-template-columns: 90px repeat(4, minmax(70px, 1fr)) 95px; min-width: 535px; }
     .para-grid   { grid-template-columns: 90px 1fr 1fr; }
-    .movers-grid { grid-template-columns: 90px repeat(5, minmax(60px, 1fr)); min-width: 520px; }
-    .capit-grid   { grid-template-columns: 80px repeat(6, minmax(62px, 1fr)); min-width: 560px; }
+    .movers-grid { grid-template-columns: 90px repeat(5, minmax(60px, 1fr)) 95px; min-width: 615px; }
+    .capit-grid   { grid-template-columns: 80px repeat(6, minmax(62px, 1fr)) 95px; min-width: 655px; }
     .s-cell      { font-size: 0.8rem; color: #888; white-space: nowrap; }
     .s-cell.dim  { color: #555; }
+    .s-cell.earn { color: #eab308; font-weight: 600; }
     .scanner-na  { font-size: 0.8rem; color: #333; display: block; padding: 1rem 1.5rem; }
   </style>
 </head>
@@ -267,6 +268,23 @@
       return fetch(path + '?t=' + Date.now(), { cache: 'no-store' });
     }
 
+    // Earnings date cell: amber date when the ticker reported today or
+    // yesterday (earnings_date comes from the Nasdaq calendar in the JSON),
+    // dim dash otherwise.
+    function earnCell(s) {
+      var c = document.createElement('span');
+      if (s.earnings_date) {
+        var p = s.earnings_date.split('-');
+        var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        c.className = 's-cell earn';
+        c.textContent = months[parseInt(p[1], 10) - 1] + ' ' + parseInt(p[2], 10);
+      } else {
+        c.className = 's-cell dim';
+        c.textContent = '—';
+      }
+      return c;
+    }
+
     function makeTicker(symbol, cssClass) {
       const a = document.createElement('a');
       a.className = 'ticker ' + cssClass;
@@ -324,7 +342,7 @@
         }
         var head = document.createElement('div');
         head.className = 's-head capit-grid';
-        ['Ticker', 'Setup', 'Score', 'Price', 'Stretch', 'RVOL', '3D'].forEach(function(h) {
+        ['Ticker', 'Setup', 'Score', 'Price', 'Stretch', 'RVOL', '3D', 'Earnings'].forEach(function(h) {
           var c = document.createElement('span'); c.textContent = h; head.appendChild(c);
         });
         container.appendChild(head);
@@ -338,6 +356,7 @@
           [s.stretch, s.rvol, s.roc3].forEach(function(v) {
             var c = document.createElement('span'); c.className = 's-cell'; c.textContent = safe(v); row.appendChild(c);
           });
+          row.appendChild(earnCell(s));
           container.appendChild(row);
         });
         attachScannerPopups();
@@ -361,7 +380,7 @@
         }
         var head = document.createElement('div');
         head.className = 's-head qualla-grid';
-        ['Ticker', 'Score', 'Rating', 'Close'].forEach(function(h) {
+        ['Ticker', 'Score', 'Rating', 'Close', 'Earnings'].forEach(function(h) {
           var c = document.createElement('span'); c.textContent = h; head.appendChild(c);
         });
         container.appendChild(head);
@@ -372,6 +391,7 @@
           var c2 = document.createElement('span'); c2.className = 's-cell'; c2.textContent = safe(String(s.tightness)); row.appendChild(c2);
           var c3 = document.createElement('span'); c3.className = 's-cell dim'; c3.textContent = safe(s.rating); row.appendChild(c3);
           var c4 = document.createElement('span'); c4.className = 's-cell'; c4.textContent = '$' + safe(String(s.close)); row.appendChild(c4);
+          row.appendChild(earnCell(s));
           container.appendChild(row);
         });
         attachScannerPopups();
@@ -395,7 +415,7 @@
         }
         var head = document.createElement('div');
         head.className = 's-head rs-grid';
-        ['Ticker', '1M', '3M', '6M', '9M'].forEach(function(h) {
+        ['Ticker', '1M', '3M', '6M', '9M', 'Earnings'].forEach(function(h) {
           var c = document.createElement('span'); c.textContent = h; head.appendChild(c);
         });
         container.appendChild(head);
@@ -406,6 +426,7 @@
           [s.ret_1m, s.ret_3m, s.ret_6m, s.ret_9m].forEach(function(v) {
             var c = document.createElement('span'); c.className = 's-cell'; c.textContent = safe(v); row.appendChild(c);
           });
+          row.appendChild(earnCell(s));
           container.appendChild(row);
         });
         attachScannerPopups();
@@ -429,7 +450,7 @@
         }
         var head = document.createElement('div');
         head.className = 's-head movers-grid';
-        ['Ticker', 'Price', 'Change', 'Volume', 'Avg Vol', 'Rel Vol'].forEach(function(h) {
+        ['Ticker', 'Price', 'Change', 'Volume', 'Avg Vol', 'Rel Vol', 'Earnings'].forEach(function(h) {
           var c = document.createElement('span'); c.textContent = h; head.appendChild(c);
         });
         container.appendChild(head);
@@ -440,6 +461,7 @@
           [s.price, s.change, s.volume, s.avg_volume, s.rel_volume].forEach(function(v) {
             var c = document.createElement('span'); c.className = 's-cell'; c.textContent = safe(v); row.appendChild(c);
           });
+          row.appendChild(earnCell(s));
           container.appendChild(row);
         });
         attachScannerPopups();

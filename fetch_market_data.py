@@ -109,6 +109,17 @@ def main() -> None:
         print(f"Skipping everything: failed to fetch price data: {e}")
         return
 
+    # --- Earnings flags: tickers that reported today or yesterday get an
+    # `earnings_date` on their screener rows (Sakshar's ask, 2026-10-23).
+    # Best-effort but loud: a failed lookup never blocks the dashboard, and
+    # never silently ships an all-empty column either (warning in the log).
+    try:
+        earnings = helpers.get_earnings_map()
+        print(f"Earnings map: {len(earnings)} tickers reported today/yesterday")
+    except Exception as e:
+        earnings = {}
+        print(f"WARNING: earnings lookup failed, shipping without flags: {e}")
+
     # --- Market indicators ---
     try:
         payload = {"date": date.today().isoformat(), "updated_at": helpers.now_utc_iso()}
@@ -122,32 +133,36 @@ def main() -> None:
     # --- Capitulation Fade (needs OHLCV; screens the large+mid universe) ---
     try:
         result = capitulation_fade.run(ohlcv)
+        n_earn = helpers.annotate_earnings(result, earnings)
         write_json(result, "data/capitulation_fade.json")
-        print(f"Capitulation fade: {len(result['stocks'])} candidates")
+        print(f"Capitulation fade: {len(result['stocks'])} candidates ({n_earn} earnings-flagged)")
     except Exception as e:
         print(f"Skipping capitulation fade: {e}")
 
     # --- News Movers (independent — Finviz Custom screener only, no yfinance) ---
     try:
         result = news_movers.run()
+        n_earn = helpers.annotate_earnings(result, earnings)
         write_json(result, "data/news_movers.json")
-        print(f"News movers: {len(result['stocks'])} stocks")
+        print(f"News movers: {len(result['stocks'])} stocks ({n_earn} earnings-flagged)")
     except Exception as e:
         print(f"Skipping news movers: {e}")
 
     # --- Qullamaggie ---
     try:
         result = qullamaggie.run(price_large, momentum)
+        n_earn = helpers.annotate_earnings(result, earnings)
         write_json(result, "data/qullamaggie.json")
-        print(f"Qullamaggie: {len(result['stocks'])} stocks")
+        print(f"Qullamaggie: {len(result['stocks'])} stocks ({n_earn} earnings-flagged)")
     except Exception as e:
         print(f"Skipping Qullamaggie: {e}")
 
     # --- Relative Strength ---
     try:
         result = relative_strength.run(momentum)
+        n_earn = helpers.annotate_earnings(result, earnings)
         write_json(result, "data/relative_strength.json")
-        print(f"Relative strength: {len(result['stocks'])} stocks")
+        print(f"Relative strength: {len(result['stocks'])} stocks ({n_earn} earnings-flagged)")
     except Exception as e:
         print(f"Skipping relative strength: {e}")
 
