@@ -1,47 +1,47 @@
 {
-  "date": "2026-10-22",
-  "updated_at": "2026-10-22T20:09:21.305509+00:00",
+  "date": "2026-10-23",
+  "updated_at": "2026-10-23T13:10:47.333459+00:00",
   "stocks": [
     {
       "ticker": "MANH",
       "tightness": 2.1,
       "rating": "Wide",
       "close": 242.17,
-      "avg_rank": 0.9238
+      "avg_rank": 0.9234
     },
     {
       "ticker": "VLO",
       "tightness": 1.9,
       "rating": "Wide",
-      "close": 426.13,
+      "close": 426.28,
       "avg_rank": 0.9242
     },
     {
       "ticker": "DINO",
       "tightness": 1.8,
       "rating": "Wide",
-      "close": 122.27,
-      "avg_rank": 0.9583
+      "close": 122.32,
+      "avg_rank": 0.9581
     },
     {
       "ticker": "CRL",
       "tightness": 1.7,
       "rating": "Wide",
       "close": 339.66,
-      "avg_rank": 0.9421
+      "avg_rank": 0.9419
     },
     {
       "ticker": "MPC",
       "tightness": 1.6,
       "rating": "Wide",
-      "close": 459.46,
-      "avg_rank": 0.9741
+      "close": 459.28,
+      "avg_rank": 0.9738
     },
     {
       "ticker": "PAYC",
       "tightness": 1.5,
       "rating": "Wide",
-      "close": 272.51,
+      "close": 272.61,
       "avg_rank": 0.981
     },
     {
@@ -49,21 +49,21 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 84.41,
-      "avg_rank": 0.955
+      "avg_rank": 0.9552
     },
     {
       "ticker": "TEAM",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 223.16,
-      "avg_rank": 0.9652
+      "avg_rank": 0.9649
     },
     {
       "ticker": "VEEV",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 322.69,
-      "avg_rank": 0.9534
+      "close": 322.55,
+      "avg_rank": 0.9532
     }
   ]
 }
