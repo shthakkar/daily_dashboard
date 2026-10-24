@@ -1,69 +1,69 @@
 {
-  "date": "2026-10-23",
-  "updated_at": "2026-10-23T20:41:51.553500+00:00",
+  "date": "2026-10-24",
+  "updated_at": "2026-10-24T13:10:38.429496+00:00",
   "stocks": [
     {
       "ticker": "FROG",
       "tightness": 6.8,
       "rating": "Tight",
       "close": 100.62,
-      "avg_rank": 0.9356
+      "avg_rank": 0.9355
     },
     {
       "ticker": "OKTA",
       "tightness": 4.3,
       "rating": "Medium",
       "close": 213.05,
-      "avg_rank": 0.9263
+      "avg_rank": 0.9261
     },
     {
       "ticker": "ESTC",
       "tightness": 2.5,
       "rating": "Wide",
       "close": 102.43,
-      "avg_rank": 0.9417
+      "avg_rank": 0.9416
     },
     {
       "ticker": "HALO",
       "tightness": 2.0,
       "rating": "Wide",
       "close": 125.63,
-      "avg_rank": 0.9234
+      "avg_rank": 0.9229
     },
     {
       "ticker": "DINO",
       "tightness": 1.7,
       "rating": "Wide",
       "close": 121.66,
-      "avg_rank": 0.9445
+      "avg_rank": 0.9444
     },
     {
       "ticker": "MPC",
       "tightness": 1.6,
       "rating": "Wide",
       "close": 457.22,
-      "avg_rank": 0.966
+      "avg_rank": 0.9659
     },
     {
       "ticker": "CRL",
       "tightness": 1.4,
       "rating": "Wide",
       "close": 345.37,
-      "avg_rank": 0.9583
+      "avg_rank": 0.9582
     },
     {
       "ticker": "APA",
       "tightness": 1.2,
       "rating": "Wide",
       "close": 51.9,
-      "avg_rank": 0.9392
+      "avg_rank": 0.9391
     },
     {
       "ticker": "PAYC",
       "tightness": 1.2,
       "rating": "Wide",
       "close": 274.59,
-      "avg_rank": 0.9818
+      "avg_rank": 0.9817
     },
     {
       "ticker": "DOCU",
@@ -91,7 +91,7 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 323.04,
-      "avg_rank": 0.9384
+      "avg_rank": 0.9383
     }
   ]
 }
