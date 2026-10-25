@@ -1,97 +1,97 @@
 {
-  "date": "2026-10-24",
-  "updated_at": "2026-10-24T13:10:38.429496+00:00",
+  "date": "2026-10-25",
+  "updated_at": "2026-10-25T13:11:13.516315+00:00",
   "stocks": [
     {
       "ticker": "FROG",
       "tightness": 6.8,
       "rating": "Tight",
       "close": 100.62,
-      "avg_rank": 0.9355
+      "avg_rank": 0.9357
     },
     {
       "ticker": "OKTA",
       "tightness": 4.3,
       "rating": "Medium",
       "close": 213.05,
-      "avg_rank": 0.9261
+      "avg_rank": 0.9262
     },
     {
       "ticker": "ESTC",
       "tightness": 2.5,
       "rating": "Wide",
       "close": 102.43,
-      "avg_rank": 0.9416
+      "avg_rank": 0.9414
     },
     {
       "ticker": "HALO",
       "tightness": 2.0,
       "rating": "Wide",
       "close": 125.63,
-      "avg_rank": 0.9229
+      "avg_rank": 0.923
     },
     {
       "ticker": "DINO",
       "tightness": 1.7,
       "rating": "Wide",
       "close": 121.66,
-      "avg_rank": 0.9444
+      "avg_rank": 0.9447
     },
     {
       "ticker": "MPC",
       "tightness": 1.6,
       "rating": "Wide",
       "close": 457.22,
-      "avg_rank": 0.9659
+      "avg_rank": 0.9656
     },
     {
       "ticker": "CRL",
       "tightness": 1.4,
       "rating": "Wide",
       "close": 345.37,
-      "avg_rank": 0.9582
+      "avg_rank": 0.9578
     },
     {
       "ticker": "APA",
       "tightness": 1.2,
       "rating": "Wide",
       "close": 51.9,
-      "avg_rank": 0.9391
+      "avg_rank": 0.9385
     },
     {
       "ticker": "PAYC",
       "tightness": 1.2,
       "rating": "Wide",
       "close": 274.59,
-      "avg_rank": 0.9817
+      "avg_rank": 0.9816
     },
     {
       "ticker": "DOCU",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 85.27,
-      "avg_rank": 0.9558
+      "avg_rank": 0.9553
     },
     {
       "ticker": "RBRK",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 128.74,
-      "avg_rank": 0.9773
+      "avg_rank": 0.977
     },
     {
       "ticker": "TEAM",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 227.61,
-      "avg_rank": 0.9773
+      "avg_rank": 0.977
     },
     {
       "ticker": "VEEV",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 323.04,
-      "avg_rank": 0.9383
+      "avg_rank": 0.9381
     }
   ]
 }
