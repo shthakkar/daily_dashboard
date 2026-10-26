@@ -1,50 +1,140 @@
 {
   "date": "2026-10-26",
-  "updated_at": "2026-10-26T13:10:44.233892+00:00",
+  "updated_at": "2026-10-26T20:08:55.394099+00:00",
   "stocks": [
     {
       "ticker": "SRTM",
-      "price": "$0.58",
-      "change": "+34.12%",
-      "volume": "55.0M",
+      "price": "$0.30",
+      "change": "-30.28%",
+      "volume": "114.7M",
       "avg_volume": "506.8K",
-      "rel_volume": "2170.2x",
+      "rel_volume": "226.4x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "XTND",
+      "price": "$2.18",
+      "change": "+23.45%",
+      "volume": "40.7M",
+      "avg_volume": "865.1K",
+      "rel_volume": "47.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "SGRY",
+      "price": "$23.25",
+      "change": "+47.62%",
+      "volume": "58.8M",
+      "avg_volume": "2.3M",
+      "rel_volume": "25.8x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "GCDT",
+      "price": "$0.15",
+      "change": "-14.99%",
+      "volume": "65.5M",
+      "avg_volume": "3.6M",
+      "rel_volume": "18.1x",
       "high_dollar_volume": false
     },
     {
       "ticker": "VBIO",
-      "price": "$0.86",
-      "change": "-8.50%",
-      "volume": "14.8M",
+      "price": "$0.84",
+      "change": "-10.64%",
+      "volume": "17.3M",
       "avg_volume": "1.7M",
-      "rel_volume": "177.7x",
+      "rel_volume": "10.4x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "PRSO",
-      "price": "$0.36",
-      "change": "-6.03%",
-      "volume": "7.0M",
+      "ticker": "RRC",
+      "price": "$53.57",
+      "change": "+17.68%",
+      "volume": "26.5M",
+      "avg_volume": "2.6M",
+      "rel_volume": "10.2x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "CART",
+      "price": "$60.88",
+      "change": "+7.87%",
+      "volume": "31.7M",
       "avg_volume": "4.0M",
-      "rel_volume": "34.6x",
+      "rel_volume": "7.9x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "XNCR",
+      "price": "$29.18",
+      "change": "+15.89%",
+      "volume": "8.9M",
+      "avg_volume": "1.3M",
+      "rel_volume": "6.6x",
       "high_dollar_volume": false
     },
     {
       "ticker": "XXII",
-      "price": "$0.12",
-      "change": "-41.53%",
-      "volume": "9.8M",
+      "price": "$0.09",
+      "change": "-55.29%",
+      "volume": "34.1M",
       "avg_volume": "5.9M",
-      "rel_volume": "33.4x",
+      "rel_volume": "5.8x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "AMKR",
+      "price": "$36.81",
+      "change": "-6.34%",
+      "volume": "19.7M",
+      "avg_volume": "4.7M",
+      "rel_volume": "4.2x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "EQT",
+      "price": "$54.85",
+      "change": "-1.40%",
+      "volume": "27.2M",
+      "avg_volume": "6.9M",
+      "rel_volume": "4.0x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "LKQ",
+      "price": "$17.25",
+      "change": "-0.98%",
+      "volume": "12.1M",
+      "avg_volume": "3.7M",
+      "rel_volume": "3.3x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "WHR",
+      "price": "$26.44",
+      "change": "-5.94%",
+      "volume": "8.9M",
+      "avg_volume": "2.8M",
+      "rel_volume": "3.2x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "NXH",
+      "price": "$1.58",
+      "change": "-3.66%",
+      "volume": "10.5M",
+      "avg_volume": "3.3M",
+      "rel_volume": "3.2x",
       "high_dollar_volume": false
     },
     {
       "ticker": "SHFS",
-      "price": "$0.12",
-      "change": "-12.69%",
-      "volume": "43.6M",
+      "price": "$0.09",
+      "change": "-29.00%",
+      "volume": "96.0M",
       "avg_volume": "31.8M",
-      "rel_volume": "27.4x",
+      "rel_volume": "3.0x",
       "high_dollar_volume": false
     }
   ]

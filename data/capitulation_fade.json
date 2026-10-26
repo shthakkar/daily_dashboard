@@ -1,76 +1,76 @@
 {
   "date": "2026-10-26",
-  "updated_at": "2026-10-26T13:10:43.849007+00:00",
+  "updated_at": "2026-10-26T20:08:54.715430+00:00",
   "stocks": [
     {
-      "ticker": "CORT",
+      "ticker": "RRC",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "6/6",
+      "close": 53.57,
+      "stretch": "+28.6%",
+      "rvol": "6.6x",
+      "roc3": "+24.8%"
+    },
+    {
+      "ticker": "SGRY",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "5/6",
+      "close": 23.25,
+      "stretch": "+56.9%",
+      "rvol": "12.6x",
+      "roc3": "+51.0%"
+    },
+    {
+      "ticker": "CART",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "5/6",
+      "close": 60.88,
+      "stretch": "+25.1%",
+      "rvol": "6.1x",
+      "roc3": "+21.0%"
+    },
+    {
+      "ticker": "XNCR",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 29.18,
+      "stretch": "+17.8%",
+      "rvol": "5.1x",
+      "roc3": "+16.0%"
+    },
+    {
+      "ticker": "LMT",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 635.32,
+      "stretch": "+19.1%",
+      "rvol": "1.7x",
+      "roc3": "+15.2%"
+    },
+    {
+      "ticker": "GGG",
       "setup": "Fade Long",
       "direction": "long",
-      "score": "5/6",
-      "close": 85.86,
-      "stretch": "-25.1%",
-      "rvol": "3.6x",
-      "roc3": "-26.3%"
-    },
-    {
-      "ticker": "RHI",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "5/6",
-      "close": 45.87,
-      "stretch": "+29.0%",
-      "rvol": "3.4x",
-      "roc3": "+35.5%"
-    },
-    {
-      "ticker": "GBCI",
-      "setup": "Fade Short",
-      "direction": "short",
       "score": "4/6",
-      "close": 47.81,
-      "stretch": "+9.3%",
-      "rvol": "2.2x",
-      "roc3": "+7.4%"
-    },
-    {
-      "ticker": "TCBI",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 101.99,
-      "stretch": "+10.1%",
-      "rvol": "1.6x",
-      "roc3": "+12.0%"
-    },
-    {
-      "ticker": "OZK",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 50.61,
-      "stretch": "+10.3%",
-      "rvol": "1.0x",
-      "roc3": "+9.6%"
-    },
-    {
-      "ticker": "HAS",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 117.44,
-      "stretch": "+20.8%",
-      "rvol": "1.1x",
-      "roc3": "+7.2%"
+      "close": 66.08,
+      "stretch": "-14.6%",
+      "rvol": "0.9x",
+      "roc3": "-19.2%"
     },
     {
       "ticker": "CCI",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 85.97,
-      "stretch": "+15.0%",
-      "rvol": "3.0x",
-      "roc3": "+6.0%"
+      "close": 87.56,
+      "stretch": "+15.6%",
+      "rvol": "1.1x",
+      "roc3": "+11.3%"
     }
   ]
 }
