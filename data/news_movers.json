@@ -1,5 +1,51 @@
 {
-  "date": "2026-10-25",
-  "updated_at": "2026-10-25T13:11:13.509554+00:00",
-  "stocks": []
+  "date": "2026-10-26",
+  "updated_at": "2026-10-26T13:10:44.233892+00:00",
+  "stocks": [
+    {
+      "ticker": "SRTM",
+      "price": "$0.58",
+      "change": "+34.12%",
+      "volume": "55.0M",
+      "avg_volume": "506.8K",
+      "rel_volume": "2170.2x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "VBIO",
+      "price": "$0.86",
+      "change": "-8.50%",
+      "volume": "14.8M",
+      "avg_volume": "1.7M",
+      "rel_volume": "177.7x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "PRSO",
+      "price": "$0.36",
+      "change": "-6.03%",
+      "volume": "7.0M",
+      "avg_volume": "4.0M",
+      "rel_volume": "34.6x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "XXII",
+      "price": "$0.12",
+      "change": "-41.53%",
+      "volume": "9.8M",
+      "avg_volume": "5.9M",
+      "rel_volume": "33.4x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "SHFS",
+      "price": "$0.12",
+      "change": "-12.69%",
+      "volume": "43.6M",
+      "avg_volume": "31.8M",
+      "rel_volume": "27.4x",
+      "high_dollar_volume": false
+    }
+  ]
 }
