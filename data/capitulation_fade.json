@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-27",
-  "updated_at": "2026-10-27T20:09:19.426355+00:00",
+  "date": "2026-10-28",
+  "updated_at": "2026-10-28T13:10:49.195324+00:00",
   "stocks": [
     {
       "ticker": "EEFT",
@@ -9,7 +9,7 @@
       "score": "5/6",
       "close": 59.01,
       "stretch": "-8.0%",
-      "rvol": "3.1x",
+      "rvol": "3.2x",
       "roc3": "-12.0%",
       "earnings_date": "2026-10-27"
     },
@@ -18,10 +18,10 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "5/6",
-      "close": 92.78,
-      "stretch": "-10.2%",
-      "rvol": "3.6x",
-      "roc3": "-15.1%",
+      "close": 92.86,
+      "stretch": "-10.1%",
+      "rvol": "3.9x",
+      "roc3": "-15.0%",
       "earnings_date": "2026-10-27"
     },
     {
@@ -29,10 +29,10 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "5/6",
-      "close": 56.37,
-      "stretch": "+32.2%",
-      "rvol": "3.2x",
-      "roc3": "+28.5%",
+      "close": 56.38,
+      "stretch": "+32.3%",
+      "rvol": "3.5x",
+      "roc3": "+28.6%",
       "earnings_date": "2026-10-27"
     },
     {
@@ -40,9 +40,9 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 168.16,
+      "close": 168.18,
       "stretch": "-10.7%",
-      "rvol": "4.8x",
+      "rvol": "5.0x",
       "roc3": "-10.3%",
       "earnings_date": "2026-10-27"
     },
@@ -51,19 +51,19 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 23.34,
-      "stretch": "-9.0%",
+      "close": 23.36,
+      "stretch": "-8.9%",
       "rvol": "0.5x",
-      "roc3": "-8.1%"
+      "roc3": "-8.0%"
     },
     {
       "ticker": "CCI",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 87.88,
+      "close": 87.87,
       "stretch": "+14.4%",
-      "rvol": "0.6x",
+      "rvol": "0.8x",
       "roc3": "+11.5%"
     }
   ]
