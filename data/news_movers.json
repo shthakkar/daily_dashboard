@@ -1,63 +1,210 @@
 {
   "date": "2026-10-29",
-  "updated_at": "2026-10-29T13:11:22.504167+00:00",
+  "updated_at": "2026-10-29T20:09:25.057049+00:00",
   "stocks": [
     {
+      "ticker": "CETX",
+      "price": "$1.78",
+      "change": "+0.56%",
+      "volume": "37.9M",
+      "avg_volume": "39.1K",
+      "rel_volume": "967.3x",
+      "high_dollar_volume": false
+    },
+    {
       "ticker": "BURU",
-      "price": "$0.21",
-      "change": "+19.58%",
-      "volume": "43.8M",
+      "price": "$0.38",
+      "change": "+118.36%",
+      "volume": "837.5M",
       "avg_volume": "1.9M",
-      "rel_volume": "465.8x",
-      "high_dollar_volume": false
+      "rel_volume": "445.0x",
+      "high_dollar_volume": true
     },
     {
-      "ticker": "QNME",
-      "price": "$0.47",
-      "change": "+7.08%",
-      "volume": "9.7M",
-      "avg_volume": "14.0M",
-      "rel_volume": "13.9x",
-      "high_dollar_volume": false
+      "ticker": "ADT",
+      "price": "$9.87",
+      "change": "+33.20%",
+      "volume": "163.8M",
+      "avg_volume": "7.7M",
+      "rel_volume": "21.4x",
+      "high_dollar_volume": true
     },
     {
-      "ticker": "IOVA",
-      "price": "$10.25",
-      "change": "-30.79%",
-      "volume": "10.1M",
-      "avg_volume": "16.3M",
-      "rel_volume": "12.4x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "NCLH",
-      "price": "$17.88",
-      "change": "+11.33%",
-      "volume": "5.7M",
-      "avg_volume": "17.8M",
-      "rel_volume": "6.4x",
+      "ticker": "XRX",
+      "price": "$1.66",
+      "change": "-40.32%",
+      "volume": "29.6M",
+      "avg_volume": "3.1M",
+      "rel_volume": "9.6x",
       "high_dollar_volume": false,
       "earnings_date": "2026-10-29"
     },
     {
+      "ticker": "SFM",
+      "price": "$48.00",
+      "change": "-22.58%",
+      "volume": "19.3M",
+      "avg_volume": "2.0M",
+      "rel_volume": "9.4x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-10-28"
+    },
+    {
+      "ticker": "LENZ",
+      "price": "$3.49",
+      "change": "+8.72%",
+      "volume": "6.0M",
+      "avg_volume": "735.2K",
+      "rel_volume": "8.1x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-10-28"
+    },
+    {
+      "ticker": "ALNY",
+      "price": "$174.00",
+      "change": "-25.13%",
+      "volume": "11.8M",
+      "avg_volume": "1.8M",
+      "rel_volume": "6.7x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-10-29"
+    },
+    {
+      "ticker": "KDK",
+      "price": "$1.28",
+      "change": "-2.29%",
+      "volume": "22.9M",
+      "avg_volume": "3.8M",
+      "rel_volume": "6.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "GKOS",
+      "price": "$242.39",
+      "change": "+33.60%",
+      "volume": "5.4M",
+      "avg_volume": "922.9K",
+      "rel_volume": "5.9x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-10-28"
+    },
+    {
+      "ticker": "CART",
+      "price": "$57.11",
+      "change": "-2.24%",
+      "volume": "25.6M",
+      "avg_volume": "4.7M",
+      "rel_volume": "5.5x",
+      "high_dollar_volume": true
+    },
+    {
       "ticker": "GOOG",
-      "price": "$284.35",
-      "change": "-11.66%",
-      "volume": "5.3M",
+      "price": "$282.32",
+      "change": "-12.29%",
+      "volume": "91.6M",
       "avg_volume": "17.2M",
-      "rel_volume": "6.2x",
+      "rel_volume": "5.3x",
       "high_dollar_volume": true,
       "earnings_date": "2026-10-28"
     },
     {
       "ticker": "GOOGL",
-      "price": "$287.55",
-      "change": "-11.49%",
-      "volume": "6.9M",
+      "price": "$283.82",
+      "change": "-12.64%",
+      "volume": "136.5M",
       "avg_volume": "26.1M",
-      "rel_volume": "5.3x",
+      "rel_volume": "5.2x",
       "high_dollar_volume": true,
       "earnings_date": "2026-10-28"
+    },
+    {
+      "ticker": "NOW",
+      "price": "$109.65",
+      "change": "-26.96%",
+      "volume": "75.2M",
+      "avg_volume": "15.4M",
+      "rel_volume": "4.9x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-10-28"
+    },
+    {
+      "ticker": "TDOC",
+      "price": "$8.73",
+      "change": "+26.82%",
+      "volume": "20.0M",
+      "avg_volume": "4.2M",
+      "rel_volume": "4.7x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-10-28"
+    },
+    {
+      "ticker": "INSM",
+      "price": "$111.59",
+      "change": "+15.06%",
+      "volume": "11.1M",
+      "avg_volume": "2.8M",
+      "rel_volume": "4.0x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-10-29"
+    },
+    {
+      "ticker": "FTNT",
+      "price": "$139.10",
+      "change": "-20.09%",
+      "volume": "17.2M",
+      "avg_volume": "4.5M",
+      "rel_volume": "3.8x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-10-28"
+    },
+    {
+      "ticker": "NCLH",
+      "price": "$18.20",
+      "change": "+13.33%",
+      "volume": "66.9M",
+      "avg_volume": "17.8M",
+      "rel_volume": "3.8x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-10-29"
+    },
+    {
+      "ticker": "IOVA",
+      "price": "$9.56",
+      "change": "-35.45%",
+      "volume": "58.5M",
+      "avg_volume": "16.3M",
+      "rel_volume": "3.6x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "NEXT",
+      "price": "$7.26",
+      "change": "+11.52%",
+      "volume": "8.6M",
+      "avg_volume": "2.6M",
+      "rel_volume": "3.3x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-10-29"
+    },
+    {
+      "ticker": "MPT",
+      "price": "$2.43",
+      "change": "-11.45%",
+      "volume": "35.7M",
+      "avg_volume": "10.8M",
+      "rel_volume": "3.3x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-10-29"
+    },
+    {
+      "ticker": "CAT",
+      "price": "$647.25",
+      "change": "-9.27%",
+      "volume": "8.0M",
+      "avg_volume": "2.7M",
+      "rel_volume": "3.0x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-10-29"
     }
   ]
 }

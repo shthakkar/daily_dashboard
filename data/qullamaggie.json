@@ -1,118 +1,105 @@
 {
   "date": "2026-10-29",
-  "updated_at": "2026-10-29T13:11:22.509235+00:00",
+  "updated_at": "2026-10-29T20:09:25.063448+00:00",
   "stocks": [
     {
-      "ticker": "MPC",
-      "tightness": 2.7,
+      "ticker": "PAYC",
+      "tightness": 2.6,
       "rating": "Wide",
-      "close": 440.77,
-      "avg_rank": 0.9329
+      "close": 260.65,
+      "avg_rank": 0.9509
     },
     {
       "ticker": "MANH",
       "tightness": 2.5,
       "rating": "Wide",
-      "close": 239.73,
-      "avg_rank": 0.9357
+      "close": 240.84,
+      "avg_rank": 0.9457
     },
     {
-      "ticker": "PAYC",
-      "tightness": 2.4,
+      "ticker": "GKOS",
+      "tightness": 2.3,
       "rating": "Wide",
-      "close": 262.79,
-      "avg_rank": 0.9677
+      "close": 242.41,
+      "avg_rank": 0.9739,
+      "earnings_date": "2026-10-28"
+    },
+    {
+      "ticker": "DOCU",
+      "tightness": 1.8,
+      "rating": "Wide",
+      "close": 81.54,
+      "avg_rank": 0.9457
     },
     {
       "ticker": "APA",
-      "tightness": 1.9,
+      "tightness": 1.7,
       "rating": "Wide",
-      "close": 51.11,
-      "avg_rank": 0.9257
-    },
-    {
-      "ticker": "MRNA",
-      "tightness": 1.9,
-      "rating": "Wide",
-      "close": 214.16,
-      "avg_rank": 0.9525
-    },
-    {
-      "ticker": "TEAM",
-      "tightness": 1.8,
-      "rating": "Wide",
-      "close": 220.12,
-      "avg_rank": 0.9776
-    },
-    {
-      "ticker": "HALO",
-      "tightness": 1.4,
-      "rating": "Wide",
-      "close": 130.03,
-      "avg_rank": 0.9609
-    },
-    {
-      "ticker": "ESTC",
-      "tightness": 1.2,
-      "rating": "Wide",
-      "close": 106.58,
-      "avg_rank": 0.9521
+      "close": 51.51,
+      "avg_rank": 0.9287
     },
     {
       "ticker": "CART",
-      "tightness": 1.1,
+      "tightness": 1.6,
       "rating": "Wide",
-      "close": 58.42,
-      "avg_rank": 0.9241
+      "close": 57.11,
+      "avg_rank": 0.9204
+    },
+    {
+      "ticker": "SN",
+      "tightness": 1.4,
+      "rating": "Wide",
+      "close": 209.26,
+      "avg_rank": 0.9334
+    },
+    {
+      "ticker": "HALO",
+      "tightness": 1.3,
+      "rating": "Wide",
+      "close": 131.18,
+      "avg_rank": 0.9651
+    },
+    {
+      "ticker": "ZS",
+      "tightness": 1.3,
+      "rating": "Wide",
+      "close": 247.82,
+      "avg_rank": 0.9275
     },
     {
       "ticker": "CAI",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 35.45,
-      "avg_rank": 0.9437
+      "close": 36.14,
+      "avg_rank": 0.962
     },
     {
       "ticker": "CRL",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 373.98,
-      "avg_rank": 0.9732
+      "close": 375.83,
+      "avg_rank": 0.9742
     },
     {
-      "ticker": "DOCU",
+      "ticker": "MRNA",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 83.6,
-      "avg_rank": 0.9521
+      "close": 222.76,
+      "avg_rank": 0.9869
     },
     {
       "ticker": "NTSK",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 26.52,
-      "avg_rank": 0.9848
+      "close": 26.19,
+      "avg_rank": 0.9877
     },
     {
       "ticker": "RBRK",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 136.0,
-      "avg_rank": 0.9812
-    },
-    {
-      "ticker": "RRC",
-      "tightness": 1.0,
-      "rating": "Wide",
-      "close": 55.88,
-      "avg_rank": 0.9285
-    },
-    {
-      "ticker": "ZS",
-      "tightness": 1.0,
-      "rating": "Wide",
-      "close": 255.8,
-      "avg_rank": 0.9301
+      "close": 133.66,
+      "avg_rank": 0.9723
     }
   ]
 }
