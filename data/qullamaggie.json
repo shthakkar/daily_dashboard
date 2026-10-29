@@ -1,42 +1,41 @@
 {
-  "date": "2026-10-28",
-  "updated_at": "2026-10-28T20:08:58.680661+00:00",
+  "date": "2026-10-29",
+  "updated_at": "2026-10-29T13:11:22.509235+00:00",
   "stocks": [
     {
       "ticker": "MPC",
       "tightness": 2.7,
       "rating": "Wide",
-      "close": 440.61,
-      "avg_rank": 0.9325
+      "close": 440.77,
+      "avg_rank": 0.9329
     },
     {
       "ticker": "MANH",
       "tightness": 2.5,
       "rating": "Wide",
       "close": 239.73,
-      "avg_rank": 0.9357,
-      "earnings_date": "2026-10-27"
+      "avg_rank": 0.9357
     },
     {
       "ticker": "PAYC",
       "tightness": 2.4,
       "rating": "Wide",
-      "close": 262.56,
-      "avg_rank": 0.9673
+      "close": 262.79,
+      "avg_rank": 0.9677
     },
     {
       "ticker": "APA",
       "tightness": 1.9,
       "rating": "Wide",
       "close": 51.11,
-      "avg_rank": 0.9245
+      "avg_rank": 0.9257
     },
     {
       "ticker": "MRNA",
       "tightness": 1.9,
       "rating": "Wide",
       "close": 214.16,
-      "avg_rank": 0.9521
+      "avg_rank": 0.9525
     },
     {
       "ticker": "TEAM",
@@ -56,7 +55,7 @@
       "ticker": "ESTC",
       "tightness": 1.2,
       "rating": "Wide",
-      "close": 106.6,
+      "close": 106.58,
       "avg_rank": 0.9521
     },
     {
@@ -64,20 +63,20 @@
       "tightness": 1.1,
       "rating": "Wide",
       "close": 58.42,
-      "avg_rank": 0.9233
+      "avg_rank": 0.9241
     },
     {
       "ticker": "CAI",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 35.45,
-      "avg_rank": 0.9433
+      "avg_rank": 0.9437
     },
     {
       "ticker": "CRL",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 374.16,
+      "close": 373.98,
       "avg_rank": 0.9732
     },
     {
@@ -85,7 +84,7 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 83.6,
-      "avg_rank": 0.9517
+      "avg_rank": 0.9521
     },
     {
       "ticker": "NTSK",
@@ -98,23 +97,22 @@
       "ticker": "RBRK",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 136.14,
-      "avg_rank": 0.9816
+      "close": 136.0,
+      "avg_rank": 0.9812
     },
     {
       "ticker": "RRC",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 55.88,
-      "avg_rank": 0.9277,
-      "earnings_date": "2026-10-27"
+      "avg_rank": 0.9285
     },
     {
       "ticker": "ZS",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 255.8,
-      "avg_rank": 0.9297
+      "avg_rank": 0.9301
     }
   ]
 }
