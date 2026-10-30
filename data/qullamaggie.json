@@ -1,98 +1,120 @@
 {
   "date": "2026-10-30",
-  "updated_at": "2026-10-30T13:11:40.830354+00:00",
+  "updated_at": "2026-10-30T20:10:03.749609+00:00",
   "stocks": [
     {
-      "ticker": "PAYC",
+      "ticker": "VEEV",
       "tightness": 2.6,
       "rating": "Wide",
-      "close": 260.66,
-      "avg_rank": 0.9512
+      "close": 312.88,
+      "avg_rank": 0.9355
     },
     {
-      "ticker": "MANH",
-      "tightness": 2.5,
+      "ticker": "FDS",
+      "tightness": 2.2,
       "rating": "Wide",
-      "close": 240.84,
-      "avg_rank": 0.9464
+      "close": 328.24,
+      "avg_rank": 0.9248
     },
     {
-      "ticker": "GKOS",
-      "tightness": 2.3,
+      "ticker": "PAYC",
+      "tightness": 2.2,
       "rating": "Wide",
-      "close": 242.48,
-      "avg_rank": 0.9746
-    },
-    {
-      "ticker": "DOCU",
-      "tightness": 1.8,
-      "rating": "Wide",
-      "close": 81.54,
-      "avg_rank": 0.9464
-    },
-    {
-      "ticker": "APA",
-      "tightness": 1.7,
-      "rating": "Wide",
-      "close": 51.51,
-      "avg_rank": 0.929
+      "close": 264.11,
+      "avg_rank": 0.9741
     },
     {
       "ticker": "CART",
-      "tightness": 1.6,
+      "tightness": 1.9,
       "rating": "Wide",
-      "close": 57.11,
-      "avg_rank": 0.921,
+      "close": 56.4,
+      "avg_rank": 0.9335,
       "earnings_date": "2026-10-29"
     },
     {
-      "ticker": "SN",
+      "ticker": "MANH",
+      "tightness": 1.6,
+      "rating": "Wide",
+      "close": 248.66,
+      "avg_rank": 0.9594
+    },
+    {
+      "ticker": "PTC",
+      "tightness": 1.6,
+      "rating": "Wide",
+      "close": 195.54,
+      "avg_rank": 0.9216
+    },
+    {
+      "ticker": "DOCU",
       "tightness": 1.5,
       "rating": "Wide",
-      "close": 209.12,
-      "avg_rank": 0.9341
+      "close": 82.4,
+      "avg_rank": 0.957
     },
     {
       "ticker": "HALO",
-      "tightness": 1.3,
+      "tightness": 1.5,
       "rating": "Wide",
-      "close": 131.18,
-      "avg_rank": 0.9659
-    },
-    {
-      "ticker": "ZS",
-      "tightness": 1.3,
-      "rating": "Wide",
-      "close": 247.82,
-      "avg_rank": 0.929
+      "close": 130.91,
+      "avg_rank": 0.9618
     },
     {
       "ticker": "CRL",
-      "tightness": 1.0,
+      "tightness": 1.4,
       "rating": "Wide",
-      "close": 376.1,
-      "avg_rank": 0.9746
+      "close": 354.61,
+      "avg_rank": 0.9642
+    },
+    {
+      "ticker": "GKOS",
+      "tightness": 1.4,
+      "rating": "Wide",
+      "close": 239.61,
+      "avg_rank": 0.9793
+    },
+    {
+      "ticker": "ZS",
+      "tightness": 1.4,
+      "rating": "Wide",
+      "close": 237.83,
+      "avg_rank": 0.9204
+    },
+    {
+      "ticker": "IT",
+      "tightness": 1.2,
+      "rating": "Wide",
+      "close": 228.46,
+      "avg_rank": 0.9275
+    },
+    {
+      "ticker": "APA",
+      "tightness": 1.1,
+      "rating": "Wide",
+      "close": 52.64,
+      "avg_rank": 0.9538
     },
     {
       "ticker": "MRNA",
-      "tightness": 1.0,
+      "tightness": 1.1,
       "rating": "Wide",
-      "close": 222.76,
-      "avg_rank": 0.9869
+      "close": 221.72,
+      "avg_rank": 0.9733
     },
     {
-      "ticker": "NTSK",
+      "ticker": "EXEL",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 26.19,
-      "avg_rank": 0.9881
+      "close": 69.42,
+      "avg_rank": 0.9208,
+      "earnings_date": "2026-10-29"
     },
     {
-      "ticker": "RBRK",
+      "ticker": "RRC",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 133.63,
-      "avg_rank": 0.9726
+      "close": 54.81,
+      "avg_rank": 0.9383
     }
   ]
 }
