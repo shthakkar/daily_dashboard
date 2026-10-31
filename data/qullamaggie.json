@@ -1,120 +1,111 @@
 {
-  "date": "2026-10-30",
-  "updated_at": "2026-10-30T20:10:03.749609+00:00",
+  "date": "2026-10-31",
+  "updated_at": "2026-10-31T13:10:34.456783+00:00",
   "stocks": [
     {
       "ticker": "VEEV",
       "tightness": 2.6,
       "rating": "Wide",
-      "close": 312.88,
+      "close": 312.96,
       "avg_rank": 0.9355
-    },
-    {
-      "ticker": "FDS",
-      "tightness": 2.2,
-      "rating": "Wide",
-      "close": 328.24,
-      "avg_rank": 0.9248
     },
     {
       "ticker": "PAYC",
       "tightness": 2.2,
       "rating": "Wide",
-      "close": 264.11,
-      "avg_rank": 0.9741
+      "close": 264.2,
+      "avg_rank": 0.9737
+    },
+    {
+      "ticker": "FDS",
+      "tightness": 2.1,
+      "rating": "Wide",
+      "close": 329.57,
+      "avg_rank": 0.9271
     },
     {
       "ticker": "CART",
       "tightness": 1.9,
       "rating": "Wide",
-      "close": 56.4,
-      "avg_rank": 0.9335,
-      "earnings_date": "2026-10-29"
+      "close": 56.45,
+      "avg_rank": 0.9327
+    },
+    {
+      "ticker": "DOCU",
+      "tightness": 1.6,
+      "rating": "Wide",
+      "close": 82.17,
+      "avg_rank": 0.9546
     },
     {
       "ticker": "MANH",
       "tightness": 1.6,
       "rating": "Wide",
-      "close": 248.66,
-      "avg_rank": 0.9594
+      "close": 248.39,
+      "avg_rank": 0.9574
     },
     {
       "ticker": "PTC",
       "tightness": 1.6,
       "rating": "Wide",
       "close": 195.54,
-      "avg_rank": 0.9216
-    },
-    {
-      "ticker": "DOCU",
-      "tightness": 1.5,
-      "rating": "Wide",
-      "close": 82.4,
-      "avg_rank": 0.957
+      "avg_rank": 0.9204
     },
     {
       "ticker": "HALO",
       "tightness": 1.5,
       "rating": "Wide",
       "close": 130.91,
-      "avg_rank": 0.9618
-    },
-    {
-      "ticker": "CRL",
-      "tightness": 1.4,
-      "rating": "Wide",
-      "close": 354.61,
-      "avg_rank": 0.9642
+      "avg_rank": 0.9614
     },
     {
       "ticker": "GKOS",
       "tightness": 1.4,
       "rating": "Wide",
-      "close": 239.61,
-      "avg_rank": 0.9793
-    },
-    {
-      "ticker": "ZS",
-      "tightness": 1.4,
-      "rating": "Wide",
-      "close": 237.83,
-      "avg_rank": 0.9204
+      "close": 237.6,
+      "avg_rank": 0.9781
     },
     {
       "ticker": "IT",
-      "tightness": 1.2,
-      "rating": "Wide",
-      "close": 228.46,
-      "avg_rank": 0.9275
-    },
-    {
-      "ticker": "APA",
       "tightness": 1.1,
       "rating": "Wide",
-      "close": 52.64,
-      "avg_rank": 0.9538
+      "close": 228.79,
+      "avg_rank": 0.9271
     },
     {
       "ticker": "MRNA",
       "tightness": 1.1,
       "rating": "Wide",
       "close": 221.72,
-      "avg_rank": 0.9733
+      "avg_rank": 0.9737
+    },
+    {
+      "ticker": "APA",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 52.82,
+      "avg_rank": 0.9538
+    },
+    {
+      "ticker": "CRL",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 359.41,
+      "avg_rank": 0.9674
     },
     {
       "ticker": "EXEL",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 69.42,
-      "avg_rank": 0.9208,
-      "earnings_date": "2026-10-29"
+      "close": 69.39,
+      "avg_rank": 0.9208
     },
     {
       "ticker": "RRC",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 54.81,
-      "avg_rank": 0.9383
+      "close": 54.63,
+      "avg_rank": 0.9347
     }
   ]
 }
