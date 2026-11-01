@@ -1,16 +1,7 @@
 {
-  "date": "2026-10-31",
-  "updated_at": "2026-10-31T13:10:34.449275+00:00",
+  "date": "2026-11-01",
+  "updated_at": "2026-11-01T14:11:01.128643+00:00",
   "stocks": [
-    {
-      "ticker": "RDDT",
-      "price": "$91.73",
-      "change": "-29.22%",
-      "volume": "33.4M",
-      "avg_volume": "6.1M",
-      "rel_volume": "5.5x",
-      "high_dollar_volume": true
-    },
     {
       "ticker": "INTC",
       "price": "$65.76",
