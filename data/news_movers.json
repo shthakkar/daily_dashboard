@@ -1,15 +1,42 @@
 {
-  "date": "2026-11-01",
-  "updated_at": "2026-11-01T14:11:01.128643+00:00",
+  "date": "2026-11-02",
+  "updated_at": "2026-11-02T14:11:00.823753+00:00",
   "stocks": [
     {
-      "ticker": "INTC",
-      "price": "$65.76",
-      "change": "-28.58%",
-      "volume": "455.6M",
-      "avg_volume": "102.8M",
-      "rel_volume": "4.4x",
-      "high_dollar_volume": true
+      "ticker": "TOVX",
+      "price": "$0.14",
+      "change": "-20.12%",
+      "volume": "72.3M",
+      "avg_volume": "523.1K",
+      "rel_volume": "2763.7x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "CJMB",
+      "price": "$0.33",
+      "change": "-21.18%",
+      "volume": "49.2M",
+      "avg_volume": "2.7M",
+      "rel_volume": "359.9x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "ACH",
+      "price": "$0.25",
+      "change": "-0.39%",
+      "volume": "12.2M",
+      "avg_volume": "1.9M",
+      "rel_volume": "130.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "KPTI",
+      "price": "$0.15",
+      "change": "-76.84%",
+      "volume": "7.9M",
+      "avg_volume": "2.9M",
+      "rel_volume": "55.1x",
+      "high_dollar_volume": false
     }
   ]
 }
