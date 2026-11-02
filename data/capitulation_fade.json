@@ -1,226 +1,326 @@
 {
   "date": "2026-11-02",
-  "updated_at": "2026-11-02T14:11:00.608478+00:00",
+  "updated_at": "2026-11-02T21:10:30.887633+00:00",
   "stocks": [
     {
-      "ticker": "BFAM",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "6/6",
-      "close": 54.98,
-      "stretch": "-19.6%",
-      "rvol": "6.7x",
-      "roc3": "-22.1%"
+      "ticker": "IDXX",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "5/6",
+      "close": 671.64,
+      "stretch": "+21.9%",
+      "rvol": "3.1x",
+      "roc3": "+19.3%"
     },
     {
       "ticker": "GPN",
       "setup": "Fade Short",
       "direction": "short",
       "score": "5/6",
-      "close": 96.84,
-      "stretch": "+15.7%",
-      "rvol": "6.3x",
-      "roc3": "+18.9%"
-    },
-    {
-      "ticker": "RDDT",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "5/6",
-      "close": 91.73,
-      "stretch": "-37.5%",
-      "rvol": "5.2x",
-      "roc3": "-32.8%"
-    },
-    {
-      "ticker": "CDNA",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 87.41,
-      "stretch": "+28.3%",
-      "rvol": "2.5x",
-      "roc3": "+23.9%"
-    },
-    {
-      "ticker": "LAUR",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 33.22,
-      "stretch": "-13.3%",
-      "rvol": "2.5x",
-      "roc3": "-11.7%"
-    },
-    {
-      "ticker": "TRN",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 29.46,
-      "stretch": "+14.1%",
+      "close": 99.6,
+      "stretch": "+17.8%",
       "rvol": "1.8x",
-      "roc3": "+15.5%"
+      "roc3": "+19.2%"
     },
     {
-      "ticker": "APP",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 228.5,
-      "stretch": "-14.6%",
-      "rvol": "2.4x",
-      "roc3": "-13.1%"
+      "ticker": "MHK",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "5/6",
+      "close": 148.58,
+      "stretch": "+19.6%",
+      "rvol": "1.5x",
+      "roc3": "+16.3%"
     },
     {
-      "ticker": "ALNY",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 165.0,
-      "stretch": "-25.6%",
-      "rvol": "3.2x",
-      "roc3": "-27.2%"
-    },
-    {
-      "ticker": "REGN",
+      "ticker": "FHI",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 927.89,
-      "stretch": "+17.6%",
-      "rvol": "3.9x",
-      "roc3": "+13.7%"
+      "close": 62.57,
+      "stretch": "+10.3%",
+      "rvol": "1.0x",
+      "roc3": "+10.2%"
     },
     {
-      "ticker": "EHC",
+      "ticker": "HGV",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 135.9,
-      "stretch": "+9.0%",
+      "close": 41.01,
+      "stretch": "+14.4%",
+      "rvol": "2.3x",
+      "roc3": "+15.4%"
+    },
+    {
+      "ticker": "RPM",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 107.78,
+      "stretch": "+8.3%",
+      "rvol": "0.8x",
+      "roc3": "+8.6%"
+    },
+    {
+      "ticker": "BYD",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 76.98,
+      "stretch": "+8.1%",
+      "rvol": "0.9x",
+      "roc3": "+8.8%"
+    },
+    {
+      "ticker": "MWA",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 24.02,
+      "stretch": "+8.7%",
+      "rvol": "0.9x",
+      "roc3": "+8.5%"
+    },
+    {
+      "ticker": "WY",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 21.27,
+      "stretch": "+9.8%",
+      "rvol": "0.9x",
+      "roc3": "+10.8%"
+    },
+    {
+      "ticker": "VLTO",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 115.71,
+      "stretch": "+13.6%",
       "rvol": "1.6x",
-      "roc3": "+11.8%"
-    },
-    {
-      "ticker": "CROX",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 150.52,
-      "stretch": "+23.2%",
-      "rvol": "1.6x",
-      "roc3": "+26.0%"
-    },
-    {
-      "ticker": "FFIV",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 338.34,
-      "stretch": "-24.0%",
-      "rvol": "2.8x",
-      "roc3": "-26.4%"
-    },
-    {
-      "ticker": "NOW",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 105.12,
-      "stretch": "-26.1%",
-      "rvol": "2.0x",
-      "roc3": "-32.1%"
-    },
-    {
-      "ticker": "FTNT",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 136.08,
-      "stretch": "-23.4%",
-      "rvol": "1.7x",
-      "roc3": "-26.4%"
-    },
-    {
-      "ticker": "VRTX",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 558.88,
-      "stretch": "+8.6%",
-      "rvol": "2.2x",
-      "roc3": "+7.3%"
+      "roc3": "+12.6%"
     },
     {
       "ticker": "DDOG",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 235.27,
-      "stretch": "-12.9%",
-      "rvol": "2.0x",
-      "roc3": "-16.2%"
+      "close": 216.1,
+      "stretch": "-19.1%",
+      "rvol": "1.5x",
+      "roc3": "-22.4%"
     },
     {
-      "ticker": "LLY",
+      "ticker": "BFAM",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 54.31,
+      "stretch": "-20.0%",
+      "rvol": "1.8x",
+      "roc3": "-21.6%"
+    },
+    {
+      "ticker": "WING",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 1417.54,
-      "stretch": "+13.8%",
+      "close": 163.04,
+      "stretch": "+26.7%",
+      "rvol": "1.9x",
+      "roc3": "+17.7%"
+    },
+    {
+      "ticker": "PATK",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 81.75,
+      "stretch": "+18.9%",
+      "rvol": "1.3x",
+      "roc3": "+16.9%"
+    },
+    {
+      "ticker": "GVA",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 128.9,
+      "stretch": "+13.9%",
+      "rvol": "1.0x",
+      "roc3": "+15.4%"
+    },
+    {
+      "ticker": "EHC",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 137.17,
+      "stretch": "+9.3%",
+      "rvol": "1.1x",
+      "roc3": "+12.3%"
+    },
+    {
+      "ticker": "FTNT",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 126.21,
+      "stretch": "-27.8%",
       "rvol": "2.1x",
-      "roc3": "+10.6%"
+      "roc3": "-27.5%"
+    },
+    {
+      "ticker": "PHM",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 131.32,
+      "stretch": "+12.5%",
+      "rvol": "1.0x",
+      "roc3": "+9.7%"
+    },
+    {
+      "ticker": "CROX",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 153.13,
+      "stretch": "+23.5%",
+      "rvol": "1.1x",
+      "roc3": "+27.9%"
+    },
+    {
+      "ticker": "ITRI",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 99.77,
+      "stretch": "+13.3%",
+      "rvol": "1.3x",
+      "roc3": "+7.8%"
+    },
+    {
+      "ticker": "FFIV",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 324.55,
+      "stretch": "-26.0%",
+      "rvol": "1.6x",
+      "roc3": "-11.2%"
     },
     {
       "ticker": "MAS",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 80.64,
-      "stretch": "+10.2%",
-      "rvol": "0.8x",
-      "roc3": "+7.3%"
+      "close": 83.51,
+      "stretch": "+13.0%",
+      "rvol": "0.7x",
+      "roc3": "+9.8%"
+    },
+    {
+      "ticker": "OKTA",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 184.87,
+      "stretch": "-12.8%",
+      "rvol": "1.7x",
+      "roc3": "-17.0%"
     },
     {
       "ticker": "ROP",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 466.6,
-      "stretch": "+17.1%",
-      "rvol": "2.1x",
-      "roc3": "+7.4%"
+      "close": 479.54,
+      "stretch": "+18.6%",
+      "rvol": "1.2x",
+      "roc3": "+8.8%"
     },
     {
       "ticker": "POOL",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 205.95,
-      "stretch": "+17.3%",
-      "rvol": "0.8x",
-      "roc3": "+5.7%"
+      "close": 214.76,
+      "stretch": "+20.4%",
+      "rvol": "1.2x",
+      "roc3": "+9.8%"
+    },
+    {
+      "ticker": "P",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 113.77,
+      "stretch": "-16.7%",
+      "rvol": "1.0x",
+      "roc3": "-17.9%"
+    },
+    {
+      "ticker": "MRSH",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 205.39,
+      "stretch": "+9.5%",
+      "rvol": "0.7x",
+      "roc3": "+6.8%"
     },
     {
       "ticker": "KEYS",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 307.2,
-      "stretch": "-11.8%",
-      "rvol": "1.4x",
-      "roc3": "-8.6%"
+      "close": 299.01,
+      "stretch": "-13.0%",
+      "rvol": "0.8x",
+      "roc3": "-10.9%"
     },
     {
-      "ticker": "ANET",
+      "ticker": "CWST",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 97.89,
+      "stretch": "+9.7%",
+      "rvol": "1.1x",
+      "roc3": "+10.6%"
+    },
+    {
+      "ticker": "PENG",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 168.86,
-      "stretch": "-11.9%",
-      "rvol": "1.4x",
-      "roc3": "-9.7%"
+      "close": 47.5,
+      "stretch": "-23.3%",
+      "rvol": "0.4x",
+      "roc3": "-21.9%"
+    },
+    {
+      "ticker": "RLI",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 67.29,
+      "stretch": "+9.9%",
+      "rvol": "0.5x",
+      "roc3": "+5.5%"
+    },
+    {
+      "ticker": "TRU",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 79.21,
+      "stretch": "+8.4%",
+      "rvol": "1.2x",
+      "roc3": "+6.6%"
     }
   ]
 }
