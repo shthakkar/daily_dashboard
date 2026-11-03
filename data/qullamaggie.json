@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-02",
-  "updated_at": "2026-11-02T21:10:31.419138+00:00",
+  "date": "2026-11-03",
+  "updated_at": "2026-11-03T14:11:15.694500+00:00",
   "stocks": [
     {
       "ticker": "HALO",
@@ -13,43 +13,43 @@
       "ticker": "PAYC",
       "tightness": 2.0,
       "rating": "Wide",
-      "close": 266.05,
-      "avg_rank": 0.9568
+      "close": 266.04,
+      "avg_rank": 0.9572
     },
     {
       "ticker": "DOCU",
       "tightness": 1.9,
       "rating": "Wide",
       "close": 81.65,
-      "avg_rank": 0.946
+      "avg_rank": 0.9464
     },
     {
       "ticker": "CART",
       "tightness": 1.3,
       "rating": "Wide",
       "close": 57.59,
-      "avg_rank": 0.9548
+      "avg_rank": 0.9552
     },
     {
       "ticker": "FDS",
       "tightness": 1.2,
       "rating": "Wide",
-      "close": 344.0,
-      "avg_rank": 0.9504
+      "close": 343.74,
+      "avg_rank": 0.95
     },
     {
       "ticker": "MANH",
       "tightness": 1.2,
       "rating": "Wide",
       "close": 253.22,
-      "avg_rank": 0.9676
+      "avg_rank": 0.968
     },
     {
       "ticker": "SN",
       "tightness": 1.1,
       "rating": "Wide",
-      "close": 213.25,
-      "avg_rank": 0.9356
+      "close": 213.22,
+      "avg_rank": 0.936
     },
     {
       "ticker": "EXEL",
@@ -62,15 +62,16 @@
       "ticker": "GKOS",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 238.95,
+      "close": 238.61,
       "avg_rank": 0.986
     },
     {
       "ticker": "IT",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 235.49,
-      "avg_rank": 0.9456
+      "close": 235.26,
+      "avg_rank": 0.9456,
+      "earnings_date": "2026-11-03"
     },
     {
       "ticker": "RRC",

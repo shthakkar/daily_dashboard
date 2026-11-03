@@ -1,132 +1,33 @@
 {
-  "date": "2026-11-02",
-  "updated_at": "2026-11-02T21:10:31.413157+00:00",
+  "date": "2026-11-03",
+  "updated_at": "2026-11-03T14:11:15.690513+00:00",
   "stocks": [
     {
-      "ticker": "SEGG",
-      "price": "$1.93",
-      "change": "+45.11%",
-      "volume": "32.0M",
-      "avg_volume": "60.9K",
-      "rel_volume": "525.0x",
+      "ticker": "HYFM",
+      "price": "$0.60",
+      "change": "-10.28%",
+      "volume": "12.4M",
+      "avg_volume": "2.6M",
+      "rel_volume": "95.9x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "TOVX",
+      "ticker": "SURG",
       "price": "$0.19",
-      "change": "+11.50%",
-      "volume": "83.0M",
-      "avg_volume": "523.1K",
-      "rel_volume": "158.7x",
+      "change": "+21.95%",
+      "volume": "10.1M",
+      "avg_volume": "20.0M",
+      "rel_volume": "10.2x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "INO",
-      "price": "$1.89",
-      "change": "+213.75%",
-      "volume": "217.8M",
-      "avg_volume": "5.4M",
-      "rel_volume": "40.5x",
+      "ticker": "ORCL",
+      "price": "$120.97",
+      "change": "+1.47%",
+      "volume": "8.2M",
+      "avg_volume": "30.9M",
+      "rel_volume": "5.3x",
       "high_dollar_volume": true
-    },
-    {
-      "ticker": "CJMB",
-      "price": "$0.35",
-      "change": "-16.67%",
-      "volume": "58.4M",
-      "avg_volume": "2.7M",
-      "rel_volume": "21.4x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "OFRM",
-      "price": "$9.46",
-      "change": "-37.02%",
-      "volume": "7.9M",
-      "avg_volume": "399.7K",
-      "rel_volume": "19.8x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "EVGO",
-      "price": "$1.85",
-      "change": "+46.83%",
-      "volume": "71.8M",
-      "avg_volume": "3.7M",
-      "rel_volume": "19.6x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "ACH",
-      "price": "$0.27",
-      "change": "+5.90%",
-      "volume": "34.3M",
-      "avg_volume": "1.9M",
-      "rel_volume": "18.4x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "KPTI",
-      "price": "$0.11",
-      "change": "-83.08%",
-      "volume": "43.0M",
-      "avg_volume": "2.9M",
-      "rel_volume": "15.0x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "PGEN",
-      "price": "$5.14",
-      "change": "-25.94%",
-      "volume": "20.5M",
-      "avg_volume": "5.3M",
-      "rel_volume": "3.9x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "SFM",
-      "price": "$55.23",
-      "change": "+11.13%",
-      "volume": "8.7M",
-      "avg_volume": "2.4M",
-      "rel_volume": "3.6x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "LSCC",
-      "price": "$95.44",
-      "change": "+2.66%",
-      "volume": "6.4M",
-      "avg_volume": "1.8M",
-      "rel_volume": "3.6x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "EW",
-      "price": "$93.23",
-      "change": "+1.33%",
-      "volume": "12.1M",
-      "avg_volume": "3.4M",
-      "rel_volume": "3.6x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "LITE",
-      "price": "$684.40",
-      "change": "-18.59%",
-      "volume": "15.0M",
-      "avg_volume": "4.9M",
-      "rel_volume": "3.1x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "KOS",
-      "price": "$2.46",
-      "change": "-13.51%",
-      "volume": "39.1M",
-      "avg_volume": "12.9M",
-      "rel_volume": "3.0x",
-      "high_dollar_volume": false
     }
   ]
 }
