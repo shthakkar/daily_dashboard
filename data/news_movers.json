@@ -1,33 +1,159 @@
 {
   "date": "2026-11-03",
-  "updated_at": "2026-11-03T14:11:15.690513+00:00",
+  "updated_at": "2026-11-03T21:09:08.553569+00:00",
   "stocks": [
     {
-      "ticker": "HYFM",
-      "price": "$0.60",
-      "change": "-10.28%",
-      "volume": "12.4M",
-      "avg_volume": "2.6M",
-      "rel_volume": "95.9x",
+      "ticker": "CENN",
+      "price": "$0.30",
+      "change": "-85.00%",
+      "volume": "48.6M",
+      "avg_volume": "186.1K",
+      "rel_volume": "261.0x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "SURG",
-      "price": "$0.19",
-      "change": "+21.95%",
-      "volume": "10.1M",
-      "avg_volume": "20.0M",
-      "rel_volume": "10.2x",
+      "ticker": "KTTA",
+      "price": "$0.53",
+      "change": "+44.02%",
+      "volume": "20.7M",
+      "avg_volume": "230.5K",
+      "rel_volume": "89.8x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "ORCL",
-      "price": "$120.97",
-      "change": "+1.47%",
-      "volume": "8.2M",
-      "avg_volume": "30.9M",
-      "rel_volume": "5.3x",
+      "ticker": "XTND",
+      "price": "$1.46",
+      "change": "+12.31%",
+      "volume": "20.4M",
+      "avg_volume": "1.7M",
+      "rel_volume": "12.3x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "GKOS",
+      "price": "$233.00",
+      "change": "-2.35%",
+      "volume": "10.7M",
+      "avg_volume": "960.2K",
+      "rel_volume": "11.1x",
       "high_dollar_volume": true
+    },
+    {
+      "ticker": "RYTM",
+      "price": "$86.44",
+      "change": "-7.49%",
+      "volume": "7.1M",
+      "avg_volume": "679.4K",
+      "rel_volume": "10.5x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-11-03"
+    },
+    {
+      "ticker": "XIFR",
+      "price": "$8.18",
+      "change": "-15.28%",
+      "volume": "6.7M",
+      "avg_volume": "948.2K",
+      "rel_volume": "7.0x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-03"
+    },
+    {
+      "ticker": "HYFM",
+      "price": "$0.67",
+      "change": "+0.28%",
+      "volume": "14.9M",
+      "avg_volume": "2.6M",
+      "rel_volume": "5.8x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "INO",
+      "price": "$1.66",
+      "change": "-12.17%",
+      "volume": "42.3M",
+      "avg_volume": "8.6M",
+      "rel_volume": "4.9x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "KMB",
+      "price": "$104.46",
+      "change": "-3.50%",
+      "volume": "19.5M",
+      "avg_volume": "4.4M",
+      "rel_volume": "4.4x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "LSCC",
+      "price": "$105.92",
+      "change": "+10.98%",
+      "volume": "7.8M",
+      "avg_volume": "1.9M",
+      "rel_volume": "4.2x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-11-02"
+    },
+    {
+      "ticker": "GPK",
+      "price": "$11.34",
+      "change": "+21.54%",
+      "volume": "22.7M",
+      "avg_volume": "6.3M",
+      "rel_volume": "3.6x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-03"
+    },
+    {
+      "ticker": "DOCN",
+      "price": "$90.57",
+      "change": "+0.87%",
+      "volume": "8.8M",
+      "avg_volume": "2.7M",
+      "rel_volume": "3.3x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-11-03"
+    },
+    {
+      "ticker": "AEHR",
+      "price": "$65.11",
+      "change": "+26.50%",
+      "volume": "8.5M",
+      "avg_volume": "2.6M",
+      "rel_volume": "3.3x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-11-02"
+    },
+    {
+      "ticker": "ADT",
+      "price": "$9.86",
+      "change": "+0.31%",
+      "volume": "33.8M",
+      "avg_volume": "10.9M",
+      "rel_volume": "3.1x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-11-03"
+    },
+    {
+      "ticker": "DT",
+      "price": "$47.09",
+      "change": "-14.58%",
+      "volume": "22.3M",
+      "avg_volume": "7.3M",
+      "rel_volume": "3.0x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-11-03"
+    },
+    {
+      "ticker": "VITL",
+      "price": "$10.02",
+      "change": "+9.15%",
+      "volume": "5.0M",
+      "avg_volume": "1.6M",
+      "rel_volume": "3.0x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-03"
     }
   ]
 }
