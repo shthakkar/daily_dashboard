@@ -1,90 +1,99 @@
 {
-  "date": "2026-11-03",
-  "updated_at": "2026-11-03T21:09:08.560179+00:00",
+  "date": "2026-11-04",
+  "updated_at": "2026-11-04T14:11:04.175859+00:00",
   "stocks": [
     {
       "ticker": "KYMR",
       "tightness": 3.1,
       "rating": "Wide",
       "close": 127.09,
-      "avg_rank": 0.9339
+      "avg_rank": 0.9343
     },
     {
       "ticker": "PAYC",
       "tightness": 2.4,
       "rating": "Wide",
-      "close": 263.1,
-      "avg_rank": 0.965
+      "close": 262.99,
+      "avg_rank": 0.9652,
+      "earnings_date": "2026-11-04"
     },
     {
       "ticker": "HALO",
       "tightness": 2.1,
       "rating": "Wide",
       "close": 128.62,
-      "avg_rank": 0.951
+      "avg_rank": 0.9513
     },
     {
       "ticker": "FDS",
       "tightness": 2.0,
       "rating": "Wide",
-      "close": 332.58,
-      "avg_rank": 0.9379
+      "close": 332.59,
+      "avg_rank": 0.9383
     },
     {
       "ticker": "DOCU",
       "tightness": 1.7,
       "rating": "Wide",
       "close": 80.36,
-      "avg_rank": 0.9586
+      "avg_rank": 0.9589
     },
     {
       "ticker": "CRL",
       "tightness": 1.6,
       "rating": "Wide",
       "close": 351.87,
-      "avg_rank": 0.955
+      "avg_rank": 0.9545,
+      "earnings_date": "2026-11-04"
     },
     {
       "ticker": "MANH",
       "tightness": 1.1,
       "rating": "Wide",
       "close": 255.14,
-      "avg_rank": 0.9713
+      "avg_rank": 0.9715
     },
     {
       "ticker": "CART",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 58.31,
-      "avg_rank": 0.9387
+      "avg_rank": 0.9395
     },
     {
       "ticker": "EXEL",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 72.31,
-      "avg_rank": 0.9598
+      "avg_rank": 0.96
     },
     {
       "ticker": "GKOS",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 233.0,
-      "avg_rank": 0.9821
+      "close": 233.04,
+      "avg_rank": 0.9822
+    },
+    {
+      "ticker": "LLY",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 1409.38,
+      "avg_rank": 0.9201
     },
     {
       "ticker": "MRNA",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 228.44,
-      "avg_rank": 0.9916
+      "avg_rank": 0.9917
     },
     {
       "ticker": "RRC",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 54.0,
-      "avg_rank": 0.9447
+      "close": 54.01,
+      "avg_rank": 0.945
     }
   ]
 }

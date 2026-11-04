@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-03",
-  "updated_at": "2026-11-03T21:09:08.355894+00:00",
+  "date": "2026-11-04",
+  "updated_at": "2026-11-04T14:11:03.810206+00:00",
   "stocks": [
     {
       "ticker": "ZBRA",
@@ -14,31 +14,21 @@
       "earnings_date": "2026-11-03"
     },
     {
-      "ticker": "SUPN",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "5/6",
-      "close": 28.15,
-      "stretch": "-30.7%",
-      "rvol": "5.2x",
-      "roc3": "-32.7%"
-    },
-    {
       "ticker": "DT",
       "setup": "Fade Long",
       "direction": "long",
       "score": "5/6",
-      "close": 47.09,
-      "stretch": "-23.5%",
-      "rvol": "2.4x",
-      "roc3": "-22.8%",
+      "close": 47.03,
+      "stretch": "-23.6%",
+      "rvol": "2.6x",
+      "roc3": "-22.9%",
       "earnings_date": "2026-11-03"
     },
     {
       "ticker": "FISV",
       "setup": "Fade Short",
       "direction": "short",
-      "score": "4/6",
+      "score": "5/6",
       "close": 58.4,
       "stretch": "+20.7%",
       "rvol": "3.0x",
@@ -52,29 +42,29 @@
       "score": "4/6",
       "close": 48.6,
       "stretch": "-17.5%",
-      "rvol": "3.5x",
+      "rvol": "3.8x",
       "roc3": "-14.5%",
       "earnings_date": "2026-11-03"
-    },
-    {
-      "ticker": "VLTO",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 116.33,
-      "stretch": "+13.1%",
-      "rvol": "0.9x",
-      "roc3": "+11.8%"
     },
     {
       "ticker": "BFAM",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 53.32,
-      "stretch": "-20.7%",
-      "rvol": "1.0x",
-      "roc3": "-20.4%"
+      "close": 53.24,
+      "stretch": "-20.8%",
+      "rvol": "1.3x",
+      "roc3": "-20.5%"
+    },
+    {
+      "ticker": "VLTO",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 116.32,
+      "stretch": "+13.1%",
+      "rvol": "1.2x",
+      "roc3": "+11.8%"
     },
     {
       "ticker": "GEHC",
@@ -83,7 +73,7 @@
       "score": "4/6",
       "close": 80.66,
       "stretch": "+13.4%",
-      "rvol": "1.3x",
+      "rvol": "1.4x",
       "roc3": "+5.5%"
     },
     {
@@ -91,10 +81,10 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 71.25,
+      "close": 71.23,
       "stretch": "+10.4%",
-      "rvol": "0.5x",
-      "roc3": "+9.2%"
+      "rvol": "0.8x",
+      "roc3": "+9.1%"
     }
   ]
 }
