@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-04",
-  "updated_at": "2026-11-04T21:08:59.469224+00:00",
+  "date": "2026-11-05",
+  "updated_at": "2026-11-05T14:11:19.215809+00:00",
   "stocks": [
     {
       "ticker": "CVI",
@@ -8,10 +8,9 @@
       "direction": "long",
       "score": "6/6",
       "close": 43.01,
-      "stretch": "-26.0%",
-      "rvol": "8.7x",
-      "roc3": "-26.3%",
-      "earnings_date": "2026-11-03"
+      "stretch": "-26.1%",
+      "rvol": "9.0x",
+      "roc3": "-26.3%"
     },
     {
       "ticker": "NXT",
@@ -20,7 +19,7 @@
       "score": "6/6",
       "close": 106.7,
       "stretch": "+27.1%",
-      "rvol": "3.4x",
+      "rvol": "3.5x",
       "roc3": "+34.5%"
     },
     {
@@ -31,18 +30,17 @@
       "close": 43.66,
       "stretch": "-27.7%",
       "rvol": "6.6x",
-      "roc3": "-30.5%",
-      "earnings_date": "2026-11-03"
+      "roc3": "-30.5%"
     },
     {
       "ticker": "YOU",
       "setup": "Fade Short",
       "direction": "short",
       "score": "5/6",
-      "close": 59.13,
-      "stretch": "+29.0%",
-      "rvol": "4.2x",
-      "roc3": "+28.6%",
+      "close": 59.08,
+      "stretch": "+28.9%",
+      "rvol": "4.4x",
+      "roc3": "+28.5%",
       "earnings_date": "2026-11-04"
     },
     {
@@ -50,22 +48,32 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "5/6",
-      "close": 109.62,
-      "stretch": "+12.8%",
-      "rvol": "3.0x",
-      "roc3": "+10.7%",
+      "close": 109.57,
+      "stretch": "+12.7%",
+      "rvol": "3.7x",
+      "roc3": "+10.6%",
       "earnings_date": "2026-11-04"
+    },
+    {
+      "ticker": "HASI",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "5/6",
+      "close": 40.38,
+      "stretch": "+9.4%",
+      "rvol": "3.1x",
+      "roc3": "+8.5%",
+      "earnings_date": "2026-11-05"
     },
     {
       "ticker": "UNM",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 74.78,
+      "close": 74.79,
       "stretch": "-17.3%",
-      "rvol": "4.9x",
-      "roc3": "-17.9%",
-      "earnings_date": "2026-11-03"
+      "rvol": "5.2x",
+      "roc3": "-17.9%"
     },
     {
       "ticker": "RYTM",
@@ -74,20 +82,18 @@
       "score": "4/6",
       "close": 110.68,
       "stretch": "+22.0%",
-      "rvol": "3.3x",
-      "roc3": "+19.6%",
-      "earnings_date": "2026-11-03"
+      "rvol": "4.4x",
+      "roc3": "+19.6%"
     },
     {
       "ticker": "XYZ",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 87.6,
+      "close": 87.63,
       "stretch": "+13.2%",
-      "rvol": "3.2x",
-      "roc3": "+14.9%",
-      "earnings_date": "2026-11-03"
+      "rvol": "3.5x",
+      "roc3": "+15.0%"
     },
     {
       "ticker": "SM",
@@ -96,18 +102,17 @@
       "score": "4/6",
       "close": 31.06,
       "stretch": "-18.7%",
-      "rvol": "2.3x",
-      "roc3": "-23.1%",
-      "earnings_date": "2026-11-03"
+      "rvol": "2.6x",
+      "roc3": "-23.1%"
     },
     {
       "ticker": "THC",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 292.23,
+      "close": 292.25,
       "stretch": "+8.4%",
-      "rvol": "2.2x",
+      "rvol": "2.5x",
       "roc3": "+7.0%"
     },
     {
@@ -115,11 +120,10 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 126.67,
+      "close": 126.63,
       "stretch": "+9.2%",
-      "rvol": "1.6x",
-      "roc3": "+8.8%",
-      "earnings_date": "2026-11-03"
+      "rvol": "2.0x",
+      "roc3": "+8.7%"
     },
     {
       "ticker": "FLYW",
@@ -129,17 +133,16 @@
       "close": 21.81,
       "stretch": "+14.8%",
       "rvol": "3.9x",
-      "roc3": "+10.8%",
-      "earnings_date": "2026-11-03"
+      "roc3": "+10.8%"
     },
     {
       "ticker": "HCA",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 510.78,
+      "close": 510.7,
       "stretch": "+9.8%",
-      "rvol": "2.2x",
+      "rvol": "2.4x",
       "roc3": "+7.9%"
     },
     {
@@ -147,21 +150,20 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 48.3,
-      "stretch": "-9.8%",
-      "rvol": "1.4x",
-      "roc3": "-12.9%"
+      "close": 48.34,
+      "stretch": "-9.7%",
+      "rvol": "1.8x",
+      "roc3": "-12.8%"
     },
     {
       "ticker": "PCOR",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 75.59,
+      "close": 75.6,
       "stretch": "+24.9%",
-      "rvol": "2.4x",
-      "roc3": "+23.1%",
-      "earnings_date": "2026-11-03"
+      "rvol": "2.6x",
+      "roc3": "+23.2%"
     },
     {
       "ticker": "MIRM",
@@ -170,19 +172,29 @@
       "score": "4/6",
       "close": 96.97,
       "stretch": "+15.1%",
-      "rvol": "1.6x",
-      "roc3": "+14.1%",
-      "earnings_date": "2026-11-03"
+      "rvol": "1.7x",
+      "roc3": "+14.1%"
     },
     {
       "ticker": "NVST",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 27.25,
-      "stretch": "+15.3%",
-      "rvol": "1.6x",
-      "roc3": "+15.9%",
+      "close": 27.19,
+      "stretch": "+15.1%",
+      "rvol": "1.8x",
+      "roc3": "+15.7%",
+      "earnings_date": "2026-11-04"
+    },
+    {
+      "ticker": "KMT",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 26.28,
+      "stretch": "-13.5%",
+      "rvol": "3.1x",
+      "roc3": "-9.7%",
       "earnings_date": "2026-11-04"
     },
     {
@@ -190,11 +202,10 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 126.34,
+      "close": 126.27,
       "stretch": "+15.9%",
-      "rvol": "1.8x",
-      "roc3": "+15.7%",
-      "earnings_date": "2026-11-03"
+      "rvol": "2.2x",
+      "roc3": "+15.7%"
     },
     {
       "ticker": "SIRI",
@@ -203,18 +214,8 @@
       "score": "4/6",
       "close": 33.4,
       "stretch": "+20.1%",
-      "rvol": "2.0x",
+      "rvol": "2.1x",
       "roc3": "+15.1%"
-    },
-    {
-      "ticker": "HASI",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 40.39,
-      "stretch": "+9.4%",
-      "rvol": "2.8x",
-      "roc3": "+8.5%"
     },
     {
       "ticker": "HLNE",
@@ -223,28 +224,28 @@
       "score": "4/6",
       "close": 94.99,
       "stretch": "+12.3%",
-      "rvol": "1.4x",
-      "roc3": "+13.2%",
-      "earnings_date": "2026-11-03"
+      "rvol": "1.5x",
+      "roc3": "+13.2%"
     },
     {
       "ticker": "DVN",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 44.1,
+      "close": 44.12,
       "stretch": "-11.4%",
-      "rvol": "1.7x",
-      "roc3": "-15.4%"
+      "rvol": "2.0x",
+      "roc3": "-15.4%",
+      "earnings_date": "2026-11-05"
     },
     {
       "ticker": "CLX",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 99.18,
+      "close": 99.16,
       "stretch": "+14.6%",
-      "rvol": "1.5x",
+      "rvol": "1.7x",
       "roc3": "+12.7%"
     },
     {
@@ -254,7 +255,7 @@
       "score": "4/6",
       "close": 112.57,
       "stretch": "+8.4%",
-      "rvol": "1.2x",
+      "rvol": "1.3x",
       "roc3": "+8.3%"
     },
     {
@@ -264,20 +265,18 @@
       "score": "4/6",
       "close": 62.05,
       "stretch": "+26.1%",
-      "rvol": "2.3x",
-      "roc3": "+24.1%",
-      "earnings_date": "2026-11-03"
+      "rvol": "2.4x",
+      "roc3": "+24.1%"
     },
     {
       "ticker": "GXO",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 56.92,
-      "stretch": "+16.5%",
-      "rvol": "3.2x",
-      "roc3": "+13.2%",
-      "earnings_date": "2026-11-03"
+      "close": 56.96,
+      "stretch": "+16.6%",
+      "rvol": "3.6x",
+      "roc3": "+13.3%"
     },
     {
       "ticker": "ISRG",
@@ -294,9 +293,9 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 29.77,
-      "stretch": "-17.7%",
-      "rvol": "4.5x",
+      "close": 29.76,
+      "stretch": "-17.8%",
+      "rvol": "4.9x",
       "roc3": "-22.8%",
       "earnings_date": "2026-11-04"
     },
@@ -307,18 +306,19 @@
       "score": "4/6",
       "close": 45.48,
       "stretch": "+9.9%",
-      "rvol": "2.8x",
-      "roc3": "+13.0%"
+      "rvol": "2.9x",
+      "roc3": "+13.0%",
+      "earnings_date": "2026-11-05"
     },
     {
       "ticker": "SWK",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 118.24,
-      "stretch": "+21.4%",
-      "rvol": "3.2x",
-      "roc3": "+14.3%",
+      "close": 118.33,
+      "stretch": "+21.5%",
+      "rvol": "3.7x",
+      "roc3": "+14.4%",
       "earnings_date": "2026-11-04"
     },
     {
@@ -328,7 +328,7 @@
       "score": "4/6",
       "close": 194.51,
       "stretch": "+9.5%",
-      "rvol": "3.3x",
+      "rvol": "3.4x",
       "roc3": "+11.5%"
     },
     {
@@ -338,7 +338,7 @@
       "score": "4/6",
       "close": 188.72,
       "stretch": "-27.5%",
-      "rvol": "3.2x",
+      "rvol": "3.4x",
       "roc3": "-19.8%",
       "earnings_date": "2026-11-04"
     },
@@ -347,22 +347,20 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 79.77,
-      "stretch": "-25.5%",
-      "rvol": "4.0x",
-      "roc3": "-22.3%",
-      "earnings_date": "2026-11-03"
+      "close": 79.71,
+      "stretch": "-25.6%",
+      "rvol": "4.2x",
+      "roc3": "-22.3%"
     },
     {
       "ticker": "DT",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 46.73,
-      "stretch": "-23.3%",
-      "rvol": "1.5x",
-      "roc3": "-19.0%",
-      "earnings_date": "2026-11-03"
+      "close": 46.78,
+      "stretch": "-23.2%",
+      "rvol": "1.6x",
+      "roc3": "-18.9%"
     },
     {
       "ticker": "TRMB",
@@ -392,7 +390,7 @@
       "score": "4/6",
       "close": 698.55,
       "stretch": "+22.9%",
-      "rvol": "1.9x",
+      "rvol": "2.0x",
       "roc3": "+26.7%"
     },
     {
@@ -402,27 +400,27 @@
       "score": "4/6",
       "close": 38.38,
       "stretch": "+12.7%",
-      "rvol": "1.0x",
-      "roc3": "+10.8%"
+      "rvol": "1.2x",
+      "roc3": "+10.7%"
     },
     {
       "ticker": "VFC",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 20.92,
+      "close": 20.93,
       "stretch": "+20.8%",
-      "rvol": "1.1x",
-      "roc3": "+14.3%"
+      "rvol": "1.3x",
+      "roc3": "+14.4%"
     },
     {
       "ticker": "MSCI",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 674.56,
-      "stretch": "+12.7%",
-      "rvol": "1.3x",
+      "close": 674.3,
+      "stretch": "+12.6%",
+      "rvol": "1.6x",
       "roc3": "+8.2%"
     },
     {
@@ -432,7 +430,7 @@
       "score": "4/6",
       "close": 29.06,
       "stretch": "+31.3%",
-      "rvol": "4.1x",
+      "rvol": "4.2x",
       "roc3": "+17.8%",
       "earnings_date": "2026-11-04"
     },
@@ -453,7 +451,7 @@
       "score": "4/6",
       "close": 117.02,
       "stretch": "+12.6%",
-      "rvol": "0.9x",
+      "rvol": "1.1x",
       "roc3": "+5.3%"
     },
     {
@@ -464,8 +462,18 @@
       "close": 113.52,
       "stretch": "+15.1%",
       "rvol": "1.2x",
-      "roc3": "+21.2%",
-      "earnings_date": "2026-11-03"
+      "roc3": "+21.2%"
+    },
+    {
+      "ticker": "HUBS",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 216.64,
+      "stretch": "-9.5%",
+      "rvol": "3.5x",
+      "roc3": "-7.8%",
+      "earnings_date": "2026-11-04"
     }
   ]
 }
