@@ -1,5 +1,161 @@
 {
   "date": "2026-11-06",
-  "updated_at": "2026-11-06T14:11:48.137361+00:00",
-  "stocks": []
+  "updated_at": "2026-11-06T21:09:00.563641+00:00",
+  "stocks": [
+    {
+      "ticker": "GOGO",
+      "price": "$3.88",
+      "change": "+71.52%",
+      "volume": "27.5M",
+      "avg_volume": "1.8M",
+      "rel_volume": "15.2x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-06"
+    },
+    {
+      "ticker": "AIRS",
+      "price": "$0.53",
+      "change": "-62.92%",
+      "volume": "10.9M",
+      "avg_volume": "953.2K",
+      "rel_volume": "11.4x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "IRTC",
+      "price": "$90.22",
+      "change": "-30.70%",
+      "volume": "5.7M",
+      "avg_volume": "578.3K",
+      "rel_volume": "9.8x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "ticker": "DKNG",
+      "price": "$18.51",
+      "change": "-21.30%",
+      "volume": "69.7M",
+      "avg_volume": "13.1M",
+      "rel_volume": "5.3x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "ticker": "RC",
+      "price": "$0.86",
+      "change": "-19.60%",
+      "volume": "7.5M",
+      "avg_volume": "1.5M",
+      "rel_volume": "5.1x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "ticker": "AXON",
+      "price": "$313.00",
+      "change": "-18.18%",
+      "volume": "5.2M",
+      "avg_volume": "1.0M",
+      "rel_volume": "5.0x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "ticker": "ROKU",
+      "price": "$160.52",
+      "change": "+0.09%",
+      "volume": "11.2M",
+      "avg_volume": "2.3M",
+      "rel_volume": "4.9x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "BKD",
+      "price": "$9.01",
+      "change": "-16.65%",
+      "volume": "25.5M",
+      "avg_volume": "5.2M",
+      "rel_volume": "4.9x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-06"
+    },
+    {
+      "ticker": "FLY",
+      "price": "$20.76",
+      "change": "+36.80%",
+      "volume": "13.2M",
+      "avg_volume": "3.0M",
+      "rel_volume": "4.4x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "INO",
+      "price": "$1.22",
+      "change": "-16.21%",
+      "volume": "39.4M",
+      "avg_volume": "9.6M",
+      "rel_volume": "4.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "FOXA",
+      "price": "$66.64",
+      "change": "-1.52%",
+      "volume": "19.6M",
+      "avg_volume": "5.2M",
+      "rel_volume": "3.7x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "FROG",
+      "price": "$100.98",
+      "change": "+35.33%",
+      "volume": "7.0M",
+      "avg_volume": "1.9M",
+      "rel_volume": "3.6x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "ticker": "NTRA",
+      "price": "$310.67",
+      "change": "-14.59%",
+      "volume": "5.7M",
+      "avg_volume": "1.6M",
+      "rel_volume": "3.5x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "ticker": "TRIP",
+      "price": "$7.00",
+      "change": "-5.15%",
+      "volume": "13.1M",
+      "avg_volume": "4.1M",
+      "rel_volume": "3.2x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "ticker": "FIVN",
+      "price": "$28.12",
+      "change": "-17.63%",
+      "volume": "6.5M",
+      "avg_volume": "2.0M",
+      "rel_volume": "3.2x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "ticker": "KRMN",
+      "price": "$45.66",
+      "change": "+42.29%",
+      "volume": "10.1M",
+      "avg_volume": "3.3M",
+      "rel_volume": "3.1x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-11-05"
+    }
+  ]
 }
