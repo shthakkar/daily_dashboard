@@ -1,85 +1,77 @@
 {
-  "date": "2026-11-05",
-  "updated_at": "2026-11-05T21:09:39.415454+00:00",
+  "date": "2026-11-06",
+  "updated_at": "2026-11-06T14:11:48.143492+00:00",
   "stocks": [
     {
       "ticker": "KYMR",
       "tightness": 3.0,
       "rating": "Wide",
       "close": 128.12,
-      "avg_rank": 0.9259
+      "avg_rank": 0.926
     },
     {
       "ticker": "EXEL",
       "tightness": 1.9,
       "rating": "Wide",
       "close": 68.71,
-      "avg_rank": 0.925
+      "avg_rank": 0.9256
     },
     {
       "ticker": "CART",
       "tightness": 1.5,
       "rating": "Wide",
       "close": 57.79,
-      "avg_rank": 0.9437
+      "avg_rank": 0.9435
     },
     {
       "ticker": "GKOS",
       "tightness": 1.5,
       "rating": "Wide",
-      "close": 220.01,
-      "avg_rank": 0.9777
+      "close": 219.98,
+      "avg_rank": 0.9776
     },
     {
       "ticker": "FDS",
       "tightness": 1.4,
       "rating": "Wide",
       "close": 340.47,
-      "avg_rank": 0.951
+      "avg_rank": 0.9508
     },
     {
       "ticker": "MANH",
       "tightness": 1.3,
       "rating": "Wide",
       "close": 255.17,
-      "avg_rank": 0.9773
-    },
-    {
-      "ticker": "BSY",
-      "tightness": 1.0,
-      "rating": "Wide",
-      "close": 44.94,
-      "avg_rank": 0.9206,
-      "earnings_date": "2026-11-05"
+      "avg_rank": 0.9772
     },
     {
       "ticker": "MRNA",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 241.46,
-      "avg_rank": 0.9911
+      "avg_rank": 0.9911,
+      "earnings_date": "2026-11-06"
     },
     {
       "ticker": "PCOR",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 75.6,
-      "avg_rank": 0.9643
+      "avg_rank": 0.9642
     },
     {
       "ticker": "ROP",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 490.96,
-      "avg_rank": 0.9514
+      "avg_rank": 0.9512
     },
     {
       "ticker": "SN",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 217.13,
-      "avg_rank": 0.9421,
-      "earnings_date": "2026-11-04"
+      "avg_rank": 0.9423
     }
   ]
 }
