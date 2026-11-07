@@ -1,7 +1,17 @@
 {
-  "date": "2026-11-06",
-  "updated_at": "2026-11-06T21:09:00.348981+00:00",
+  "date": "2026-11-07",
+  "updated_at": "2026-11-07T14:10:37.554899+00:00",
   "stocks": [
+    {
+      "ticker": "MCHP",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "6/6",
+      "close": 58.35,
+      "stretch": "-21.7%",
+      "rvol": "3.1x",
+      "roc3": "-25.1%"
+    },
     {
       "ticker": "APP",
       "setup": "Fade Short",
@@ -9,19 +19,8 @@
       "score": "5/6",
       "close": 391.22,
       "stretch": "+43.7%",
-      "rvol": "2.0x",
+      "rvol": "2.1x",
       "roc3": "+59.4%"
-    },
-    {
-      "ticker": "MCHP",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "5/6",
-      "close": 58.35,
-      "stretch": "-21.7%",
-      "rvol": "3.0x",
-      "roc3": "-25.1%",
-      "earnings_date": "2026-11-05"
     },
     {
       "ticker": "ACHC",
@@ -30,7 +29,7 @@
       "score": "5/6",
       "close": 37.0,
       "stretch": "+18.8%",
-      "rvol": "1.9x",
+      "rvol": "2.1x",
       "roc3": "+24.9%"
     },
     {
@@ -41,8 +40,7 @@
       "close": 54.62,
       "stretch": "+27.9%",
       "rvol": "2.1x",
-      "roc3": "+32.9%",
-      "earnings_date": "2026-11-05"
+      "roc3": "+32.9%"
     },
     {
       "ticker": "CGON",
@@ -61,9 +59,8 @@
       "score": "4/6",
       "close": 313.0,
       "stretch": "-23.3%",
-      "rvol": "4.1x",
-      "roc3": "-24.9%",
-      "earnings_date": "2026-11-05"
+      "rvol": "4.2x",
+      "roc3": "-24.9%"
     },
     {
       "ticker": "NTRA",
@@ -72,9 +69,8 @@
       "score": "4/6",
       "close": 310.67,
       "stretch": "-21.7%",
-      "rvol": "2.9x",
-      "roc3": "-20.1%",
-      "earnings_date": "2026-11-05"
+      "rvol": "3.0x",
+      "roc3": "-20.1%"
     },
     {
       "ticker": "FIVN",
@@ -83,9 +79,8 @@
       "score": "4/6",
       "close": 28.12,
       "stretch": "-20.1%",
-      "rvol": "3.5x",
-      "roc3": "-21.4%",
-      "earnings_date": "2026-11-05"
+      "rvol": "3.6x",
+      "roc3": "-21.4%"
     },
     {
       "ticker": "PGNY",
@@ -94,7 +89,7 @@
       "score": "4/6",
       "close": 34.84,
       "stretch": "+20.2%",
-      "rvol": "1.3x",
+      "rvol": "1.5x",
       "roc3": "+19.9%"
     },
     {
@@ -104,9 +99,8 @@
       "score": "4/6",
       "close": 42.23,
       "stretch": "+20.2%",
-      "rvol": "2.4x",
-      "roc3": "+15.5%",
-      "earnings_date": "2026-11-05"
+      "rvol": "2.9x",
+      "roc3": "+15.5%"
     },
     {
       "ticker": "ALGT",
@@ -123,22 +117,20 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 375.79,
-      "stretch": "-12.3%",
-      "rvol": "1.9x",
-      "roc3": "-15.8%",
-      "earnings_date": "2026-11-05"
+      "close": 375.86,
+      "stretch": "-12.2%",
+      "rvol": "2.1x",
+      "roc3": "-15.8%"
     },
     {
       "ticker": "LOAR",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 75.31,
-      "stretch": "+16.7%",
-      "rvol": "0.7x",
-      "roc3": "+10.1%",
-      "earnings_date": "2026-11-05"
+      "close": 75.3,
+      "stretch": "+16.6%",
+      "rvol": "0.9x",
+      "roc3": "+10.1%"
     },
     {
       "ticker": "IRTC",
@@ -148,17 +140,16 @@
       "close": 90.22,
       "stretch": "-23.0%",
       "rvol": "7.0x",
-      "roc3": "-28.6%",
-      "earnings_date": "2026-11-05"
+      "roc3": "-28.6%"
     },
     {
       "ticker": "IFF",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 82.59,
+      "close": 82.62,
       "stretch": "-8.7%",
-      "rvol": "0.9x",
+      "rvol": "1.1x",
       "roc3": "-10.4%"
     },
     {
@@ -169,39 +160,36 @@
       "close": 136.5,
       "stretch": "+18.2%",
       "rvol": "1.8x",
-      "roc3": "+11.2%",
-      "earnings_date": "2026-11-05"
+      "roc3": "+11.2%"
     },
     {
       "ticker": "GMED",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 71.04,
+      "close": 71.05,
       "stretch": "-10.3%",
-      "rvol": "4.8x",
-      "roc3": "-10.7%",
-      "earnings_date": "2026-11-05"
+      "rvol": "5.1x",
+      "roc3": "-10.7%"
     },
     {
       "ticker": "TRGP",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 264.61,
-      "stretch": "-9.7%",
-      "rvol": "1.5x",
-      "roc3": "-11.4%",
-      "earnings_date": "2026-11-05"
+      "close": 264.59,
+      "stretch": "-9.8%",
+      "rvol": "2.0x",
+      "roc3": "-11.4%"
     },
     {
       "ticker": "CVI",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 38.16,
+      "close": 38.13,
       "stretch": "-32.1%",
-      "rvol": "1.2x",
+      "rvol": "1.7x",
       "roc3": "-21.5%"
     },
     {
@@ -211,7 +199,7 @@
       "score": "4/6",
       "close": 64.08,
       "stretch": "-10.2%",
-      "rvol": "0.7x",
+      "rvol": "0.9x",
       "roc3": "-11.6%"
     },
     {
@@ -219,19 +207,19 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 28.72,
+      "close": 28.73,
       "stretch": "-19.5%",
-      "rvol": "1.1x",
-      "roc3": "-26.4%"
+      "rvol": "1.3x",
+      "roc3": "-26.3%"
     },
     {
       "ticker": "EW",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 102.12,
-      "stretch": "+11.8%",
-      "rvol": "0.8x",
+      "close": 102.14,
+      "stretch": "+11.9%",
+      "rvol": "1.1x",
       "roc3": "+7.3%"
     },
     {
@@ -251,28 +239,27 @@
       "score": "4/6",
       "close": 97.09,
       "stretch": "+14.7%",
-      "rvol": "1.3x",
-      "roc3": "+9.6%",
-      "earnings_date": "2026-11-05"
+      "rvol": "1.4x",
+      "roc3": "+9.6%"
     },
     {
       "ticker": "RNG",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 72.09,
-      "stretch": "-9.7%",
-      "rvol": "0.8x",
-      "roc3": "-7.7%"
+      "close": 72.07,
+      "stretch": "-9.6%",
+      "rvol": "0.9x",
+      "roc3": "-7.6%"
     },
     {
       "ticker": "CRS",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 278.39,
+      "close": 278.31,
       "stretch": "-13.9%",
-      "rvol": "0.7x",
+      "rvol": "0.8x",
       "roc3": "-6.2%"
     }
   ]
