@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-07",
-  "updated_at": "2026-11-07T14:10:37.888522+00:00",
+  "date": "2026-11-08",
+  "updated_at": "2026-11-08T14:11:17.933629+00:00",
   "stocks": [
     {
       "ticker": "BBY",
@@ -28,7 +28,7 @@
       "tightness": 2.1,
       "rating": "Wide",
       "close": 131.73,
-      "avg_rank": 0.931
+      "avg_rank": 0.9306
     },
     {
       "ticker": "EXEL",
@@ -77,8 +77,7 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 254.19,
-      "avg_rank": 0.9545,
-      "earnings_date": "2026-11-06"
+      "avg_rank": 0.9545
     },
     {
       "ticker": "PCOR",

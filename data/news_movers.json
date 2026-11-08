@@ -1,5 +1,15 @@
 {
-  "date": "2026-11-07",
-  "updated_at": "2026-11-07T14:10:37.881757+00:00",
-  "stocks": []
+  "date": "2026-11-08",
+  "updated_at": "2026-11-08T14:11:17.929143+00:00",
+  "stocks": [
+    {
+      "ticker": "INO",
+      "price": "$1.22",
+      "change": "-16.21%",
+      "volume": "39.7M",
+      "avg_volume": "9.6M",
+      "rel_volume": "4.1x",
+      "high_dollar_volume": false
+    }
+  ]
 }
