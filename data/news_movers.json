@@ -1,15 +1,62 @@
 {
-  "date": "2026-11-08",
-  "updated_at": "2026-11-08T14:11:17.929143+00:00",
+  "date": "2026-11-09",
+  "updated_at": "2026-11-09T14:10:36.807722+00:00",
   "stocks": [
     {
-      "ticker": "INO",
-      "price": "$1.22",
-      "change": "-16.21%",
-      "volume": "39.7M",
-      "avg_volume": "9.6M",
-      "rel_volume": "4.1x",
+      "ticker": "HRTX",
+      "price": "$0.36",
+      "change": "+23.72%",
+      "volume": "84.6M",
+      "avg_volume": "2.4M",
+      "rel_volume": "694.0x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-09"
+    },
+    {
+      "ticker": "ZURA",
+      "price": "$1.28",
+      "change": "-68.70%",
+      "volume": "8.4M",
+      "avg_volume": "2.8M",
+      "rel_volume": "59.2x",
       "high_dollar_volume": false
+    },
+    {
+      "ticker": "SOC",
+      "price": "$0.52",
+      "change": "-73.05%",
+      "volume": "22.6M",
+      "avg_volume": "8.5M",
+      "rel_volume": "53.4x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-09"
+    },
+    {
+      "ticker": "SHFS",
+      "price": "$0.02",
+      "change": "-13.69%",
+      "volume": "72.9M",
+      "avg_volume": "58.1M",
+      "rel_volume": "25.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "GPUS",
+      "price": "$0.17",
+      "change": "+18.89%",
+      "volume": "33.0M",
+      "avg_volume": "38.7M",
+      "rel_volume": "17.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "NVDA",
+      "price": "$175.55",
+      "change": "-5.94%",
+      "volume": "32.1M",
+      "avg_volume": "117.1M",
+      "rel_volume": "5.5x",
+      "high_dollar_volume": true
     }
   ]
 }

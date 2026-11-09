@@ -1,97 +1,97 @@
 {
-  "date": "2026-11-08",
-  "updated_at": "2026-11-08T14:11:17.933629+00:00",
+  "date": "2026-11-09",
+  "updated_at": "2026-11-09T14:10:36.813765+00:00",
   "stocks": [
     {
       "ticker": "BBY",
       "tightness": 3.8,
       "rating": "Wide",
       "close": 99.63,
-      "avg_rank": 0.9334
+      "avg_rank": 0.9324
     },
     {
       "ticker": "CRL",
       "tightness": 3.1,
       "rating": "Wide",
       "close": 337.52,
-      "avg_rank": 0.9261
+      "avg_rank": 0.9248
     },
     {
       "ticker": "FDS",
       "tightness": 2.2,
       "rating": "Wide",
       "close": 327.89,
-      "avg_rank": 0.9286
+      "avg_rank": 0.9276
     },
     {
       "ticker": "KYMR",
       "tightness": 2.1,
       "rating": "Wide",
       "close": 131.73,
-      "avg_rank": 0.9306
+      "avg_rank": 0.9296
     },
     {
       "ticker": "EXEL",
       "tightness": 1.6,
       "rating": "Wide",
       "close": 69.57,
-      "avg_rank": 0.933
+      "avg_rank": 0.932
     },
     {
       "ticker": "MANH",
       "tightness": 1.6,
       "rating": "Wide",
       "close": 252.78,
-      "avg_rank": 0.9801
+      "avg_rank": 0.9798
     },
     {
       "ticker": "CART",
       "tightness": 1.5,
       "rating": "Wide",
       "close": 58.12,
-      "avg_rank": 0.9501
+      "avg_rank": 0.9494
     },
     {
       "ticker": "GKOS",
       "tightness": 1.1,
       "rating": "Wide",
       "close": 224.41,
-      "avg_rank": 0.9761
+      "avg_rank": 0.9753
     },
     {
       "ticker": "ROP",
       "tightness": 1.1,
       "rating": "Wide",
       "close": 476.6,
-      "avg_rank": 0.9493
+      "avg_rank": 0.9486
     },
     {
       "ticker": "BSY",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 44.65,
-      "avg_rank": 0.9343
+      "avg_rank": 0.9341
     },
     {
       "ticker": "MRNA",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 254.19,
-      "avg_rank": 0.9545
+      "avg_rank": 0.9543
     },
     {
       "ticker": "PCOR",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 75.33,
-      "avg_rank": 0.97
+      "avg_rank": 0.9697
     },
     {
       "ticker": "SN",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 222.95,
-      "avg_rank": 0.9675
+      "avg_rank": 0.9664
     }
   ]
 }
