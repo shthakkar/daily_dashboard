@@ -1,13 +1,13 @@
 {
   "date": "2026-11-09",
-  "updated_at": "2026-11-09T14:10:32.367504+00:00",
+  "updated_at": "2026-11-09T21:09:44.256015+00:00",
   "spy_ema": "bearish",
-  "spy_10ema": 753.45,
-  "spy_20ema": 759.59,
-  "spy_last_close": 735.29,
+  "spy_10ema": 753.3,
+  "spy_20ema": 758.92,
+  "spy_last_close": 752.64,
   "spy_52w_high": 781.62,
-  "spy_pct_off_high": -5.93,
-  "spy_off_high_level": "mild-off",
-  "vix": 25.64,
-  "vix_level": "elevated"
+  "spy_pct_off_high": -3.71,
+  "spy_off_high_level": "near-high",
+  "vix": 19.89,
+  "vix_level": "normal"
 }
