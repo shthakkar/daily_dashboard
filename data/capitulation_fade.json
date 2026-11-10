@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-09",
-  "updated_at": "2026-11-09T21:09:46.557658+00:00",
+  "date": "2026-11-10",
+  "updated_at": "2026-11-10T14:11:41.083417+00:00",
   "stocks": [
     {
       "ticker": "ARWR",
@@ -30,7 +30,7 @@
       "score": "4/6",
       "close": 48.74,
       "stretch": "+23.7%",
-      "rvol": "1.3x",
+      "rvol": "1.5x",
       "roc3": "+29.9%"
     },
     {
@@ -38,10 +38,10 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 55.01,
+      "close": 54.98,
       "stretch": "+19.5%",
-      "rvol": "1.0x",
-      "roc3": "+15.0%"
+      "rvol": "1.4x",
+      "roc3": "+14.9%"
     },
     {
       "ticker": "PRM",
@@ -50,7 +50,7 @@
       "score": "4/6",
       "close": 31.58,
       "stretch": "+12.7%",
-      "rvol": "0.9x",
+      "rvol": "1.2x",
       "roc3": "+12.4%"
     },
     {
@@ -60,7 +60,7 @@
       "score": "4/6",
       "close": 32.58,
       "stretch": "-9.6%",
-      "rvol": "3.0x",
+      "rvol": "3.1x",
       "roc3": "-9.8%"
     },
     {
@@ -70,7 +70,7 @@
       "score": "4/6",
       "close": 58.39,
       "stretch": "+34.0%",
-      "rvol": "2.0x",
+      "rvol": "2.1x",
       "roc3": "+28.4%"
     },
     {
@@ -98,9 +98,9 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 89.96,
+      "close": 89.93,
       "stretch": "+26.1%",
-      "rvol": "1.0x",
+      "rvol": "1.2x",
       "roc3": "+14.8%"
     },
     {
@@ -110,7 +110,7 @@
       "score": "4/6",
       "close": 43.88,
       "stretch": "+22.8%",
-      "rvol": "1.7x",
+      "rvol": "2.0x",
       "roc3": "+16.8%"
     },
     {
@@ -118,9 +118,9 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 78.58,
+      "close": 78.57,
       "stretch": "+20.2%",
-      "rvol": "0.9x",
+      "rvol": "1.1x",
       "roc3": "+12.7%"
     },
     {
@@ -140,7 +140,7 @@
       "score": "4/6",
       "close": 178.67,
       "stretch": "-14.6%",
-      "rvol": "3.3x",
+      "rvol": "3.4x",
       "roc3": "-10.7%"
     },
     {
@@ -160,7 +160,7 @@
       "score": "4/6",
       "close": 36.06,
       "stretch": "-28.0%",
-      "rvol": "1.7x",
+      "rvol": "1.8x",
       "roc3": "-17.3%"
     },
     {
@@ -168,9 +168,9 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 104.72,
+      "close": 104.71,
       "stretch": "+13.5%",
-      "rvol": "1.0x",
+      "rvol": "1.4x",
       "roc3": "+5.4%"
     },
     {
@@ -180,7 +180,7 @@
       "score": "4/6",
       "close": 100.73,
       "stretch": "+17.4%",
-      "rvol": "1.8x",
+      "rvol": "1.9x",
       "roc3": "+8.5%"
     },
     {
@@ -200,7 +200,7 @@
       "score": "4/6",
       "close": 259.16,
       "stretch": "-8.9%",
-      "rvol": "1.1x",
+      "rvol": "1.3x",
       "roc3": "-18.0%"
     },
     {
@@ -208,10 +208,10 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 236.24,
-      "stretch": "-8.1%",
-      "rvol": "1.2x",
-      "roc3": "-11.9%"
+      "close": 236.46,
+      "stretch": "-8.0%",
+      "rvol": "1.5x",
+      "roc3": "-11.8%"
     },
     {
       "ticker": "SGRY",
@@ -220,7 +220,7 @@
       "score": "4/6",
       "close": 26.45,
       "stretch": "+34.1%",
-      "rvol": "1.8x",
+      "rvol": "2.4x",
       "roc3": "+14.2%",
       "earnings_date": "2026-11-09"
     }

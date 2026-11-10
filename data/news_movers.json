@@ -1,230 +1,79 @@
 {
-  "date": "2026-11-09",
-  "updated_at": "2026-11-09T21:09:48.090919+00:00",
+  "date": "2026-11-10",
+  "updated_at": "2026-11-10T14:11:41.483238+00:00",
   "stocks": [
     {
-      "ticker": "CKX",
-      "price": "$16.85",
-      "change": "+62.54%",
-      "volume": "11.9M",
-      "avg_volume": "3.9K",
-      "rel_volume": "3094.7x",
-      "high_dollar_volume": false,
-      "earnings_date": "2026-11-09"
+      "ticker": "PXLW",
+      "price": "$6.90",
+      "change": "+32.30%",
+      "volume": "8.5M",
+      "avg_volume": "30.4K",
+      "rel_volume": "5568.5x",
+      "high_dollar_volume": false
     },
     {
-      "ticker": "HRTX",
-      "price": "$0.37",
-      "change": "+26.48%",
-      "volume": "136.5M",
-      "avg_volume": "2.4M",
-      "rel_volume": "56.0x",
-      "high_dollar_volume": false,
-      "earnings_date": "2026-11-09"
+      "ticker": "CODX",
+      "price": "$0.31",
+      "change": "-2.92%",
+      "volume": "57.6M",
+      "avg_volume": "743.2K",
+      "rel_volume": "1551.2x",
+      "high_dollar_volume": false
     },
     {
-      "ticker": "SOC",
-      "price": "$0.88",
-      "change": "-54.40%",
-      "volume": "248.4M",
-      "avg_volume": "8.5M",
-      "rel_volume": "29.2x",
-      "high_dollar_volume": false,
-      "earnings_date": "2026-11-09"
-    },
-    {
-      "ticker": "ZURA",
-      "price": "$1.24",
-      "change": "-69.68%",
-      "volume": "63.6M",
-      "avg_volume": "2.8M",
-      "rel_volume": "22.5x",
+      "ticker": "PEPG",
+      "price": "$5.35",
+      "change": "+123.85%",
+      "volume": "31.3M",
+      "avg_volume": "894.6K",
+      "rel_volume": "700.5x",
       "high_dollar_volume": false
     },
     {
       "ticker": "PARA",
-      "price": "$0.09",
-      "change": "-23.58%",
-      "volume": "60.7M",
-      "avg_volume": "3.8M",
-      "rel_volume": "16.1x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "NKTX",
-      "price": "$1.59",
-      "change": "-8.09%",
-      "volume": "9.3M",
-      "avg_volume": "796.3K",
-      "rel_volume": "11.7x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "ABEO",
-      "price": "$2.54",
-      "change": "-39.09%",
-      "volume": "13.4M",
-      "avg_volume": "1.4M",
-      "rel_volume": "9.9x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "LFST",
-      "price": "$14.60",
-      "change": "+6.03%",
-      "volume": "29.5M",
-      "avg_volume": "4.4M",
-      "rel_volume": "6.7x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "IONS",
-      "price": "$31.00",
-      "change": "-21.36%",
-      "volume": "19.5M",
-      "avg_volume": "3.2M",
-      "rel_volume": "6.1x",
-      "high_dollar_volume": true,
-      "earnings_date": "2026-11-09"
-    },
-    {
-      "ticker": "ARWR",
-      "price": "$49.24",
-      "change": "-15.34%",
-      "volume": "8.1M",
-      "avg_volume": "1.7M",
-      "rel_volume": "4.7x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "TIC",
-      "price": "$11.30",
-      "change": "+8.97%",
-      "volume": "7.4M",
-      "avg_volume": "1.7M",
-      "rel_volume": "4.4x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "SGRY",
-      "price": "$26.45",
-      "change": "+14.01%",
-      "volume": "15.6M",
-      "avg_volume": "3.6M",
-      "rel_volume": "4.3x",
-      "high_dollar_volume": true,
-      "earnings_date": "2026-11-09"
-    },
-    {
-      "ticker": "HIMS",
-      "price": "$22.93",
-      "change": "-11.79%",
-      "volume": "43.4M",
-      "avg_volume": "10.8M",
-      "rel_volume": "4.0x",
-      "high_dollar_volume": true,
-      "earnings_date": "2026-11-09"
-    },
-    {
-      "ticker": "IBRX",
-      "price": "$7.11",
-      "change": "-17.66%",
-      "volume": "44.7M",
-      "avg_volume": "11.3M",
-      "rel_volume": "4.0x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "NVDA",
-      "price": "$178.67",
-      "change": "-4.27%",
-      "volume": "454.8M",
-      "avg_volume": "117.1M",
-      "rel_volume": "3.9x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "VIR",
-      "price": "$13.65",
-      "change": "+11.75%",
-      "volume": "7.1M",
-      "avg_volume": "1.9M",
-      "rel_volume": "3.6x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "TTD",
-      "price": "$14.93",
-      "change": "+15.47%",
-      "volume": "77.5M",
-      "avg_volume": "22.0M",
-      "rel_volume": "3.5x",
-      "high_dollar_volume": true,
-      "earnings_date": "2026-11-09"
-    },
-    {
-      "ticker": "AKAM",
-      "price": "$80.29",
-      "change": "-3.37%",
-      "volume": "16.2M",
+      "price": "$0.07",
+      "change": "-19.66%",
+      "volume": "23.0M",
       "avg_volume": "4.8M",
-      "rel_volume": "3.4x",
-      "high_dollar_volume": true
+      "rel_volume": "95.0x",
+      "high_dollar_volume": false
     },
     {
-      "ticker": "UNIT",
-      "price": "$4.40",
-      "change": "-15.71%",
-      "volume": "10.1M",
-      "avg_volume": "3.0M",
-      "rel_volume": "3.3x",
-      "high_dollar_volume": false,
-      "earnings_date": "2026-11-09"
+      "ticker": "DBX",
+      "price": "$31.50",
+      "change": "-3.31%",
+      "volume": "6.9M",
+      "avg_volume": "4.0M",
+      "rel_volume": "34.7x",
+      "high_dollar_volume": false
     },
     {
       "ticker": "GPUS",
-      "price": "$0.19",
-      "change": "+32.89%",
-      "volume": "127.7M",
-      "avg_volume": "38.7M",
-      "rel_volume": "3.3x",
+      "price": "$0.20",
+      "change": "+3.64%",
+      "volume": "12.9M",
+      "avg_volume": "40.8M",
+      "rel_volume": "6.3x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "ANVS",
-      "price": "$0.90",
-      "change": "+6.71%",
-      "volume": "5.2M",
-      "avg_volume": "1.6M",
-      "rel_volume": "3.3x",
-      "high_dollar_volume": false
+      "ticker": "SMCI",
+      "price": "$28.00",
+      "change": "-2.10%",
+      "volume": "13.0M",
+      "avg_volume": "43.8M",
+      "rel_volume": "5.9x",
+      "high_dollar_volume": true
     },
     {
-      "ticker": "SHFS",
-      "price": "$0.02",
-      "change": "-5.70%",
-      "volume": "189.8M",
-      "avg_volume": "58.1M",
-      "rel_volume": "3.3x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "FRVO",
-      "price": "$11.38",
-      "change": "+26.09%",
-      "volume": "23.8M",
-      "avg_volume": "7.6M",
-      "rel_volume": "3.1x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "PLCE",
-      "price": "$0.19",
-      "change": "-41.83%",
-      "volume": "10.0M",
-      "avg_volume": "3.3M",
-      "rel_volume": "3.1x",
-      "high_dollar_volume": false
+      "ticker": "TTD",
+      "price": "$13.85",
+      "change": "-7.20%",
+      "volume": "6.0M",
+      "avg_volume": "21.5M",
+      "rel_volume": "5.6x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-09"
     }
   ]
 }

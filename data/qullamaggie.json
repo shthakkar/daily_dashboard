@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-09",
-  "updated_at": "2026-11-09T21:09:48.094513+00:00",
+  "date": "2026-11-10",
+  "updated_at": "2026-11-10T14:11:41.490967+00:00",
   "stocks": [
     {
       "ticker": "TEM",
@@ -13,8 +13,8 @@
       "ticker": "CRL",
       "tightness": 1.8,
       "rating": "Wide",
-      "close": 353.11,
-      "avg_rank": 0.9567
+      "close": 353.34,
+      "avg_rank": 0.9571
     },
     {
       "ticker": "BBY",
@@ -55,7 +55,7 @@
       "ticker": "TYL",
       "tightness": 1.2,
       "rating": "Wide",
-      "close": 418.1,
+      "close": 418.18,
       "avg_rank": 0.9285
     },
     {
@@ -70,13 +70,13 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 71.74,
-      "avg_rank": 0.9368
+      "avg_rank": 0.9372
     },
     {
       "ticker": "GKOS",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 238.7,
+      "close": 238.74,
       "avg_rank": 0.9849
     },
     {
@@ -90,21 +90,21 @@
       "ticker": "PCOR",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 76.44,
+      "close": 76.46,
       "avg_rank": 0.9607
     },
     {
       "ticker": "SN",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 229.49,
-      "avg_rank": 0.9622
+      "close": 229.51,
+      "avg_rank": 0.9618
     },
     {
       "ticker": "SWK",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 118.13,
+      "close": 118.1,
       "avg_rank": 0.9249
     }
   ]
