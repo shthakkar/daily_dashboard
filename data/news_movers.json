@@ -1,43 +1,119 @@
 {
   "date": "2026-11-11",
-  "updated_at": "2026-11-11T14:11:26.677263+00:00",
+  "updated_at": "2026-11-11T21:09:04.545242+00:00",
   "stocks": [
     {
-      "ticker": "AUUD",
-      "price": "$0.31",
-      "change": "+28.14%",
-      "volume": "100.9M",
-      "avg_volume": "1.1M",
-      "rel_volume": "1766.5x",
+      "ticker": "NXXT",
+      "price": "$1.70",
+      "change": "+811.53%",
+      "volume": "101.8M",
+      "avg_volume": "237.0K",
+      "rel_volume": "429.7x",
       "high_dollar_volume": false
     },
     {
+      "ticker": "AUUD",
+      "price": "$0.30",
+      "change": "+24.90%",
+      "volume": "127.1M",
+      "avg_volume": "1.1M",
+      "rel_volume": "111.2x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "ARAI",
+      "price": "$0.06",
+      "change": "+10.90%",
+      "volume": "57.4M",
+      "avg_volume": "4.9M",
+      "rel_volume": "11.6x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "IMXI",
+      "price": "$6.89",
+      "change": "+6.08%",
+      "volume": "7.7M",
+      "avg_volume": "703.9K",
+      "rel_volume": "11.0x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "FOSL",
+      "price": "$9.97",
+      "change": "+26.68%",
+      "volume": "7.7M",
+      "avg_volume": "834.0K",
+      "rel_volume": "9.2x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-10"
+    },
+    {
+      "ticker": "IHRT",
+      "price": "$0.70",
+      "change": "+13.10%",
+      "volume": "11.4M",
+      "avg_volume": "1.3M",
+      "rel_volume": "8.6x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "BGS",
+      "price": "$3.65",
+      "change": "+37.22%",
+      "volume": "14.6M",
+      "avg_volume": "2.2M",
+      "rel_volume": "6.8x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-10"
+    },
+    {
+      "ticker": "PEPG",
+      "price": "$5.26",
+      "change": "+14.10%",
+      "volume": "15.9M",
+      "avg_volume": "2.5M",
+      "rel_volume": "6.3x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-10"
+    },
+    {
       "ticker": "BURU",
-      "price": "$0.26",
-      "change": "+29.71%",
-      "volume": "23.0M",
+      "price": "$0.27",
+      "change": "+32.99%",
+      "volume": "109.0M",
       "avg_volume": "24.7M",
-      "rel_volume": "18.6x",
+      "rel_volume": "4.4x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "ABEO",
+      "price": "$2.30",
+      "change": "-6.31%",
+      "volume": "6.4M",
+      "avg_volume": "1.6M",
+      "rel_volume": "4.0x",
       "high_dollar_volume": false
     },
     {
       "ticker": "CRWV",
-      "price": "$55.29",
-      "change": "+13.46%",
-      "volume": "13.3M",
+      "price": "$60.77",
+      "change": "+24.71%",
+      "volume": "154.3M",
       "avg_volume": "42.4M",
-      "rel_volume": "6.3x",
+      "rel_volume": "3.6x",
       "high_dollar_volume": true,
       "earnings_date": "2026-11-10"
     },
     {
-      "ticker": "NVDA",
-      "price": "$174.16",
-      "change": "+3.12%",
-      "volume": "23.2M",
-      "avg_volume": "127.5M",
-      "rel_volume": "3.6x",
-      "high_dollar_volume": true
+      "ticker": "ANGX",
+      "price": "$4.30",
+      "change": "+14.84%",
+      "volume": "5.6M",
+      "avg_volume": "1.7M",
+      "rel_volume": "3.2x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-10"
     }
   ]
 }
