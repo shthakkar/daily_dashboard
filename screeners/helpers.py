@@ -1,6 +1,10 @@
 import re
 import time
+import urllib.parse
+import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import date, datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 
 import pandas as pd
 import requests
@@ -121,48 +125,306 @@ def get_finviz_tickers(filters: dict) -> list[str]:
     return fix_finviz_tickers(tickers)
 
 
-def get_earnings_map() -> dict[str, str]:
-    """Tickers that reported earnings today or yesterday -> ISO earnings date.
+def get_earnings_map(days_back: int = 10) -> dict[str, str]:
+    """Tickers that reported earnings in the last `days_back` days -> ISO date.
 
     Source: Nasdaq's earnings calendar (one request per day). Sakshar's ask
     (2026-10-23): flag earnings next to dashboard tickers instead of dropping
-    them, so earnings-day names are visible before he trades them. Raises on
-    failure or an implausibly empty calendar -- the caller logs it loudly and
-    ships the dashboard without the annotation rather than a fake-empty one.
+    them, so earnings-day names are visible before he trades them. Extended
+    2026-11-11 to a 10-calendar-day window so the 6:22 pre-trade check can
+    count sessions since earnings (the post-earnings filter needs up to 5
+    sessions back, which spans a weekend). Tolerant per day: a day with no
+    rows (weekend/holiday) is skipped, not fatal -- but if NO day returns
+    rows at all, raise so the caller ships without the annotation loudly
+    rather than a fake-empty one.
     """
     out: dict[str, str] = {}
     session = requests.Session()
     session.headers.update({"User-Agent": _FINVIZ_UA,
                             "Accept": "application/json"})
-    for offset in (1, 0):  # yesterday first so today's date wins on overlap
+    any_rows = False
+    for offset in range(days_back, -1, -1):
         day = date.today() - timedelta(days=offset)
-        resp = session.get(
-            "https://api.nasdaq.com/api/calendar/earnings",
-            params={"date": day.isoformat()}, timeout=30)
-        resp.raise_for_status()
-        rows = (resp.json().get("data") or {}).get("rows") or []
+        try:
+            resp = session.get(
+                "https://api.nasdaq.com/api/calendar/earnings",
+                params={"date": day.isoformat()}, timeout=30)
+            resp.raise_for_status()
+            rows = (resp.json().get("data") or {}).get("rows") or []
+        except Exception:  # noqa: BLE001 - one bad day must not kill the map
+            continue
         if not rows:
-            raise RuntimeError(
-                f"Nasdaq earnings calendar returned no rows for {day}")
+            continue
+        any_rows = True
         for row in rows:
             sym = (row.get("symbol") or "").strip()
             if sym:
                 out[sym] = day.isoformat()
+    if not any_rows:
+        raise RuntimeError(
+            f"Nasdaq earnings calendar returned no rows in the last {days_back} days")
     return out
 
 
-def annotate_earnings(result: dict, earnings: dict[str, str]) -> int:
-    """Set stock['earnings_date'] on rows whose ticker reported today/yesterday.
+def _sessions_since(index, event_date: str) -> int | None:
+    """Sessions in `index` (a DatetimeIndex of session dates) after event_date.
+
+    Returns None if the index is empty. 0 means the event was today (no
+    session has closed since it).
+    """
+    if index is None or len(index) == 0:
+        return None
+    try:
+        ev = pd.Timestamp(event_date).date()
+    except (ValueError, TypeError):
+        return None
+    return int(sum(1 for d in index if d.date() > ev))
+
+
+def _earnings_move_pct(df: pd.DataFrame, earn_date: str) -> float | None:
+    """Signed % move of the earnings reaction session.
+
+    The report can land before the open (reaction on the report date) or
+    after the close (reaction the next session), and the calendar does not
+    say which -- so take the larger absolute single-session move of the
+    report date and the next session. Returns None when neither session has
+    a close yet (reported this morning and the market has not closed).
+    """
+    if df is None or df.empty or "Close" not in df.columns:
+        return None
+    try:
+        ev = pd.Timestamp(earn_date)
+    except (ValueError, TypeError):
+        return None
+    closes = df["Close"].dropna()
+    if closes.empty:
+        return None
+    # First session on or after the report date; if the report date is not a
+    # session (weekend), the next session is the reaction session.
+    after = closes.loc[closes.index >= ev]
+    if after.empty:
+        return None
+    moves = []
+    for pos in range(len(closes)):
+        if closes.index[pos] < ev:
+            continue
+        if pos == 0:
+            continue
+        moves.append(float(closes.iloc[pos] / closes.iloc[pos - 1] - 1) * 100)
+        if len(moves) >= 2:
+            break
+    if not moves:
+        return None
+    best = max(moves, key=abs)
+    return round(best, 2)
+
+
+def annotate_earnings(result: dict, earnings: dict[str, str],
+                      ohlcv: dict | None = None) -> int:
+    """Set earnings fields on fade rows: date, day move, sessions since.
 
     Mutates `result` in place; returns how many stocks were annotated.
+    With `ohlcv` (the pipeline's per-ticker daily bars) each flagged row also
+    gets `earnings_move_pct` (the reaction-session % move -- the larger of the
+    report date and the next session, since the calendar does not say whether
+    the report landed before the open or after the close) and
+    `sessions_since_earnings` (sessions closed since the report). Without
+    `ohlcv` it only sets the date, as before.
     """
     n = 0
     for stock in result.get("stocks", []):
         d = earnings.get(stock.get("ticker"))
         if d:
             stock["earnings_date"] = d
+            if ohlcv is not None:
+                df = ohlcv.get(stock["ticker"])
+                stock["earnings_move_pct"] = _earnings_move_pct(df, d)
+                stock["sessions_since_earnings"] = _sessions_since(
+                    df.index if df is not None else None, d)
             n += 1
     return n
+
+
+# --- Pre-trade context (Sakshar's ask, 2026-11-11): the four things the
+# Friday analysis said to start tracking, captured per fade candidate so the
+# 6:22 pre-trade check can drop names that should not be traded. All three
+# getters are best-effort: they return None on failure (unknown), never a
+# fake-empty result -- the caller logs loudly and the check fails open.
+_FINANCING_PHRASES = (
+    "convertible note", "convertible senior", "secondary offering",
+    "follow-on offering", "follow on offering", "public offering",
+    "private placement", "proposed offering", "announces offering",
+    "announces pricing", "prices offering", "upsizes offering",
+    "upsized offering", "offering of common stock", "notes offering",
+    "senior notes",
+)
+_GUIDANCE_CUT_PHRASES = (
+    "lowers guidance", "cuts guidance", "cuts outlook", "lowers outlook",
+    "withdraws guidance", "suspends guidance",
+)
+
+
+def get_analyst_tape(ticker: str, index=None,
+                     sessions: int = 5, as_of: date | None = None) -> dict | None:
+    """Analyst actions for `ticker` in the last `sessions` sessions.
+
+    Source: yfinance upgrades/downgrades history. `as_of` caps the window
+    (default today) so a backtest never counts actions after its as-of date.
+    Returns counts plus the latest actions, or None when the lookup fails
+    (unknown). An empty history is a valid result (no actions on record),
+    not a failure.
+    """
+    as_of = as_of or date.today()
+    try:
+        ud = yf.Ticker(ticker).upgrades_downgrades
+    except Exception:  # noqa: BLE001
+        return None
+    if ud is None or ud.empty:
+        return {"status": "ok", "upgrades": 0, "downgrades": 0,
+                "raises": 0, "lowers": 0, "net": 0, "tape_net": 0, "latest": []}
+    try:
+        if index is not None and len(index) > 0:
+            cutoff = index[-min(sessions, len(index))]
+            recent = ud.loc[(ud.index >= cutoff)
+                            & (ud.index < pd.Timestamp(as_of) + pd.Timedelta(days=1))]
+        else:
+            cutoff = pd.Timestamp.now(tz="US/Eastern") - pd.Timedelta(days=10)
+            recent = ud.loc[ud.index >= cutoff]
+    except Exception:  # noqa: BLE001
+        return None
+    if recent.empty:
+        return {"status": "ok", "upgrades": 0, "downgrades": 0,
+                "raises": 0, "lowers": 0, "net": 0, "tape_net": 0, "latest": []}
+    up = int((recent["Action"] == "up").sum())
+    down = int((recent["Action"] == "down").sum())
+    raises = int((recent["priceTargetAction"] == "Raises").sum())
+    lowers = int((recent["priceTargetAction"] == "Lowers").sum())
+    # tape_net: positive = the Street is warming to the name (upgrades and
+    # target raises); negative = cooling (downgrades and target lowers).
+    # A short fade fights a positive tape; a long fade fights a negative one.
+    tape_net = (up + raises) - (down + lowers)
+    latest = []
+    for ts, row in recent.head(3).iterrows():
+        latest.append({
+            "date": ts.date().isoformat(),
+            "firm": str(row.get("Firm", "")),
+            "action": str(row.get("Action", "")),
+            "to_grade": str(row.get("ToGrade", "")),
+            "target": (float(row["currentPriceTarget"])
+                       if pd.notna(row.get("currentPriceTarget")) else None),
+        })
+    return {"status": "ok", "upgrades": up, "downgrades": down,
+            "raises": raises, "lowers": lowers, "net": up - down,
+            "tape_net": tape_net,
+            "latest": latest}
+
+
+def get_corporate_flags(ticker: str, index=None,
+                        sessions: int = 5, as_of: date | None = None) -> list | None:
+    """Financing / guidance-cut events for `ticker` in the last sessions.
+
+    Source: Google News RSS (one targeted query per ticker). `as_of` caps
+    the window (default today). Returns a list of {date, title, kind} with
+    kind "financing" or "guidance_cut", or None when the lookup fails
+    (unknown). An empty list means no matching event found in the window.
+
+    Relevance: Google's RSS matching is loose (a query for APP once returned
+    a Dropbox converts story), so a title only counts if it names the ticker
+    as a word or the company's first name word (e.g. "Dropbox" for DBX).
+    """
+    as_of = as_of or date.today()
+    try:
+        # yfinance .info has no timeout of its own and can hang; bound it.
+        from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeout
+
+        def _info():
+            return yf.Ticker(ticker).info or {}
+
+        with ThreadPoolExecutor(max_workers=1) as pool:
+            info = pool.submit(_info).result(timeout=10)
+        name = (info.get("shortName") or info.get("longName") or "")
+        name_token = name.split()[0] if name else None
+    except Exception:  # noqa: BLE001 - no name, fall back to ticker-only
+        name_token = None
+    try:
+        q = urllib.parse.quote(
+            f'"{ticker}" convertible notes offering OR "{ticker}" '
+            f'secondary offering OR "{ticker}" follow-on offering OR '
+            f'"{ticker}" public offering OR "{ticker}" private placement')
+        req = urllib.request.Request(
+            "https://news.google.com/rss/search?q=" + q +
+            "&hl=en-US&gl=US&ceid=US:en",
+            headers={"User-Agent": _FINVIZ_UA})
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            root = ET.fromstring(resp.read())
+    except Exception:  # noqa: BLE001
+        return None
+    if index is not None and len(index) > 0:
+        cutoff = index[-min(sessions, len(index))].date()
+    else:
+        cutoff = date.today() - timedelta(days=10)
+    out = []
+    for item in root.iter("item"):
+        title = (item.findtext("title") or "").strip()
+        pub = item.findtext("pubDate") or ""
+        try:
+            pub_date = parsedate_to_datetime(pub).date()
+        except (ValueError, TypeError):
+            continue
+        if pub_date < cutoff or pub_date > as_of:
+            continue
+        low = title.lower()
+        if not (re.search(rf"\b{re.escape(ticker.lower())}\b", low)
+                or (name_token and name_token.lower() in low)):
+            continue
+        if any(p in low for p in _FINANCING_PHRASES):
+            out.append({"date": pub_date.isoformat(), "title": title,
+                        "kind": "financing"})
+        elif any(p in low for p in _GUIDANCE_CUT_PHRASES):
+            out.append({"date": pub_date.isoformat(), "title": title,
+                        "kind": "guidance_cut"})
+    return out
+
+
+def annotate_context(result: dict, ohlcv: dict | None = None,
+                     as_of: date | None = None) -> dict:
+    """Attach analyst tape + corporate flags to each fade row.
+
+    Mutates `result` in place. Returns a summary of how many rows got each
+    annotation and how many lookups failed (unknown). A failed lookup leaves
+    the field as None -- the dashboard shows "unknown", the 6:22 check treats
+    it as no evidence (fails open), never as a clean bill of health.
+    `as_of` caps the news/tape window (default: the result's date, else today).
+    """
+    if as_of is None:
+        try:
+            as_of = date.fromisoformat(result.get("date", ""))
+        except ValueError:
+            as_of = date.today()
+    summary = {"analyst_ok": 0, "analyst_failed": 0,
+               "corporate_ok": 0, "corporate_failed": 0}
+    for stock in result.get("stocks", []):
+        ticker = stock.get("ticker")
+        df = (ohlcv or {}).get(ticker) if ohlcv else None
+        index = df.index if df is not None else None
+        tape = get_analyst_tape(ticker, index, as_of=as_of)
+        if tape is None:
+            stock["analyst_tape"] = None
+            summary["analyst_failed"] += 1
+        else:
+            stock["analyst_tape"] = tape
+            summary["analyst_ok"] += 1
+        flags = get_corporate_flags(ticker, index, as_of=as_of)
+        if flags is None:
+            stock["corporate_flags"] = None
+            summary["corporate_failed"] += 1
+        else:
+            if flags:
+                for f in flags:
+                    f["sessions_since"] = _sessions_since(index, f["date"])
+            stock["corporate_flags"] = flags
+            summary["corporate_ok"] += 1
+    return summary
 
 
 def _chunked(items: list[str], size: int) -> list[list[str]]:

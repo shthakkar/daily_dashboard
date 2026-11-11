@@ -133,7 +133,35 @@ def main() -> None:
     # --- Capitulation Fade (needs OHLCV; screens the large+mid universe) ---
     try:
         result = capitulation_fade.run(ohlcv)
-        n_earn = helpers.annotate_earnings(result, earnings)
+        n_earn = helpers.annotate_earnings(result, earnings, ohlcv)
+        # Pre-trade context (Sakshar's ask, 2026-11-11): analyst tape and
+        # corporate flags per candidate, for the 6:22 drop check. Best-effort
+        # per ticker and never blocking: a failed lookup leaves the field as
+        # None (unknown), and the check fails open on unknowns.
+        try:
+            ctx = helpers.annotate_context(result, ohlcv)
+            print(f"Fade context: analyst {ctx['analyst_ok']} ok / "
+                  f"{ctx['analyst_failed']} failed; corporate "
+                  f"{ctx['corporate_ok']} ok / {ctx['corporate_failed']} failed")
+        except Exception as e:
+            print(f"WARNING: fade context annotation failed, shipping "
+                  f"without tape/flags: {e}")
+        # SPY context for the fade rows (4th tracked item): the market tape
+        # the fades are trading against.
+        try:
+            spy_close = extras["SPY"]["close"].dropna()
+            sma20 = spy_close.rolling(20).mean().iloc[-1]
+            result["spy_context"] = {
+                "last_close": round(float(spy_close.iloc[-1]), 2),
+                "chg_3d_pct": round(
+                    (float(spy_close.iloc[-1]) / float(spy_close.iloc[-4]) - 1) * 100, 2),
+                "chg_5d_pct": round(
+                    (float(spy_close.iloc[-1]) / float(spy_close.iloc[-6]) - 1) * 100, 2),
+                "vs_sma20_pct": round(
+                    (float(spy_close.iloc[-1]) / float(sma20) - 1) * 100, 2),
+            }
+        except Exception as e:
+            print(f"WARNING: SPY context failed, shipping without it: {e}")
         write_json(result, "data/capitulation_fade.json")
         print(f"Capitulation fade: {len(result['stocks'])} candidates ({n_earn} earnings-flagged)")
     except Exception as e:
