@@ -1,256 +1,43 @@
 {
-  "date": "2026-11-10",
-  "updated_at": "2026-11-10T21:09:52.599918+00:00",
+  "date": "2026-11-11",
+  "updated_at": "2026-11-11T14:11:26.677263+00:00",
   "stocks": [
     {
-      "ticker": "PXLW",
-      "price": "$7.29",
-      "change": "+39.79%",
-      "volume": "17.8M",
-      "avg_volume": "30.4K",
-      "rel_volume": "584.0x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "PEPG",
-      "price": "$4.61",
-      "change": "+92.89%",
-      "volume": "102.8M",
-      "avg_volume": "894.6K",
-      "rel_volume": "114.9x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "CODX",
-      "price": "$0.29",
-      "change": "-9.50%",
-      "volume": "68.7M",
-      "avg_volume": "743.2K",
-      "rel_volume": "92.5x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "AMIX",
-      "price": "$1.85",
-      "change": "+8.82%",
-      "volume": "71.7M",
-      "avg_volume": "856.8K",
-      "rel_volume": "83.7x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "TTEC",
-      "price": "$2.40",
-      "change": "+72.04%",
-      "volume": "22.0M",
-      "avg_volume": "444.8K",
-      "rel_volume": "49.5x",
-      "high_dollar_volume": false,
-      "earnings_date": "2026-11-09"
-    },
-    {
-      "ticker": "FF",
-      "price": "$3.12",
-      "change": "-38.56%",
-      "volume": "7.4M",
-      "avg_volume": "469.3K",
-      "rel_volume": "15.8x",
-      "high_dollar_volume": false,
-      "earnings_date": "2026-11-09"
-    },
-    {
-      "ticker": "PARA",
-      "price": "$0.08",
-      "change": "-10.86%",
-      "volume": "62.0M",
-      "avg_volume": "4.8M",
-      "rel_volume": "12.8x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "APPS",
-      "price": "$7.25",
-      "change": "-35.84%",
-      "volume": "20.3M",
-      "avg_volume": "2.9M",
-      "rel_volume": "7.0x",
-      "high_dollar_volume": false,
-      "earnings_date": "2026-11-09"
-    },
-    {
-      "ticker": "PDYN",
-      "price": "$3.57",
-      "change": "+0.85%",
-      "volume": "5.8M",
-      "avg_volume": "877.6K",
-      "rel_volume": "6.6x",
-      "high_dollar_volume": false,
-      "earnings_date": "2026-11-10"
-    },
-    {
-      "ticker": "SOC",
-      "price": "$0.76",
-      "change": "-13.85%",
-      "volume": "79.2M",
-      "avg_volume": "12.3M",
-      "rel_volume": "6.4x",
-      "high_dollar_volume": false,
-      "earnings_date": "2026-11-09"
-    },
-    {
-      "ticker": "DBX",
-      "price": "$32.40",
-      "change": "-0.55%",
-      "volume": "25.5M",
-      "avg_volume": "4.0M",
-      "rel_volume": "6.4x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "GFL",
-      "price": "$42.40",
-      "change": "-7.59%",
-      "volume": "22.0M",
-      "avg_volume": "3.5M",
-      "rel_volume": "6.3x",
-      "high_dollar_volume": true
-    },
-    {
-      "ticker": "FA",
-      "price": "$21.58",
-      "change": "-8.25%",
-      "volume": "10.6M",
-      "avg_volume": "1.8M",
-      "rel_volume": "5.8x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "HIMS",
-      "price": "$19.15",
-      "change": "-16.52%",
-      "volume": "57.7M",
-      "avg_volume": "11.5M",
-      "rel_volume": "5.0x",
-      "high_dollar_volume": true,
-      "earnings_date": "2026-11-09"
-    },
-    {
-      "ticker": "GRPN",
-      "price": "$12.51",
-      "change": "-23.05%",
-      "volume": "5.4M",
+      "ticker": "AUUD",
+      "price": "$0.31",
+      "change": "+28.14%",
+      "volume": "100.9M",
       "avg_volume": "1.1M",
-      "rel_volume": "5.0x",
-      "high_dollar_volume": false,
-      "earnings_date": "2026-11-09"
-    },
-    {
-      "ticker": "ZURA",
-      "price": "$1.40",
-      "change": "+13.31%",
-      "volume": "16.9M",
-      "avg_volume": "3.8M",
-      "rel_volume": "4.5x",
+      "rel_volume": "1766.5x",
       "high_dollar_volume": false
     },
     {
-      "ticker": "CSQR",
-      "price": "$17.52",
-      "change": "+14.73%",
-      "volume": "6.6M",
-      "avg_volume": "1.6M",
-      "rel_volume": "4.1x",
-      "high_dollar_volume": false,
-      "earnings_date": "2026-11-09"
+      "ticker": "BURU",
+      "price": "$0.26",
+      "change": "+29.71%",
+      "volume": "23.0M",
+      "avg_volume": "24.7M",
+      "rel_volume": "18.6x",
+      "high_dollar_volume": false
     },
     {
-      "ticker": "AAON",
-      "price": "$75.01",
-      "change": "+19.31%",
-      "volume": "5.0M",
-      "avg_volume": "1.2M",
-      "rel_volume": "4.1x",
+      "ticker": "CRWV",
+      "price": "$55.29",
+      "change": "+13.46%",
+      "volume": "13.3M",
+      "avg_volume": "42.4M",
+      "rel_volume": "6.3x",
       "high_dollar_volume": true,
-      "earnings_date": "2026-11-09"
-    },
-    {
-      "ticker": "UNIT",
-      "price": "$4.20",
-      "change": "-4.55%",
-      "volume": "11.9M",
-      "avg_volume": "3.2M",
-      "rel_volume": "3.7x",
-      "high_dollar_volume": false,
-      "earnings_date": "2026-11-09"
+      "earnings_date": "2026-11-10"
     },
     {
       "ticker": "NVDA",
-      "price": "$168.80",
-      "change": "-5.53%",
-      "volume": "420.3M",
-      "avg_volume": "122.6M",
-      "rel_volume": "3.4x",
+      "price": "$174.16",
+      "change": "+3.12%",
+      "volume": "23.2M",
+      "avg_volume": "127.5M",
+      "rel_volume": "3.6x",
       "high_dollar_volume": true
-    },
-    {
-      "ticker": "SECZ",
-      "price": "$8.56",
-      "change": "+22.88%",
-      "volume": "11.1M",
-      "avg_volume": "3.3M",
-      "rel_volume": "3.3x",
-      "high_dollar_volume": false,
-      "earnings_date": "2026-11-09"
-    },
-    {
-      "ticker": "TGTX",
-      "price": "$64.26",
-      "change": "+1.39%",
-      "volume": "5.8M",
-      "avg_volume": "1.9M",
-      "rel_volume": "3.1x",
-      "high_dollar_volume": true,
-      "earnings_date": "2026-11-09"
-    },
-    {
-      "ticker": "TTWO",
-      "price": "$224.64",
-      "change": "+8.31%",
-      "volume": "8.2M",
-      "avg_volume": "2.6M",
-      "rel_volume": "3.1x",
-      "high_dollar_volume": true,
-      "earnings_date": "2026-11-09"
-    },
-    {
-      "ticker": "IONS",
-      "price": "$28.19",
-      "change": "-9.06%",
-      "volume": "10.7M",
-      "avg_volume": "3.5M",
-      "rel_volume": "3.1x",
-      "high_dollar_volume": true,
-      "earnings_date": "2026-11-09"
-    },
-    {
-      "ticker": "JBI",
-      "price": "$3.90",
-      "change": "-17.96%",
-      "volume": "6.5M",
-      "avg_volume": "2.1M",
-      "rel_volume": "3.1x",
-      "high_dollar_volume": false,
-      "earnings_date": "2026-11-10"
-    },
-    {
-      "ticker": "TTD",
-      "price": "$15.42",
-      "change": "+3.28%",
-      "volume": "64.8M",
-      "avg_volume": "21.5M",
-      "rel_volume": "3.0x",
-      "high_dollar_volume": true,
-      "earnings_date": "2026-11-09"
     }
   ]
 }
