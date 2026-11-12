@@ -1,70 +1,184 @@
 {
   "date": "2026-11-12",
-  "updated_at": "2026-11-12T14:12:10.177997+00:00",
+  "updated_at": "2026-11-12T21:10:11.247172+00:00",
   "stocks": [
     {
-      "ticker": "VWAV",
-      "price": "$0.50",
-      "change": "-51.92%",
-      "volume": "21.0M",
-      "avg_volume": "315.2K",
-      "rel_volume": "1331.6x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "CJMB",
-      "price": "$0.30",
-      "change": "-4.08%",
-      "volume": "27.7M",
-      "avg_volume": "3.7M",
-      "rel_volume": "148.6x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "MGRX",
-      "price": "$0.18",
-      "change": "-7.98%",
-      "volume": "7.1M",
-      "avg_volume": "1.3M",
-      "rel_volume": "108.7x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "FRMI",
-      "price": "$1.74",
-      "change": "-3.87%",
-      "volume": "12.8M",
-      "avg_volume": "20.6M",
-      "rel_volume": "12.4x",
+      "ticker": "AIMD",
+      "price": "$1.06",
+      "change": "+118.65%",
+      "volume": "77.9M",
+      "avg_volume": "140.6K",
+      "rel_volume": "553.9x",
       "high_dollar_volume": false,
       "earnings_date": "2026-11-12"
     },
     {
-      "ticker": "NVDA",
-      "price": "$153.89",
-      "change": "-11.42%",
-      "volume": "67.2M",
-      "avg_volume": "131.1M",
+      "ticker": "OGEN",
+      "price": "$0.35",
+      "change": "+2.64%",
+      "volume": "5.4M",
+      "avg_volume": "28.1K",
+      "rel_volume": "190.9x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "VWAV",
+      "price": "$0.56",
+      "change": "-46.53%",
+      "volume": "30.3M",
+      "avg_volume": "315.2K",
+      "rel_volume": "96.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "PLCE",
+      "price": "$0.44",
+      "change": "+123.68%",
+      "volume": "332.0M",
+      "avg_volume": "5.5M",
+      "rel_volume": "60.6x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "CDNL",
+      "price": "$5.64",
+      "change": "-62.37%",
+      "volume": "19.9M",
+      "avg_volume": "897.6K",
+      "rel_volume": "22.2x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "RIME",
+      "price": "$0.14",
+      "change": "+64.77%",
+      "volume": "70.6M",
+      "avg_volume": "4.2M",
+      "rel_volume": "16.8x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "CJMB",
+      "price": "$0.38",
+      "change": "+22.00%",
+      "volume": "37.9M",
+      "avg_volume": "3.7M",
       "rel_volume": "10.2x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "HWC",
+      "price": "$65.00",
+      "change": "-10.20%",
+      "volume": "6.7M",
+      "avg_volume": "793.4K",
+      "rel_volume": "8.4x",
       "high_dollar_volume": true
     },
     {
-      "ticker": "CRWV",
-      "price": "$52.20",
-      "change": "-14.10%",
-      "volume": "10.9M",
-      "avg_volume": "44.2M",
-      "rel_volume": "4.9x",
-      "high_dollar_volume": true,
-      "earnings_date": "2026-11-10"
+      "ticker": "ADIG",
+      "price": "$9.81",
+      "change": "-49.87%",
+      "volume": "5.7M",
+      "avg_volume": "755.9K",
+      "rel_volume": "7.5x",
+      "high_dollar_volume": false
     },
     {
-      "ticker": "ONDS",
-      "price": "$5.42",
-      "change": "-5.42%",
-      "volume": "9.5M",
-      "avg_volume": "58.0M",
+      "ticker": "MGRX",
+      "price": "$0.19",
+      "change": "-7.18%",
+      "volume": "8.7M",
+      "avg_volume": "1.3M",
+      "rel_volume": "6.7x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "CTRE",
+      "price": "$38.15",
+      "change": "-1.19%",
+      "volume": "15.3M",
+      "avg_volume": "2.5M",
+      "rel_volume": "6.2x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "ticker": "NVDA",
+      "price": "$166.19",
+      "change": "-4.34%",
+      "volume": "733.5M",
+      "avg_volume": "131.1M",
+      "rel_volume": "5.6x",
+      "high_dollar_volume": true
+    },
+    {
+      "ticker": "YETI",
+      "price": "$38.33",
+      "change": "-10.42%",
+      "volume": "7.5M",
+      "avg_volume": "1.8M",
+      "rel_volume": "4.2x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-12"
+    },
+    {
+      "ticker": "FRMI",
+      "price": "$2.06",
+      "change": "+13.81%",
+      "volume": "86.2M",
+      "avg_volume": "20.6M",
+      "rel_volume": "4.2x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-12"
+    },
+    {
+      "ticker": "IHRT",
+      "price": "$0.58",
+      "change": "-16.57%",
+      "volume": "5.8M",
+      "avg_volume": "1.5M",
+      "rel_volume": "4.0x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-09"
+    },
+    {
+      "ticker": "GPN",
+      "price": "$88.18",
+      "change": "-12.03%",
+      "volume": "9.8M",
+      "avg_volume": "2.8M",
+      "rel_volume": "3.6x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-11-05"
+    },
+    {
+      "ticker": "LUNR",
+      "price": "$13.03",
+      "change": "+6.98%",
+      "volume": "27.7M",
+      "avg_volume": "8.3M",
       "rel_volume": "3.3x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-11-12"
+    },
+    {
+      "ticker": "AVEX",
+      "price": "$13.80",
+      "change": "+13.77%",
+      "volume": "5.9M",
+      "avg_volume": "1.8M",
+      "rel_volume": "3.2x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-11"
+    },
+    {
+      "ticker": "ALT",
+      "price": "$1.61",
+      "change": "-16.58%",
+      "volume": "12.3M",
+      "avg_volume": "3.9M",
+      "rel_volume": "3.2x",
       "high_dollar_volume": false,
       "earnings_date": "2026-11-12"
     }

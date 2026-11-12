@@ -1,136 +1,16 @@
 {
   "date": "2026-11-12",
-  "updated_at": "2026-11-12T14:11:56.092565+00:00",
+  "updated_at": "2026-11-12T21:10:03.185817+00:00",
   "stocks": [
     {
-      "ticker": "AZTA",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 48.9,
-      "stretch": "+27.6%",
-      "rvol": "2.5x",
-      "roc3": "+24.9%",
-      "earnings_date": "2026-11-10",
-      "earnings_move_pct": 20.8,
-      "sessions_since_earnings": 1,
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 2,
-        "lowers": 0,
-        "net": 0,
-        "tape_net": 2,
-        "latest": [
-          {
-            "date": "2026-11-11",
-            "firm": "Jefferies",
-            "action": "main",
-            "to_grade": "Buy",
-            "target": 52.0
-          },
-          {
-            "date": "2026-11-11",
-            "firm": "Needham",
-            "action": "main",
-            "to_grade": "Buy",
-            "target": 57.0
-          }
-        ]
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "REZI",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 23.0,
-      "stretch": "+23.6%",
-      "rvol": "4.4x",
-      "roc3": "+18.6%",
-      "earnings_date": "2026-11-10",
-      "earnings_move_pct": 18.25,
-      "sessions_since_earnings": 1,
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 0,
-        "lowers": 1,
-        "net": 0,
-        "tape_net": -1,
-        "latest": [
-          {
-            "date": "2026-11-11",
-            "firm": "Oppenheimer",
-            "action": "main",
-            "to_grade": "Outperform",
-            "target": 25.0
-          }
-        ]
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "FIGS",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 23.4,
-      "stretch": "+12.8%",
-      "rvol": "1.1x",
-      "roc3": "+18.1%",
-      "earnings_date": "2026-11-05",
-      "earnings_move_pct": -7.89,
-      "sessions_since_earnings": 4,
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 2,
-        "lowers": 0,
-        "net": 0,
-        "tape_net": 2,
-        "latest": [
-          {
-            "date": "2026-11-10",
-            "firm": "Cantor Fitzgerald",
-            "action": "init",
-            "to_grade": "Overweight",
-            "target": 25.0
-          },
-          {
-            "date": "2026-11-06",
-            "firm": "Barclays",
-            "action": "main",
-            "to_grade": "Overweight",
-            "target": 28.0
-          },
-          {
-            "date": "2026-11-06",
-            "firm": "Keybanc",
-            "action": "main",
-            "to_grade": "Overweight",
-            "target": 27.0
-          }
-        ]
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "GCT",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 64.67,
-      "stretch": "+8.9%",
-      "rvol": "1.2x",
-      "roc3": "+10.8%",
-      "earnings_date": "2026-11-05",
-      "earnings_move_pct": 8.86,
-      "sessions_since_earnings": 4,
+      "ticker": "HWC",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "6/6",
+      "close": 65.0,
+      "stretch": "-10.2%",
+      "rvol": "5.9x",
+      "roc3": "-11.3%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -144,80 +24,50 @@
       "corporate_flags": []
     },
     {
-      "ticker": "MRCY",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 88.33,
-      "stretch": "+14.5%",
-      "rvol": "2.0x",
-      "roc3": "+20.1%",
-      "earnings_date": "2026-11-10",
-      "earnings_move_pct": 5.68,
-      "sessions_since_earnings": 1,
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 1,
-        "downgrades": 0,
-        "raises": 1,
-        "lowers": 1,
-        "net": 1,
-        "tape_net": 1,
-        "latest": [
-          {
-            "date": "2026-11-12",
-            "firm": "Canaccord Genuity",
-            "action": "main",
-            "to_grade": "Buy",
-            "target": 129.0
-          },
-          {
-            "date": "2026-11-11",
-            "firm": "JP Morgan",
-            "action": "up",
-            "to_grade": "Overweight",
-            "target": 102.0
-          },
-          {
-            "date": "2026-11-11",
-            "firm": "Piper Sandler",
-            "action": "reit",
-            "to_grade": "Overweight",
-            "target": 107.0
-          }
-        ]
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "ATMU",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 56.48,
-      "stretch": "+19.5%",
-      "rvol": "0.9x",
-      "roc3": "+11.6%",
-      "earnings_date": "2026-11-06",
-      "earnings_move_pct": 9.62,
-      "sessions_since_earnings": 3,
+      "ticker": "YETI",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "5/6",
+      "close": 38.33,
+      "stretch": "-12.5%",
+      "rvol": "3.9x",
+      "roc3": "-16.4%",
+      "earnings_date": "2026-11-12",
+      "earnings_move_pct": -10.42,
+      "sessions_since_earnings": 0,
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
         "downgrades": 0,
-        "raises": 1,
+        "raises": 0,
         "lowers": 0,
         "net": 0,
-        "tape_net": 1,
-        "latest": [
-          {
-            "date": "2026-11-09",
-            "firm": "JP Morgan",
-            "action": "main",
-            "to_grade": "Overweight",
-            "target": 60.0
-          }
-        ]
+        "tape_net": 0,
+        "latest": []
+      },
+      "corporate_flags": []
+    },
+    {
+      "ticker": "TDS",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 30.72,
+      "stretch": "-9.7%",
+      "rvol": "0.4x",
+      "roc3": "-9.3%",
+      "earnings_date": "2026-11-06",
+      "earnings_move_pct": 3.01,
+      "sessions_since_earnings": 4,
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 0,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 0,
+        "latest": []
       },
       "corporate_flags": []
     },
@@ -226,13 +76,13 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 28.74,
-      "stretch": "+13.5%",
-      "rvol": "1.1x",
-      "roc3": "+16.1%",
+      "close": 29.31,
+      "stretch": "+14.9%",
+      "rvol": "0.8x",
+      "roc3": "+8.3%",
       "earnings_date": "2026-11-05",
       "earnings_move_pct": 9.56,
-      "sessions_since_earnings": 4,
+      "sessions_since_earnings": 5,
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -246,14 +96,17 @@
       "corporate_flags": []
     },
     {
-      "ticker": "SUPN",
+      "ticker": "GCT",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 29.45,
-      "stretch": "+8.2%",
-      "rvol": "0.8x",
-      "roc3": "+12.6%",
+      "close": 64.79,
+      "stretch": "+8.7%",
+      "rvol": "1.0x",
+      "roc3": "+9.2%",
+      "earnings_date": "2026-11-05",
+      "earnings_move_pct": 8.86,
+      "sessions_since_earnings": 5,
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -262,100 +115,89 @@
         "lowers": 0,
         "net": 0,
         "tape_net": 0,
-        "latest": [
-          {
-            "date": "2026-11-09",
-            "firm": "B of A Securities",
-            "action": "init",
-            "to_grade": "Buy",
-            "target": 47.0
-          }
-        ]
+        "latest": []
       },
       "corporate_flags": []
     },
     {
-      "ticker": "BEN",
+      "ticker": "AVGO",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 36.3,
-      "stretch": "+11.8%",
-      "rvol": "0.8x",
-      "roc3": "+7.6%",
-      "earnings_date": "2026-11-06",
-      "earnings_move_pct": 6.34,
-      "sessions_since_earnings": 3,
+      "close": 364.36,
+      "stretch": "+10.4%",
+      "rvol": "1.6x",
+      "roc3": "+14.1%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
         "downgrades": 0,
-        "raises": 3,
+        "raises": 0,
         "lowers": 0,
         "net": 0,
+        "tape_net": 0,
+        "latest": []
+      },
+      "corporate_flags": []
+    },
+    {
+      "ticker": "AMD",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 585.3,
+      "stretch": "+12.8%",
+      "rvol": "1.6x",
+      "roc3": "+15.1%",
+      "earnings_date": "2026-11-03",
+      "earnings_move_pct": 3.65,
+      "sessions_since_earnings": 7,
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 2,
+        "downgrades": 0,
+        "raises": 1,
+        "lowers": 0,
+        "net": 2,
         "tape_net": 3,
         "latest": [
           {
-            "date": "2026-11-09",
-            "firm": "Keefe, Bruyette & Woods",
-            "action": "reit",
-            "to_grade": "Market Perform",
-            "target": 38.0
-          },
-          {
-            "date": "2026-11-09",
-            "firm": "TD Cowen",
+            "date": "2026-11-12",
+            "firm": "B of A Securities",
             "action": "main",
             "to_grade": "Buy",
-            "target": 44.0
+            "target": 700.0
           },
           {
-            "date": "2026-11-09",
-            "firm": "Barclays",
-            "action": "main",
-            "to_grade": "Equal-Weight",
-            "target": 36.0
+            "date": "2026-11-12",
+            "firm": "RBC Capital",
+            "action": "reit",
+            "to_grade": "Sector Perform",
+            "target": 540.0
+          },
+          {
+            "date": "2026-11-12",
+            "firm": "William Blair",
+            "action": "up",
+            "to_grade": "Outperform",
+            "target": 0.0
           }
         ]
       },
       "corporate_flags": []
     },
     {
-      "ticker": "LASR",
+      "ticker": "DIOD",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 44.48,
-      "stretch": "+19.7%",
+      "close": 91.6,
+      "stretch": "+9.2%",
       "rvol": "0.7x",
-      "roc3": "+17.0%",
+      "roc3": "+6.7%",
       "earnings_date": "2026-11-05",
-      "earnings_move_pct": 29.58,
-      "sessions_since_earnings": 4,
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 0,
-        "lowers": 0,
-        "net": 0,
-        "tape_net": 0,
-        "latest": []
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "TGTX",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 65.76,
-      "stretch": "+13.4%",
-      "rvol": "1.0x",
-      "roc3": "+9.9%",
-      "earnings_date": "2026-11-09",
-      "earnings_move_pct": 5.94,
-      "sessions_since_earnings": 2,
+      "earnings_move_pct": -13.97,
+      "sessions_since_earnings": 5,
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -366,314 +208,11 @@
         "tape_net": -1,
         "latest": [
           {
-            "date": "2026-11-10",
-            "firm": "Evercore ISI Group",
-            "action": "main",
-            "to_grade": "Outperform",
-            "target": 71.0
-          }
-        ]
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "CDW",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 173.08,
-      "stretch": "+8.2%",
-      "rvol": "0.9x",
-      "roc3": "+10.2%",
-      "earnings_date": "2026-11-04",
-      "earnings_move_pct": 12.67,
-      "sessions_since_earnings": 5,
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 3,
-        "lowers": 0,
-        "net": 0,
-        "tape_net": 3,
-        "latest": [
-          {
-            "date": "2026-11-06",
-            "firm": "UBS",
-            "action": "main",
-            "to_grade": "Buy",
-            "target": 195.0
-          },
-          {
-            "date": "2026-11-05",
-            "firm": "JP Morgan",
-            "action": "main",
-            "to_grade": "Overweight",
-            "target": 195.0
-          },
-          {
-            "date": "2026-11-05",
-            "firm": "Citigroup",
-            "action": "main",
-            "to_grade": "Neutral",
-            "target": 170.0
-          }
-        ]
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "AXGN",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 58.63,
-      "stretch": "+32.3%",
-      "rvol": "2.2x",
-      "roc3": "+17.2%",
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 0,
-        "lowers": 0,
-        "net": 0,
-        "tape_net": 0,
-        "latest": []
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "CLX",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 106.86,
-      "stretch": "+16.5%",
-      "rvol": "2.2x",
-      "roc3": "+6.9%",
-      "earnings_date": "2026-11-02",
-      "earnings_move_pct": 4.34,
-      "sessions_since_earnings": 7,
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 0,
-        "lowers": 0,
-        "net": 0,
-        "tape_net": 0,
-        "latest": []
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "NBIX",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 174.41,
-      "stretch": "+15.4%",
-      "rvol": "0.8x",
-      "roc3": "+5.9%",
-      "earnings_date": "2026-11-02",
-      "earnings_move_pct": 13.42,
-      "sessions_since_earnings": 7,
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 0,
-        "lowers": 0,
-        "net": 0,
-        "tape_net": 0,
-        "latest": []
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "XNCR",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 39.97,
-      "stretch": "+32.7%",
-      "rvol": "0.6x",
-      "roc3": "+11.8%",
-      "earnings_date": "2026-11-04",
-      "earnings_move_pct": 14.33,
-      "sessions_since_earnings": 5,
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 0,
-        "lowers": 0,
-        "net": 0,
-        "tape_net": 0,
-        "latest": [
-          {
-            "date": "2026-11-05",
-            "firm": "Cantor Fitzgerald",
-            "action": "reit",
-            "to_grade": "Overweight",
-            "target": 70.0
-          }
-        ]
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "BTSG",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 72.62,
-      "stretch": "+12.8%",
-      "rvol": "0.8x",
-      "roc3": "+8.2%",
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 0,
-        "lowers": 0,
-        "net": 0,
-        "tape_net": 0,
-        "latest": []
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "VRDN",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 31.25,
-      "stretch": "+25.0%",
-      "rvol": "1.0x",
-      "roc3": "+9.7%",
-      "earnings_date": "2026-11-04",
-      "earnings_move_pct": 15.53,
-      "sessions_since_earnings": 5,
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 9,
-        "lowers": 0,
-        "net": 0,
-        "tape_net": 9,
-        "latest": [
-          {
-            "date": "2026-11-10",
-            "firm": "Wedbush",
-            "action": "main",
-            "to_grade": "Outperform",
-            "target": 44.0
-          },
-          {
-            "date": "2026-11-10",
-            "firm": "Wells Fargo",
-            "action": "main",
-            "to_grade": "Overweight",
-            "target": 39.0
-          },
-          {
-            "date": "2026-11-05",
-            "firm": "RBC Capital",
-            "action": "main",
-            "to_grade": "Outperform",
-            "target": 41.0
-          }
-        ]
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "DLTR",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 142.9,
-      "stretch": "+8.7%",
-      "rvol": "0.9x",
-      "roc3": "+9.0%",
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 1,
-        "raises": 0,
-        "lowers": 0,
-        "net": -1,
-        "tape_net": -1,
-        "latest": [
-          {
-            "date": "2026-11-05",
-            "firm": "Loop Capital",
-            "action": "down",
-            "to_grade": "Hold",
-            "target": 140.0
-          }
-        ]
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "PRCH",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 22.14,
-      "stretch": "+14.7%",
-      "rvol": "0.5x",
-      "roc3": "+12.2%",
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 0,
-        "lowers": 0,
-        "net": 0,
-        "tape_net": 0,
-        "latest": []
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "VSAT",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 75.12,
-      "stretch": "+10.7%",
-      "rvol": "0.6x",
-      "roc3": "+17.5%",
-      "earnings_date": "2026-11-05",
-      "earnings_move_pct": -11.09,
-      "sessions_since_earnings": 4,
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 0,
-        "lowers": 2,
-        "net": 0,
-        "tape_net": -2,
-        "latest": [
-          {
-            "date": "2026-11-09",
-            "firm": "JP Morgan",
-            "action": "main",
-            "to_grade": "Overweight",
-            "target": 120.0
-          },
-          {
             "date": "2026-11-06",
             "firm": "Needham",
             "action": "main",
             "to_grade": "Buy",
-            "target": 85.0
+            "target": 100.0
           }
         ]
       },
@@ -684,13 +223,13 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 76.33,
-      "stretch": "+9.0%",
-      "rvol": "0.9x",
-      "roc3": "+33.5%",
+      "close": 78.8,
+      "stretch": "+12.4%",
+      "rvol": "0.8x",
+      "roc3": "+25.3%",
       "earnings_date": "2026-11-09",
       "earnings_move_pct": 19.31,
-      "sessions_since_earnings": 2,
+      "sessions_since_earnings": 3,
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -720,9 +259,9 @@
     }
   ],
   "spy_context": {
-    "last_close": 759.81,
-    "chg_3d_pct": 3.33,
-    "chg_5d_pct": -0.91,
-    "vs_sma20_pct": -0.05
+    "last_close": 757.25,
+    "chg_3d_pct": 0.61,
+    "chg_5d_pct": 3.31,
+    "vs_sma20_pct": -0.29
   }
 }
