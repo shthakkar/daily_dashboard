@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-12",
-  "updated_at": "2026-11-12T21:10:03.185817+00:00",
+  "date": "2026-11-13",
+  "updated_at": "2026-11-13T14:10:52.199970+00:00",
   "stocks": [
     {
       "ticker": "HWC",
@@ -28,12 +28,12 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "5/6",
-      "close": 38.33,
-      "stretch": "-12.5%",
-      "rvol": "3.9x",
+      "close": 38.3,
+      "stretch": "-12.6%",
+      "rvol": "4.1x",
       "roc3": "-16.4%",
       "earnings_date": "2026-11-12",
-      "earnings_move_pct": -10.42,
+      "earnings_move_pct": -10.49,
       "sessions_since_earnings": 0,
       "analyst_tape": {
         "status": "ok",
@@ -52,10 +52,10 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 30.72,
+      "close": 30.73,
       "stretch": "-9.7%",
-      "rvol": "0.4x",
-      "roc3": "-9.3%",
+      "rvol": "0.6x",
+      "roc3": "-9.2%",
       "earnings_date": "2026-11-06",
       "earnings_move_pct": 3.01,
       "sessions_since_earnings": 4,
@@ -76,9 +76,9 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 29.31,
+      "close": 29.3,
       "stretch": "+14.9%",
-      "rvol": "0.8x",
+      "rvol": "0.9x",
       "roc3": "+8.3%",
       "earnings_date": "2026-11-05",
       "earnings_move_pct": 9.56,
@@ -259,9 +259,9 @@
     }
   ],
   "spy_context": {
-    "last_close": 757.25,
-    "chg_3d_pct": 0.61,
-    "chg_5d_pct": 3.31,
-    "vs_sma20_pct": -0.29
+    "last_close": 757.12,
+    "chg_3d_pct": 0.59,
+    "chg_5d_pct": 3.29,
+    "vs_sma20_pct": -0.31
   }
 }
