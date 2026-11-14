@@ -1,15 +1,5 @@
 {
-  "date": "2026-11-13",
-  "updated_at": "2026-11-13T14:10:58.684442+00:00",
-  "stocks": [
-    {
-      "ticker": "NVDA",
-      "price": "$170.35",
-      "change": "+2.50%",
-      "volume": "21.8M",
-      "avg_volume": "140.9M",
-      "rel_volume": "3.1x",
-      "high_dollar_volume": true
-    }
-  ]
+  "date": "2026-11-14",
+  "updated_at": "2026-11-14T14:11:48.321929+00:00",
+  "stocks": []
 }
