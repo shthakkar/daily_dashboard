@@ -1,19 +1,43 @@
 {
   "date": "2026-11-16",
-  "updated_at": "2026-11-16T14:11:58.768537+00:00",
+  "updated_at": "2026-11-16T21:09:32.566377+00:00",
   "stocks": [
+    {
+      "ticker": "CGON",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 84.78,
+      "stretch": "+25.7%",
+      "rvol": "5.8x",
+      "roc3": "+16.8%",
+      "earnings_date": "2026-11-06",
+      "earnings_move_pct": 17.27,
+      "sessions_since_earnings": 6,
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 0,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 0,
+        "latest": []
+      },
+      "corporate_flags": []
+    },
     {
       "ticker": "WWW",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 24.89,
-      "stretch": "+17.3%",
-      "rvol": "2.5x",
-      "roc3": "+14.8%",
+      "close": 25.34,
+      "stretch": "+17.7%",
+      "rvol": "1.9x",
+      "roc3": "+15.6%",
       "earnings_date": "2026-11-12",
       "earnings_move_pct": 8.83,
-      "sessions_since_earnings": 1,
+      "sessions_since_earnings": 2,
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -35,14 +59,86 @@
       "corporate_flags": []
     },
     {
-      "ticker": "GCT",
-      "setup": "Fade Short",
-      "direction": "short",
+      "ticker": "BEAM",
+      "setup": "Fade Long",
+      "direction": "long",
       "score": "4/6",
-      "close": 66.63,
-      "stretch": "+10.9%",
-      "rvol": "1.1x",
-      "roc3": "+7.9%",
+      "close": 20.94,
+      "stretch": "-17.9%",
+      "rvol": "1.6x",
+      "roc3": "-18.9%",
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 1,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 1,
+        "latest": [
+          {
+            "date": "2026-11-11",
+            "firm": "Wedbush",
+            "action": "main",
+            "to_grade": "Outperform",
+            "target": 33.0
+          }
+        ]
+      },
+      "corporate_flags": []
+    },
+    {
+      "ticker": "NVDA",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 156.14,
+      "stretch": "-20.2%",
+      "rvol": "1.4x",
+      "roc3": "-10.1%",
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 9,
+        "raises": 0,
+        "lowers": 15,
+        "net": -9,
+        "tape_net": -24,
+        "latest": [
+          {
+            "date": "2026-11-12",
+            "firm": "Melius Research",
+            "action": "down",
+            "to_grade": "Hold",
+            "target": 185.0
+          },
+          {
+            "date": "2026-11-12",
+            "firm": "DA Davidson",
+            "action": "main",
+            "to_grade": "Buy",
+            "target": 200.0
+          },
+          {
+            "date": "2026-11-12",
+            "firm": "Craig-Hallum",
+            "action": "down",
+            "to_grade": "Hold",
+            "target": 180.0
+          }
+        ]
+      },
+      "corporate_flags": []
+    },
+    {
+      "ticker": "GMED",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 70.56,
+      "stretch": "-9.9%",
+      "rvol": "0.5x",
+      "roc3": "-6.4%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -56,46 +152,98 @@
       "corporate_flags": []
     },
     {
-      "ticker": "FROG",
-      "setup": "Fade Short",
-      "direction": "short",
+      "ticker": "ALGM",
+      "setup": "Fade Long",
+      "direction": "long",
       "score": "4/6",
-      "close": 113.6,
-      "stretch": "+16.6%",
-      "rvol": "1.0x",
-      "roc3": "+9.7%",
+      "close": 28.11,
+      "stretch": "-11.1%",
+      "rvol": "0.6x",
+      "roc3": "-12.5%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
         "downgrades": 0,
-        "raises": 1,
+        "raises": 0,
         "lowers": 0,
         "net": 0,
-        "tape_net": 1,
-        "latest": [
-          {
-            "date": "2026-11-12",
-            "firm": "Morgan Stanley",
-            "action": "main",
-            "to_grade": "Equal-Weight",
-            "target": 114.0
-          }
-        ]
+        "tape_net": 0,
+        "latest": []
       },
       "corporate_flags": []
     },
     {
-      "ticker": "AAON",
-      "setup": "Fade Short",
-      "direction": "short",
+      "ticker": "ROK",
+      "setup": "Fade Long",
+      "direction": "long",
       "score": "4/6",
-      "close": 80.25,
-      "stretch": "+14.0%",
-      "rvol": "0.9x",
-      "roc3": "+7.0%",
-      "earnings_date": "2026-11-09",
-      "earnings_move_pct": 19.31,
-      "sessions_since_earnings": 4,
+      "close": 384.93,
+      "stretch": "-8.2%",
+      "rvol": "0.7x",
+      "roc3": "-5.2%",
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 0,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 0,
+        "latest": []
+      },
+      "corporate_flags": null
+    },
+    {
+      "ticker": "MU",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 719.02,
+      "stretch": "-13.2%",
+      "rvol": "0.8x",
+      "roc3": "-11.4%",
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 0,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 0,
+        "latest": []
+      },
+      "corporate_flags": []
+    },
+    {
+      "ticker": "RBLX",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 46.14,
+      "stretch": "-8.3%",
+      "rvol": "0.8x",
+      "roc3": "-12.3%",
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 0,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 0,
+        "latest": []
+      },
+      "corporate_flags": []
+    },
+    {
+      "ticker": "ECG",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 82.83,
+      "stretch": "-11.8%",
+      "rvol": "0.5x",
+      "roc3": "-7.0%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -107,17 +255,17 @@
         "latest": [
           {
             "date": "2026-11-10",
-            "firm": "Oppenheimer",
+            "firm": "Stifel",
             "action": "main",
-            "to_grade": "Outperform",
-            "target": 105.0
+            "to_grade": "Buy",
+            "target": 139.0
           },
           {
             "date": "2026-11-10",
-            "firm": "Baird",
+            "firm": "Cantor Fitzgerald",
             "action": "main",
-            "to_grade": "Outperform",
-            "target": 104.0
+            "to_grade": "Neutral",
+            "target": 123.0
           }
         ]
       },
@@ -125,9 +273,9 @@
     }
   ],
   "spy_context": {
-    "last_close": 754.37,
-    "chg_3d_pct": 0.59,
-    "chg_5d_pct": 2.59,
-    "vs_sma20_pct": -0.61
+    "last_close": 739.96,
+    "chg_3d_pct": -2.61,
+    "chg_5d_pct": -1.69,
+    "vs_sma20_pct": -2.34
   }
 }
