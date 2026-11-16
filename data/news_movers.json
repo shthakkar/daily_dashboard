@@ -1,5 +1,55 @@
 {
-  "date": "2026-11-15",
-  "updated_at": "2026-11-15T14:11:31.868402+00:00",
-  "stocks": []
+  "date": "2026-11-16",
+  "updated_at": "2026-11-16T14:12:02.471837+00:00",
+  "stocks": [
+    {
+      "ticker": "AMST",
+      "price": "$0.45",
+      "change": "-4.40%",
+      "volume": "9.0M",
+      "avg_volume": "91.3K",
+      "rel_volume": "1978.4x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-13"
+    },
+    {
+      "ticker": "CRDF",
+      "price": "$0.79",
+      "change": "+8.57%",
+      "volume": "12.0M",
+      "avg_volume": "591.2K",
+      "rel_volume": "405.2x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-12"
+    },
+    {
+      "ticker": "AIMD",
+      "price": "$1.32",
+      "change": "+7.20%",
+      "volume": "18.3M",
+      "avg_volume": "1.4M",
+      "rel_volume": "252.1x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-12"
+    },
+    {
+      "ticker": "LXEO",
+      "price": "$3.45",
+      "change": "+20.21%",
+      "volume": "9.4M",
+      "avg_volume": "1.3M",
+      "rel_volume": "143.8x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "SAFX",
+      "price": "$0.07",
+      "change": "-4.70%",
+      "volume": "32.2M",
+      "avg_volume": "10.2M",
+      "rel_volume": "63.2x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-13"
+    }
+  ]
 }

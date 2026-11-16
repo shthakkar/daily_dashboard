@@ -1,64 +1,62 @@
 {
-  "date": "2026-11-15",
-  "updated_at": "2026-11-15T14:11:31.874249+00:00",
+  "date": "2026-11-16",
+  "updated_at": "2026-11-16T14:12:02.474766+00:00",
   "stocks": [
     {
       "ticker": "CRL",
       "tightness": 3.9,
       "rating": "Wide",
       "close": 337.97,
-      "avg_rank": 0.9381
+      "avg_rank": 0.9379
     },
     {
       "ticker": "BBY",
       "tightness": 2.3,
       "rating": "Wide",
       "close": 104.07,
-      "avg_rank": 0.9293
+      "avg_rank": 0.9291
     },
     {
       "ticker": "FROG",
       "tightness": 1.7,
       "rating": "Wide",
       "close": 113.6,
-      "avg_rank": 0.9768,
-      "earnings_date": "2026-11-05"
+      "avg_rank": 0.9768
     },
     {
       "ticker": "CART",
       "tightness": 1.6,
       "rating": "Wide",
       "close": 58.87,
-      "avg_rank": 0.9313
+      "avg_rank": 0.9311
     },
     {
       "ticker": "CDW",
       "tightness": 1.6,
       "rating": "Wide",
       "close": 171.65,
-      "avg_rank": 0.9293
+      "avg_rank": 0.9291
     },
     {
       "ticker": "MANH",
       "tightness": 1.5,
       "rating": "Wide",
       "close": 257.15,
-      "avg_rank": 0.9589
+      "avg_rank": 0.9587
     },
     {
       "ticker": "ROP",
       "tightness": 1.4,
       "rating": "Wide",
       "close": 479.98,
-      "avg_rank": 0.9401
+      "avg_rank": 0.9399
     },
     {
       "ticker": "U",
       "tightness": 1.3,
       "rating": "Wide",
       "close": 52.81,
-      "avg_rank": 0.9569,
-      "earnings_date": "2026-11-05"
+      "avg_rank": 0.9567
     },
     {
       "ticker": "GKOS",
@@ -72,7 +70,7 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 77.62,
-      "avg_rank": 0.9617
+      "avg_rank": 0.9615
     },
     {
       "ticker": "SN",

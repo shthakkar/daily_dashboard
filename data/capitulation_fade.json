@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-15",
-  "updated_at": "2026-11-15T14:11:29.140302+00:00",
+  "date": "2026-11-16",
+  "updated_at": "2026-11-16T14:11:58.768537+00:00",
   "stocks": [
     {
       "ticker": "WWW",
@@ -43,9 +43,6 @@
       "stretch": "+10.9%",
       "rvol": "1.1x",
       "roc3": "+7.9%",
-      "earnings_date": "2026-11-05",
-      "earnings_move_pct": 8.86,
-      "sessions_since_earnings": 6,
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -67,9 +64,6 @@
       "stretch": "+16.6%",
       "rvol": "1.0x",
       "roc3": "+9.7%",
-      "earnings_date": "2026-11-05",
-      "earnings_move_pct": 35.33,
-      "sessions_since_earnings": 6,
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
