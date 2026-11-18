@@ -77,6 +77,23 @@
       letter-spacing: 0.1em;
       margin-bottom: 0.75rem;
     }
+    /* Shown only when data/status.json says the last run failed — the page
+       otherwise looks normal on stale data, so a dead run needs a signal. */
+    .run-status {
+      display: none;
+      width: 100%;
+      max-width: 900px;
+      box-sizing: border-box;
+      margin: 0 0 1.5rem;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      background: #450a0a;
+      border: 1px solid #ef4444;
+      color: #fecaca;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    .run-status.failed { display: block; }
     .ticker {
       font-size: 0.85rem;
       font-weight: 600;
@@ -173,6 +190,8 @@
 </head>
 <body>
   <h1>Market Dashboard</h1>
+
+  <div id="run-status" class="run-status" role="alert"></div>
 
   <div class="cards">
     <div class="card">
@@ -296,9 +315,38 @@
       return a;
     }
 
+    // Run-status banner: data/status.json records whether the last workflow
+    // run succeeded. When it failed, the numbers below are stale, so show a
+    // red banner naming when the run failed and which date the data is from.
+    // Missing status.json (older deploys) means no banner.
+    let runStatus = null;
+    let latestData = null;
+    function maybeShowRunStatus() {
+      if (!runStatus || runStatus.status !== 'failed' || !latestData) return;
+      const el = document.getElementById('run-status');
+      const runAt = runStatus.run_at ? formatPSTTimestamp(runStatus.run_at) : 'unknown time';
+      const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      let dataDate = latestData.date || 'an earlier date';
+      const p = String(dataDate).split('-');
+      if (p.length === 3) {
+        dataDate = months[parseInt(p[1], 10) - 1] + ' ' + parseInt(p[2], 10) + ', ' + p[0];
+      }
+      let msg = '⚠ Last dashboard run failed (' + runAt + ') — showing data from ' + dataDate + '.';
+      if (runStatus.error) msg += ' ' + runStatus.error;
+      el.textContent = msg;
+      el.className = 'run-status failed';
+    }
+
+    freshFetch('data/status.json')
+      .then(r => r.json())
+      .then(s => { runStatus = s; maybeShowRunStatus(); })
+      .catch(() => {});
+
     freshFetch('data/latest.json')
       .then(r => r.json())
       .then(d => {
+        latestData = d;
+        maybeShowRunStatus();
         const ts = timestampOf(d);
         if (ts) {
           document.getElementById('cards-timestamp').textContent = 'Updated: ' + formatPSTTimestamp(ts);
@@ -553,3 +601,4 @@
 </body>
 <!-- pages rebuild poke 2026-10-05T21:16 -->
 </html>
+
