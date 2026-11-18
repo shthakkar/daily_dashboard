@@ -1,4 +1,5 @@
 import json
+import sys
 from datetime import date
 from pathlib import Path
 
@@ -106,8 +107,13 @@ def main() -> None:
             f"({len(ohlcv)} with OHLCV)"
         )
     except Exception as e:
+        # Fatal, not a silent skip: if the universe/price fetch fails there is
+        # no data worth publishing, and exiting 0 here made GitHub mark the
+        # run green while the dashboard kept stale data (Nov 17, 2026 — the
+        # 1:05 PM run "succeeded" in 41s and committed nothing). A non-zero
+        # exit fails the workflow so a dead run is visible.
         print(f"Skipping everything: failed to fetch price data: {e}")
-        return
+        sys.exit(1)
 
     # --- Earnings flags: tickers that reported today or yesterday get an
     # `earnings_date` on their screener rows (Sakshar's ask, 2026-10-23).
@@ -197,3 +203,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
