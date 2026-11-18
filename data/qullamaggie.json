@@ -1,76 +1,62 @@
 {
-  "date": "2026-11-17",
-  "updated_at": "2026-11-17T14:11:28.486019+00:00",
+  "date": "2026-11-18",
+  "updated_at": "2026-11-18T00:06:00.192963+00:00",
   "stocks": [
     {
-      "ticker": "CRL",
-      "tightness": 4.3,
-      "rating": "Medium",
-      "close": 335.52,
-      "avg_rank": 0.9231
-    },
-    {
-      "ticker": "BBY",
-      "tightness": 2.6,
-      "rating": "Wide",
-      "close": 103.35,
-      "avg_rank": 0.9377
-    },
-    {
-      "ticker": "HUM",
-      "tightness": 2.6,
-      "rating": "Wide",
-      "close": 461.25,
-      "avg_rank": 0.9252
-    },
-    {
       "ticker": "FROG",
-      "tightness": 1.6,
+      "tightness": 3.1,
       "rating": "Wide",
-      "close": 109.94,
-      "avg_rank": 0.9701
-    },
-    {
-      "ticker": "SN",
-      "tightness": 1.6,
-      "rating": "Wide",
-      "close": 223.29,
-      "avg_rank": 0.9656
-    },
-    {
-      "ticker": "MANH",
-      "tightness": 1.5,
-      "rating": "Wide",
-      "close": 257.93,
-      "avg_rank": 0.9506
-    },
-    {
-      "ticker": "ROP",
-      "tightness": 1.3,
-      "rating": "Wide",
-      "close": 483.72,
-      "avg_rank": 0.9393
-    },
-    {
-      "ticker": "GKOS",
-      "tightness": 1.0,
-      "rating": "Wide",
-      "close": 244.88,
-      "avg_rank": 0.9887
+      "close": 105.1,
+      "avg_rank": 0.9454
     },
     {
       "ticker": "PCOR",
-      "tightness": 1.0,
+      "tightness": 1.9,
       "rating": "Wide",
-      "close": 77.55,
-      "avg_rank": 0.9616
+      "close": 74.78,
+      "avg_rank": 0.9568
+    },
+    {
+      "ticker": "ROP",
+      "tightness": 1.9,
+      "rating": "Wide",
+      "close": 471.92,
+      "avg_rank": 0.9331
+    },
+    {
+      "ticker": "SN",
+      "tightness": 1.9,
+      "rating": "Wide",
+      "close": 220.12,
+      "avg_rank": 0.9547
     },
     {
       "ticker": "U",
-      "tightness": 1.0,
+      "tightness": 1.9,
       "rating": "Wide",
-      "close": 51.88,
-      "avg_rank": 0.9486
+      "close": 50.36,
+      "avg_rank": 0.936
+    },
+    {
+      "ticker": "CART",
+      "tightness": 1.8,
+      "rating": "Wide",
+      "close": 58.52,
+      "avg_rank": 0.9429
+    },
+    {
+      "ticker": "MANH",
+      "tightness": 1.6,
+      "rating": "Wide",
+      "close": 250.05,
+      "avg_rank": 0.9221
+    },
+    {
+      "ticker": "GKOS",
+      "tightness": 1.2,
+      "rating": "Wide",
+      "close": 243.25,
+      "avg_rank": 0.9914
     }
   ]
 }
