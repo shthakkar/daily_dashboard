@@ -1,62 +1,62 @@
 {
   "date": "2026-11-18",
-  "updated_at": "2026-11-18T00:38:32.310337+00:00",
+  "updated_at": "2026-11-18T14:11:59.227183+00:00",
   "stocks": [
     {
       "ticker": "FROG",
       "tightness": 3.1,
       "rating": "Wide",
       "close": 105.1,
-      "avg_rank": 0.9454
+      "avg_rank": 0.9456
     },
     {
       "ticker": "PCOR",
       "tightness": 1.9,
       "rating": "Wide",
       "close": 74.78,
-      "avg_rank": 0.9568
+      "avg_rank": 0.957
     },
     {
       "ticker": "ROP",
       "tightness": 1.9,
       "rating": "Wide",
       "close": 471.92,
-      "avg_rank": 0.9331
+      "avg_rank": 0.9334
     },
     {
       "ticker": "SN",
       "tightness": 1.9,
       "rating": "Wide",
       "close": 220.12,
-      "avg_rank": 0.9547
+      "avg_rank": 0.955
     },
     {
       "ticker": "U",
       "tightness": 1.9,
       "rating": "Wide",
       "close": 50.36,
-      "avg_rank": 0.936
+      "avg_rank": 0.9363
     },
     {
       "ticker": "CART",
       "tightness": 1.8,
       "rating": "Wide",
       "close": 58.52,
-      "avg_rank": 0.9429
+      "avg_rank": 0.9432
     },
     {
       "ticker": "MANH",
       "tightness": 1.6,
       "rating": "Wide",
       "close": 250.05,
-      "avg_rank": 0.9221
+      "avg_rank": 0.9225
     },
     {
       "ticker": "GKOS",
       "tightness": 1.2,
       "rating": "Wide",
       "close": 243.25,
-      "avg_rank": 0.9914
+      "avg_rank": 0.9915
     }
   ]
 }
