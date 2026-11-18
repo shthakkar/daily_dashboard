@@ -41,6 +41,21 @@ def write_json(data: dict, path: str = "data/latest.json") -> None:
         f.write("\n")
 
 
+def write_status(status: str, error: str | None = None) -> None:
+    """Record this run's outcome in data/status.json so the dashboard page
+    can show when the last run failed (otherwise a dead run leaves stale
+    data on the page with no signal anything went wrong)."""
+    write_json(
+        {
+            "status": status,
+            "run_at": helpers.now_utc_iso(),
+            "date": date.today().isoformat(),
+            "error": error,
+        },
+        "data/status.json",
+    )
+
+
 def get_spy_ema_signal(spy: pd.DataFrame) -> dict:
     close = spy["close"]
     if pd.isna(close.iloc[-1]):
@@ -111,8 +126,10 @@ def main() -> None:
         # no data worth publishing, and exiting 0 here made GitHub mark the
         # run green while the dashboard kept stale data (Nov 17, 2026 — the
         # 1:05 PM run "succeeded" in 41s and committed nothing). A non-zero
-        # exit fails the workflow so a dead run is visible.
+        # exit fails the workflow so a dead run is visible. Record the
+        # failure first so the dashboard page can show it went red.
         print(f"Skipping everything: failed to fetch price data: {e}")
+        write_status("failed", str(e))
         sys.exit(1)
 
     # --- Earnings flags: tickers that reported today or yesterday get an
@@ -199,6 +216,8 @@ def main() -> None:
         print(f"Relative strength: {len(result['stocks'])} stocks ({n_earn} earnings-flagged)")
     except Exception as e:
         print(f"Skipping relative strength: {e}")
+
+    write_status("ok")
 
 
 if __name__ == "__main__":
