@@ -1,45 +1,37 @@
 {
   "date": "2026-11-18",
-  "updated_at": "2026-11-18T14:11:50.743103+00:00",
+  "updated_at": "2026-11-18T21:09:15.999162+00:00",
   "stocks": [
     {
-      "ticker": "BILL",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "6/6",
-      "close": 64.88,
-      "stretch": "+24.5%",
-      "rvol": "5.2x",
-      "roc3": "+20.1%",
+      "ticker": "SATA",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 89.02,
+      "stretch": "-7.3%",
+      "rvol": "1.6x",
+      "roc3": "-8.9%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
         "downgrades": 0,
-        "raises": 1,
+        "raises": 0,
         "lowers": 0,
         "net": 0,
-        "tape_net": 1,
-        "latest": [
-          {
-            "date": "2026-11-11",
-            "firm": "Morgan Stanley",
-            "action": "main",
-            "to_grade": "Equal-Weight",
-            "target": 64.0
-          }
-        ]
+        "tape_net": 0,
+        "latest": []
       },
       "corporate_flags": []
     },
     {
-      "ticker": "UNFI",
+      "ticker": "BILL",
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 51.99,
-      "stretch": "+9.8%",
-      "rvol": "1.6x",
-      "roc3": "+9.2%",
+      "close": 66.04,
+      "stretch": "+24.7%",
+      "rvol": "1.5x",
+      "roc3": "+21.2%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -57,13 +49,118 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 80.53,
-      "stretch": "+21.1%",
-      "rvol": "2.8x",
-      "roc3": "+14.9%",
+      "close": 82.32,
+      "stretch": "+21.7%",
+      "rvol": "1.4x",
+      "roc3": "+16.8%",
       "earnings_date": "2026-11-16",
       "earnings_move_pct": 11.08,
-      "sessions_since_earnings": 1,
+      "sessions_since_earnings": 2,
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 0,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 0,
+        "latest": []
+      },
+      "corporate_flags": []
+    },
+    {
+      "ticker": "BIPC",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 41.84,
+      "stretch": "+8.3%",
+      "rvol": "4.2x",
+      "roc3": "+5.8%",
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 0,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 0,
+        "latest": []
+      },
+      "corporate_flags": []
+    },
+    {
+      "ticker": "ATEN",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 32.36,
+      "stretch": "+22.2%",
+      "rvol": "1.4x",
+      "roc3": "+13.2%",
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 0,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 0,
+        "latest": []
+      },
+      "corporate_flags": []
+    },
+    {
+      "ticker": "KBR",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 33.08,
+      "stretch": "-12.8%",
+      "rvol": "0.4x",
+      "roc3": "-7.0%",
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 0,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 0,
+        "latest": []
+      },
+      "corporate_flags": []
+    },
+    {
+      "ticker": "ACIW",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 52.89,
+      "stretch": "-9.1%",
+      "rvol": "1.7x",
+      "roc3": "-13.0%",
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 0,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 0,
+        "latest": []
+      },
+      "corporate_flags": []
+    },
+    {
+      "ticker": "TFX",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 165.99,
+      "stretch": "+12.4%",
+      "rvol": "1.1x",
+      "roc3": "+7.3%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -81,10 +178,10 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 152.97,
-      "stretch": "-14.0%",
-      "rvol": "1.0x",
-      "roc3": "-11.2%",
+      "close": 150.98,
+      "stretch": "-14.6%",
+      "rvol": "0.7x",
+      "roc3": "-11.9%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -98,88 +195,14 @@
       "corporate_flags": []
     },
     {
-      "ticker": "RELY",
+      "ticker": "FIS",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 20.53,
-      "stretch": "-13.9%",
-      "rvol": "0.9x",
-      "roc3": "-9.9%",
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 0,
-        "lowers": 0,
-        "net": 0,
-        "tape_net": 0,
-        "latest": []
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "CYTK",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 51.65,
-      "stretch": "-12.5%",
-      "rvol": "1.3x",
-      "roc3": "-8.0%",
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 0,
-        "lowers": 0,
-        "net": 0,
-        "tape_net": 0,
-        "latest": []
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "EXPE",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 243.16,
-      "stretch": "-11.6%",
-      "rvol": "0.8x",
-      "roc3": "-6.8%",
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 0,
-        "lowers": 1,
-        "net": 0,
-        "tape_net": -1,
-        "latest": [
-          {
-            "date": "2026-11-11",
-            "firm": "Argus Research",
-            "action": "main",
-            "to_grade": "Buy",
-            "target": 300.0
-          }
-        ]
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "ENS",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 136.9,
-      "stretch": "-13.0%",
-      "rvol": "0.8x",
-      "roc3": "-7.4%",
-      "earnings_date": "2026-11-11",
-      "earnings_move_pct": -2.43,
-      "sessions_since_earnings": 4,
+      "close": 26.73,
+      "stretch": "-18.4%",
+      "rvol": "0.6x",
+      "roc3": "-9.5%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -191,24 +214,24 @@
         "latest": [
           {
             "date": "2026-11-12",
-            "firm": "BTIG",
+            "firm": "Truist Securities",
             "action": "main",
-            "to_grade": "Buy",
-            "target": 250.0
+            "to_grade": "Hold",
+            "target": 31.0
           }
         ]
       },
       "corporate_flags": []
     },
     {
-      "ticker": "NTRA",
+      "ticker": "KRMN",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 287.47,
-      "stretch": "-21.4%",
+      "close": 34.19,
+      "stretch": "-12.2%",
       "rvol": "1.0x",
-      "roc3": "-11.0%",
+      "roc3": "-15.9%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -222,14 +245,43 @@
       "corporate_flags": []
     },
     {
-      "ticker": "RBLX",
+      "ticker": "NXT",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 44.0,
-      "stretch": "-11.9%",
-      "rvol": "0.7x",
-      "roc3": "-14.4%",
+      "close": 78.41,
+      "stretch": "-12.5%",
+      "rvol": "1.1x",
+      "roc3": "-17.5%",
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 1,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 1,
+        "latest": [
+          {
+            "date": "2026-11-12",
+            "firm": "RBC Capital",
+            "action": "main",
+            "to_grade": "Outperform",
+            "target": 120.0
+          }
+        ]
+      },
+      "corporate_flags": []
+    },
+    {
+      "ticker": "DOX",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 42.28,
+      "stretch": "-18.5%",
+      "rvol": "0.6x",
+      "roc3": "-5.6%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -247,10 +299,10 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 20.59,
-      "stretch": "-9.2%",
-      "rvol": "1.0x",
-      "roc3": "-18.2%",
+      "close": 20.05,
+      "stretch": "-11.9%",
+      "rvol": "2.5x",
+      "roc3": "-14.1%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -265,9 +317,9 @@
     }
   ],
   "spy_context": {
-    "last_close": 732.44,
-    "chg_3d_pct": -3.26,
-    "chg_5d_pct": -2.33,
-    "vs_sma20_pct": -3.1
+    "last_close": 730.25,
+    "chg_3d_pct": -3.2,
+    "chg_5d_pct": -3.89,
+    "vs_sma20_pct": -3.11
   }
 }
