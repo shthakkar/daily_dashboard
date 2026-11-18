@@ -1,12 +1,12 @@
 {
   "date": "2026-11-18",
-  "updated_at": "2026-11-18T00:06:00.189673+00:00",
+  "updated_at": "2026-11-18T00:38:32.305594+00:00",
   "stocks": [
     {
       "ticker": "FRTT",
       "price": "$0.68",
       "change": "+77.74%",
-      "volume": "412.5M",
+      "volume": "412.7M",
       "avg_volume": "3.6M",
       "rel_volume": "115.4x",
       "high_dollar_volume": false,
@@ -18,7 +18,7 @@
       "change": "-25.15%",
       "volume": "13.9M",
       "avg_volume": "184.7K",
-      "rel_volume": "75.0x",
+      "rel_volume": "75.1x",
       "high_dollar_volume": false,
       "earnings_date": "2026-11-16"
     },
@@ -28,7 +28,7 @@
       "change": "+23.08%",
       "volume": "12.3M",
       "avg_volume": "284.3K",
-      "rel_volume": "43.3x",
+      "rel_volume": "43.4x",
       "high_dollar_volume": false,
       "earnings_date": "2026-11-16"
     },
@@ -36,7 +36,7 @@
       "ticker": "SLS",
       "price": "$19.15",
       "change": "+156.36%",
-      "volume": "120.1M",
+      "volume": "120.2M",
       "avg_volume": "7.0M",
       "rel_volume": "17.3x",
       "high_dollar_volume": true,
