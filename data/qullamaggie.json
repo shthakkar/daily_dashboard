@@ -1,69 +1,77 @@
 {
-  "date": "2026-11-18",
-  "updated_at": "2026-11-18T21:09:22.442320+00:00",
+  "date": "2026-11-19",
+  "updated_at": "2026-11-19T14:11:44.139424+00:00",
   "stocks": [
     {
       "ticker": "SAIL",
       "tightness": 5.6,
       "rating": "Tight",
       "close": 22.25,
-      "avg_rank": 0.9473
+      "avg_rank": 0.9461
     },
     {
       "ticker": "RRC",
       "tightness": 3.1,
       "rating": "Wide",
       "close": 50.06,
-      "avg_rank": 0.9207
+      "avg_rank": 0.9202
     },
     {
       "ticker": "CART",
       "tightness": 2.1,
       "rating": "Wide",
       "close": 58.66,
-      "avg_rank": 0.9343
+      "avg_rank": 0.9331
     },
     {
       "ticker": "ROP",
       "tightness": 1.8,
       "rating": "Wide",
       "close": 470.87,
-      "avg_rank": 0.9235
+      "avg_rank": 0.9223
     },
     {
       "ticker": "SIRI",
       "tightness": 1.5,
       "rating": "Wide",
       "close": 32.22,
-      "avg_rank": 0.9435
+      "avg_rank": 0.9423
     },
     {
       "ticker": "GKOS",
       "tightness": 1.4,
       "rating": "Wide",
-      "close": 233.09,
-      "avg_rank": 0.987
+      "close": 233.08,
+      "avg_rank": 0.9865
     },
     {
       "ticker": "PCOR",
       "tightness": 1.4,
       "rating": "Wide",
-      "close": 76.19,
-      "avg_rank": 0.9544
+      "close": 76.2,
+      "avg_rank": 0.9547
     },
     {
       "ticker": "FROG",
       "tightness": 1.2,
       "rating": "Wide",
       "close": 114.38,
-      "avg_rank": 0.987
+      "avg_rank": 0.986
+    },
+    {
+      "ticker": "TGTX",
+      "tightness": 1.2,
+      "rating": "Wide",
+      "close": 66.12,
+      "avg_rank": 0.9725,
+      "earnings_date": "2026-11-09"
     },
     {
       "ticker": "SN",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 230.14,
-      "avg_rank": 0.9707
+      "close": 230.09,
+      "avg_rank": 0.9693
     }
   ]
 }

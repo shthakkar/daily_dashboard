@@ -1,34 +1,43 @@
 {
-  "date": "2026-11-18",
-  "updated_at": "2026-11-18T21:09:22.443357+00:00",
+  "date": "2026-11-19",
+  "updated_at": "2026-11-19T14:11:44.140282+00:00",
   "stocks": [
     {
+      "ticker": "GKOS",
+      "avg_rank": 0.9865,
+      "ret_1m": "+31.8%",
+      "ret_3m": "+25.5%",
+      "ret_6m": "+nan%",
+      "ret_9m": "+95.6%"
+    },
+    {
       "ticker": "FROG",
-      "avg_rank": 0.987,
+      "avg_rank": 0.986,
       "ret_1m": "+18.8%",
       "ret_3m": "+26.9%",
       "ret_6m": "+nan%",
       "ret_9m": "+207.6%"
     },
     {
-      "ticker": "GKOS",
-      "avg_rank": 0.987,
-      "ret_1m": "+31.8%",
-      "ret_3m": "+25.6%",
+      "ticker": "TGTX",
+      "avg_rank": 0.9725,
+      "ret_1m": "+24.3%",
+      "ret_3m": "+18.1%",
       "ret_6m": "+nan%",
-      "ret_9m": "+95.6%"
+      "ret_9m": "+116.7%",
+      "earnings_date": "2026-11-09"
     },
     {
       "ticker": "SN",
-      "avg_rank": 0.9707,
+      "avg_rank": 0.9693,
       "ret_1m": "+16.5%",
-      "ret_3m": "+25.8%",
+      "ret_3m": "+25.7%",
       "ret_6m": "+nan%",
       "ret_9m": "+79.6%"
     },
     {
       "ticker": "PCOR",
-      "avg_rank": 0.9544,
+      "avg_rank": 0.9547,
       "ret_1m": "+25.1%",
       "ret_3m": "+22.7%",
       "ret_6m": "+nan%",

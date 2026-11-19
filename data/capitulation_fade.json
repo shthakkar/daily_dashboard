@@ -1,16 +1,37 @@
 {
-  "date": "2026-11-18",
-  "updated_at": "2026-11-18T21:09:15.999162+00:00",
+  "date": "2026-11-19",
+  "updated_at": "2026-11-19T14:11:31.649670+00:00",
   "stocks": [
+    {
+      "ticker": "UNH",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 349.91,
+      "stretch": "-13.2%",
+      "rvol": "3.1x",
+      "roc3": "-14.1%",
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 0,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 0,
+        "latest": []
+      },
+      "corporate_flags": []
+    },
     {
       "ticker": "SATA",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
       "close": 89.02,
-      "stretch": "-7.3%",
+      "stretch": "-7.2%",
       "rvol": "1.6x",
-      "roc3": "-8.9%",
+      "roc3": "-8.8%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -28,9 +49,9 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 66.04,
-      "stretch": "+24.7%",
-      "rvol": "1.5x",
+      "close": 66.01,
+      "stretch": "+24.6%",
+      "rvol": "1.8x",
       "roc3": "+21.2%",
       "analyst_tape": {
         "status": "ok",
@@ -49,10 +70,10 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 82.32,
+      "close": 82.38,
       "stretch": "+21.7%",
-      "rvol": "1.4x",
-      "roc3": "+16.8%",
+      "rvol": "1.8x",
+      "roc3": "+16.9%",
       "earnings_date": "2026-11-16",
       "earnings_move_pct": 11.08,
       "sessions_since_earnings": 2,
@@ -73,10 +94,10 @@
       "setup": "Fade Short",
       "direction": "short",
       "score": "4/6",
-      "close": 41.84,
-      "stretch": "+8.3%",
-      "rvol": "4.2x",
-      "roc3": "+5.8%",
+      "close": 41.82,
+      "stretch": "+8.2%",
+      "rvol": "4.4x",
+      "roc3": "+5.7%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -96,7 +117,7 @@
       "score": "4/6",
       "close": 32.36,
       "stretch": "+22.2%",
-      "rvol": "1.4x",
+      "rvol": "1.6x",
       "roc3": "+13.2%",
       "analyst_tape": {
         "status": "ok",
@@ -117,7 +138,7 @@
       "score": "4/6",
       "close": 33.08,
       "stretch": "-12.8%",
-      "rvol": "0.4x",
+      "rvol": "0.6x",
       "roc3": "-7.0%",
       "analyst_tape": {
         "status": "ok",
@@ -138,29 +159,8 @@
       "score": "4/6",
       "close": 52.89,
       "stretch": "-9.1%",
-      "rvol": "1.7x",
+      "rvol": "1.8x",
       "roc3": "-13.0%",
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 0,
-        "lowers": 0,
-        "net": 0,
-        "tape_net": 0,
-        "latest": []
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "TFX",
-      "setup": "Fade Short",
-      "direction": "short",
-      "score": "4/6",
-      "close": 165.99,
-      "stretch": "+12.4%",
-      "rvol": "1.1x",
-      "roc3": "+7.3%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -195,13 +195,34 @@
       "corporate_flags": []
     },
     {
+      "ticker": "TFX",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 165.85,
+      "stretch": "+12.3%",
+      "rvol": "1.3x",
+      "roc3": "+7.2%",
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 0,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 0,
+        "latest": []
+      },
+      "corporate_flags": []
+    },
+    {
       "ticker": "FIS",
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
       "close": 26.73,
       "stretch": "-18.4%",
-      "rvol": "0.6x",
+      "rvol": "0.7x",
       "roc3": "-9.5%",
       "analyst_tape": {
         "status": "ok",
@@ -230,7 +251,7 @@
       "score": "4/6",
       "close": 34.19,
       "stretch": "-12.2%",
-      "rvol": "1.0x",
+      "rvol": "1.2x",
       "roc3": "-15.9%",
       "analyst_tape": {
         "status": "ok",
@@ -280,7 +301,7 @@
       "score": "4/6",
       "close": 42.28,
       "stretch": "-18.5%",
-      "rvol": "0.6x",
+      "rvol": "0.7x",
       "roc3": "-5.6%",
       "analyst_tape": {
         "status": "ok",
@@ -301,7 +322,7 @@
       "score": "4/6",
       "close": 20.05,
       "stretch": "-11.9%",
-      "rvol": "2.5x",
+      "rvol": "2.6x",
       "roc3": "-14.1%",
       "analyst_tape": {
         "status": "ok",
@@ -317,9 +338,9 @@
     }
   ],
   "spy_context": {
-    "last_close": 730.25,
+    "last_close": 730.2,
     "chg_3d_pct": -3.2,
-    "chg_5d_pct": -3.89,
-    "vs_sma20_pct": -3.11
+    "chg_5d_pct": -3.9,
+    "vs_sma20_pct": -3.12
   }
 }
