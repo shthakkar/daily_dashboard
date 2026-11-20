@@ -1,69 +1,62 @@
 {
   "date": "2026-11-20",
-  "updated_at": "2026-11-20T01:34:26.002829+00:00",
+  "updated_at": "2026-11-20T14:10:43.204441+00:00",
   "stocks": [
     {
       "ticker": "SAIL",
-      "tightness": 5.6,
-      "rating": "Tight",
-      "close": 22.25,
-      "avg_rank": 0.9451
+      "tightness": 5.0,
+      "rating": "Medium",
+      "close": 22.04,
+      "avg_rank": 0.9484
     },
     {
-      "ticker": "NTSK",
-      "tightness": 3.7,
-      "rating": "Wide",
-      "close": 23.5,
-      "avg_rank": 0.9292
+      "ticker": "OKTA",
+      "tightness": 4.0,
+      "rating": "Medium",
+      "close": 206.85,
+      "avg_rank": 0.9385
     },
     {
       "ticker": "CART",
-      "tightness": 2.1,
+      "tightness": 2.6,
       "rating": "Wide",
-      "close": 58.66,
-      "avg_rank": 0.933
+      "close": 57.84,
+      "avg_rank": 0.9398
     },
     {
-      "ticker": "ROP",
-      "tightness": 1.8,
+      "ticker": "FROG",
+      "tightness": 2.2,
       "rating": "Wide",
-      "close": 470.87,
-      "avg_rank": 0.922
-    },
-    {
-      "ticker": "SIRI",
-      "tightness": 1.5,
-      "rating": "Wide",
-      "close": 32.22,
-      "avg_rank": 0.9423
+      "close": 109.27,
+      "avg_rank": 0.9794
     },
     {
       "ticker": "GKOS",
-      "tightness": 1.4,
+      "tightness": 1.8,
       "rating": "Wide",
-      "close": 233.08,
-      "avg_rank": 0.9857
+      "close": 238.1,
+      "avg_rank": 0.9922
     },
     {
       "ticker": "PCOR",
       "tightness": 1.4,
       "rating": "Wide",
-      "close": 76.2,
-      "avg_rank": 0.9533
-    },
-    {
-      "ticker": "FROG",
-      "tightness": 1.2,
-      "rating": "Wide",
-      "close": 114.38,
-      "avg_rank": 0.9857
+      "close": 73.3,
+      "avg_rank": 0.9563
     },
     {
       "ticker": "SN",
+      "tightness": 1.3,
+      "rating": "Wide",
+      "close": 216.8,
+      "avg_rank": 0.9583
+    },
+    {
+      "ticker": "U",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 230.09,
-      "avg_rank": 0.9687
+      "close": 46.7,
+      "avg_rank": 0.9208
     }
   ]
 }
