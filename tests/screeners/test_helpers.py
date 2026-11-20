@@ -1,9 +1,11 @@
 import numpy as np
 import pandas as pd
 import pytest
+import requests
 
 from screeners.helpers import (
     _drop_trailing_empty_row,
+    _fetch_with_retry,
     _finviz_filter_param,
     compute_momentum,
     fix_finviz_tickers,
@@ -47,11 +49,13 @@ def _page_html(tickers, total):
 
 
 class _FakeResponse:
-    def __init__(self, text):
+    def __init__(self, text, status_code=200):
         self.text = text
+        self.status_code = status_code
 
     def raise_for_status(self):
-        pass
+        if self.status_code >= 400:
+            raise requests.HTTPError(f"{self.status_code} Error", response=self)
 
 
 class _FakeSession:
@@ -106,6 +110,82 @@ def test_finviz_filter_param_builds_codes():
         "Country": "USA",
     })
     assert param == "cap_largeover,sh_price_o20,sh_avgvol_o500,geo_usa"
+
+
+# --- _fetch_with_retry ---
+
+class _FlakySession:
+    """Session.get returns the queued outcomes in order: an Exception to
+    raise, or a _FakeResponse to return."""
+
+    def __init__(self, outcomes):
+        self._outcomes = list(outcomes)
+        self.calls = 0
+        self.headers = {}
+
+    def get(self, url, params=None, timeout=None):
+        self.calls += 1
+        outcome = self._outcomes.pop(0)
+        if isinstance(outcome, Exception):
+            raise outcome
+        return outcome
+
+
+def test_fetch_with_retry_succeeds_after_transient_failures(monkeypatch):
+    import screeners.helpers as h
+    monkeypatch.setattr(h.time, "sleep", lambda s: None)
+    session = _FlakySession([
+        requests.ConnectionError("Remote end closed connection"),
+        requests.ConnectionError("Response ended prematurely"),
+        _FakeResponse("ok"),
+    ])
+    resp = _fetch_with_retry(session, "https://example.com", params={})
+    assert resp.text == "ok"
+    assert session.calls == 3
+
+
+def test_fetch_with_retry_raises_after_exhausting_attempts(monkeypatch):
+    import screeners.helpers as h
+    monkeypatch.setattr(h.time, "sleep", lambda s: None)
+    session = _FlakySession([requests.ConnectionError("down")] * 5)
+    with pytest.raises(requests.ConnectionError):
+        _fetch_with_retry(session, "https://example.com", params={})
+    assert session.calls == 4  # 1 initial + 3 retries
+
+
+def test_fetch_with_retry_retries_403_then_succeeds(monkeypatch):
+    import screeners.helpers as h
+    monkeypatch.setattr(h.time, "sleep", lambda s: None)
+    session = _FlakySession([
+        _FakeResponse("forbidden", status_code=403),
+        _FakeResponse("ok"),
+    ])
+    resp = _fetch_with_retry(session, "https://example.com", params={})
+    assert resp.text == "ok"
+    assert session.calls == 2
+
+
+def test_fetch_with_retry_does_not_retry_404(monkeypatch):
+    import screeners.helpers as h
+    monkeypatch.setattr(h.time, "sleep", lambda s: None)
+    session = _FlakySession([_FakeResponse("missing", status_code=404)])
+    with pytest.raises(requests.HTTPError):
+        _fetch_with_retry(session, "https://example.com", params={})
+    assert session.calls == 1
+
+
+def test_get_finviz_tickers_retries_failed_first_page(monkeypatch):
+    pages = {1: _page_html(["AAPL", "MSFT"], 2)}
+    flaky = _FlakySession([
+        requests.ConnectionError("Remote end closed connection"),
+        _FakeResponse(pages[1]),
+    ])
+    import screeners.helpers as h
+    monkeypatch.setattr(h.requests, "Session", lambda: flaky)
+    monkeypatch.setattr(h.time, "sleep", lambda s: None)
+    result = get_finviz_tickers({"Country": "USA"})
+    assert result == ["AAPL", "MSFT"]
+    assert flaky.calls == 2
 
 
 def _make_price_df(tickers, n_days=200):
