@@ -7,7 +7,13 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
-from .helpers import _FINVIZ_UA, _finviz_filter_param, fix_finviz_tickers, now_utc_iso
+from .helpers import (
+    _FINVIZ_UA,
+    _fetch_with_retry,
+    _finviz_filter_param,
+    fix_finviz_tickers,
+    now_utc_iso,
+)
 
 _FILTERS = {"Country": "USA", "Relative Volume": "Over 3", "Current Volume": "Over 5M"}
 
@@ -175,12 +181,11 @@ def _fetch() -> pd.DataFrame:
     total = None
     r = 1
     while True:
-        resp = session.get(
+        resp = _fetch_with_retry(
+            session,
             "https://finviz.com/screener.ashx",
             params={"v": "151", "f": f, "c": _COLUMNS_PARAM, "r": r},
-            timeout=30,
         )
-        resp.raise_for_status()
         html = resp.text
         if total is None:
             m = re.search(r'"totalCount"\s*:\s*(\d+)', html)
