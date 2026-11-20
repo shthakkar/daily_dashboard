@@ -34,8 +34,53 @@ _FINVIZ_FILTER_CODES = {
 
 _CHUNK_SIZE = 40
 _CHUNK_DELAY_SECONDS = 2
-_MAX_RETRIES = 2
-_RETRY_DELAY_SECONDS = 8
+_MAX_RETRIES = 3
+_RETRY_DELAY_SECONDS = 15
+# Retries for a single Finviz/Yahoo HTTP request: 4 attempts with
+# 15/30/60s pauses (~2 min span). Both sources drop connections
+# intermittently (Yahoo "Response ended prematurely" Oct 19, Finviz 403
+# Nov 17, RemoteDisconnected Nov 19, 2026) — a single failed request used
+# to kill the whole run; every one of those recovered on a re-run minutes
+# later, so riding it out in-process is cheaper than a dead dashboard.
+_FINVIZ_RETRY_DELAYS = (15, 30, 60)
+_FINVIZ_RETRYABLE_STATUS = frozenset({403, 429, 500, 502, 503, 504})
+
+
+def _is_retryable_request_error(exc: Exception) -> bool:
+    """True for dropped connections/timeouts and for HTTP statuses that
+    have been observed transient (403/429/5xx). Other HTTP errors (400,
+    404, ...) fail immediately — retrying them never helps."""
+    if isinstance(exc, requests.HTTPError):
+        resp = exc.response
+        return resp is not None and resp.status_code in _FINVIZ_RETRYABLE_STATUS
+    return isinstance(exc, requests.RequestException)
+
+
+def _fetch_with_retry(session, url: str, params: dict, timeout: int = 30):
+    """GET with retries on transient failures; raises the last error after
+    the final attempt."""
+    last_exc: Exception | None = None
+    for attempt in range(len(_FINVIZ_RETRY_DELAYS) + 1):
+        try:
+            resp = session.get(url, params=params, timeout=timeout)
+            if resp.status_code in _FINVIZ_RETRYABLE_STATUS:
+                raise requests.HTTPError(
+                    f"{resp.status_code} Client Error for url: {url}", response=resp
+                )
+            resp.raise_for_status()
+            return resp
+        except requests.RequestException as e:
+            if not _is_retryable_request_error(e):
+                raise
+            last_exc = e
+            if attempt < len(_FINVIZ_RETRY_DELAYS):
+                delay = _FINVIZ_RETRY_DELAYS[attempt]
+                print(
+                    f"Request failed ({e}), retrying in {delay}s "
+                    f"(attempt {attempt + 2}/{len(_FINVIZ_RETRY_DELAYS) + 1})"
+                )
+                time.sleep(delay)
+    raise last_exc  # noqa: TRY200 - last_exc is always set here
 
 
 def now_utc_iso() -> str:
@@ -102,12 +147,11 @@ def get_finviz_tickers(filters: dict) -> list[str]:
     session = requests.Session()
     session.headers.update({"User-Agent": _FINVIZ_UA})
     while True:
-        resp = session.get(
+        resp = _fetch_with_retry(
+            session,
             "https://finviz.com/screener.ashx",
             params={"v": "111", "f": f, "r": r},
-            timeout=30,
         )
-        resp.raise_for_status()
         html = resp.text
         if total is None:
             m = re.search(r'"totalCount"\s*:\s*(\d+)', html)
@@ -137,29 +181,41 @@ def get_earnings_map(days_back: int = 10) -> dict[str, str]:
     rows (weekend/holiday) is skipped, not fatal -- but if NO day returns
     rows at all, raise so the caller ships without the annotation loudly
     rather than a fake-empty one.
+
+    The days are fetched in parallel (2026-11-12): the sequential version
+    took ~25s healthy and up to 30s per day worst case, which ate the
+    6:22 check's 180s starter timeout on Nov 12 and the check never
+    finished. Same return contract, just concurrent requests.
     """
-    out: dict[str, str] = {}
-    session = requests.Session()
-    session.headers.update({"User-Agent": _FINVIZ_UA,
-                            "Accept": "application/json"})
-    any_rows = False
-    for offset in range(days_back, -1, -1):
-        day = date.today() - timedelta(days=offset)
+    days = [date.today() - timedelta(days=offset)
+            for offset in range(days_back, -1, -1)]
+
+    def _fetch(day):
+        # Plain requests.get per thread: a shared Session is not thread-safe.
         try:
-            resp = session.get(
+            resp = requests.get(
                 "https://api.nasdaq.com/api/calendar/earnings",
-                params={"date": day.isoformat()}, timeout=30)
+                params={"date": day.isoformat()},
+                headers={"User-Agent": _FINVIZ_UA,
+                         "Accept": "application/json"}, timeout=30)
             resp.raise_for_status()
-            rows = (resp.json().get("data") or {}).get("rows") or []
+            return day, (resp.json().get("data") or {}).get("rows") or []
         except Exception:  # noqa: BLE001 - one bad day must not kill the map
-            continue
-        if not rows:
-            continue
-        any_rows = True
-        for row in rows:
-            sym = (row.get("symbol") or "").strip()
-            if sym:
-                out[sym] = day.isoformat()
+            return day, []
+
+    import concurrent.futures
+    out: dict[str, str] = {}
+    any_rows = False
+    with concurrent.futures.ThreadPoolExecutor(
+            max_workers=len(days)) as pool:
+        for day, rows in pool.map(_fetch, days):
+            if not rows:
+                continue
+            any_rows = True
+            for row in rows:
+                sym = (row.get("symbol") or "").strip()
+                if sym:
+                    out[sym] = day.isoformat()
     if not any_rows:
         raise RuntimeError(
             f"Nasdaq earnings calendar returned no rows in the last {days_back} days")
