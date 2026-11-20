@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-19",
-  "updated_at": "2026-11-19T14:11:31.649670+00:00",
+  "date": "2026-11-20",
+  "updated_at": "2026-11-20T01:03:25.612856+00:00",
   "stocks": [
     {
       "ticker": "UNH",
@@ -303,27 +303,6 @@
       "stretch": "-18.5%",
       "rvol": "0.7x",
       "roc3": "-5.6%",
-      "analyst_tape": {
-        "status": "ok",
-        "upgrades": 0,
-        "downgrades": 0,
-        "raises": 0,
-        "lowers": 0,
-        "net": 0,
-        "tape_net": 0,
-        "latest": []
-      },
-      "corporate_flags": []
-    },
-    {
-      "ticker": "BETA",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 20.05,
-      "stretch": "-11.9%",
-      "rvol": "2.6x",
-      "roc3": "-14.1%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
