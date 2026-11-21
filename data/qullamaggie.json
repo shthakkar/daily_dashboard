@@ -1,26 +1,26 @@
 {
-  "date": "2026-11-20",
-  "updated_at": "2026-11-20T21:10:10.798993+00:00",
+  "date": "2026-11-21",
+  "updated_at": "2026-11-21T14:11:10.809825+00:00",
   "stocks": [
     {
       "ticker": "GKOS",
-      "tightness": 1.9,
+      "tightness": 2.0,
       "rating": "Wide",
-      "close": 237.69,
+      "close": 237.31,
       "avg_rank": 0.9933
     },
     {
       "ticker": "SN",
       "tightness": 1.5,
       "rating": "Wide",
-      "close": 212.69,
-      "avg_rank": 0.9529
+      "close": 212.64,
+      "avg_rank": 0.9528
     },
     {
       "ticker": "PCOR",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 71.75,
+      "close": 71.76,
       "avg_rank": 0.9508
     }
   ]
