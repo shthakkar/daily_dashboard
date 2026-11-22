@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-21",
-  "updated_at": "2026-11-21T14:11:10.807892+00:00",
+  "date": "2026-11-22",
+  "updated_at": "2026-11-22T14:10:48.076524+00:00",
   "stocks": [
     {
       "ticker": "NVDA",
@@ -11,6 +11,15 @@
       "rel_volume": "3.9x",
       "high_dollar_volume": true,
       "earnings_date": "2026-11-17"
+    },
+    {
+      "ticker": "TTWO",
+      "price": "$210.00",
+      "change": "+0.65%",
+      "volume": "10.6M",
+      "avg_volume": "3.2M",
+      "rel_volume": "3.3x",
+      "high_dollar_volume": true
     }
   ]
 }
