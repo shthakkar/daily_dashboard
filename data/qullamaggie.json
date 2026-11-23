@@ -1,27 +1,55 @@
 {
   "date": "2026-11-23",
-  "updated_at": "2026-11-23T14:11:57.163530+00:00",
+  "updated_at": "2026-11-23T21:09:11.722409+00:00",
   "stocks": [
     {
-      "ticker": "GKOS",
-      "tightness": 2.0,
+      "ticker": "MRNA",
+      "tightness": 3.8,
       "rating": "Wide",
-      "close": 237.31,
-      "avg_rank": 0.9926
+      "close": 212.08,
+      "avg_rank": 0.9519
+    },
+    {
+      "ticker": "U",
+      "tightness": 3.1,
+      "rating": "Wide",
+      "close": 47.47,
+      "avg_rank": 0.947
+    },
+    {
+      "ticker": "KYMR",
+      "tightness": 3.0,
+      "rating": "Wide",
+      "close": 150.37,
+      "avg_rank": 0.9812
     },
     {
       "ticker": "SN",
-      "tightness": 1.5,
+      "tightness": 2.1,
       "rating": "Wide",
-      "close": 212.64,
-      "avg_rank": 0.9521
+      "close": 225.21,
+      "avg_rank": 0.9649
+    },
+    {
+      "ticker": "REGN",
+      "tightness": 1.9,
+      "rating": "Wide",
+      "close": 942.24,
+      "avg_rank": 0.9233
     },
     {
       "ticker": "PCOR",
+      "tightness": 1.8,
+      "rating": "Wide",
+      "close": 73.41,
+      "avg_rank": 0.94
+    },
+    {
+      "ticker": "GKOS",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 71.76,
-      "avg_rank": 0.95
+      "close": 249.41,
+      "avg_rank": 0.9931
     }
   ]
 }
