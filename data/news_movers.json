@@ -1,24 +1,71 @@
 {
-  "date": "2026-11-22",
-  "updated_at": "2026-11-22T14:10:48.076524+00:00",
+  "date": "2026-11-23",
+  "updated_at": "2026-11-23T14:11:57.161502+00:00",
   "stocks": [
     {
+      "ticker": "DWTX",
+      "price": "$1.32",
+      "change": "+27.54%",
+      "volume": "8.3M",
+      "avg_volume": "98.2K",
+      "rel_volume": "1695.0x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "DCGO",
+      "price": "$0.19",
+      "change": "+9.14%",
+      "volume": "30.1M",
+      "avg_volume": "727.9K",
+      "rel_volume": "828.1x",
+      "high_dollar_volume": false
+    },
+    {
+      "ticker": "IVVD",
+      "price": "$0.48",
+      "change": "+17.49%",
+      "volume": "36.8M",
+      "avg_volume": "5.2M",
+      "rel_volume": "141.2x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-16"
+    },
+    {
+      "ticker": "FFAI",
+      "price": "$0.10",
+      "change": "-3.40%",
+      "volume": "9.6M",
+      "avg_volume": "3.6M",
+      "rel_volume": "53.7x",
+      "high_dollar_volume": false,
+      "earnings_date": "2026-11-16"
+    },
+    {
+      "ticker": "SOAR",
+      "price": "$0.20",
+      "change": "+19.70%",
+      "volume": "94.0M",
+      "avg_volume": "44.2M",
+      "rel_volume": "42.5x",
+      "high_dollar_volume": false
+    },
+    {
       "ticker": "NVDA",
-      "price": "$125.53",
-      "change": "-14.01%",
-      "volume": "633.4M",
-      "avg_volume": "161.1M",
-      "rel_volume": "3.9x",
+      "price": "$160.31",
+      "change": "+27.71%",
+      "volume": "67.5M",
+      "avg_volume": "169.4M",
+      "rel_volume": "8.0x",
       "high_dollar_volume": true,
       "earnings_date": "2026-11-17"
     },
     {
-      "ticker": "TTWO",
-      "price": "$210.00",
-      "change": "+0.65%",
-      "volume": "10.6M",
-      "avg_volume": "3.2M",
-      "rel_volume": "3.3x",
+      "ticker": "CRWV",
+      "price": "$50.42",
+      "change": "+27.61%",
+      "volume": "9.3M",
+      "avg_volume": "47.8M",
+      "rel_volume": "3.9x",
       "high_dollar_volume": true
     }
   ]

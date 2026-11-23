@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-22",
-  "updated_at": "2026-11-22T14:10:29.947541+00:00",
+  "date": "2026-11-23",
+  "updated_at": "2026-11-23T14:11:30.469190+00:00",
   "stocks": [
     {
       "ticker": "INTU",
@@ -282,7 +282,7 @@
         "tape_net": 0,
         "latest": []
       },
-      "corporate_flags": []
+      "corporate_flags": null
     },
     {
       "ticker": "LMND",
@@ -390,7 +390,7 @@
         "tape_net": 0,
         "latest": []
       },
-      "corporate_flags": []
+      "corporate_flags": null
     },
     {
       "ticker": "KBR",
@@ -474,7 +474,7 @@
         "tape_net": 0,
         "latest": []
       },
-      "corporate_flags": []
+      "corporate_flags": null
     },
     {
       "ticker": "HWC",
@@ -677,6 +677,27 @@
       "stretch": "-18.1%",
       "rvol": "1.1x",
       "roc3": "-6.0%",
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 0,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 0,
+        "latest": []
+      },
+      "corporate_flags": []
+    },
+    {
+      "ticker": "FLY",
+      "setup": "Fade Long",
+      "direction": "long",
+      "score": "4/6",
+      "close": 17.69,
+      "stretch": "-13.5%",
+      "rvol": "1.2x",
+      "roc3": "-17.5%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
