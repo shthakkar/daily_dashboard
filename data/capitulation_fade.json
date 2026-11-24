@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-23",
-  "updated_at": "2026-11-23T21:09:09.144903+00:00",
+  "date": "2026-11-24",
+  "updated_at": "2026-11-24T14:11:35.873360+00:00",
   "stocks": [
     {
       "ticker": "KYMR",
@@ -28,9 +28,9 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 28.42,
+      "close": 28.41,
       "stretch": "-13.5%",
-      "rvol": "1.0x",
+      "rvol": "1.2x",
       "roc3": "-11.2%",
       "analyst_tape": {
         "status": "ok",
@@ -51,7 +51,7 @@
       "score": "4/6",
       "close": 63.32,
       "stretch": "-8.6%",
-      "rvol": "0.5x",
+      "rvol": "0.7x",
       "roc3": "-6.1%",
       "analyst_tape": {
         "status": "ok",
@@ -70,10 +70,10 @@
       "setup": "Fade Long",
       "direction": "long",
       "score": "4/6",
-      "close": 22.85,
-      "stretch": "-10.8%",
-      "rvol": "0.9x",
-      "roc3": "-19.0%",
+      "close": 22.88,
+      "stretch": "-10.7%",
+      "rvol": "1.1x",
+      "roc3": "-18.9%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -88,9 +88,9 @@
     }
   ],
   "spy_context": {
-    "last_close": 722.51,
-    "chg_3d_pct": -1.05,
-    "chg_5d_pct": -2.36,
-    "vs_sma20_pct": -3.11
+    "last_close": 722.29,
+    "chg_3d_pct": -1.08,
+    "chg_5d_pct": -2.39,
+    "vs_sma20_pct": -3.13
   }
 }
