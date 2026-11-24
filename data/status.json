@@ -1,6 +1,6 @@
 {
-  "status": "failed",
-  "run_at": "2026-11-24T21:07:42.797782+00:00",
+  "status": "ok",
+  "run_at": "2026-11-24T22:37:39.624074+00:00",
   "date": "2026-11-24",
-  "error": "403 Client Error for url: https://finviz.com/screener.ashx"
+  "error": null
 }

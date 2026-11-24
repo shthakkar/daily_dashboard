@@ -1,16 +1,16 @@
 {
   "date": "2026-11-24",
-  "updated_at": "2026-11-24T14:11:35.873360+00:00",
+  "updated_at": "2026-11-24T22:37:36.287232+00:00",
   "stocks": [
     {
       "ticker": "KYMR",
       "setup": "Fade Short",
       "direction": "short",
-      "score": "4/6",
-      "close": 150.37,
-      "stretch": "+17.5%",
-      "rvol": "5.6x",
-      "roc3": "+24.1%",
+      "score": "5/6",
+      "close": 173.92,
+      "stretch": "+33.0%",
+      "rvol": "3.9x",
+      "roc3": "+45.7%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -24,14 +24,17 @@
       "corporate_flags": []
     },
     {
-      "ticker": "CWEN",
-      "setup": "Fade Long",
-      "direction": "long",
-      "score": "4/6",
-      "close": 28.41,
-      "stretch": "-13.5%",
-      "rvol": "1.2x",
-      "roc3": "-11.2%",
+      "ticker": "ANF",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "5/6",
+      "close": 168.1,
+      "stretch": "+9.5%",
+      "rvol": "3.9x",
+      "roc3": "+22.1%",
+      "earnings_date": "2026-11-24",
+      "earnings_move_pct": 19.69,
+      "sessions_since_earnings": 0,
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -45,14 +48,17 @@
       "corporate_flags": []
     },
     {
-      "ticker": "CNC",
-      "setup": "Fade Long",
-      "direction": "long",
+      "ticker": "AMTM",
+      "setup": "Fade Short",
+      "direction": "short",
       "score": "4/6",
-      "close": 63.32,
-      "stretch": "-8.6%",
-      "rvol": "0.7x",
-      "roc3": "-6.1%",
+      "close": 24.8,
+      "stretch": "+13.2%",
+      "rvol": "4.5x",
+      "roc3": "+18.0%",
+      "earnings_date": "2026-11-23",
+      "earnings_move_pct": 20.1,
+      "sessions_since_earnings": 1,
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -66,14 +72,56 @@
       "corporate_flags": []
     },
     {
-      "ticker": "WRBY",
-      "setup": "Fade Long",
-      "direction": "long",
+      "ticker": "INSM",
+      "setup": "Fade Short",
+      "direction": "short",
       "score": "4/6",
-      "close": 22.88,
-      "stretch": "-10.7%",
-      "rvol": "1.1x",
-      "roc3": "-18.9%",
+      "close": 170.15,
+      "stretch": "+39.9%",
+      "rvol": "9.6x",
+      "roc3": "+17.8%",
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 0,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 0,
+        "latest": []
+      },
+      "corporate_flags": []
+    },
+    {
+      "ticker": "AEO",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 22.79,
+      "stretch": "+8.6%",
+      "rvol": "1.6x",
+      "roc3": "+8.5%",
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 0,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 0,
+        "latest": []
+      },
+      "corporate_flags": []
+    },
+    {
+      "ticker": "GRDN",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 50.62,
+      "stretch": "+10.9%",
+      "rvol": "2.4x",
+      "roc3": "+8.5%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
@@ -88,9 +136,9 @@
     }
   ],
   "spy_context": {
-    "last_close": 722.29,
-    "chg_3d_pct": -1.08,
-    "chg_5d_pct": -2.39,
-    "vs_sma20_pct": -3.13
+    "last_close": 718.78,
+    "chg_3d_pct": 0.41,
+    "chg_5d_pct": -1.86,
+    "vs_sma20_pct": -3.27
   }
 }
