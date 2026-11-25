@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-24",
-  "updated_at": "2026-11-24T22:37:36.287232+00:00",
+  "date": "2026-11-25",
+  "updated_at": "2026-11-25T14:10:54.333818+00:00",
   "stocks": [
     {
       "ticker": "KYMR",
@@ -80,6 +80,27 @@
       "stretch": "+39.9%",
       "rvol": "9.6x",
       "roc3": "+17.8%",
+      "analyst_tape": {
+        "status": "ok",
+        "upgrades": 0,
+        "downgrades": 0,
+        "raises": 0,
+        "lowers": 0,
+        "net": 0,
+        "tape_net": 0,
+        "latest": []
+      },
+      "corporate_flags": []
+    },
+    {
+      "ticker": "BIP",
+      "setup": "Fade Short",
+      "direction": "short",
+      "score": "4/6",
+      "close": 45.52,
+      "stretch": "+14.3%",
+      "rvol": "2.8x",
+      "roc3": "+10.8%",
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,

@@ -1,41 +1,41 @@
 {
-  "date": "2026-11-24",
-  "updated_at": "2026-11-24T22:37:39.622675+00:00",
+  "date": "2026-11-25",
+  "updated_at": "2026-11-25T14:10:58.675851+00:00",
   "stocks": [
     {
       "ticker": "MRNA",
       "tightness": 4.3,
       "rating": "Medium",
       "close": 227.38,
-      "avg_rank": 0.9613
+      "avg_rank": 0.9609
     },
     {
       "ticker": "U",
       "tightness": 3.5,
       "rating": "Wide",
       "close": 48.37,
-      "avg_rank": 0.949
+      "avg_rank": 0.9489
     },
     {
       "ticker": "PCOR",
       "tightness": 2.0,
       "rating": "Wide",
       "close": 73.97,
-      "avg_rank": 0.929
+      "avg_rank": 0.9283
     },
     {
       "ticker": "SN",
       "tightness": 1.6,
       "rating": "Wide",
       "close": 228.93,
-      "avg_rank": 0.9678
+      "avg_rank": 0.9679
     },
     {
       "ticker": "DLTR",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 154.65,
-      "avg_rank": 0.9221,
+      "avg_rank": 0.9222,
       "earnings_date": "2026-11-24"
     },
     {
@@ -43,35 +43,35 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 256.98,
-      "avg_rank": 0.9927
+      "avg_rank": 0.9934
     },
     {
       "ticker": "INSM",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 170.15,
-      "avg_rank": 0.9241
+      "avg_rank": 0.9242
     },
     {
       "ticker": "KYMR",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 173.92,
-      "avg_rank": 0.9923
+      "avg_rank": 0.993
     },
     {
       "ticker": "REGN",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 987.09,
-      "avg_rank": 0.936
+      "avg_rank": 0.9362
     },
     {
       "ticker": "TGTX",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 70.13,
-      "avg_rank": 0.989
+      "avg_rank": 0.9897
     }
   ]
 }
