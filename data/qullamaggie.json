@@ -1,77 +1,69 @@
 {
   "date": "2026-11-25",
-  "updated_at": "2026-11-25T14:10:58.675851+00:00",
+  "updated_at": "2026-11-25T21:09:03.405009+00:00",
   "stocks": [
     {
-      "ticker": "MRNA",
-      "tightness": 4.3,
-      "rating": "Medium",
-      "close": 227.38,
-      "avg_rank": 0.9609
-    },
-    {
       "ticker": "U",
-      "tightness": 3.5,
+      "tightness": 3.9,
       "rating": "Wide",
-      "close": 48.37,
-      "avg_rank": 0.9489
+      "close": 48.24,
+      "avg_rank": 0.9517
     },
     {
-      "ticker": "PCOR",
+      "ticker": "VLTO",
       "tightness": 2.0,
       "rating": "Wide",
-      "close": 73.97,
-      "avg_rank": 0.9283
+      "close": 120.21,
+      "avg_rank": 0.9219
     },
     {
       "ticker": "SN",
-      "tightness": 1.6,
+      "tightness": 1.2,
       "rating": "Wide",
-      "close": 228.93,
-      "avg_rank": 0.9679
+      "close": 232.36,
+      "avg_rank": 0.9706
     },
     {
-      "ticker": "DLTR",
+      "ticker": "BBIO",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 154.65,
-      "avg_rank": 0.9222,
-      "earnings_date": "2026-11-24"
+      "close": 89.79,
+      "avg_rank": 0.9291
     },
     {
       "ticker": "GKOS",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 256.98,
-      "avg_rank": 0.9934
-    },
-    {
-      "ticker": "INSM",
-      "tightness": 1.0,
-      "rating": "Wide",
-      "close": 170.15,
-      "avg_rank": 0.9242
+      "close": 259.99,
+      "avg_rank": 0.994
     },
     {
       "ticker": "KYMR",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 173.92,
-      "avg_rank": 0.993
+      "close": 173.77,
+      "avg_rank": 0.9919
     },
     {
       "ticker": "REGN",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 987.09,
-      "avg_rank": 0.9362
+      "close": 981.87,
+      "avg_rank": 0.94
+    },
+    {
+      "ticker": "RYAN",
+      "tightness": 1.0,
+      "rating": "Wide",
+      "close": 50.12,
+      "avg_rank": 0.9219
     },
     {
       "ticker": "TGTX",
       "tightness": 1.0,
       "rating": "Wide",
-      "close": 70.13,
-      "avg_rank": 0.9897
+      "close": 68.37,
+      "avg_rank": 0.9823
     }
   ]
 }
