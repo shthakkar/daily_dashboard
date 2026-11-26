@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "updated_at": "2026-11-26T14:11:02.601399+00:00",
+  "updated_at": "2026-11-26T21:09:11.171764+00:00",
   "stocks": [
     {
       "ticker": "INSM",
@@ -156,7 +156,7 @@
         "tape_net": 0,
         "latest": []
       },
-      "corporate_flags": null
+      "corporate_flags": []
     },
     {
       "ticker": "DKS",

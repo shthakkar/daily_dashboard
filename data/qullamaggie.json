@@ -1,41 +1,41 @@
 {
   "date": "2026-11-26",
-  "updated_at": "2026-11-26T14:11:15.040150+00:00",
+  "updated_at": "2026-11-26T21:09:25.277593+00:00",
   "stocks": [
     {
       "ticker": "U",
       "tightness": 3.9,
       "rating": "Wide",
       "close": 48.24,
-      "avg_rank": 0.9519
+      "avg_rank": 0.952
     },
     {
       "ticker": "VLTO",
       "tightness": 2.0,
       "rating": "Wide",
       "close": 120.19,
-      "avg_rank": 0.9216
+      "avg_rank": 0.9218
     },
     {
       "ticker": "SN",
       "tightness": 1.1,
       "rating": "Wide",
       "close": 232.5,
-      "avg_rank": 0.9709
+      "avg_rank": 0.971
     },
     {
       "ticker": "BBIO",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 89.79,
-      "avg_rank": 0.9289
+      "avg_rank": 0.929
     },
     {
       "ticker": "GKOS",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 259.9,
-      "avg_rank": 0.9939
+      "avg_rank": 0.994
     },
     {
       "ticker": "KYMR",
@@ -49,21 +49,21 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 981.87,
-      "avg_rank": 0.9402
+      "avg_rank": 0.9403
     },
     {
       "ticker": "RYAN",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 50.14,
-      "avg_rank": 0.9233
+      "avg_rank": 0.9234
     },
     {
       "ticker": "TGTX",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 68.37,
-      "avg_rank": 0.9826
+      "avg_rank": 0.9827
     }
   ]
 }

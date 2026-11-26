@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "updated_at": "2026-11-26T14:11:15.035650+00:00",
+  "updated_at": "2026-11-26T21:09:25.272195+00:00",
   "stocks": [
     {
       "ticker": "AMBA",
@@ -20,6 +20,16 @@
       "avg_volume": "4.3M",
       "rel_volume": "7.3x",
       "high_dollar_volume": true
+    },
+    {
+      "ticker": "NTNX",
+      "price": "$46.30",
+      "change": "-15.19%",
+      "volume": "13.6M",
+      "avg_volume": "2.6M",
+      "rel_volume": "5.3x",
+      "high_dollar_volume": true,
+      "earnings_date": "2026-11-24"
     },
     {
       "ticker": "DELL",
