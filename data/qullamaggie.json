@@ -1,34 +1,41 @@
 {
-  "date": "2026-11-26",
-  "updated_at": "2026-11-26T21:09:25.277593+00:00",
+  "date": "2026-11-27",
+  "updated_at": "2026-11-27T14:10:45.583664+00:00",
   "stocks": [
     {
       "ticker": "U",
       "tightness": 3.9,
       "rating": "Wide",
       "close": 48.24,
-      "avg_rank": 0.952
+      "avg_rank": 0.9524
     },
     {
       "ticker": "VLTO",
       "tightness": 2.0,
       "rating": "Wide",
       "close": 120.19,
-      "avg_rank": 0.9218
+      "avg_rank": 0.9222
+    },
+    {
+      "ticker": "PCOR",
+      "tightness": 1.8,
+      "rating": "Wide",
+      "close": 74.56,
+      "avg_rank": 0.9202
     },
     {
       "ticker": "SN",
       "tightness": 1.1,
       "rating": "Wide",
       "close": 232.5,
-      "avg_rank": 0.971
+      "avg_rank": 0.9714
     },
     {
       "ticker": "BBIO",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 89.79,
-      "avg_rank": 0.929
+      "avg_rank": 0.9294
     },
     {
       "ticker": "GKOS",
@@ -56,14 +63,14 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 50.14,
-      "avg_rank": 0.9234
+      "avg_rank": 0.9238
     },
     {
       "ticker": "TGTX",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 68.37,
-      "avg_rank": 0.9827
+      "avg_rank": 0.9831
     }
   ]
 }

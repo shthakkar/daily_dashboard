@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-26",
-  "updated_at": "2026-11-26T21:09:11.171764+00:00",
+  "date": "2026-11-27",
+  "updated_at": "2026-11-27T14:10:37.366146+00:00",
   "stocks": [
     {
       "ticker": "INSM",
@@ -239,9 +239,6 @@
       "stretch": "+15.0%",
       "rvol": "1.1x",
       "roc3": "+6.1%",
-      "earnings_date": "2026-11-16",
-      "earnings_move_pct": 11.08,
-      "sessions_since_earnings": 7,
       "analyst_tape": {
         "status": "ok",
         "upgrades": 0,
