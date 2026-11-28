@@ -1,24 +1,5 @@
 {
-  "date": "2026-11-27",
-  "updated_at": "2026-11-27T21:09:46.166546+00:00",
-  "stocks": [
-    {
-      "ticker": "TRUG",
-      "price": "$0.27",
-      "change": "+0.61%",
-      "volume": "26.7M",
-      "avg_volume": "2.3M",
-      "rel_volume": "11.8x",
-      "high_dollar_volume": false
-    },
-    {
-      "ticker": "VWAV",
-      "price": "$0.04",
-      "change": "-13.75%",
-      "volume": "59.1M",
-      "avg_volume": "5.5M",
-      "rel_volume": "10.7x",
-      "high_dollar_volume": false
-    }
-  ]
+  "date": "2026-11-28",
+  "updated_at": "2026-11-28T14:10:40.720624+00:00",
+  "stocks": []
 }

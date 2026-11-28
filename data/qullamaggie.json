@@ -1,13 +1,13 @@
 {
-  "date": "2026-11-27",
-  "updated_at": "2026-11-27T21:09:46.171030+00:00",
+  "date": "2026-11-28",
+  "updated_at": "2026-11-28T14:10:40.725086+00:00",
   "stocks": [
     {
       "ticker": "BBY",
       "tightness": 5.2,
       "rating": "Medium",
       "close": 104.18,
-      "avg_rank": 0.9307,
+      "avg_rank": 0.9306,
       "earnings_date": "2026-11-24"
     },
     {
@@ -15,49 +15,49 @@
       "tightness": 2.4,
       "rating": "Wide",
       "close": 50.3,
-      "avg_rank": 0.982
+      "avg_rank": 0.9819
     },
     {
       "ticker": "FROG",
       "tightness": 1.9,
       "rating": "Wide",
       "close": 111.52,
-      "avg_rank": 0.9499
+      "avg_rank": 0.9498
     },
     {
       "ticker": "PCOR",
       "tightness": 1.5,
       "rating": "Wide",
       "close": 75.48,
-      "avg_rank": 0.9331
+      "avg_rank": 0.9326
     },
     {
       "ticker": "CDW",
       "tightness": 1.4,
       "rating": "Wide",
       "close": 179.1,
-      "avg_rank": 0.9223
+      "avg_rank": 0.9222
     },
     {
       "ticker": "BBIO",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 91.12,
-      "avg_rank": 0.9243
+      "avg_rank": 0.9238
     },
     {
       "ticker": "GKOS",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 264.06,
-      "avg_rank": 0.9724
+      "avg_rank": 0.9723
     },
     {
       "ticker": "INSM",
       "tightness": 1.0,
       "rating": "Wide",
       "close": 170.44,
-      "avg_rank": 0.9211
+      "avg_rank": 0.9209
     },
     {
       "ticker": "KYMR",
@@ -78,7 +78,7 @@
       "tightness": 1.0,
       "rating": "Wide",
       "close": 236.98,
-      "avg_rank": 0.9768
+      "avg_rank": 0.9767
     },
     {
       "ticker": "TGTX",
